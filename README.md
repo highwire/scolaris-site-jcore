@@ -1,1 +1,0 @@
-# scolaris-site-jcore
