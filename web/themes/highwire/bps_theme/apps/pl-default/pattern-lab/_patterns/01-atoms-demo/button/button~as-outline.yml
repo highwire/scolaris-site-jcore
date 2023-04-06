@@ -1,0 +1,6 @@
+---
+button:
+  title: Outline Button
+  text: Outline
+  type: button
+  style: outline-primary

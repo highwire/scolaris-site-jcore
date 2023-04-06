@@ -1,0 +1,21 @@
+uuid: 37ed4aa7-f30b-45f8-8697-54e1be3f048a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.publisher_editable
+    - field.storage.block_content.field_display_sub_title
+  module:
+    - text
+id: block_content.publisher_editable.field_display_sub_title
+field_name: field_display_sub_title
+entity_type: block_content
+bundle: publisher_editable
+label: 'Display Sub Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

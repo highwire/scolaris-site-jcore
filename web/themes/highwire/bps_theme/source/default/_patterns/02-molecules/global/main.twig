@@ -1,0 +1,64 @@
+<main role="main" class="main-container {{ attributes.class }}" {{ atttributes|without('class', 'role') }}>
+  {% block content_top_alt %}
+    {% if content_top_alt %}
+      <div class="page-wrapper content-top-alt bg--alt">
+          {{ content_top_alt }}
+      </div>
+    {% endif %}
+  {% endblock %}
+  {% block content_top %}
+    {% if content_top %}
+      <div class="page-wrapper content-top">
+          {{ content_top }}
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {% block main_content %}
+      <div class="page-wrapper main-content-container">
+        {% if sidebar_first and sidebar_second %}
+          {% set row_classes = 'row mlr-0 row--3col' %}
+        {% elseif sidebar_first %}
+          {% set row_classes = 'row mlr-0 row--2col-lhs' %}
+        {% elseif sidebar_second %}
+          {% set row_classes = 'row mlr-0 row--2col-rhs' %}
+        {% else %}
+          {% set row_classes = 'row mlr-0' %}
+        {% endif %}
+        <div class="{{ row_classes }}">
+          {% block sidebar_first %}
+            {% if sidebar_first %}
+              <aside class="col-xs-12 col--lhs plr-0" role="complementary">
+                {{ sidebar_first }}
+              </aside>
+            {% endif %}
+          {% endblock %}
+
+          {% block content %}
+            <section{{ content_attributes|without('class') }} class="{{ content_attributes.class }} col-xs-12 plr-0 col--main">
+              {% if page_title %}
+                <div class="content-page-title">{{ page_title }}</div>
+              {% endif %}
+              {{ content }}
+            </section>
+          {% endblock %}
+
+          {% block sidebar_second %}
+            {% if sidebar_second %}
+              <aside class="col-xs-12 col--rhs" role="complementary">
+                {{ sidebar_second }}
+              </aside>
+            {% endif %}
+          {% endblock %}
+        </div>
+    </div>
+  {% endblock %}
+
+  {% block content_bottom %}
+    {% if content_bottom %}
+      <div class="page-wrapper content-bottom">
+          {{ content_bottom }}
+      </div>
+    {% endif %}
+  {% endblock %}
+</main> 

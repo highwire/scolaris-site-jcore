@@ -1,0 +1,47 @@
+{% set buttonSize = button.size ? "btn-" ~ button.size : "" %}
+{% set buttonStyle =  button.style ? "btn-" ~ button.style : "" %}
+
+{% if button.href %}
+  <a href="{{ button.href }}" class="{{ button.class }}" title="{{ button.title }}">
+	{% if button.lefticon|default(false) %}
+		{% if button.leftstackclass %}
+			<span class="font-stack {{button.leftstackclass}}">
+		{% endif %}		
+		{% if button.leftstackclass %}
+			</span>
+		{% endif %}
+	{% endif %}
+	{{ button.text }}
+	{% if button.righticon|default(false) %}
+		{% if button.rightstackclass %}
+			<span class="font-stack {{button.rightstackclass}}">
+		{% endif %}		
+		{% if button.rightstackclass %}
+			</span>
+		{% endif %}
+	{% endif %}
+	{% if button.rightspancontent %}
+		<span class="{{button.rightspanclass}}">{{button.rightspancontent}}</span>
+	{% endif %}
+  </a>
+{% elseif button.text %}
+  <button type="{{ button.type }}" class="btn {{ " " ~ buttonSize }} {{ " " ~ buttonStyle }} {{ button.classes }}" {% if button.closemodal %}data-bs-dismiss="{{ button.closemodal }}"{% endif %} {% if button.info %}aria-label="{{ button.info }}"{% endif %} {% if button.togglemodal %}data-bs-toggle="{{ button.togglemodal }}" data-bs-target="{{ button.targetmodal }}"{% endif %}>
+	{% if button.lefticon|default(false) %}
+		{% if button.leftstackclass %}
+			<span class="font-stack {{button.leftstackclass}}">
+		{% endif %}		
+		{% if button.leftstackclass %}
+			</span>
+		{% endif %}
+	{% endif %}
+	{{ button.text }}
+	{% if button.righticon|default(false) %}
+		{% if button.rightstackclass %}
+			<span class="font-stack {{button.rightstackclass}}">
+		{% endif %}	
+		{% if button.rightstackclass %}
+			</span>
+		{% endif %}
+	{% endif %}
+  </button>
+{% endif %}

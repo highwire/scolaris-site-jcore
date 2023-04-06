@@ -1,0 +1,207 @@
+uuid: cddbda82-90d9-4622-918b-91eedc9fdaf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.related_content
+  module:
+    - bps_content_display
+    - bps_ecommerce
+    - ctools
+    - ctools_block
+    - panels
+    - views
+id: node_view-panels_variant-5
+label: 'Test Review'
+variant: panels_variant
+variant_settings:
+  blocks:
+    3493ae02-60ce-4dfa-9ec5-6c8532914046:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: content_details
+      region: top
+      weight: -3
+      uuid: 3493ae02-60ce-4dfa-9ec5-6c8532914046
+      context_mapping:
+        entity: node
+    0d195d7e-d2a6-45e4-992f-ce89c2d10c74:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: full
+      region: bottom_left
+      weight: 0
+      uuid: 0d195d7e-d2a6-45e4-992f-ce89c2d10c74
+      context_mapping:
+        entity: node
+    237e7514-33e6-49a0-8f0c-5606a610b07f:
+      id: 'views_block:related_content-block_related_content'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: '5'
+      region: bottom_right
+      weight: -1
+      uuid: 237e7514-33e6-49a0-8f0c-5606a610b07f
+      context_mapping: {  }
+    0d80cce8-3377-4f35-b9d5-e32364441728:
+      id: 'entity_field:node:keywords'
+      label: Keywords
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: double_field_unformatted_list
+        settings:
+          first:
+            link: false
+            format_type: medium
+            hidden: false
+            prefix: ''
+            suffix: ''
+          second:
+            link: false
+            format_type: medium
+            hidden: false
+            prefix: ''
+            suffix: ''
+          inline: true
+        third_party_settings: {  }
+        weight: 0
+      region: bottom_right
+      weight: 0
+      uuid: 0d80cce8-3377-4f35-b9d5-e32364441728
+      context_mapping:
+        entity: node
+    b8352332-e149-4428-9eeb-b4aa9f3b44b5:
+      id: 'entity_field:node:test_type'
+      label: 'Test Type'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: double_field_unformatted_list
+        settings:
+          first:
+            link: false
+            format_type: medium
+            hidden: false
+            prefix: ''
+            suffix: ''
+          second:
+            link: false
+            format_type: medium
+            hidden: false
+            prefix: ''
+            suffix: ''
+          inline: true
+        third_party_settings: {  }
+        weight: 0
+      region: bottom_right
+      weight: -2
+      uuid: b8352332-e149-4428-9eeb-b4aa9f3b44b5
+      context_mapping:
+        entity: node
+    56750334-9a01-423c-a4a4-687eb7ead04e:
+      id: bps_display_price
+      label: 'BPS Display Price'
+      provider: bps_ecommerce
+      label_display: '0'
+      list_titles:
+        user_access_already: 'You already have access to these :types:'
+        purchase_offers_current: 'Get access to this :type:'
+        purchase_offers_container: 'Get access to the entire :type:'
+        purchase_offers_default: 'Get access to the :type:'
+      child_offers_prompt:
+        title: 'Get access to individual :types:'
+        text: 'Open :a :type to see its purchasing options.'
+      region: top
+      weight: -1
+      uuid: 56750334-9a01-423c-a4a4-687eb7ead04e
+      context_mapping:
+        node: node
+      view_modes:
+        item_test_review: fu
+        item_monograph: default
+      access_control_rule: online_access
+    e7a6f8dd-39b2-4a9d-86f7-54817f488a79:
+      id: bps_pdf_only_message
+      label: 'PDF Only Message'
+      provider: bps_content_display
+      label_display: '0'
+      region: top
+      weight: -2
+      uuid: e7a6f8dd-39b2-4a9d-86f7-54817f488a79
+      context_mapping:
+        node: node
+  id: panels_variant
+  uuid: e8c21cc0-dee6-4e9b-8e11-6bf2e443ef9b
+  label: null
+  weight: 0
+  layout: bs_2col_bricked
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes: {  }
+      add_layout_class: 0
+      attributes: 'class|journal-page journal-article'
+    regions:
+      top:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: 'class|journal-article '
+      top_left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: ''
+      top_right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: ''
+      middle:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: ''
+      bottom_left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-9'
+      bottom_right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: 'class|col-12 col-large-tablet-3 article__rightbar'
+      bottom:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+  page_title: '[node:title]'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-5
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      item_test_review: item_test_review
+      item_monograph: item_monograph
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

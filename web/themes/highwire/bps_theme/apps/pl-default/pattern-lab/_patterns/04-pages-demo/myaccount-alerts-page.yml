@@ -1,0 +1,256 @@
+---
+page_name: my-account  
+show_search: true
+order_2_1: order_2_1
+left_column_width: col-medium-tablet-4 col-desktop-3
+main_column_width: col-medium-tablet-8 col-desktop-9
+myaccount_top:
+  badge_heading:
+    level: '6'
+    class: my-account__badge__title
+    text: My Account
+  heading:
+    level: '2'
+    class: my-account__main-heading
+    text: Alerts
+  paragraph:
+    class: my-account__main-description
+    text: Manage your alerts.
+myaccount_filter: false
+myaccount_shortby:  
+  select:
+    labelcontent: Sort by
+    group: my-account__filter
+    labelclass: 
+    class: my-account__filter-form-select    
+    title: Select Title
+    name: Select Name
+    options:
+    - value: '1'
+      text: Newest first
+    - value: '2'
+      text: A - Z
+navtabs_item:
+- active: active
+  id: 1
+  title: Journal issue alerts
+- active: ''
+  id: 2
+  title: New content alerts
+navtabs_content:
+- active: active
+  id: 1
+  myaccount_shortby:  
+    labelcontent: Sort by
+    group: my-account__filter
+    labelclass: 
+    class: my-account__filter-form-select    
+    title: Select Title
+    name: Select Name
+    options:
+    - value: '1'
+      text: Newest first
+    - value: '2'
+      text: A - Z
+  journal_artical_cms: false
+  journal_article_card:
+  - card_lr_column:
+    - left_col_width: false
+      middle_col_width: 
+      card_heading:
+      - heading:
+          level: '6'
+          class: article-section__sub-heading
+          text: Added on 19 june 2021
+      card_heading_link:
+      - anchorHead:
+          level: '5'
+          class: article-section__heading
+          button:
+            href: "#"
+            title: 'Annals of LGBTQ Public and Population Health'
+            text: 'Annals of LGBTQ Public and Population Health'
+      card_description:    
+      - paragraph:
+          class: article-section__author-description
+          text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+      card_link:
+      - button:
+          href: "#"
+          class: article-section__save
+          title: Save
+          text: Save
+      - button:
+          type: button
+          togglemodal: modal
+          targetmodal: '#account-alertDelete'          
+          text: Remove
+          classes: my-account__delete
+      switch:
+        labelcontent: 'Status : '
+        id: switch-id
+        enable: On
+        disable: Off
+  - card_lr_column:
+    - left_col_width: false
+      middle_col_width: 
+      card_heading:
+      - heading:
+          level: '6'
+          class: article-section__sub-heading
+          text: Added on 19 june 2021
+      card_heading_link:
+      - anchorHead:
+          level: '5'
+          class: article-section__heading
+          button:
+            href: "#"
+            title: 'Annals of LGBTQ Public and Population Health'
+            text: 'Annals of LGBTQ Public and Population Health'
+      card_description:    
+      - paragraph:
+          class: article-section__author-description
+          text: Email me when a new book is published      
+      card_link:
+      - button:
+          href: "#"
+          class: article-section__save
+          title: Save
+          text: Save
+      - button:
+          type: button
+          togglemodal: modal
+          targetmodal: '#account-alertDelete'          
+          text: Remove
+          classes: my-account__delete
+      switch:
+        labelcontent: 'Status : '
+        id: switch-id
+        enable: On
+        disable: Off 
+- active: ''
+  id: 2
+  journal_artical_cms: false
+  journal_article_card:
+  - card_lr_column:
+    - left_col_width: false
+      middle_col_width: 
+      card_heading:
+      - heading:
+          level: '6'
+          class: article-section__sub-heading
+          text: Added on 19 june 2021
+      card_heading_link:
+      - anchorHead:
+          level: '5'
+          class: article-section__heading
+          button:
+            href: "#"
+            title: 'Annals of LGBTQ Public and Population Health'
+            text: 'Annals of LGBTQ Public and Population Health'
+      card_description:    
+      - paragraph:
+          class: article-section__author-description
+          text: Email me when a new book is published
+      card_radio_input:
+      - radiobox:
+          name: journal-date
+          label: The day it happens
+          index: 1
+      - radiobox:
+          name: journal-date
+          label: Once a week
+          index: 2
+      - radiobox:
+          name: journal-date
+          label: Once a month
+          index: 3
+      card_link:
+      - button:
+          href: "#"
+          class: article-section__save
+          title: Save
+          text: Save
+      - button:
+          type: button
+          togglemodal: modal
+          targetmodal: '#account-alertDelete'          
+          text: Remove
+          classes: my-account__delete
+      switch:
+        labelcontent: 'Status : '
+        id: switch-id
+        enable: On
+        disable: Off
+sidenavLoop:
+- heading:
+    level: '4'
+    class: sidebar__heading
+    text: Hello <span class='sidebar__heading__name'>Vinoth!</span>
+- profilelink:
+    href: "#"
+    title: Logout
+    text: Logout
+    class: sidebar__logout
+  listgroupClass: sidebar__sticky-top
+  listing_items:
+  - urls_class: sidebar__listgroup_item
+    active: active
+    urls: "#"
+    content: Alerts
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: Favorites    
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: Labels
+  - urls_class: sidebar__listgroup_item    
+    urls: "#"
+    content: Saved searches
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: Profile & privacy
+myaccount_bottom:
+  OrderbyBottomLeft:
+    class: 
+    content: Show
+  OrderbyBottomRight:
+    class: 
+    content: per page
+  pageBottomCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'
+myaccounts_delete:
+  modalPopup:
+    modaltargetid: account-alertDelete
+    modal_type: modal-small-tablet
+    modalHeading:
+      level: 6
+      class: modal-title
+      text:   
+    myaccount_deleteContent:
+    - alertheading:
+        level: '3'
+        text: Are you sure?
+      alertdesc:
+        text: Do you really want to delete these records? This process cannot be undone  
+    closeButton:
+      info: Close
+      togglemodal: modal
+      type: button
+      style: info 
+      text: Cancel
+      closemodal: modal
+    saveButton:
+      type: button
+      style: danger 
+      text: Delete       

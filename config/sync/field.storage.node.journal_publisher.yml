@@ -1,0 +1,19 @@
+uuid: 4ec6fbbd-015f-4cac-9c43-d8e460d2bbab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.journal_publisher
+field_name: journal_publisher
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

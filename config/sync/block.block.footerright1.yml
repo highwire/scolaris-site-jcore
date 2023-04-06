@@ -1,0 +1,25 @@
+uuid: 1aa3a0df-74f4-4a3f-be76-c0b23c1143a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-right
+  module:
+    - system
+  theme:
+    - bps
+id: footerright1
+theme: bps
+region: footer_3
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-right'
+settings:
+  id: 'system_menu_block:footer-right'
+  label: Information
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

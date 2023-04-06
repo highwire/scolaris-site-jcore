@@ -1,0 +1,9 @@
+uuid: bfad9942-8566-4a7b-bfa2-0e5585bc445a
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__all_periodicals__block_1
+name: 'search_api:views_block__all_periodicals__block_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

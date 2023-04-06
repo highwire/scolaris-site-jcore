@@ -1,0 +1,21 @@
+uuid: e322362f-1b1d-4d82-b129-a185cfccd7b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contributors_xml
+    - node.type.item_back_matter
+  module:
+    - text
+id: node.item_back_matter.contributors_xml
+field_name: contributors_xml
+entity_type: node
+bundle: item_back_matter
+label: contributors-xml
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

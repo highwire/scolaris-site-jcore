@@ -1,0 +1,21 @@
+uuid: 7c3005f6-e80b-449b-acd7-c957e4769116
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.lpage
+field_name: lpage
+entity_type: node
+bundle: item_monograph
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

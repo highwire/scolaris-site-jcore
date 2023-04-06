@@ -1,0 +1,335 @@
+---
+organisms_only: true
+tabcontent_class: ''
+page_name: journal-page journal-issue-page
+journals_articles_top:
+- left_col_width: col-large-tablet-3 col-desktop-2
+  right_col_width: col-large-tablet-3 col-desktop-3
+  middle_col_width: col-12 col-large-tablet-6 col-desktop-7 
+  left_modified_class: 
+  middle_modified_class: article__top_left
+  right_modified_class: 
+  leftsource_media:
+  - leftimg_media: "(min-width:650px)"
+    leftimg_srcset: "../../../assets/images/250X350.png"
+  - leftimg_media: "(min-width:465px)"
+    leftimg_srcset: "../../../assets/images/250X350.png"
+  leftimage:
+    src: "../../../assets/images/250X350.png"
+    alt: Card Image
+    title: Card Image
+    class: article__top_left-card-img
+  rightsource_media:
+  - rightimg_media: "(min-width:650px)"
+    rightimg_srcset: "../../../assets/images/520x270.png"
+  - rightimg_media: "(min-width:465px)"
+    rightimg_srcset: "../../../assets/images/520x270.png"
+  rightimage:
+    src: "../../../assets/images/520x270.png"
+    alt: Card Image
+    title: Card Image
+    class: article__top_right-card-img
+  card_rightheading: false
+  card_rightlink:
+  - button:
+      href: "#"
+      class: article__top_right-card-link
+      title: Nisi inceptos ac scelerisque quis aliquet a duis est Sociosqu cubilia tincidunt
+      text: Nisi inceptos ac scelerisque quis aliquet a duis est Sociosqu cubilia tincidunt
+  card_heading:
+  - heading:
+      level: 1
+      class: article__title
+      text: Journal title potenti lorem quam nunc
+  - heading:
+      level: 5
+      class: article__volume-detail
+      text: Volume 21, Issue 1
+  card_heading_link: false
+  card_description: false
+  card_content:
+  - content: "<div class='row'><div class='col-desktop-12'><ul class='article__top-card-list '><li class=''>ISSN (print): <span class='fw-bold'>0000-0000</span></li><li class=''>DOI:  <span class='fw-bold'>1234/XYZ</span></li></ul></div></div>"
+  - content: "<div class='row'><div class='col-desktop-12'><ul class='article__top-card-list '><li class=''>ISSN (online):  <span class='fw-bold'>0000-0000</span></li><li class=''>Published:  <span class='fw-bold'>October 2020</span></li></ul></div></div>"
+  card_link:
+  - button:
+      href: "#"
+      class: article__social_btn article__social_btn__favorites
+      title: Add to favorites
+      text: Add to favorites     
+  - button:
+      href: "#"
+      class: article__social_btn article__social_btn__share
+      title: Share
+      text: Share      
+  - button:
+      href: "#"
+      class: article__social_btn article__social_btn__alerts
+      title: Alerts
+      text: Alerts      
+  - button: false
+  - button: false
+  - button: false
+accordion_wrapper_id: accrodion_login_access
+accordion_login:
+- accordionItem: login-accordion
+  id: article1
+  accordion_level: '3'
+  heading_content: Login or register to access this content
+  accordionLeftIconBg: leftBg article__accordian_wrapper__lock
+  accordionLeftIcon: feather-lock
+  accordionRightIconBg: right-toggle-icon article__accordian_wrapper__toggle
+  collapsed: collapsed  article__accordian_wrapper
+  showhide: ''
+  description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  journals_login_register_content:
+  - access_left_head: Access article
+    access_left_licence: Perpetual license   
+    cartlink_description:
+      href: "#"
+      title: Nec elementum suscipit eleifend mauris nunc porttitor et at magnis senectus quam consectetur
+      text: Nec elementum suscipit eleifend mauris nunc porttitor et at magnis senectus quam consectetur
+    cart_price_symbol: "$"
+    cart_amount: '21.00'
+    button:
+      href: "#"
+      class: accordian_wrap__accordian_info__license-btn
+      text: Add to cart
+  - access_left_head: Access issue
+    access_left_licence: Perpetual license
+    cartlink_description:
+      href: "#"
+      title: suscipit eleifend mauris nunc porttitor et imperdiet lobortis consectetur augue
+      text: suscipit eleifend mauris nunc porttitor et imperdiet lobortis consectetur augue
+    cart_price_symbol: "$"
+    cart_amount: '49.95'
+    button:
+      href: "#"
+      class: accordian_wrap__accordian_info__license-btn
+      text: Add to cart
+  - access_left_head: Access journal
+    access_left_licence: 1 Year license
+    cartlink_description:
+      href: "#"
+      title: suscipit eleifend mauris nunc porttitor et fames massa class
+      text: suscipit eleifend mauris nunc porttitor et fames massa class
+    cart_price_symbol: "$"
+    cart_amount: '99.00'
+    button:
+      href: "#"
+      class: accordian_wrap__accordian_info__license-btn
+      text: Add to cart     
+  journals_login_register_actions:
+  - heading:
+      level: '6'
+      class: article__accrodian_righthead
+      text: Have access already?
+    button:
+      href: "#"
+      class: article__accrodian_rightbtn
+      text: Log in / Register
+  - button:
+      href: "#"
+      class: article__accrodian_rightlink
+      text: Redeem a voucher
+      righticon: true
+
+articles_search_form:
+  search_filter_right: search-filter-right
+  search_position: search__position
+  search_autocomplete: form-journal-search 
+  field:
+    type: text
+    id: id
+    placeholder: Search within this issue
+    style: 'journal-article__searchbox__input' 
+  button:
+    type: submit
+    style: journal-article__searchbox-submit
+    text: Search    
+navtabs_item: false
+journals_action_top: true
+journals_action_bottom: false
+journals_tabs_click:
+- button: false
+- button:
+    href: "#"
+    lefticon: true
+    title: Previous
+    text: Previous    
+- button:
+    href: "#"
+    righticon: true
+    title: Next
+    text: Next    
+articleHead:
+    heading:
+          level: '2'
+          class: tab-content__main-heading
+          text: Articles in this issue
+journal_article_section:
+  - card_lr_column:
+    - left_col_width: false
+      middle_col_width: 
+      card_heading:
+      - heading:
+          level: '6'
+          class: article-section__sub-heading
+          text: Editorial
+      card_heading_link:
+      - anchorHead:
+          level: '5'
+          class: article-section__heading
+          button:
+            href: "#"
+            title: 'Reconsidering “Mental Illness” Systems Through the Lens of Adaptation, Trauma, and Community'
+            text: 'Reconsidering “Mental Illness” Systems Through the Lens of Adaptation, Trauma, and Community'
+      card_description:
+      - paragraph:
+          class: article-section__author-name
+          text: Lastname, Firstname 
+      - paragraph:
+          class: article-section__author-sub
+          text:  Lastname, Firstname    
+      - paragraph:
+          class: article-section__author-description
+          text: 'Ethical Human Psychology and Psychiatry 22(1): 31-48'
+      card_link:
+      - button:
+          href: "#"
+          righticon: true
+          class: article-section__abstract-btn
+          title: Show abstract
+          text: Show abstract          
+      - button:
+          href: "#"
+          class: article-section__view-article-btn
+          title: View article
+          text: View article
+      - button:
+          href: "#"
+          lefticon: true
+          class: article-section__btn-download-icon
+          title: Download PDF
+          text: Download PDF
+  - card_lr_column:
+    - left_col_width: false
+      middle_col_width: 
+      card_heading:
+      - heading:
+          level: '6'
+          class: article-section__sub-heading
+          text: Research article
+      card_heading_link:
+      - anchorHead:
+          level: '5'
+          class: article-section__heading
+          button:
+            href: "#"
+            title: 'The Online Nurtured Heart Approach to Parenting: A Randomized Study to Improve ADHD Behaviors in Children Ages 6–8'
+            text: 'The Online Nurtured Heart Approach to Parenting: A Randomized Study to Improve ADHD Behaviors in Children Ages 6–8'
+      card_description:
+      - paragraph:
+          class: article-section__author-name
+          text: Lastname, Firstname 
+      - paragraph:
+          class: article-section__author-sub
+          text:  Lastname, Firstname    
+      - paragraph:
+          class: article-section__author-description
+          text: 'Ethical Human Psychology and Psychiatry 22(1): 31-48'
+      card_link:
+      - button:
+          href: "#"
+          righticon: true
+          class: article-section__abstract-btn
+          title: Show abstract
+          text: Show abstract          
+      - button:
+          href: "#"
+          class: article-section__view-article-btn
+          title: View article
+          text: View article
+      - button:
+          href: "#"
+          lefticon: true
+          class: article-section__btn-download-icon
+          title: Download PDF
+          text: Download PDF
+  - card_lr_column:
+    - left_col_width: false
+      middle_col_width: 
+      card_heading:
+      - heading:
+          level: '6'
+          class: article-section__sub-heading
+          text: Research article
+      card_heading_link:
+      - anchorHead:
+          level: '5'
+          class: article-section__heading
+          button:
+            href: "#"
+            title: 'The Online Nurtured Heart Approach to Parenting: A Randomized Study to Improve ADHD Behaviors in Children Ages 6–8'
+            text: 'The Online Nurtured Heart Approach to Parenting: A Randomized Study to Improve ADHD Behaviors in Children Ages 6–8'
+      card_description:
+      - paragraph:
+          class: article-section__author-name
+          text: Lastname, Firstname 
+      - paragraph:
+          class: article-section__author-sub
+          text:  Lastname, Firstname    
+      - paragraph:
+          class: article-section__author-description
+          text: 'Ethical Human Psychology and Psychiatry 22(1): 31-48'
+      card_link:
+      - button:
+          href: "#"
+          righticon: true
+          class: article-section__abstract-btn
+          title: Show abstract
+          text: Show abstract          
+      - button:
+          href: "#"
+          class: article-section__view-article-btn
+          title: View article
+          text: View article
+      - button:
+          href: "#"
+          lefticon: true
+          class: article-section__btn-download-icon
+          title: Download PDF
+          text: Download PDF          
+journals_sidebar:
+- heading:
+    level: '5'
+    class: article__rightbar__heading
+    text: Journal news
+  related_article:
+  - image:
+      src: "../../../assets/images/520x270.png"
+      alt: Card Image
+      title: Card Image
+      width: '120'
+      height: '62'
+      class: article__rightbar__news-section__image
+    heading: false
+    button:
+      href: "#"
+      title: Call for papers
+      text: Call for papers
+      class: ''
+  - image:
+      src: "../../../assets/images/520x270.png"
+      alt: Card Image
+      title: Card Image
+      width: '120'
+      height: '62'
+      class: article__rightbar__news-section__image
+    heading: false
+    button:
+      href: "#"
+      title: Call for papers
+      text: Call for papers
+      class: ''
+- heading: false
+  listing_items: false

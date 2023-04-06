@@ -1,0 +1,19 @@
+uuid: 70ab4622-4365-40c4-9cb1-1ee78ab1686a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_journal_submit_article
+field_name: field_journal_submit_article
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: 91b9e328-ba38-4ed1-a171-633a24fb1ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_figures_tables_article_
+    - node.type.journal_article
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: figures_tables_article_
+id: node.journal_article.hwmd_figures_tables_article_
+field_name: hwmd_figures_tables_article_
+entity_type: node
+bundle: journal_article
+label: 'HighWire Markup Display - Figures & Tables (Article)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

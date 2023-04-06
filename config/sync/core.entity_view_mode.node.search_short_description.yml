@@ -1,0 +1,10 @@
+uuid: 6c54ac5b-51c4-4cbb-ab3e-06a4edb07ec4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.search_short_description
+label: 'Search Short Description'
+targetEntityType: node
+cache: true

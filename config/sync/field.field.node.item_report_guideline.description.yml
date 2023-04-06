@@ -1,0 +1,21 @@
+uuid: 74d4600a-dad6-42f1-9774-934e0273e087
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.description
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.description
+field_name: description
+entity_type: node
+bundle: item_report_guideline
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

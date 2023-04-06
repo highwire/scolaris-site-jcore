@@ -1,0 +1,19 @@
+<div id="collapse-{{id}}" 
+	class="accordion-collapse collapse {{showhide}}" 
+	data-bs-parent="#{{accordion_wrapper_id}}" 
+	aria-labelledby="heading-{{id}}"
+>
+	<div class="accordion-body p-0 bg-secondary-light">	
+		{% if journals_login_register_content %}
+			{% include "@components/site/_journals-login-register-content.twig" with {
+				journals_login_register_content: journals_login_register_content,
+				journals_login_register_actions: journals_login_register_actions
+			} only %}
+		{% endif %}
+		{% if accordion_description %}
+			<div class="p-4">
+				{{accordion_description}}
+			</div>
+		{% endif %}
+	</div>
+</div>

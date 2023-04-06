@@ -1,0 +1,21 @@
+uuid: d7e09c20-2875-479b-add6-65d4786f9c9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.instructor_material
+    - node.type.item_test_review
+id: node.item_test_review.instructor_material
+field_name: instructor_material
+entity_type: node
+bundle: item_test_review
+label: instructor-material
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,29 @@
+{% include "@components/site/_custom-collections.twig" with {
+    title_prefix: title_prefix,
+    title_suffix: title_suffix,
+    ccb_top: {
+      cardlist: [{
+        middle_col_width: 'card-content',
+        card_heading: [{
+          heading: {
+            level: 1,
+            text: page_title,
+            class: 'title'
+          }
+        }, {
+          heading: {
+            level: 6,
+            text: display_sub_title
+          }
+        }],
+        card_description:[{
+          paragraph:{
+            text: intro|render|striptags
+          }
+        }]
+      }]
+    },
+    ccb_bottom: {
+      card_items: collections_list_info
+    }
+  } only %}

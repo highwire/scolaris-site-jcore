@@ -1,0 +1,302 @@
+---
+organisms_only: true
+tabcontent_class: article__tabcontent-body
+journals_articles_top:
+- right_col_width: col-large-tablet-4 col-desktop-3
+  middle_col_width: col-large-tablet-8 col-desktop-9
+  right_modified_class: article__top_right
+  middle_modified_class: article__top_left
+  rightsource_media:
+  - rightimg_media: "(min-width:650px)"
+    rightimg_srcset: "../../../assets/images/128X128.png"
+  - rightimg_media: "(min-width:465px)"
+    rightimg_srcset: "../../../assets/images/128X128.png"
+  rightimage:
+    src: "../../../assets/images/128X128.png"
+    alt: Card Image
+    title: Card Image
+    class: article__top-image
+  card_rightheading:
+  - heading:
+      level: '6'
+      class: article__image_title
+      text: 'This article appears in:'
+  card_rightlink:
+  - button:
+      class: article__image_link
+      href: "#"
+      title: Journal of Eget placerat senectus curae semper – Vol 18 Issue 1
+      text: Journal of Eget placerat senectus curae semper – Vol 18 Issue 1
+  card_heading:
+  - heading:
+      level: '5'
+      class: article__subtitle
+      text: Research Article
+  - heading:
+      level: '1'
+      class: article__title
+      text: Article title venenatis vestibulum aliquet enim
+  card_heading_link:
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  card_description:
+  - paragraph:
+      class: article__detail
+      text: 'Journal of Eget placerat senectus curae semper – Vol 18 Issue 1 <span
+        class=''article__detail_inner''>DOI: <strong>1234/XYZ</strong></span>'
+  card_link:
+  - button:
+      href: "#"
+      class: article__social_btn article__download
+      title: Download PDF
+      text: Download PDF
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__favorites
+      title: Add to favorites
+      text: Add to favorites
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__cite
+      title: Cite
+      text: Cite
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__permissions
+      title: Permissions
+      text: Permissions
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__share
+      title: Share
+      text: Share
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__alerts
+      title: Alerts
+      text: Alerts
+      lefticon: true
+accordion_wrapper_id: accrodion_login_access
+accordion_login:
+- accordionItem: login-accordion
+  id: article1
+  accordion_level: '3'
+  heading_content: Login or register to access this content
+  accordionLeftIconBg: leftBg article__accordian_wrapper__lock
+  accordionLeftIcon: feather-lock
+  accordionRightIconBg: right-toggle-icon article__accordian_wrapper__toggle
+  collapsed: collapsed bg-primary text-white d-block article__accordian_wrapper
+  showhide: 
+  description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+    Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+    is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+    simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+    dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+    text of the printing and typesetting industry. Lorem Ipsum is simply dummy text
+    of the printing and typesetting industry.
+  journals_login_register_content:
+  - access_left_head: Access article
+    access_left_licence: Perpetual license
+    cartlink_description:
+      href: "#"
+      title: Nec elementum suscipit eleifend mauris nunc porttitor et at magnis senectus quam consectetur
+      text: Nec elementum suscipit eleifend mauris nunc porttitor et at magnis senectus quam consectetur
+    cart_price_symbol: "$"
+    cart_amount: '21.00'
+    button:
+      href: "#"
+      class: accordian_wrap__accordian_info__license-btn
+      text: Add to cart
+  - access_left_head: Access issue
+    access_left_licence: Perpetual license
+    cartlink_description:
+      href: "#"
+      title: suscipit eleifend mauris nunc porttitor et imperdiet lobortis consectetur augue
+      text: suscipit eleifend mauris nunc porttitor et imperdiet lobortis consectetur augue
+    cart_price_symbol: "$"
+    cart_amount: '49.95'
+    button:
+      href: "#"
+      class: accordian_wrap__accordian_info__license-btn
+      text: Add to cart
+  - access_left_head: Access journal
+    access_left_licence: 1 Year license
+    cartlink_description:
+      href: "#"
+      title: suscipit eleifend mauris nunc porttitor et fames massa class
+      text: suscipit eleifend mauris nunc porttitor et fames massa class
+    cart_price_symbol: "$"
+    cart_amount: '99.00'
+    button:
+      href: "#"
+      class: accordian_wrap__accordian_info__license-btn
+      text: Add to cart
+  journals_login_register_actions:
+  - heading:
+      level: '6'
+      class: article__accrodian_righthead
+      text: Have access already?
+    button:
+      href: "#"
+      class: article__accrodian_rightbtn
+      text: Log in / Register
+  - button:
+      href: "#"
+      class: article__accrodian_rightlink
+      text: Redeem a voucher
+      righticon: true
+navtabs_item:
+- active: active
+  id: 1
+  title: Article
+- active: ''
+  id: 2
+  title: Figures & tables
+- active: ''
+  id: 3
+  title: Metrics
+navtabs_content:
+- active: active
+  id: 1
+  journal_artical_cms: "<h2>Abstract</h2><p>Process-oriented dynamic testing aims
+    to investigate the processes children use to solve cognitive tasks, and evaluate
+    changes in these processes as a result of training. For the current study, a dynamic
+    complex figure task was constructed, using the graduated prompts approach, to
+    investigate the processes involved in solving a complex figure task and changes
+    in these processes as a consequence of training. A new process-oriented measure
+    was developed, which used computer-automated scoring to evaluate children's organization
+    in drawing the figure. Participants were 106 regular primary school children (M
+    = 7.8 years, standard deviation [SD] = 0.42 years). The graduated prompts training
+    led to significantly more progression in complex figure drawing accuracy from
+    pre-test to post-test, compared to unguided control. The level of organization
+    of the figure also became more advanced as a result of training, as reflected
+    by the highest category of organization being attained by trained children only.
+    However, the training did not lead to transfer from the trained domain to an inductive
+    reasoning task.</p>"
+- active: ''
+  id: 2
+  journal_artical_cms: Content 2
+- active: ''
+  id: 3
+  journal_artical_cms: Content 3
+- active: ''
+  id: 4
+  journal_artical_cms: Content 4
+journals_action_top: true
+journals_action_bottom: true
+journals_tabs_click:
+- button:
+    href: "#"
+    lefticon: true
+    title: Focus
+    text: Focus
+    class: article__focus_link
+- button:
+    href: "#"
+    lefticon: true
+    title: Previous
+    text: Previous
+    class: article__previous_link
+- button:
+    href: "#"
+    righticon: true
+    title: Next
+    text: Next
+    class: article__next_link
+journals_sidebar:
+- heading:
+    level: '5'
+    class: article__related_heading
+    text: Related content
+  related_article:
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Book chapter
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+- heading:
+    level: '5'
+    class: article__heading_keyword
+    text: Article keywords
+  ullisting_class: article__sidecontent_list
+  listing_items:
+  - urls: "#"
+    content: dynamic testing
+  - urls: "#"
+    content: process measurement
+  - urls: "#"
+    content: complex figure
+  - urls: "#"
+    content: gradual prompts
+  - urls: "#"
+    content: computer-automated scoring
+- heading:
+    level: '5'
+    class: article__heading_table
+    text: Table of contents
+  ullisting_class: article__sidecontent_list
+  listing_items:
+  - urls: "#"
+    content: Top
+  - urls: "#"
+    content: Abstract
+  - urls: "#"
+    content: Sollicitudin feugiat mus lectus
+  - urls: "#"
+    content: Habitasse adipiscing velit turpis
+  - urls: "#"
+    content: Eros inceptos mattis erat
+

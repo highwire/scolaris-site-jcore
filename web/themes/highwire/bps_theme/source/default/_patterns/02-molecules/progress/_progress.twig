@@ -1,0 +1,4 @@
+{% set base_class = "progress-bar" %}
+<div class="progress">
+  <div class="{{ base_class }} {{ progressbar.modifier_class }}" role="progressbar" style="width: {{ progressbar.value }}" aria-valuenow="{{ progressbar.value }}" aria-valuemin="0" aria-valuemax="100"></div>
+</div>

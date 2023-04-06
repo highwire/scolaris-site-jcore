@@ -1,0 +1,27 @@
+uuid: fffe7e7b-a5bd-42f0-a2b5-d8dc2c798923
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.enclosures
+    - node.type.journal_issue
+  module:
+    - file
+id: node.journal_issue.enclosures
+field_name: enclosures
+entity_type: node
+bundle: journal_issue
+label: enclosures
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

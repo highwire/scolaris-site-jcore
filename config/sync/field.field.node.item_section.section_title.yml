@@ -1,0 +1,21 @@
+uuid: 3cda4dc3-f9ef-42dc-972c-ac3fad133852
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section_title
+    - node.type.item_section
+  module:
+    - text
+id: node.item_section.section_title
+field_name: section_title
+entity_type: node
+bundle: item_section
+label: section-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

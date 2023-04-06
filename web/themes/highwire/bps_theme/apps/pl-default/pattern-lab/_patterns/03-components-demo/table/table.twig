@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: table_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/table/_table.twig' %}
+  {% endblock content %}
+{% endembed %}

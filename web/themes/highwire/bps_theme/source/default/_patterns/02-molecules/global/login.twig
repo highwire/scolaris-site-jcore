@@ -1,0 +1,26 @@
+{% import "@molecules/global/menu--collapse.twig" as menu %}
+<ul{{ attributes|without('class') }} class="{{ attributes.class }} menu menu--account nav">
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle user__icon" data-bs-toggle="dropdown">
+    {{ "My Account"|t }}
+    </a>
+    <span class="menu_arrow" data-bs-toggle="dropdown"></span>
+    <ul class="dropdown-menu" aria-expanded="false">
+    {% if user_info %}
+    <li>{{ user_info }}</li>
+    {% endif %}
+    {% if p13n_menus %}
+    {% for p13n_menu in p13n_menus %}
+      {% if p13n_menu['#items'] %}
+      <li>
+        {{ menu.menu_links(p13n_menu['#items'], p13n_menu['#attributes'], 0, ['menu']) }}
+      </li>
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+    <li>
+      {{ menu.menu_links(items, attributes, 0, ['menu', 'menu--user-account']) }}
+    </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,25 @@
+uuid: ab9530b2-0bb9-48e2-a3b3-8e09f03e0b94
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: featured_report_guideline_carous
+label: 'Featured report & guideline carousal'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      item_report_guideline: item_report_guideline
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

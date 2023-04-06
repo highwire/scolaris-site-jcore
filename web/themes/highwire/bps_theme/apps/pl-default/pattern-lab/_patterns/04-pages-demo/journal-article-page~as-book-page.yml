@@ -1,0 +1,233 @@
+---
+page_name: journal-article journal-book-page
+show_search: true
+journal_authenticated: book__authenticated
+journals_articles_top:
+- left_col_width: col-large-tablet-3 col-desktop-2
+  middle_col_width: col-12 col-large-tablet-9 col-desktop-10
+  right_col_width: false
+  left_modified_class: book__image_wrap
+  middle_modified_class: book__topbody_wrap
+  leftsource_media:
+  - leftimg_media: "(min-width:650px)"
+    leftimg_srcset: "../../../assets/images/250X350.png"
+  - leftimg_media: "(min-width:465px)"
+    leftimg_srcset: "../../../assets/images/250X350.png"
+  leftimage:
+    src: "../../../assets/images/250X350.png"
+    alt: Card Image
+    title: Card Image
+    class: book__top_image
+  card_rightheading: false
+  card_rightlink:
+  - button:
+      href: "#"
+      class: 
+      title: Nisi inceptos ac scelerisque quis aliquet a duis est Sociosqu cubilia tincidunt
+      text: Nisi inceptos ac scelerisque quis aliquet a duis est Sociosqu cubilia tincidunt
+  card_heading:
+  - heading:
+      level: 1
+      class: article__title
+      text: Book title potenti lorem quam nunc etiam
+  - heading:
+      level: 5
+      class: article__minititle
+      text: Subtitle Accumsan ex ac fringilla fusce a lectus metus scelerisque etiam
+  card_heading_link:
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  card_description: false
+  card_content:
+  - content: "<div class='book__edition'><span class='book__badge'><span class='book__badgeicon'></span></span> <span class='book__content'>Latest edition</span><a href='#' title='Keyword' class='book__other_edition'>View other editions <span class='book__arrow_right'></span> </a></div><div class='row'><div class='col-desktop-7'><ul class='book__listing_box row'><li class='col-12 col-large-tablet-6'>ISSN (print): <span class='book__bold_title'>0000-0000</span></li><li class='col-12 col-large-tablet-6'>DOI:  <span class='book__bold_title'>1234/XYZ</span></li><li class='col-12 col-large-tablet-6'>ISSN (online):  <span class='book__bold_title'>0000-0000</span></li><li class='col-12 col-large-tablet-6'>Published:  <span class='book__bold_title'>October 2020</span></li></ul></div></div>"
+  card_link:
+  - button:
+      href: "#"
+      class: action-favorites
+      title: Add to favorites
+      text: Add to favorites
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-cite
+      title: Cite
+      text: Cite
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-permissions
+      title: Permissions
+      text: Permissions
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-share
+      title: Share
+      text: Share
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-alerts
+      title: Alerts
+      text: Alerts
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-print
+      title: Buy print edition
+      text: Buy print edition
+      lefticon: false
+accordion_login: false
+articles_search_form:
+  search_filter_right: search-filter-right
+  search_position: journal-article__searchbox__search-field 
+  field:
+    type: text
+    id: id
+    placeholder: Search within this book
+    style: 'journal-article__searchbox__article-form-input'
+
+  button:
+    type: submit
+    style: search-submit 
+    text: Search
+    lefticon: true
+navtabs_item:
+- active: active
+  id: 1
+  title: Contents
+- active: ''
+  id: 2
+  title: Abstract
+- title: ''
+navtabs_content:
+- active: active
+  id: 1
+  journal_artical_cms: false
+  book_listing_items:
+  - urls_class: book-page-item
+    urls: '#'
+    content: 'Chapter title'
+  - urls_class: book-page-item
+    urls: '#'
+    content: 'Lectus orci etiam accumsan blandit'
+  - urls_class: book-page-item
+    urls: '#'
+    content: 'Hendrerit in per arcu malesuada velit rhoncus'
+  - urls_class: book-page-item
+    urls: '#'
+    content: 'Potenti erat montes'
+  - urls_class: book-page-item
+    urls: '#'
+    content: 'Elit facilisis duis'
+  - urls_class: book-page-item
+    active: active
+    urls: '#'
+    content: 'Part I: A habitasse ex elit'
+    sub_group:
+    - urls: '#'
+      content: '1:Lectus orci etiam accumsan blandit'
+    - urls: '#'
+      content: '2: Hendrerit in per arcu malesuada velit rhoncus'
+    - urls: '#'
+      content: '3: Potenti erat montes'
+    - urls: '#'
+      content: '4: Elit facilisis duis'
+    - urls: '#'
+      content: '5: Ante facilisi ad accumsan lobortis duis donec'
+  - urls_class: book-page-item
+    active: active
+    urls: '#'
+    content: 'Part II: Bibendum porttitor habitant nam nisl'
+    sub_group:
+    - urls: '#'
+      content: '1:Lectus orci etiam accumsan blandit'
+    - urls: '#'
+      content: '2: Hendrerit in per arcu malesuada velit rhoncus'
+    - urls: '#'
+      content: '3: Potenti erat montes'
+    - urls: '#'
+      content: '4: Elit facilisis duis'
+    - urls: '#'
+      content: '5: Ante facilisi ad accumsan lobortis duis donec'
+- active: ''
+  id: 2
+  journal_artical_cms: Content 2
+journals_action_top: false
+journals_action_bottom: false
+journals_sidebar:
+- heading:
+    level: '5'
+    class: article__related_heading
+    text: Related content
+  related_article:
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: pb-3 border-bottom d-block
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Book chapter
+    button:
+      href: "#"
+      title: Arcu est netus nisi leo sollicitudin lectus tellus ultricies sem phasellus quisque facilisis eleifend mollis at ad ornare neque senectus
+      text: Arcu est netus nisi leo sollicitudin lectus tellus ultricies sem phasellus quisque facilisis eleifend mollis at ad ornare neque senectus
+      class: pb-3 border-bottom d-block
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: pb-3 border-bottom d-block
+- heading:
+    level: '5'
+    class: article__heading_keyword
+    text: Keywords
+  ullisting_class: article__sidecontent_list
+  listing_items:
+  - urls: "#"
+    content: dynamic testing
+  - urls: "#"
+    content: process measurement
+  - urls: "#"
+    content: complex figure
+  - urls: "#"
+    content: gradual prompts
+  - urls: "#"
+    content: computer-automated scoring
+- heading: false
+  listing_items: false

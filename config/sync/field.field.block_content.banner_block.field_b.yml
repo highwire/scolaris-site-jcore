@@ -1,0 +1,19 @@
+uuid: d206f3bf-4ce0-4479-8b7f-ed7ef1884fc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.storage.block_content.field_b
+id: block_content.banner_block.field_b
+field_name: field_b
+entity_type: block_content
+bundle: banner_block
+label: 'banner paragraph'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

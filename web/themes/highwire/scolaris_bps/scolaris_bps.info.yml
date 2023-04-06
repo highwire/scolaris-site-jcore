@@ -1,0 +1,24 @@
+name: BPS Scolaris Theme
+type: theme
+description: Custom theme for BPS Scolaris sites
+base theme: hw_freebird
+core: 8.x
+regions:
+  header_site_id: Header Branding
+  header_navbar: Header Navigation
+  header_search: Header Search
+  header: Top Bar
+  highlighted: Highlighted
+  help: Help
+  hero: Hero
+  page_title: Page Title
+  content: Content
+  content_unavailable: Unavailable Content
+  sidebar_first: Primary
+  sidebar_second: Secondary
+  footer_col_1: Footer Column 1
+  footer_col_2: Footer Column 2
+  footer_col_3: Footer Column 3
+  footer_bar: Footer Bar
+  page_top: Page top
+  page_bottom: Page bottom

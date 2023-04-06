@@ -1,0 +1,109 @@
+<div class="journal-article {{page_name}}">
+	<div class="journals-articles-top {{journal_authenticated}}">
+		<div class="journals-articles-inner">
+			{% include "@components/card/_card-lr-column.twig" with {
+				card_lr_column: journals_articles_top
+			} only %}
+		</div>
+		{% if accordion_login %}
+			{% include "@components/accordion/_accordion.twig" with {
+				accordion_item: accordion_login,
+				accordion_wrapper_id: accordion_wrapper_id
+			} only %}
+		{% else %}
+					
+		{% endif %}
+	</div>	
+	<div class="row journals-articles-middle">
+		<div class="col-12 col-large-tablet-9">
+			{% if articles_search_form %}
+				<div class="journal-article__searchbox">
+					{% include "@molecules/forms/_searchbar.twig" with {
+						search_form: articles_search_form 
+					} only %}
+				</div>
+			{% endif %}
+			<div class="journal-article__tabwrap">				
+				{% if journals_action_top %}
+					<div class="journals-step top">
+						{% for item in journals_tabs_click %}
+							{% include "@atoms/button/_button.twig" with {
+								button: item.button
+							} only %}
+						{% endfor %}
+					</div>
+				{% endif %}
+				{% if journal_article_section %}
+					{% include "@atoms/text/_heading.twig" with {
+						heading: articleHead.heading
+					} only %}
+					{% for item in journal_article_section %}	
+						<article class="article-section">
+							{% include "@components/card/_card-lr-column.twig" with {
+								card_lr_column: item.card_lr_column
+							} only %}
+						</article>
+					{% endfor %}
+				{% endif %}
+				{% if navtabs_item %}
+					{% include "@components/tabs/_tabs.twig" with {
+						navtabs_id: navtabs_id,
+						navtabs_item: navtabs_item,
+						tabcontent_class: tabcontent_class,
+						navtabs_content: navtabs_content
+					} only %}
+				{% endif %}
+				{% if journals_action_bottom %}
+					<div class="journals-step bottom">
+						{% for item in journals_tabs_click %}
+							{% include "@atoms/button/_button.twig" with {
+								button: item.button
+							} only %}
+						{% endfor %}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="col-12 col-large-tablet-3 article__rightbar">
+			{% for item in journals_sidebar %}				
+				{% include "@atoms/text/_heading.twig" with {
+					heading: item.heading
+				} only %}
+				<div class="journals-sidebar">
+					{% if item.related_article %}
+						{% for i in item.related_article %}
+							{% if i.image %}
+								<div class="article__rightbar__news-section">								
+									{% include "@atoms/images/_image.twig" with {
+										image: i.image
+									} only %}
+							{% endif %}
+								<div class="clearfix">
+									{% if i.heading %}
+										{% include "@atoms/text/_heading.twig" with {
+											heading: i.heading
+										} only %}
+									{% endif %}
+									{% if i.button %}
+										{% include "@atoms/button/_button.twig" with {
+											button: i.button
+										} only %}
+									{% endif %}
+								</div>
+							{% if i.image %}
+							</div>
+							{% endif %}
+						{% endfor %}						
+					{% endif %}
+					{% if item.listing_items %}
+						{% include "@molecules/grouping/_listing.twig" with {
+							ullisting_class: item.ullisting_class,
+							listing_items: item.listing_items
+						} only %}
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+

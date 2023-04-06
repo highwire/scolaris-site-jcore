@@ -1,0 +1,83 @@
+{% if card_heading %}
+	{% for elem in card_heading %}
+		{% include "@atoms/text/_heading.twig" with {
+			heading: elem.heading
+		} only %}
+	{% endfor %}
+{% endif %}
+
+{% if card_heading_link %}
+	{% for elem in card_heading_link %}
+		{% include "@atoms/text/_heading-link.twig" with {
+			anchorHead: elem.anchorHead
+		} only %}
+	{% endfor %}
+{% endif %}
+
+{% if card_description %}
+	{% for elem in card_description %}
+		{% include "@atoms/text/_paragraph.twig" with {
+			paragraph: elem.paragraph
+		} only %}
+	{% endfor %}
+{% endif %}
+
+{% if card_type_item %}
+	{% for item in card_type_item %}
+		<div class="card-isbn">
+			<span class="card-type-label">
+					{{ item.label }}:    
+			</span>
+			<span class="card-type-value">{{ item.value }}</span>
+			{% if item.card_status  %}
+				<span class="card-status{% if item.card_status == 'online' %} card-status-online{% endif %}{% if item.card_status == 'offline' %} card-status-offline{% endif %}">
+					{{ item.card_status }}
+				</span>
+			{% endif %}
+		</div>
+  {% endfor %}
+{% endif %} 
+
+{% if card_radio_input %}
+	<div class="card-radio-wrapper">
+		{% for elem in card_radio_input %}
+			{% include "@atoms/forms/_radiobox.twig" with {
+				radiobox: elem.radiobox
+			} only %}
+		{% endfor %}
+	</div>
+{% endif %}
+
+{% if card_content %}
+	{% for elem in card_content %}
+		{{ elem.content }}
+	{% endfor %}
+{% endif %}
+
+{#{% if card_link %}
+	{% for elem in card_link %}
+		{% include "@atoms/button/_button.twig" with {
+			button: elem.button
+		} only %}
+	{% endfor %}
+{% endif %}#}
+
+{% if card_link %}
+	{% for elem in card_link %}
+		{% include "@atoms/button/_anchor-link.twig" with {
+			href: elem.href,
+			class: elem.class,
+			text: elem.text
+		} only %}
+	{% endfor %}
+{% endif %}
+
+{% if card_download_pdf %}
+  {{ card_download_pdf }}
+{% endif %}
+
+{% if card_toggle %}
+	<div class="show-content-toggle">
+		{{ card_toggle }}
+	</div>
+{% endif %}

@@ -1,0 +1,29 @@
+links:
+  -
+    path: /
+    priority: '1.0'
+    changefreq: daily
+  -
+    path: /home
+    priority: '0.5'
+    changefreq: monthly
+  -
+    path: /periodicals
+    priority: '0.5'
+    changefreq: monthly
+  -
+    path: /reports-guidelines
+    priority: '0.5'
+    changefreq: monthly
+  -
+    path: /monographs
+    priority: '0.5'
+    changefreq: monthly
+  -
+    path: /test-reviews
+    priority: '0.5'
+    changefreq: monthly
+  -
+    path: /search
+    priority: '0.5'
+    changefreq: monthly

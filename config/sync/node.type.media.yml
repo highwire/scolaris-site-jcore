@@ -1,0 +1,11 @@
+uuid: bb73d745-14fb-4917-b327-9bbe562679b1
+langcode: en
+status: true
+dependencies: {  }
+name: media
+type: media
+description: 'Auto generated HighWire content type for media'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

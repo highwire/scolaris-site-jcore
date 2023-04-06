@@ -1,0 +1,247 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\search_api\IndexInterface;
+
+/**
+ * Implements hook_iews_post_execute().
+ */
+function bps_search_views_post_execute($view) {
+  if (!empty($view->total_rows) && !empty($view->getItemsPerPage())) {
+    $request = \Drupal::request();
+    $total_pages = ceil($view->total_rows / $view->getItemsPerPage());
+    $total_pages--;
+    $current_page = $request->query->get('page');
+
+    if ($current_page > $total_pages) {
+      $request->query->set('page', $total_pages);
+      $options['query'] = $request->query->all();
+      $url = \Drupal\Core\Url::fromUri('internal:/search', $options);
+      $response = new \Symfony\Component\HttpFoundation\RedirectResponse($url->toString());
+      $response->send();
+    }
+  }
+}
+
+/**
+ * Custom solr query tweaking for bps.
+ *
+ * @param \Solarium\Core\Query\QueryInterface $solarium_query
+ *   The Solarium query object, as generated from the Search API query.
+ * @param \Drupal\search_api\Query\QueryInterface $query
+ *   The Search API query object representing the executed search query.
+ */
+function bps_search_search_api_solr_query_alter(\Solarium\Core\Query\QueryInterface $solarium_query, \Drupal\search_api\Query\QueryInterface $query) {
+  $solarium_query->addParam('defType', 'edismax');
+
+  //Query field boost
+  //Set boosting for related article block
+  if ($query->getSearchId() == 'views_block:related_sidebar_blocks__block_6') {
+    $query_fields = [
+      'tm_fulltext_search^3',
+      'tm_title_plain^8',
+    ];
+    $solarium_query->setBoost(true);
+    $solarium_query->setQueryFields($query_fields);
+    $solarium_query->setMatchInclude(true);
+  }
+
+  //Set boosting for search page
+  if ($query->getSearchId() == 'views_page:search__page_1' || $query->getSearchId() == 'views_rest:search__rest_export_1') {
+    $fragment_boost = '-700.0';
+    if (isset($_GET['fg_boost'])) {
+      $fragment_boost = $_GET['fg_boost'];
+    }
+    $section_boost = 2.7;
+    $query_text = $query->getKeys();
+    if (!empty($query_text)) {
+      // Escape special character.
+      if (!strstr($query_text, "\(")) {
+        $user_query = str_replace("(", "\(", $query_text);
+      }
+
+      if (!strstr($user_query, "\)")) {
+        $user_query = str_replace(")", "\)", $user_query);
+      }
+
+      if (!strstr($user_query, "\,")) {
+        $user_query = str_replace(",", "\,", $user_query);
+      }
+      // Set new querystring as a user query in SOLR.
+      $query->keys($user_query);
+    }
+    $matches = [];
+    $boolean_search = FALSE;
+    preg_match("%.*(\WAND|OR|NOT\W).*%", $query_text, $matches);
+    if (empty($matches)) {
+      $mm = "100%";
+
+      if (!empty($_GET['mm'])) {
+        $mm = $_GET['mm'];
+        $solarium_query->addParam("mm", $mm);
+        $solarium_query->addParam("mm.autoRelax", "true");
+      }
+
+      // Allow setting the parameter to blank so that it
+      // Removes it from search.
+      elseif (!isset($_GET["mm"])) {
+        $solarium_query->addParam("mm", $mm);
+        $solarium_query->addParam("mm.autoRelax", "true");
+      }
+    }
+    $solarium_query->addParam('sow', 'false');
+
+    // AI Keyword boost
+    $index_fields = $query->getIndex()->getFields();
+    if (!empty($index_fields)) {
+      $boost_functions = $solarium_query->getEDisMax()->getBoostFunctions();
+      $backend_manager = \Drupal::service('plugin.manager.search_api.backend');
+      $solr_backend = $backend_manager->createInstance('search_api_solr');
+      $solr_field_mapping = $solr_backend->getSolrFieldNames($query->getIndex());
+      $multiplier = isset($_GET['multiplier']) ? $_GET['multiplier'] : 10000;
+      $payload_queries = [];
+      $solarium_query->addParam('userQuery', $query->getKeys());
+      if (!empty($query->getKeys())) {
+        foreach ($index_fields as $field) {
+          if ($field->getType() == 'hw_string_payload_boost' && !empty($solr_field_mapping[$field->getPropertyPath()])) {
+            $solr_field = $solr_field_mapping[$field->getPropertyPath()];
+            $payload_boost_func = 'if($' . $solr_field . ',product(add($' . $solr_field . ',1),' . $multiplier . '),0)';
+            if (empty($boost_functions)) {
+              $boost_functions = $payload_boost_func;
+            }
+            else {
+              $boost_functions = $boost_functions . " " . $payload_boost_func;
+            }
+            $solarium_query->getDisMax()->setBoostFunctions($boost_functions);
+            $solarium_query->addParam($solr_field, 'payload(' . $solr_field . ',$userQuery)');
+          }
+        }
+      }
+    }
+    $components = $solarium_query->getComponents();
+    if (!empty($components['edismax'])) {
+      $phrase_fields = '';
+      if (isset($_GET['pf'])) {
+        $phrase_fields = $_GET['pf'];
+        $components['edismax']->setPhraseFields($phrase_fields);
+      }
+      else {
+        $phrase_fields = [
+          'tm_title_plain^8',
+          'itm_taxonomy_terms^5',
+          'tm_keywords^2',
+          'tm_fulltext_search^3',
+          'tm_authors_full_name^2',
+          'tm_doi^2',
+        ];
+
+        $phrase_fields = implode(' ', $phrase_fields);
+        $components['edismax']->setPhraseFields($phrase_fields);
+      }
+      $query_fields = '';
+      if (isset($_GET['qf'])) {
+        $query_fields = $_GET['qf'];
+        $components['edismax']->setQueryFields($query_fields);
+      }
+      else {
+        $query_fields = [
+          'tm_title_plain^8',
+          'itm_taxonomy_terms^5',
+          'tm_keywords^2',
+          'tm_fulltext_search^3',
+          'tm_authors_full_name^2',
+          'tm_doi^2',
+        ];
+        $query_fields = implode(" ", $query_fields);
+        $components['edismax']->setQueryFields($query_fields);
+      }
+      $slop = 10;
+      if (isset($_GET['ps'])) {
+        $slop = $_GET['ps'];
+      }
+      $components['edismax']->setPhraseSlop($slop);
+    }
+  }
+
+  if ($query->getSearchID() == 'views_attachment:search__attachment_1') {
+    $query_lowercase = strtolower($solarium_query->getFilterQuery('filters_1')->getQuery());
+    $solarium_query->getFilterQuery('filters_1')->setQuery($query_lowercase);
+  }
+
+  if ($query->getSearchId() == 'views_page:search__page_1' || $query->getSearchId() == 'views_rest:search__rest_export_1') {
+    $components = $solarium_query->getComponents();
+    $date_min = \Drupal::request()->query->get('date-min');
+    if (!empty($date_min)) {
+      $date_min = "$date_min-01-01T00:00:00Z";
+    }
+
+    $date_max = \Drupal::request()->query->get('date-max');
+    if (!empty($date_max)) {
+      $date_max = "$date_max-12-31T00:00:00Z";
+    }
+
+    $date_filter = '';
+    $date_date_field = 'ds_date_ppub_facet:';
+    if (!empty($date_min) && empty($date_max)) {
+      $date_filter = $date_date_field . "[$date_min TO NOW]";
+    }
+    elseif (!empty($date_min) && !empty($date_max)) {
+      $date_filter = $date_date_field . "[$date_min TO $date_max]";
+    }
+    elseif (empty($date_min) && !empty($date_max)) {
+      $date_filter = $date_date_field . "[ * TO $date_max]";
+    }
+
+    if (!empty($date_filter)) {
+      $solarium_query->createFilterQuery("date_ppub")->setQuery($date_filter);
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bps_search_theme() {
+  return [
+    'bps_facet_summary' => [
+      'template' => 'bps-facet-summary',
+      'variables' => ['facet_name' => '', 'active_count' => 0, 'active_items' => []],
+    ],
+  ];
+}
+
+/**
+ * Implements template_preprocess_THEME().
+ */
+function template_preprocess_bps_facet_summary(&$variables) {
+  $variables['attributes']['class'][] = 'facet-summary-toggle';
+  $variables['facet_id'] = Html::getUniqueId($variables['facet_name']);
+}
+/**
+ * Implements hook_form_ID_alter().
+ */
+function bps_search_form_bps_search_browse_alter(&$form, FormStateInterface $form_state) {
+  $form['form_id']['#access'] = FALSE;
+  $form['form_build_id']['#access'] = FALSE;
+
+}
+
+// Alter the date_ppub facet of solr before indexing so that it can ignore timezone
+function bps_search_search_api_solr_documents_alter(array &$documents, IndexInterface $index, array $items) {
+  foreach ($documents as $document) {
+    $fields = $document->getFields();
+    // check if field exist and has value
+    if(!empty($fields['ds_date_ppub_facet'])) {
+      //code to convert 2020-11-23T11:57:17Z to "2020-11-23T00:00:00Z" so that timezone become same and sort work on dates only
+      $append_timestamp = '00:00:00Z';
+      $without_timestamp = explode('T', $fields['ds_date_ppub_facet']);
+      if(is_array($without_timestamp) && (!empty($without_timestamp))) {
+        $unformatted_date = $without_timestamp[0]."T".$append_timestamp;
+        $document->setField('ds_date_ppub_facet', $unformatted_date);
+      }
+    }
+  }
+}
+

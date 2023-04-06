@@ -1,0 +1,234 @@
+// Text Setting
+hr {
+    margin: $hr-margin-y 0;
+    color: $hr-color;
+    border: 0;
+    @extend .border-bottom;
+}
+
+hr:not([size]) {
+    height: $hr-height;
+}
+
+%heading {
+    margin-top: 0;
+    margin-bottom: $headings-margin-bottom;
+    font-family: $headings-font-family;
+    font-style: $headings-font-style;
+    font-weight: $headings-font-weight;
+    color: $headings-color;
+}
+
+h1 {
+    @extend %heading;
+    font-size: 56px;
+    line-height: 64px;
+    @include media-breakpoint-down(large-tablet) {
+       font-size: 28px;
+       line-height: 36px;  
+    }
+}
+
+h2 {
+    @extend %heading;
+    font-size: 40px;
+    line-height: 48px;
+    @include media-breakpoint-down(large-tablet) {
+       font-size: 24px;
+       line-height: 32px;  
+    }
+}
+
+h3 {
+    @extend %heading;
+    font-size: 32px;
+    line-height: 44px;
+    @include media-breakpoint-down(large-tablet) {
+       font-size: 22px;
+       line-height: 32px;  
+    }
+}
+
+h4 {
+    @extend %heading;
+    font-size: 24px;
+    line-height: 32px;
+    @include media-breakpoint-down(large-tablet) {
+       font-size: 20px;
+       line-height: 28px;  
+    }
+}
+
+h5 {
+    @extend %heading;
+    font-size: 20px;
+    line-height: 24px;
+    @include media-breakpoint-down(large-tablet) {
+       font-size: 18px;
+       line-height: 24px;  
+    }
+}
+
+h6 {
+    @extend %heading;
+    font-size: 18px;
+    line-height: 24px;
+    @include media-breakpoint-down(large-tablet) {
+       font-size: 16px;
+       line-height: 24px;  
+    }   
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    @include media-breakpoint-down(medium-tablet) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.p__intro{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    @include media-breakpoint-down(medium-tablet) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+// Headings
+.h1 {
+    @extend h1;
+}
+
+.h2 {
+    @extend h2;
+}
+
+.h3 {
+    @extend h3;
+}
+
+.h4 {
+    @extend h4;
+}
+
+.h5 {
+    @extend h5;
+}
+
+.h6 {
+    @extend h6;
+}
+
+.lead {
+    @include font-size($lead-font-size);
+    font-weight: $lead-font-weight;
+}
+
+.lead-description {
+    @include font-size($lead-description-font-size);
+    font-weight: $lead-font-weight;
+}
+
+
+
+
+// Type display classes
+@each $display,
+$font-size in $display-font-sizes {
+    .display-#{$display} {
+        @include font-size($font-size);
+        font-weight: $display-font-weight;
+        line-height: $display-line-height;
+    }
+}
+
+//
+// Emphasis
+//
+.small {
+    @extend small;
+}
+
+.mark {
+    @extend mark;
+}
+
+//
+// Lists
+//
+.list-bodyUnorder{
+    @include list-body();
+}
+.list-bodyOrder{
+    @include list-bodyOrder();
+}
+.list-largeOrder{
+    @include list-largeOrder();
+}
+.list-largeUnorder{
+    @include list-largeUnorder();
+}
+
+
+.list-unstyled {
+    @include list-unstyled();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+    @include list-unstyled();
+}
+
+.list-inline-item {
+    display: inline-block;
+    &:not(:last-child) {
+        margin-right: $list-inline-padding;
+    }
+}
+
+// Misc
+.initialism {
+    @include font-size($initialism-font-size);
+    text-transform: uppercase;
+}
+
+// Blockquotes
+.blockquote-wrapper{
+    padding-left: 1.25rem;
+    border-left: 3px solid $info;
+    position: relative;    
+    &::before {
+        content: "";
+        background-image: url(../../assets/images/quote.svg);
+        position: absolute;
+        width: 23.77px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 23px;
+    }
+}
+.blockquote {
+    margin-bottom: 0.75rem;
+    padding-top: 1.5rem;
+    @include font-size($blockquote-font-size);
+    line-height: $line-height-base;
+    font-style: italic;
+   
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+.blockquote-footer {
+    @include font-size($blockquote-font-size);
+    line-height: $line-height-base;
+    color: $blockquote-footer-color;
+    font-style: italic;
+    font-weight: $font-weight-medium;  
+}

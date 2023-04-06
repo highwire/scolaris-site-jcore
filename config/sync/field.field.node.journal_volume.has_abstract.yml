@@ -1,0 +1,21 @@
+uuid: 9d773258-28ac-4f49-92d1-6c708c997c93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_abstract
+    - node.type.journal_volume
+id: node.journal_volume.has_abstract
+field_name: has_abstract
+entity_type: node
+bundle: journal_volume
+label: has-abstract
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

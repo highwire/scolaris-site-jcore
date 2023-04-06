@@ -1,0 +1,16 @@
+enabled: sams-sigma
+settings:
+  redirect_url: ''
+  client_id: ''
+  client_secret: ''
+  sigma_base_url: ''
+  sigma_enable_shibboleth: 0
+  sigma_sp_base_url: ''
+dependencies:
+  module:
+    - openid_connect_sams_sigma
+  enforced:
+    module:
+      - openid_connect_sams_sigma
+_core:
+  default_config_hash: qjs10KxUt5WtNGjQdJlFeeFbErAou2IeglF86jWeIKw

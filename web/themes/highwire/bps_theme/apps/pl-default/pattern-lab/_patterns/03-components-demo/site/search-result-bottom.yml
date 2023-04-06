@@ -1,0 +1,26 @@
+---
+organisms_only: true
+search_result_bottom:
+  OrderbyBottomLeft:
+    class: 
+    content: Show
+  OrderbyBottomRight:
+    class: 
+    content: per page
+  pageBottomCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'
+      text: '100'
+ 
+
+
+   

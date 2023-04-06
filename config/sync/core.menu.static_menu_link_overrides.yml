@@ -1,0 +1,51 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  openid_connect_sams_sigma__logout:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: 2
+  'highwire_personalization__manage_secondary_link:highwire_personalization__manage_profile':
+    enabled: false
+    menu_name: highwire-p13n-manage-secondary
+    parent: ''
+    expanded: false
+    weight: 0
+  user__logout:
+    enabled: false
+    menu_name: account
+    parent: ''
+    weight: 10
+    expanded: false
+  user__page:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: -10
+  'highwire_personalization__manage_primary_link:highwire_personalization__manage_tags':
+    enabled: false
+    menu_name: highwire-p13n-manage-primary
+    parent: ''
+    expanded: false
+    weight: 2
+  openid_connect_sams_sigma__wayfless-url__logout:
+    enabled: true
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: 3
+  openid_connect_sams_sigma__manage_access:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: 1
+_core:
+  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

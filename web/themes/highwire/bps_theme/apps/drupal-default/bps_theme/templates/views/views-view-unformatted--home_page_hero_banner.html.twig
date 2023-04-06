@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% set bs_item = {} %}
+{% set slide_item = {} %}
+{% set counter = 0 %}
+{% for key, row in rows %}
+  {% if loop.index == 1 %}
+    {% set bsitem = {
+      id: counter,
+      current: counter,
+      active: "active",
+      status: true 
+    } %}
+    {% set slideitem = {
+      active: "active",
+      top_caption: { 
+        text: row.content['#row']._entity.field_banner_caption[0].value|raw
+      }, 
+      heading: {
+        text: row.content['#row']._entity.field_banner_heading[0].value|raw
+      },
+      description: {
+        text: row.content['#row']._entity.field_banner_paragraph[0].value|raw
+      },
+      src: file_url(row.content['#row']._entity.field_banner_image.entity.uri.value),
+    } %}
+  {% else %}
+    {% set bsitem = {
+      id: counter,
+      current: counter
+    } %}
+    {% set slideitem = {
+      top_caption: {
+        text: row.content['#row']._entity.field_banner_caption[0].value|raw
+      },
+      heading: { 
+        text: row.content['#row']._entity.field_banner_heading[0].value|raw
+      },
+      description: {
+        text: row.content['#row']._entity.field_banner_paragraph[0].value|raw
+      },
+      src: file_url(row.content['#row']._entity.field_banner_image.entity.uri.value),
+    } %}
+  {% endif %}
+  {% set bs_item = bs_item|merge({ (loop.index): bsitem }) %}
+  {% set slide_item = slide_item|merge({ (loop.index): slideitem }) %}
+  {% set counter = counter + 1 %}
+{% endfor %}   
+
+{% set carousel = {
+  id: "carousel-component",
+  bs_item: bs_item,
+  slide_item: slide_item
+} %}
+{% include "@components/carousal/_carousal.twig" with {
+  carousel: carousel
+} %} 

@@ -1,0 +1,211 @@
+// Footer
+$component: ".footer";
+#{$component} {
+    background-color: $primary;
+    padding-top: 3.125rem;
+    .brand__logo {
+        width: 342px;
+        height: auto;
+        @include media-breakpoint-down(large-tablet) {
+            width: 240px;
+        }
+    }
+    #block-footerbranding {
+        img {
+            width: 342px;
+            height: auto;
+            @include media-breakpoint-down(large-tablet) {
+                width: 240px;
+            }
+        } 
+    }
+    .social-share {
+        font-size: 0;
+        margin-top: 2.438rem;
+        @include media-breakpoint-down(large-tablet) {
+            margin-bottom: 2.438rem;
+        }
+        a {
+            width: 44px;
+            height: 44px;
+            position: relative;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            border-radius: 100%;
+            margin-right: 1.5rem;
+            border: 1px solid $white;
+            svg {
+                position: relative;
+                z-index: 1;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                inset: -1px;
+                display: block;
+                background: rgb(6, 2, 15);
+                border-radius: 100%;
+                z-index: 1;
+                transform: scale(0);
+                -moz-transform: scale(0);
+                -webkit-transform: scale(0);
+                -o-transform: scale(0);
+                transition: transform 0.3s ease-out 0s;
+                -o-transition: transform 0.3s ease-out 0s;
+                -moz-transition: transform 0.3s ease-out 0s;
+                -webkit-transition: transform 0.3s ease-out 0s;
+            }
+            &:hover {
+                &::before {
+                    transform: scale(1);
+                    -moz-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    -o-transform: scale(1);
+                }
+            }
+            &.facebook {
+                border-color: $social-facebook;
+                &::before {
+                    background-color: $social-facebook;
+                }
+            }
+            &.twitter {
+                border-color: $social-twitter;
+                &::before {
+                    background-color: $social-twitter;
+                }
+            }
+            &.youtube {
+                border-color: $social-youtube;
+                &::before {
+                    background-color: $social-youtube;
+                }
+            }
+            &.linkedin {
+                border-color: $social-linkedin;
+                &::before {
+                    background-color: $social-linkedin;
+                }
+            }
+        }
+    }
+    h5, h2 {
+        @extend .h5;
+        padding-top: 0;
+        color: $white;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+        visibility: visible;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 15px 0 0;
+            padding: 0;
+            a {
+                color: $secondary;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                font-size: 18px;
+                &:hover,
+                &.active {
+                    text-decoration: underline;
+                    color: $white;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 10px;
+                    min-width: 10px;
+                    height: 10px;
+                    margin-top: 7px;
+                    margin-left: 10px;
+                    border-width: 2px 2px 0px 0px;
+                    border-top-style: solid;
+                    border-right-style: solid;
+                    border-color: initial;
+                    border-image: initial;
+                    border-left-style: initial;
+                    border-bottom-style: initial;
+                    transform: rotate(45deg);
+                    transition: margin 0.25s ease-out 0s;
+                    vertical-align: 0%;
+                    top: auto;
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding: 1.5rem 0;        
+        line-height: 1.5rem;
+        color: $secondary;
+        background: none;
+        margin-top: 0;
+        &__copyright {
+            display: block;            
+            color: $secondary;
+            font-size: 14px;
+            @include media-breakpoint-up(medium-tablet) {
+                margin-left: 40%;
+            }
+            @include media-breakpoint-up(large-tablet) {
+                margin-left: 30%;
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+    }
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-col {
+        width: 100%;
+        @include media-breakpoint-up(medium-tablet) {
+            width: 60%;
+            &:first-child {
+                width: 40%;
+            }
+        }
+        @include media-breakpoint-up(large-tablet) {
+            width: 70%;
+            &:first-child {
+                width: 30%;
+            }
+            &:nth-child(2) {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-menu {
+        display: inline-flex;
+        width: 100%;
+        @include media-breakpoint-up(small-tablet) {
+            width: 50%;
+        }
+        @include media-breakpoint-up(medium-tablet) {
+            width: auto;
+        }
+        @include media-breakpoint-down(large-tablet) {
+            margin-top: 20px;
+        }
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,21 @@
+uuid: f077c8f3-e0dc-405f-b37d-653dae2d71a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.summary
+    - node.type.media
+  module:
+    - text
+id: node.media.summary
+field_name: summary
+entity_type: node
+bundle: media
+label: summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

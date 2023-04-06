@@ -1,0 +1,31 @@
+{% extends "@components/layouts/_one-column.twig" %}
+{% block main %}
+	{% for item in home_slider %}
+		<div class="row ">
+			<div class="col-12 col-small-tablet-12 ">
+				{% include "@atoms/text/_heading.twig" with {
+					heading: item.heading
+				} only %}
+			</div>			
+		    <div class="col-12 col-small-tablet-12 ">
+			<div class="slick-slider six">
+				{% include "@components/card/_card-slider.twig" with {
+					card_row_class: item.card_row_class,
+					card_link_items: item.card_link_items
+				} only %}
+			</div>
+			</div>
+	    </div>	
+	{% endfor %}	
+	<div class="home__divider">	
+	{% include "@components/card/_card-link-without-row.twig" with {
+		card_row_class: card_row_class,
+		card_link_items: card_link_items
+	} only %}	
+	</div>		
+	{% include "@components/card/_card-lr-column.twig" with {
+		card_row_class: card_row_class,
+		card_lr_column: card_lr_column
+	} only %}	
+{% endblock %}
+

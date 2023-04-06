@@ -1,0 +1,21 @@
+uuid: 23d7f4ec-b3ae-422e-a78d-73a9a10520f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.book_has_body
+    - node.type.item_test_review
+id: node.item_test_review.book_has_body
+field_name: book_has_body
+entity_type: node
+bundle: item_test_review
+label: book-has-body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,75 @@
+---
+organisms_only: true
+
+show_search: true
+show_banner: true
+page_name: custom-collection
+ccb_top:
+  heading_label:
+    text: 'Collection Title'
+  cardlist:
+    - left_col_width: article__card-image
+      middle_col_width: article__card-content
+      leftimage:
+        class: 'img-fluid'
+        title: IMAGE TITLE
+        alt: IMAGE ALT
+        href: '#'
+        src: ../../../assets/images/250X350.png
+      card_description:
+        - paragraph:
+            text: The British Psychological Society’s periodicals publish content from
+              many different areas of psychology, with findings from both practitioner
+              and research settings. BPS network members can access their network’s
+              content free of charge, and other networks’ output for a reduced fee.
+              The periodicals are led by specialized editorial teams, with many using
+              peer review to produce high quality and relevant articles.
+        - paragraph:
+            text: The British Psychological Society’s periodicals publish content from
+              many different areas of psychology, with findings from both practitioner
+              and research settings.
+ccb_bottom:
+  include_label: Included in this collection/Collection items
+  cardlist:
+    - middle_col_width: card-content
+      card_heading:
+        - heading:
+            level: 6
+            text: Content type
+            class: sub-ttile
+      card_heading_link:
+        - anchorHead:
+            level: 5
+            class: ttile
+            button:
+              href: '#'
+              text: Title for the content
+      card_description:
+        - paragraph:
+            class: description
+            text: The British Psychological Society’s periodicals publish content
+              from many different areas of psychology, with findings from both
+              practitioner and research settings. BPS network members can access
+              their network’s content free of charge, and other networks’ output
+              for a reduced fee. The periodicals are led by specialized
+              editorial teams, with many using peer review to produce high
+              quality and relevant articles.
+    - middle_col_width: card-content
+      card_heading:
+        - heading:
+            level: 6
+            text: Content type
+            class: sub-ttile
+      card_heading_link:
+        - anchorHead:
+            level: 5
+            class: ttile
+            button:
+              href: '#'
+              text: Title for the content
+      card_description:
+        - paragraph:
+            class: description
+            text: The British Psychological Society’s periodicals publish content
+              from many different areas of psychology, with findings from both
+              practitioner and research settings.

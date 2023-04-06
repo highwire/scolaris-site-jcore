@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: table-head_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/table/_table-head.twig' %}
+  {% endblock content %}
+{% endembed %}

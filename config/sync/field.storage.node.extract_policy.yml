@@ -1,0 +1,23 @@
+uuid: 5969cea0-457f-4c70-9247-9f0ed4880d1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: P4OL0AA5nsIMXdyviK60zPIUebXSM0ZBgb8FjvGFeEI
+id: node.extract_policy
+field_name: extract_policy
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

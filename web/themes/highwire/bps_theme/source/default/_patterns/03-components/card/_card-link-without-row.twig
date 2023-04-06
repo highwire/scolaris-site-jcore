@@ -1,0 +1,36 @@
+{% if organisms_only %}
+		<div class="container">
+	{% endif %}
+	<div class="row {{ card_row_class }}">
+		{% for item in card_link_items %}
+			<div class="col-12 {{ item.colwidth }}">
+				{% if item.image %}
+					<picture>
+						{% if item.source_media %}
+							{% for i in item.source_media %}
+								<source media="{{ i.img_media }}" srcset="{{ i.img_srcset }}">
+							{% endfor %}
+						{% endif %}
+						{% include "@atoms/images/_image.twig" with {
+							image: item.image
+						} only %}
+					</picture>
+				{% endif %}
+				<div class="card-body {{ item.body }}">
+					{% if item.anchorHead %}
+						{% include "@atoms/text/_heading-link.twig" with {
+							anchorHead: item.anchorHead
+						} %}
+					{% endif %}
+					{% if item.paragraph %}
+						{% include "@atoms/text/_paragraph.twig" with {
+							paragraph: item.paragraph
+						} %}
+					{% endif %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% if organisms_only %}
+	</div>
+{% endif %}

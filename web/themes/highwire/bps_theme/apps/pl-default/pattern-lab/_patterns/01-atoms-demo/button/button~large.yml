@@ -1,0 +1,7 @@
+---
+button:
+  title: Button Size
+  text: Button Large Size
+  type: button
+  style: primary
+  size: large-tablet

@@ -1,0 +1,21 @@
+uuid: cb696790-2b38-4352-880c-0a63accd3cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue
+    - node.type.media
+  module:
+    - text
+id: node.media.issue
+field_name: issue
+entity_type: node
+bundle: media
+label: issue
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

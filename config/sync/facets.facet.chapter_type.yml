@@ -1,0 +1,64 @@
+uuid: 321d4b7f-f6ed-4528-994c-e0ba7fb00a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.bps
+    - views.view.search
+  module:
+    - search_api
+id: chapter_type
+name: 'Chapter type'
+url_alias: chapter_type
+weight: 0
+min_count: 0
+show_only_one_result: false
+field_identifier: chapter_type_facet
+facet_source_id: 'search_api:views_page__search__page_1'
+widget:
+  type: bpscheckbox_content_type
+  config:
+    show_numbers: true
+    soft_limit: '0'
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+    show_reset_link: 1
+    reset_text: 'Include all'
+    reset_id: content_types_reset
+    show_reset_count: 0
+query_operator: or
+use_hierarchy: true
+expand_hierarchy: true
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: false
+processor_configs:
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: ASC
+  exclude_specified_items:
+    processor_id: exclude_specified_items
+    weights:
+      build: 50
+    settings:
+      exclude: 'periodical-issue,periodical-volume,periodical-fragment'
+      regex: false
+  list_item:
+    processor_id: list_item
+    weights:
+      build: 5
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: none
+show_title: false

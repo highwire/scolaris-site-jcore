@@ -1,0 +1,21 @@
+uuid: 2a014cd2-72cb-4c9c-9f9f-7caa26b4e72d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.page_count
+    - node.type.media
+  module:
+    - text
+id: node.media.page_count
+field_name: page_count
+entity_type: node
+bundle: media
+label: page-count
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 92254ba8-eaa4-45aa-86e5-feac4628fb11
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.elocation_id
+field_name: elocation_id
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

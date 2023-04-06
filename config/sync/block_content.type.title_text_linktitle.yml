@@ -1,0 +1,8 @@
+uuid: fe54f224-8950-4c80-9402-1a3238e13bf3
+langcode: en
+status: true
+dependencies: {  }
+id: title_text_linktitle
+label: 'Title text linkTitle'
+revision: 0
+description: 'This block will be use to display browse header content with Title of page, some description and Link text can also be managed '

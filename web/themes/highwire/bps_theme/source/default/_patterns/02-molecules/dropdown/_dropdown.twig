@@ -1,0 +1,17 @@
+{% set base_class = "dropdown" %}
+
+<div class="{{ base_class }} {{ dropdown.modifier_class }}">
+  <a class="{{ base_class }}-toggle {{ dropdown.togglemenu }}" href="#" id="{{ dropdown.id }}" title="{{ dropdown.title }}">
+    {{ dropdown.title }}
+  </a>
+  <span class="{{ dropdown.arrow }}" data-bs-toggle="dropdown"></span>
+  <div class="{{ base_class }}-menu {{ dropdown.menulcass }}" aria-labelledby="{{ dropdown.id }}">
+    {% for item in dropdown.menu %}
+      {% if item == 'dropdown_divider' %}
+        <div class="{{ base_class }}-divider"></div>
+      {% else %}
+        <a class="{{ base_class }}-item" href="{{ item.href }}">{{ item.value }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

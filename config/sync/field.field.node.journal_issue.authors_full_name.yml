@@ -1,0 +1,21 @@
+uuid: 9b9160bc-95f4-401b-809f-cf2953136997
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.authors_full_name
+    - node.type.journal_issue
+  module:
+    - text
+id: node.journal_issue.authors_full_name
+field_name: authors_full_name
+entity_type: node
+bundle: journal_issue
+label: authors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

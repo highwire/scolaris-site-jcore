@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: navigation_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/global/_navigation.twig' %}
+  {% endblock content %}
+{% endembed %}

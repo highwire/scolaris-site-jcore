@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the main navigation menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+{% if items is not empty %}
+  {% for item in items %}
+    {% if item.title == "Content" %}
+      {% set heading_value = 'What we publish' %}
+    {% endif %}
+    {% if item.below is not empty and item.in_active_trail %}
+      {% include "@components/sidebar/_sidebar-common.twig" with {
+        heading: {
+          text: heading_value
+        },
+        listing_items: item.below
+      } only %}
+    {% endif %}
+  {% endfor %}
+{% endif %}

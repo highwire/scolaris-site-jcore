@@ -1,0 +1,22 @@
+uuid: 71e5bb57-006e-4395-9fff-78bc7f1f7ccb
+langcode: en
+status: true
+dependencies: {  }
+id: table_of_contents_book_
+label: 'Table of Contents (Book)'
+configurations:
+  -
+    markup_profile: table_of_contents_book
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - item_back_matter
+  - item_chapter
+  - item_front_matter
+  - item_monograph
+  - item_report_guideline
+log: false
+render_placeholder: false

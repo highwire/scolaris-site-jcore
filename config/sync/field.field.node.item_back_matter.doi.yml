@@ -1,0 +1,21 @@
+uuid: dc323a99-1dcc-4856-9cf2-779959f47a0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.item_back_matter
+  module:
+    - text
+id: node.item_back_matter.doi
+field_name: doi
+entity_type: node
+bundle: item_back_matter
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

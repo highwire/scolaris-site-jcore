@@ -1,0 +1,118 @@
+{% if modalPopup.modalButton_click %}
+    {% if modalPopup.editions %}
+        <a href="{{modalPopup.href}}" class="{{modalPopup.class}}" data-bs-toggle="modal" data-bs-target="#{{modalPopup.modaltargetid}}">{{modalPopup.buttonText}}</a>
+      {% else %}
+        <button type="button" class="{{ modalPopup.class }}" data-bs-toggle="modal" data-bs-target="#{{modalPopup.modaltargetid}}">{{modalPopup.buttonText}}</button>
+    {% endif %}
+  {% endif %}
+<div class="modal fade" id="{{modalPopup.modaltargetid}}" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable {{modalPopup.modal_type}}">	
+		<div class="modal-content">
+			<div class="modal-header">
+				{% include "@atoms/text/_heading-4.twig" with {
+					heading: modalPopup.modalHeading
+				} only %}
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body ">
+				{% if modalPopup.popupdata %}
+					<div class="modal-body-wrapper">{{ modalPopup.popupdata }}</div>
+				{% endif %}				
+				{% if modalPopup.modal_filter_item %}
+					<div class="list-group">						
+							{% for item in modalPopup.modal_filter_item %}
+								{% include "@atoms/forms/_checkbox.twig" with {
+									checkbox: item.checkbox
+								} only %}							
+							{% endfor %}
+					</div>
+				{% endif %}
+				{% if modalPopup.savedsearch_content %}
+					{% for item in modalPopup.savedsearch_content %}
+						<div class="my-account__searchpopup">						
+							<div class="my-account__saved-search-form-box">
+								{% include "@atoms/forms/_input-text.twig" with {
+									field: item.modalInput
+								} only %}
+							</div>
+							<div class="my-account__saved-search-emailwrap">
+								{% include "@atoms/text/_paragraph.twig" with {
+									paragraph: item.modalDesc
+								} only %}
+								{% include "@atoms/forms/_switch-toggle.twig" with {
+									switch: item.modalSwitch
+								} only %}
+							</div>																	
+						</div>
+					{% endfor %}	
+					<div class="my-account__alert-radio-box">				
+						{% for item in modalPopup.modalradiobox %}						
+							{% include "@atoms/forms/_radiobox.twig" with {
+								radiobox: item.modalradio
+							} only %}						
+						{% endfor %}
+					</div>							
+				{% endif %}
+				{% if modalPopup.myaccount_deleteContent %}
+					{% for item in modalPopup.myaccount_deleteContent %}
+						<div class="my-account__alertpopup">	
+							<div class="my-account__closesign"></div>
+							{% include "@atoms/text/_heading.twig" with {
+								heading: item.alertheading
+							} only %}
+							{% include "@atoms/text/_paragraph.twig" with {
+								paragraph: item.alertdesc
+							} only %}			
+						</div>
+					{% endfor %}
+				{% endif %}
+				{% if modalPopup.myaccount_addlabelContent %}
+					{% for item in modalPopup.myaccount_addlabelContent %}
+						<div class="my-account__alertpopup">	
+							{% include "@atoms/forms/_input-text.twig" with {
+								field: item.modalInput
+							} only %}			
+						</div>
+					{% endfor %}
+				{% endif %}
+				{% if modalPopup.myaccount_editlabelContent %}
+                    {% for item in modalPopup.myaccount_editlabelContent %}                         
+                        <div class="my-account__alertpopup">
+							{% include "@atoms/forms/_input-text.twig" with {
+								field: item.modalInput} only %}
+						</div>                   
+                    {% endfor %}
+               {% endif %}
+				{%- if items -%}
+					<{{ list_type }}{{ attributes }}>
+						{%- for item in items -%}
+							<li {{ item.attributes }} >
+								{{ item.value|without('children') }}
+								{% if item.value.children %}
+									<{{ list_type }}{{ attributes }}>
+										{%- for child in attribute(item.value.children, '#items') -%}
+											<li>
+												{{child}}
+											</li>
+										{%- endfor -%}
+									</{{ list_type }}>
+								{% endif %}
+							</li>
+						{%- endfor -%}
+					</{{ list_type }}>
+				{% endif %}
+				{{ modalPopupdata }}
+			</div>
+			{% if modalPopup.closeButton %}
+				<div class="modal-footer">
+					{% include "@atoms/button/_button.twig" with {
+						button: modalPopup.closeButton
+					} only %}
+					{% include "@atoms/button/_button.twig" with {
+						button: modalPopup.saveButton
+					} only %}
+				</div>
+			{% endif %}
+		</div>
+  </div>
+</div>

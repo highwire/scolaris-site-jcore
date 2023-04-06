@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: horizontal_rule_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/text/_horizontal-rule.twig' %}
+  {% endblock content %}
+{% endembed %}

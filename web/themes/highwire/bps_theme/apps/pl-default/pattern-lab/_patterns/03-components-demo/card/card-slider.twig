@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: card_slider_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/card/_card-slider.twig' %}
+  {% endblock content %}
+{% endembed %}

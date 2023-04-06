@@ -1,0 +1,190 @@
+uuid: 65e5e9ac-7b22-40ac-baec-97bc54324380
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.item_test_review.apath
+    - field.field.node.item_test_review.archived
+    - field.field.node.item_test_review.atom_id
+    - field.field.node.item_test_review.authors_full_name
+    - field.field.node.item_test_review.binary
+    - field.field.node.item_test_review.book_has_abstract
+    - field.field.node.item_test_review.book_has_body
+    - field.field.node.item_test_review.book_part_label
+    - field.field.node.item_test_review.book_part_type
+    - field.field.node.item_test_review.chapter_type
+    - field.field.node.item_test_review.children
+    - field.field.node.item_test_review.contributors_xml
+    - field.field.node.item_test_review.corpus
+    - field.field.node.item_test_review.counts
+    - field.field.node.item_test_review.cover_image
+    - field.field.node.item_test_review.date_atom_release
+    - field.field.node.item_test_review.date_atom_updated
+    - field.field.node.item_test_review.date_edition
+    - field.field.node.item_test_review.date_ppub
+    - field.field.node.item_test_review.date_print_publication
+    - field.field.node.item_test_review.description
+    - field.field.node.item_test_review.disclaimer
+    - field.field.node.item_test_review.doi
+    - field.field.node.item_test_review.edition
+    - field.field.node.item_test_review.edition_id
+    - field.field.node.item_test_review.editors_full_name
+    - field.field.node.item_test_review.extract_policy
+    - field.field.node.item_test_review.fpage
+    - field.field.node.item_test_review.hwmd_abstract_book
+    - field.field.node.item_test_review.hwmd_abstract_search
+    - field.field.node.item_test_review.hwmd_abstract_search_index_
+    - field.field.node.item_test_review.hwmd_full_text_book
+    - field.field.node.item_test_review.hwmd_full_text_search_index_
+    - field.field.node.item_test_review.instructor_material
+    - field.field.node.item_test_review.isbn_ebook
+    - field.field.node.item_test_review.isbn_ebook_compact
+    - field.field.node.item_test_review.isbn_print
+    - field.field.node.item_test_review.isbn_print_compact
+    - field.field.node.item_test_review.item_type
+    - field.field.node.item_test_review.keywords
+    - field.field.node.item_test_review.lpage
+    - field.field.node.item_test_review.mime_type
+    - field.field.node.item_test_review.parent
+    - field.field.node.item_test_review.parent_book
+    - field.field.node.item_test_review.pdf
+    - field.field.node.item_test_review.permissions
+    - field.field.node.item_test_review.publisher
+    - field.field.node.item_test_review.registered_test
+    - field.field.node.item_test_review.related_objects
+    - field.field.node.item_test_review.section_title
+    - field.field.node.item_test_review.subject_groups
+    - field.field.node.item_test_review.subtitle
+    - field.field.node.item_test_review.supp_content_type
+    - field.field.node.item_test_review.supplementary_material
+    - field.field.node.item_test_review.taxonomy_terms
+    - field.field.node.item_test_review.test_publisher
+    - field.field.node.item_test_review.test_type
+    - field.field.node.item_test_review.title_plain
+    - field.field.node.item_test_review.type_id
+    - node.type.item_test_review
+  module:
+    - path
+id: node.item_test_review.default
+targetEntityType: node
+bundle: item_test_review
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  apath: true
+  archived: true
+  atom_id: true
+  authors_full_name: true
+  binary: true
+  book_has_abstract: true
+  book_has_body: true
+  book_part_label: true
+  book_part_type: true
+  chapter_type: true
+  children: true
+  contributors_xml: true
+  corpus: true
+  counts: true
+  cover_image: true
+  date_atom_release: true
+  date_atom_updated: true
+  date_edition: true
+  date_ppub: true
+  date_print_publication: true
+  description: true
+  disclaimer: true
+  doi: true
+  edition: true
+  edition_id: true
+  editors_full_name: true
+  extract_policy: true
+  fpage: true
+  hwmd_abstract_book: true
+  hwmd_abstract_search: true
+  hwmd_abstract_search_index_: true
+  hwmd_full_text_book: true
+  hwmd_full_text_search_index_: true
+  instructor_material: true
+  isbn_ebook: true
+  isbn_ebook_compact: true
+  isbn_print: true
+  isbn_print_compact: true
+  item_type: true
+  keywords: true
+  lpage: true
+  mime_type: true
+  parent: true
+  parent_book: true
+  pdf: true
+  permissions: true
+  publisher: true
+  registered_test: true
+  related_objects: true
+  section_title: true
+  subject_groups: true
+  subtitle: true
+  supp_content_type: true
+  supplementary_material: true
+  taxonomy_terms: true
+  test_publisher: true
+  test_type: true
+  title_plain: true
+  type_id: true

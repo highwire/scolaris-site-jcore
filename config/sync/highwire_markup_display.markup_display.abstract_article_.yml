@@ -1,0 +1,18 @@
+uuid: 743d1602-7d33-4b21-8d0b-cb1489330229
+langcode: en
+status: true
+dependencies: {  }
+id: abstract_article_
+label: 'Abstract (Article)'
+configurations:
+  -
+    markup_profile: journal_full_text_abstract
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_article
+log: true
+render_placeholder: false

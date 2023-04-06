@@ -1,0 +1,19 @@
+{% extends "@components/layouts/_two-column.twig" %}
+{% block main %}
+	{% include "@components/site/_search-result.twig" with {
+		search_result_top: search_result_top,
+		search_result_middle: search_result_middle,
+		search_result_bottom: search_result_bottom
+	} only %}
+	
+	{% include "@components/modal/_modal-popup.twig" with {
+		modalPopup: filterResultModal.modalPopup
+	} only %}
+{% endblock %}
+
+{% block sidebar %}
+	{% include "@components/sidebar/_sidebar.twig" with {
+		sidenavLoop: sidenavLoop
+	} only %}
+{% endblock %}
+

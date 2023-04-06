@@ -1,0 +1,21 @@
+uuid: cc1662f2-b04b-40e5-b267-1409af777ebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_videos
+    - node.type.relationship
+id: node.relationship.has_videos
+field_name: has_videos
+entity_type: node
+bundle: relationship
+label: has-videos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

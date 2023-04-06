@@ -1,0 +1,21 @@
+uuid: a29b80ca-559e-48fe-a4c8-32ac957c78f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent
+    - node.type.item_monograph
+id: node.item_monograph.parent
+field_name: parent
+entity_type: node
+bundle: item_monograph
+label: parent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

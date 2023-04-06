@@ -1,0 +1,21 @@
+uuid: d9d67f70-f839-49d4-aa8a-6e6d36e151bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_edition
+    - node.type.item_test_review
+  module:
+    - datetime
+id: node.item_test_review.date_edition
+field_name: date_edition
+entity_type: node
+bundle: item_test_review
+label: date-edition
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

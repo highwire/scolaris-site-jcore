@@ -1,0 +1,13 @@
+{% embed "page.html.twig" %}
+{% block main %}
+{% include "@molecules/container/main--myaccount.twig" with {
+  "content_top_alt": page.content_top_alt,
+  "content_top": page.content_top,
+  "page_title": page_title,
+  "content": page.content,
+  "sidebar_first": page.sidebar_first,
+  "sidebar_second": page.sidebar_second,
+  "content_bottom": page.content_bottom,
+} %}
+{% endblock %}
+{% endembed %}

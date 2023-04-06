@@ -1,0 +1,9 @@
+{% extends "@components/layouts/_two-column.twig" %}
+{% block main %}
+	{% include "@components/site/_myaccount-preferences.twig"  %}
+{% endblock %}
+{% block sidebar %}
+	{% include "@components/sidebar/_sidebar.twig" with {
+		sidenavLoop: sidenavLoop
+	} only %}
+{% endblock %}

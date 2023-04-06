@@ -1,0 +1,262 @@
+uuid: c955b4f2-e47a-4e2c-b080-2af4b3d68988
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.journal_issue.adjuncts
+    - field.field.node.journal_issue.apath
+    - field.field.node.journal_issue.article_open_access
+    - field.field.node.journal_issue.article_series_title
+    - field.field.node.journal_issue.article_type
+    - field.field.node.journal_issue.atom_type
+    - field.field.node.journal_issue.authors_full_name
+    - field.field.node.journal_issue.chapter_type
+    - field.field.node.journal_issue.children
+    - field.field.node.journal_issue.col_url
+    - field.field.node.journal_issue.contributors
+    - field.field.node.journal_issue.corpus
+    - field.field.node.journal_issue.cover_date
+    - field.field.node.journal_issue.custom_meta
+    - field.field.node.journal_issue.date_epreprint
+    - field.field.node.journal_issue.date_epub
+    - field.field.node.journal_issue.date_epub_or_ppub
+    - field.field.node.journal_issue.date_epub_original
+    - field.field.node.journal_issue.date_epub_ppub
+    - field.field.node.journal_issue.date_epub_version
+    - field.field.node.journal_issue.date_ppub
+    - field.field.node.journal_issue.date_released
+    - field.field.node.journal_issue.doi
+    - field.field.node.journal_issue.early_release
+    - field.field.node.journal_issue.elocation_id
+    - field.field.node.journal_issue.enclosures
+    - field.field.node.journal_issue.extract_policy
+    - field.field.node.journal_issue.fpage
+    - field.field.node.journal_issue.georef_id
+    - field.field.node.journal_issue.has_abstract
+    - field.field.node.journal_issue.has_early_release
+    - field.field.node.journal_issue.has_figures
+    - field.field.node.journal_issue.has_figures_or_tables
+    - field.field.node.journal_issue.has_full_text
+    - field.field.node.journal_issue.has_full_text_pdf
+    - field.field.node.journal_issue.has_ref_links
+    - field.field.node.journal_issue.has_ref_stub
+    - field.field.node.journal_issue.has_source
+    - field.field.node.journal_issue.has_tables
+    - field.field.node.journal_issue.has_videos
+    - field.field.node.journal_issue.hwmd_abstract_search_index_
+    - field.field.node.journal_issue.hwmd_table_of_contents_journals_
+    - field.field.node.journal_issue.issue
+    - field.field.node.journal_issue.issue_id
+    - field.field.node.journal_issue.issue_is_open
+    - field.field.node.journal_issue.issue_page_range
+    - field.field.node.journal_issue.issue_supplemental
+    - field.field.node.journal_issue.issue_title
+    - field.field.node.journal_issue.issue_toc
+    - field.field.node.journal_issue.journal_abbrv_title
+    - field.field.node.journal_issue.journal_current_issue
+    - field.field.node.journal_issue.journal_eissn
+    - field.field.node.journal_issue.journal_eissn_compact
+    - field.field.node.journal_issue.journal_pissn
+    - field.field.node.journal_issue.journal_pissn_compact
+    - field.field.node.journal_issue.journal_publisher
+    - field.field.node.journal_issue.journal_publisher_id
+    - field.field.node.journal_issue.journal_title
+    - field.field.node.journal_issue.keywords
+    - field.field.node.journal_issue.lpage
+    - field.field.node.journal_issue.next_atom
+    - field.field.node.journal_issue.overline
+    - field.field.node.journal_issue.page_count
+    - field.field.node.journal_issue.parent
+    - field.field.node.journal_issue.parent_issue
+    - field.field.node.journal_issue.parent_journal
+    - field.field.node.journal_issue.parent_volume
+    - field.field.node.journal_issue.pdf_extract_img
+    - field.field.node.journal_issue.pisa_version
+    - field.field.node.journal_issue.prev_atom
+    - field.field.node.journal_issue.publisher_id
+    - field.field.node.journal_issue.publisher_unique_id
+    - field.field.node.journal_issue.pubmed_id
+    - field.field.node.journal_issue.related
+    - field.field.node.journal_issue.secondary
+    - field.field.node.journal_issue.sibling_order
+    - field.field.node.journal_issue.slug
+    - field.field.node.journal_issue.subtitle
+    - field.field.node.journal_issue.subtype
+    - field.field.node.journal_issue.summary
+    - field.field.node.journal_issue.taxonomy_terms
+    - field.field.node.journal_issue.title_plain
+    - field.field.node.journal_issue.title_short
+    - field.field.node.journal_issue.variant_cover_image
+    - field.field.node.journal_issue.variant_cover_pdf
+    - field.field.node.journal_issue.variant_cover_source_image
+    - field.field.node.journal_issue.variant_full_text_pdf
+    - field.field.node.journal_issue.variant_full_text_stamped_pdf
+    - field.field.node.journal_issue.variant_large_image
+    - field.field.node.journal_issue.variant_medium_image
+    - field.field.node.journal_issue.variant_small_image
+    - field.field.node.journal_issue.variant_table_of_contents_pdf
+    - field.field.node.journal_issue.version_current
+    - field.field.node.journal_issue.video_id
+    - field.field.node.journal_issue.volume
+    - node.type.journal_issue
+  module:
+    - path
+id: node.journal_issue.default
+targetEntityType: node
+bundle: journal_issue
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  adjuncts: true
+  apath: true
+  article_open_access: true
+  article_series_title: true
+  article_type: true
+  atom_type: true
+  authors_full_name: true
+  chapter_type: true
+  children: true
+  col_url: true
+  contributors: true
+  corpus: true
+  cover_date: true
+  custom_meta: true
+  date_epreprint: true
+  date_epub: true
+  date_epub_or_ppub: true
+  date_epub_original: true
+  date_epub_ppub: true
+  date_epub_version: true
+  date_ppub: true
+  date_released: true
+  doi: true
+  early_release: true
+  elocation_id: true
+  enclosures: true
+  extract_policy: true
+  fpage: true
+  georef_id: true
+  has_abstract: true
+  has_early_release: true
+  has_figures: true
+  has_figures_or_tables: true
+  has_full_text: true
+  has_full_text_pdf: true
+  has_ref_links: true
+  has_ref_stub: true
+  has_source: true
+  has_tables: true
+  has_videos: true
+  hwmd_abstract_search_index_: true
+  hwmd_table_of_contents_journals_: true
+  issue: true
+  issue_id: true
+  issue_is_open: true
+  issue_page_range: true
+  issue_supplemental: true
+  issue_title: true
+  issue_toc: true
+  journal_abbrv_title: true
+  journal_current_issue: true
+  journal_eissn: true
+  journal_eissn_compact: true
+  journal_pissn: true
+  journal_pissn_compact: true
+  journal_publisher: true
+  journal_publisher_id: true
+  journal_title: true
+  keywords: true
+  lpage: true
+  next_atom: true
+  overline: true
+  page_count: true
+  parent: true
+  parent_issue: true
+  parent_journal: true
+  parent_volume: true
+  pdf_extract_img: true
+  pisa_version: true
+  prev_atom: true
+  publisher_id: true
+  publisher_unique_id: true
+  pubmed_id: true
+  related: true
+  secondary: true
+  sibling_order: true
+  slug: true
+  subtitle: true
+  subtype: true
+  summary: true
+  taxonomy_terms: true
+  title_plain: true
+  title_short: true
+  variant_cover_image: true
+  variant_cover_pdf: true
+  variant_cover_source_image: true
+  variant_full_text_pdf: true
+  variant_full_text_stamped_pdf: true
+  variant_large_image: true
+  variant_medium_image: true
+  variant_small_image: true
+  variant_table_of_contents_pdf: true
+  version_current: true
+  video_id: true
+  volume: true

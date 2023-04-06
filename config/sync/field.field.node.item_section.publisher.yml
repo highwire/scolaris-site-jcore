@@ -1,0 +1,37 @@
+uuid: cbec8df2-934d-412b-8da6-5fa952621332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.publisher
+    - node.type.item_section
+  module:
+    - double_field
+id: node.item_section.publisher
+field_name: publisher
+entity_type: node
+bundle: item_section
+label: publisher
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

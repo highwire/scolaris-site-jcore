@@ -1,0 +1,25 @@
+uuid: cfa4c1f9-f483-49c9-acbd-19e02b3f806d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: test_reviews
+label: 'Registered Test Reviews'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      item_test_review: item_test_review
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: item_report_guideline
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

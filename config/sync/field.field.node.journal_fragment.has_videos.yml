@@ -1,0 +1,21 @@
+uuid: 194ffc6d-879d-479d-95d5-074d9988d79e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_videos
+    - node.type.journal_fragment
+id: node.journal_fragment.has_videos
+field_name: has_videos
+entity_type: node
+bundle: journal_fragment
+label: has-videos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

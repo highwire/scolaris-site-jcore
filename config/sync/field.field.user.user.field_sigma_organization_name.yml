@@ -1,0 +1,22 @@
+uuid: 2c07fc81-efe3-483d-8f18-0632390baa96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sigma_organization_name
+  module:
+    - user
+_core:
+  default_config_hash: HG8YoB5T2DM6mNd0M3BwIkZbMnjd_nC1mxuCF8zYiSY
+id: user.user.field_sigma_organization_name
+field_name: field_sigma_organization_name
+entity_type: user
+bundle: user
+label: 'Sigma Organization Name'
+description: 'Used by OpenID Connect SAMS Sigma to store the user type.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 2241dd28-4c02-4b6e-8800-89882a5c12f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.fpage
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.fpage
+field_name: fpage
+entity_type: node
+bundle: item_test_review
+label: fpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

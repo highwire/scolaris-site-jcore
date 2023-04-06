@@ -1,0 +1,16 @@
+<div{{ attributes }}>
+  {% if title or links %}
+  <div{{ title_attributes }}>
+    {% if links %}
+    <div class="highwire-personalization-manage-alert-panel__links">
+    {{ links }}
+    </div>
+    {% endif %}
+    {{ title }}
+  </div>
+  {% endif %}
+  <div{{ content_attributes }}>
+    {{ manage }}
+    {{ children }}
+  </div>
+</div>

@@ -1,0 +1,19 @@
+---
+paragraphs:
+- class: 
+  text: Paragraph Text
+- class: p__intro
+  text: Paragraph – Intro
+- class: p__small
+  text: Paragraph – Small
+- class: p__smallTight
+  text: Paragraph – small tight
+
+
+
+
+
+
+
+
+

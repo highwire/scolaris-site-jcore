@@ -1,0 +1,21 @@
+uuid: 8d5572ab-cfb4-4820-a343-119d805e5d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.chapter_type
+    - node.type.media
+  module:
+    - text
+id: node.media.chapter_type
+field_name: chapter_type
+entity_type: node
+bundle: media
+label: chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

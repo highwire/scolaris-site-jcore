@@ -1,0 +1,21 @@
+uuid: ed0af251-c271-43a4-9b03-59ded1a69f00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.atom_type
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.atom_type
+field_name: atom_type
+entity_type: node
+bundle: relationship
+label: atom-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

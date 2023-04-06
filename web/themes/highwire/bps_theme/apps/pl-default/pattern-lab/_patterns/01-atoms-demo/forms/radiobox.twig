@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: radiobox_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/forms/_radiobox.twig' %}
+  {% endblock content %}
+{% endembed %}

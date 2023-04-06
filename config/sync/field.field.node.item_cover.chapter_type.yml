@@ -1,0 +1,21 @@
+uuid: fba2cd91-f4f4-415f-b728-e22d63ee21aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.chapter_type
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.chapter_type
+field_name: chapter_type
+entity_type: node
+bundle: item_cover
+label: chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

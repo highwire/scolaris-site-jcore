@@ -1,0 +1,24 @@
+services:
+  bps_core.lookup:
+    class: Drupal\bps_core\Lookup
+    arguments:
+      [
+        "@entity.query",
+        "@entity_type.manager",
+        "@hwphp.atomx",
+        "@cache.default",
+        "@highwire_content.lookup",
+        "@logger.factory",
+        "@highwire_content.settings",
+      ]
+  bps_core.content_export:
+    class: Drupal\bps_core\ContentExport
+    arguments:
+      [
+        "@entity.query",
+        "@entity_type.manager",
+        "@highwire_content.lookup",
+        "@highwire_content.settings",
+        "@bps_core.lookup",
+        "@hwphp.payload_fetcher",
+      ]

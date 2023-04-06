@@ -1,0 +1,21 @@
+uuid: c39246c1-7fe2-40ff-b198-0011e39f6dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_ebook_compact
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.isbn_ebook_compact
+field_name: isbn_ebook_compact
+entity_type: node
+bundle: item_test_review
+label: isbn-ebook-compact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,161 @@
+uuid: 2b705aae-4cce-49cb-84ed-d9345373f2e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.abstract_search
+    - field.field.node.item_report_guideline.apath
+    - field.field.node.item_report_guideline.archived
+    - field.field.node.item_report_guideline.atom_id
+    - field.field.node.item_report_guideline.authors_full_name
+    - field.field.node.item_report_guideline.binary
+    - field.field.node.item_report_guideline.book_has_abstract
+    - field.field.node.item_report_guideline.book_has_body
+    - field.field.node.item_report_guideline.book_part_label
+    - field.field.node.item_report_guideline.book_part_type
+    - field.field.node.item_report_guideline.chapter_type
+    - field.field.node.item_report_guideline.children
+    - field.field.node.item_report_guideline.contributors_xml
+    - field.field.node.item_report_guideline.corpus
+    - field.field.node.item_report_guideline.counts
+    - field.field.node.item_report_guideline.cover_image
+    - field.field.node.item_report_guideline.date_atom_release
+    - field.field.node.item_report_guideline.date_atom_updated
+    - field.field.node.item_report_guideline.date_edition
+    - field.field.node.item_report_guideline.date_ppub
+    - field.field.node.item_report_guideline.date_print_publication
+    - field.field.node.item_report_guideline.description
+    - field.field.node.item_report_guideline.disclaimer
+    - field.field.node.item_report_guideline.doi
+    - field.field.node.item_report_guideline.edition
+    - field.field.node.item_report_guideline.edition_id
+    - field.field.node.item_report_guideline.editors_full_name
+    - field.field.node.item_report_guideline.extract_policy
+    - field.field.node.item_report_guideline.fpage
+    - field.field.node.item_report_guideline.hwmd_abstract_book
+    - field.field.node.item_report_guideline.hwmd_abstract_search
+    - field.field.node.item_report_guideline.hwmd_abstract_search_index_
+    - field.field.node.item_report_guideline.hwmd_contributors
+    - field.field.node.item_report_guideline.hwmd_full_text_book
+    - field.field.node.item_report_guideline.hwmd_full_text_search_index_
+    - field.field.node.item_report_guideline.hwmd_table_of_contents_book_
+    - field.field.node.item_report_guideline.instructor_material
+    - field.field.node.item_report_guideline.isbn_ebook
+    - field.field.node.item_report_guideline.isbn_ebook_compact
+    - field.field.node.item_report_guideline.isbn_print
+    - field.field.node.item_report_guideline.isbn_print_compact
+    - field.field.node.item_report_guideline.item_type
+    - field.field.node.item_report_guideline.keywords
+    - field.field.node.item_report_guideline.lpage
+    - field.field.node.item_report_guideline.member_network
+    - field.field.node.item_report_guideline.mime_type
+    - field.field.node.item_report_guideline.parent
+    - field.field.node.item_report_guideline.parent_book
+    - field.field.node.item_report_guideline.pdf
+    - field.field.node.item_report_guideline.permissions
+    - field.field.node.item_report_guideline.publisher
+    - field.field.node.item_report_guideline.registered_test
+    - field.field.node.item_report_guideline.related_objects
+    - field.field.node.item_report_guideline.section_title
+    - field.field.node.item_report_guideline.subject_groups
+    - field.field.node.item_report_guideline.subtitle
+    - field.field.node.item_report_guideline.supp_content_type
+    - field.field.node.item_report_guideline.supplementary_material
+    - field.field.node.item_report_guideline.taxonomy_terms
+    - field.field.node.item_report_guideline.test_publisher
+    - field.field.node.item_report_guideline.title_plain
+    - field.field.node.item_report_guideline.type_id
+    - node.type.item_report_guideline
+  module:
+    - highwire_markup_display
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.item_report_guideline.abstract_search
+targetEntityType: node
+bundle: item_report_guideline
+mode: abstract_search
+content:
+  hwmd_abstract_search:
+    type: hwmarkup_display_formatter
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  access_icon_bps_access_icon: true
+  addtoany: true
+  apath: true
+  archived: true
+  atom_id: true
+  authors_full_name: true
+  binary: true
+  book_has_abstract: true
+  book_has_body: true
+  book_part_label: true
+  book_part_type: true
+  bps_focus_view: true
+  bps_toc_pager: true
+  ccc_permissions_link: true
+  chapter_type: true
+  children: true
+  contributors_xml: true
+  corpus: true
+  counts: true
+  cover_image: true
+  date_atom_release: true
+  date_atom_updated: true
+  date_edition: true
+  date_ppub: true
+  date_print_publication: true
+  description: true
+  disclaimer: true
+  doi: true
+  edition: true
+  edition_id: true
+  editors_full_name: true
+  extract_policy: true
+  fpage: true
+  highwire_citations_download: true
+  hw_alerts_sign_up: true
+  hw_marker_sign_up: true
+  hw_tag_sign_up: true
+  hwmd_abstract_book: true
+  hwmd_abstract_search_index_: true
+  hwmd_contributors: true
+  hwmd_full_text_book: true
+  hwmd_full_text_search_index_: true
+  hwmd_table_of_contents_book_: true
+  instructor_material: true
+  isbn_ebook: true
+  isbn_ebook_compact: true
+  isbn_print: true
+  isbn_print_compact: true
+  item_type: true
+  keywords: true
+  langcode: true
+  links: true
+  lpage: true
+  member_network: true
+  mime_type: true
+  parent: true
+  parent_book: true
+  pdf: true
+  permissions: true
+  prev_next_pager: true
+  publisher: true
+  registered_test: true
+  related_objects: true
+  section_title: true
+  subject_groups: true
+  subtitle: true
+  supp_content_type: true
+  supplementary_material: true
+  taxonomy_terms: true
+  test_publisher: true
+  title_plain: true
+  type_id: true

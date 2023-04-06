@@ -1,0 +1,21 @@
+uuid: 59248da0-047b-4e53-8cd7-0bb40e04157d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_page_range
+    - node.type.journal
+  module:
+    - text
+id: node.journal.issue_page_range
+field_name: issue_page_range
+entity_type: node
+bundle: journal
+label: issue-page-range
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

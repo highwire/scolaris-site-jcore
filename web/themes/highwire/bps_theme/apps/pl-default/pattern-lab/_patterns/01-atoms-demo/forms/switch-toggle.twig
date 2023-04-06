@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: switch_toggle_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/forms/_switch-toggle.twig' %}
+  {% endblock content %}
+{% endembed %}

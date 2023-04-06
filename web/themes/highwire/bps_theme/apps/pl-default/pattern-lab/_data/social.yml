@@ -1,0 +1,37 @@
+---
+social_item:
+- button:
+    href: "#"
+    class: ''
+    text: Follow Springer Publishing on Facebook
+    title: Follow Springer Publishing on Facebook
+    lefticon: true
+    righticon: false
+    leftstackclass: footer__top__social__icon icon-facebook
+  
+- button:
+    href: "#"
+    class: ''
+    text: Follow Springer Publishing on Twitter
+    title: Follow Springer Publishing on Twitter
+    lefticon: true
+    leftstackclass: footer__top__social__icon icon-twitter
+   
+- button:
+    href: "#"
+    class: ''
+    text: Follow Springer Publishing on YouTube
+    title: Follow Springer Publishing on YouTube
+    lefticon: true
+    righticon: false
+    leftstackclass: footer__top__social__icon icon-youtube
+    
+- button:
+    href: "#"
+    class: ''
+    text: Follow Springer Publishing on LinkedIn
+    title: Follow Springer Publishing on LinkedIn
+    lefticon: true
+    righticon: false
+    leftstackclass: footer__top__social__icon icon-linkedin
+    

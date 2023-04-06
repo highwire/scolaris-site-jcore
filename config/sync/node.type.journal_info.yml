@@ -1,0 +1,17 @@
+uuid: 92d051d2-9784-4fd4-8a45-33b7b41926b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Journal info'
+type: journal_info
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

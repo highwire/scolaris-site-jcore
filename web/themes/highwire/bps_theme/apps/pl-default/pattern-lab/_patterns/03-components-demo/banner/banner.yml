@@ -1,0 +1,18 @@
+---
+bannerSrc: "../../../assets/images/hero-banner.jpg"
+bannerCaption:
+  level: '6'
+  class: banner__caption
+  text: The British Psychological Society
+bannerHeading:
+  level: '1'
+  class: banner__heading
+  text: Explore psychology publications
+bannerParagraph:
+  class: banner__subHeading
+  text: Access psychological knowledge from psychological practitioners, researchers and  working groups
+bannerLink:
+  href: "#"
+  class: banner__button
+  text: Volutpat metus turpis dolor
+ 

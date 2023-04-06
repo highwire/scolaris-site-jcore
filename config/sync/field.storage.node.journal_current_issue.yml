@@ -1,0 +1,19 @@
+uuid: 3195cea6-ada0-4656-a028-bea617fe7555
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.journal_current_issue
+field_name: journal_current_issue
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

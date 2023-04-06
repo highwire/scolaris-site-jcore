@@ -1,0 +1,15 @@
+uuid: dd2ae031-7966-4ced-9398-279c29ea3446
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: F6JKQoBgbMRrNRmtLCHm-KVO-ctkn40tLIyx5_h9sGw
+title: 'Refworks (RIS) Journal'
+id: ris_journal
+export_plugin: ris
+label: null
+format_type: null
+citations_tokens: "TY|[node:item-type]\r\nT1|[node:title]\r\nTI|[node:title]\r\nJO|[node:journal_title]\r\nJF|[node:journal_title]\r\nJA|[node:journal_abbrv_title]\r\nAU|[node:authors_full_name]\r\nN2|[node:hwmd_abstract_article_]\r\nKW|[node:keywords]\r\nVL|[node:volume]\r\nIS|[node:volume]\r\nSP|[node:fpage]\r\nEP|[node:lpage]\r\nPY|[node:date_ppub:start_date:html_year]\r\nY1|[node:date_print_publication]\r\nLA|eng\r\nDB|[]\r\nDP|[]\r\nDO|[node:doi]\r\nSN|[node:issn]\r\nST|[node:title_short]\r\nUR|[node:url]\r\nCTLG|[]\r\nCN|[]\r\nED|[]\r\nET|[node:edition]\r\nBT|[]\r\nPB|[node:publisher]\r\nER"
+content_types: null
+content_type_prefix: null
+citations_markup: null

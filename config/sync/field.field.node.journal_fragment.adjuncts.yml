@@ -1,0 +1,21 @@
+uuid: 5188d993-687d-4848-91af-b5c47581c5f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.adjuncts
+    - node.type.journal_fragment
+id: node.journal_fragment.adjuncts
+field_name: adjuncts
+entity_type: node
+bundle: journal_fragment
+label: adjuncts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

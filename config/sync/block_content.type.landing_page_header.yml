@@ -1,0 +1,8 @@
+uuid: 792b0198-8147-46ea-b626-25d4c3b44eb8
+langcode: en
+status: true
+dependencies: {  }
+id: landing_page_header
+label: 'Landing Page Header'
+revision: 0
+description: 'Use this block for the top of a landing page'

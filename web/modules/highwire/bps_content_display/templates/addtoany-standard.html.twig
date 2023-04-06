@@ -1,0 +1,133 @@
+{#
+/**
+* @file
+* Default theme implementation to standard AddToAny buttons.
+*
+* Available variables:
+* - addtoany_html: HTML for AddToAny buttons.
+* - button_image: URL for universal button.
+* - button_setting: Setting of button.
+* - button_size: Size of buttons.
+* - universal_button_placement: Value of 'before' or 'after' to place button.
+* - link_url: Value of URL to share.
+* - link_title: Value of page title to share.
+*
+* @ingroup themeable
+*/
+#}
+{# Remove whitespace between tags for even spacing between buttons. #}
+
+{% spaceless %}
+  {% if button_setting != 'none' %}
+    {% set universal_button %}
+      <a class="a2a_dd addtoany_share" href="https://www.addtoany.com/share#url={{ link_url|url_encode }}&amp;title={{ link_title|url_encode }}">
+        {% if button_image %}
+          <img src="{{ button_image }}">
+        {% endif %}
+      </a>
+    {% endset  %}
+  {% endif %}
+  {% if sigma_proxy_url %}
+    <span class="a2a_kit a2a_kit_size_{{ buttons_size }} addtoany_list" data-a2a-url="{{ link_url }}" data-sigma-url="{{ sigma_proxy_url }}" data-a2a-title="{{ link_title }}">
+      {% if universal_button_placement == 'before' %}
+        {{ universal_button }}
+      {% endif %}
+      {% if addtoany_html %}
+        {% if addtoany_html != '<a class="a2a_button_copy_link markup-item-link"><span class="fa fa-share" aria-hidden="true"></span> Share</a>' %}
+          <div class = "proxy-wrap">
+            <div class="hw-share-proxy-modal" >
+              <div class="a2a_overlay" id="hw-share-proxy-overlay"></div>
+              <div id="hw-share-proxy-modal" class="a2a_modal" role="dialog" tabindex="-1" aria-label="Copy link">
+                <div class="a2a_modal_body a2a_menu" id="hw-share-copy-link">
+                  <span id="hw-share-link-icon" class="a2a_svg a2a_s_link">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+	                    <path fill="#FFF" d="M24.4 21.18c0-.36-.1-.67-.36-.92l-2.8-2.8a1.24 1.24 0 0 0-.92-.38c-.38 0-.7.14-.97.43.02.04.1.12.25.26l.3.3.2.24c.08.12.14.24.17.35.03.1.05.23.05.37 0 .36-.13.66-.38.92a1.25 1.25 0 0 1-.92.37 1.4 1.4 0 0 1-.37-.03 1.06 1.06 0 0 1-.35-.18 2.27 2.27 0 0 1-.25-.2 6.82 6.82 0 0 1-.3-.3l-.24-.25c-.3.28-.44.6-.44.98 0 .36.13.66.38.92l2.78 2.8c.24.23.54.35.9.35.37 0 .68-.12.93-.35l1.98-1.97c.26-.25.38-.55.38-.9zm-9.46-9.5c0-.37-.13-.67-.38-.92l-2.78-2.8a1.24 1.24 0 0 0-.9-.37c-.36 0-.67.1-.93.35L7.97 9.92c-.26.25-.38.55-.38.9 0 .36.1.67.37.92l2.8 2.8c.24.25.55.37.92.37.36 0 .7-.13.96-.4-.03-.04-.1-.12-.26-.26s-.24-.23-.3-.3a2.67 2.67 0 0 1-.2-.24 1.05 1.05 0 0 1-.17-.35 1.4 1.4 0 0 1-.04-.37c0-.36.1-.66.36-.9.26-.26.56-.4.92-.4.14 0 .26.03.37.06.12.03.23.1.35.17.1.1.2.16.25.2l.3.3.24.26c.3-.28.44-.6.44-.98zM27 21.17c0 1.07-.38 2-1.15 2.73l-1.98 1.98c-.74.75-1.66 1.12-2.73 1.12-1.1 0-2-.38-2.75-1.14l-2.8-2.8c-.74-.74-1.1-1.65-1.1-2.73 0-1.1.38-2.04 1.17-2.82l-1.18-1.17c-.8.8-1.72 1.18-2.82 1.18-1.08 0-2-.36-2.75-1.12l-2.8-2.8C5.38 12.8 5 11.9 5 10.82c0-1.08.38-2 1.15-2.74L8.13 6.1C8.87 5.37 9.78 5 10.86 5c1.1 0 2 .38 2.75 1.15l2.8 2.8c.74.73 1.1 1.65 1.1 2.72 0 1.1-.38 2.05-1.17 2.82l1.18 1.18c.8-.8 1.72-1.2 2.82-1.2 1.08 0 2 .4 2.75 1.14l2.8 2.8c.76.76 1.13 1.68 1.13 2.76z"></path>
+                    </svg>
+                  </span>
+                  <input id="hw-share-copy-link-text" type="text" value="{{ sigma_proxy_url }}" title="Copy link" readonly="" data-modal-id="group-share-popup" />
+                  <input id="hw-share-copied-flag" type="text" value="0" />
+                  <div id="hw-share-copy-link-copied" class="hw-share-copy-link-copied">✓</div>
+                </div>
+                <div class="a2a_modal_body a2a_menu a2a-thanks" id="thanks">
+                  <div class="a2a_localize" data-a2a-localize="inner,ThanksForSharing">Thanks for sharing!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hw-share-tooltip-text-wrap">
+            <p><span class="hw-proxy-text-underline">To share with users that are connected to the institution’s/school’s network:</span>  Click &lt;<strong>Link</strong>&gt; button to copy the content permanent URL.</p> <br />
+            <p>
+						  <span class="hw-proxy-text-underline">To share a link in a Learning Management System (LMS) course (such as Blackboard, Canvas, Moodle, etc.) that will work for remote users as well as those connected to the school’s network:</span>
+              <ol>
+                <li><p>1. Contact <a href="mailto:customersuccess@bpseducation.com" >customersuccess@bpseducation.com </a> to confirm that your LMS has been set up correctly in our system. </p></li>
+                <ul><li>- Provide your school name and the link for your course in the email.</li></ul>
+                <li>2. Click &lt;<strong>Link</strong>&gt; button to copy the content permanent URL and paste into your course.</li>
+              </ol>
+            </p><br />
+            <p><span class="hw-proxy-text-underline">To share with remote users:</span> Click &lt;<strong>Proxy Link</strong>&gt; button to copy the content permanent URL with the added prefix for your institution's/school’s proxy server that will prompt users to log-in with their institution/school credentials in order to gain access to the content.</p>
+          </div><br />
+          <a class="a2a_button_copy_link" target="" href="{{ link_url }}" rel="nofollow noopener">
+            <span class="a2a_s_link a2a_img_text hw-share-link-only">Link</span>
+          </a> <br />
+          <a class="link-proxy" target="" href="{{ sigma_proxy_url }}" rel="nofollow noopener">
+            <span class="a2a_s_link a2a_img_text hw-share-proxy-link">Proxy Link</span>
+          </a>
+        {% endif %}
+        <div class="proxy-wrap">
+          <div class="hw-share-proxy-modal">
+            <div class="a2a_overlay" id="hw-share-proxy-overlay" ></div>
+            <div id="hw-share-proxy-modal" class="a2a_modal" role="dialog" tabindex="-1" aria-label="Copy link">
+              <div class="a2a_modal_body a2a_menu" id="hw-share-copy-link">
+                <span id="hw-share-link-icon" class="a2a_svg a2a_s_link">
+                  <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+	                  <path fill="#FFF" d="M24.4 21.18c0-.36-.1-.67-.36-.92l-2.8-2.8a1.24 1.24 0 0 0-.92-.38c-.38 0-.7.14-.97.43.02.04.1.12.25.26l.3.3.2.24c.08.12.14.24.17.35.03.1.05.23.05.37 0 .36-.13.66-.38.92a1.25 1.25 0 0 1-.92.37 1.4 1.4 0 0 1-.37-.03 1.06 1.06 0 0 1-.35-.18 2.27 2.27 0 0 1-.25-.2 6.82 6.82 0 0 1-.3-.3l-.24-.25c-.3.28-.44.6-.44.98 0 .36.13.66.38.92l2.78 2.8c.24.23.54.35.9.35.37 0 .68-.12.93-.35l1.98-1.97c.26-.25.38-.55.38-.9zm-9.46-9.5c0-.37-.13-.67-.38-.92l-2.78-2.8a1.24 1.24 0 0 0-.9-.37c-.36 0-.67.1-.93.35L7.97 9.92c-.26.25-.38.55-.38.9 0 .36.1.67.37.92l2.8 2.8c.24.25.55.37.92.37.36 0 .7-.13.96-.4-.03-.04-.1-.12-.26-.26s-.24-.23-.3-.3a2.67 2.67 0 0 1-.2-.24 1.05 1.05 0 0 1-.17-.35 1.4 1.4 0 0 1-.04-.37c0-.36.1-.66.36-.9.26-.26.56-.4.92-.4.14 0 .26.03.37.06.12.03.23.1.35.17.1.1.2.16.25.2l.3.3.24.26c.3-.28.44-.6.44-.98zM27 21.17c0 1.07-.38 2-1.15 2.73l-1.98 1.98c-.74.75-1.66 1.12-2.73 1.12-1.1 0-2-.38-2.75-1.14l-2.8-2.8c-.74-.74-1.1-1.65-1.1-2.73 0-1.1.38-2.04 1.17-2.82l-1.18-1.17c-.8.8-1.72 1.18-2.82 1.18-1.08 0-2-.36-2.75-1.12l-2.8-2.8C5.38 12.8 5 11.9 5 10.82c0-1.08.38-2 1.15-2.74L8.13 6.1C8.87 5.37 9.78 5 10.86 5c1.1 0 2 .38 2.75 1.15l2.8 2.8c.74.73 1.1 1.65 1.1 2.72 0 1.1-.38 2.05-1.17 2.82l1.18 1.18c.8-.8 1.72-1.2 2.82-1.2 1.08 0 2 .4 2.75 1.14l2.8 2.8c.76.76 1.13 1.68 1.13 2.76z"></path>
+                  </svg>
+                </span>
+                <input id="hw-share-copy-link-text" type="text" title="Copy link" readonly="" data-modal-id="group-share-popup" />
+                <input id="hw-share-copied-flag" type="text" value="0" />
+                <div id="hw-share-copy-link-copied" class="hw-share-copy-link-copied">✓</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ addtoany_html|raw }}
+        {% if sigma_proxy_url  and addtoany_html == '<a class="a2a_button_copy_link markup-item-link"><span class="fa fa-share" aria-hidden="true"></span> Share</a>' %}
+          <a class="link-proxy markup-item-link hw-share-proxy-link-chapter"><span class="fa fa-share" aria-hidden="true"></span>Proxy Link</a>
+          <div c lass="hw-share-proxy-tool-tip">
+            <p> The &lt;<strong>Proxy Link</strong>&gt; button displays the content permanent URL of AccessEngineering content with the added prefix for your institution's proxy server. Sharing this proxied URL will prompt users to log in with their institution/school credentials in order to gain access to the content.</p>
+          </div>
+        {% endif %}
+      {% endif %}
+      {% if universal_button_placement == 'after' %}
+        {{ universal_button }}
+      {% endif %}
+    </span>
+  {% else %}
+    <span class="a2a_kit a2a_kit_size_{{ buttons_size }} addtoany_list" data-a2a-url="{{ link_url }}" data-sigma-url="{{ sigma_proxy_url }}" data-a2a-title="{{ link_title }}">
+      {% if universal_button_placement == 'before' %}
+        {{ universal_button }}
+      {% endif %}
+      {% if addtoany_html %}
+        {% if addtoany_html != '<a class="a2a_button_copy_link markup-item-link"><span class="fa fa-share" aria-hidden="true"></span> Share</a>' %}
+          <div class="hw-share-div-wrap">
+            <p>Click  &lt;<strong>Link</strong>&gt; button to copy the content permanent URL.</p>
+            <p><span class="hw-proxy-text-italic">This link can be shared with users that are connected to the institution’s/school’s network and they will automatically have access to the content.</span></p>
+            <p>
+					    <span class="hw-proxy-text-underline">To share a link in a Learning Management System (LMS) course (such as Blackboard, Canvas, Moodle, etc.) that will work for remote users as well as those connected to the school’s network:</span>
+              <ol>
+                <li><p>1. Contact <a href="mailto:customersuccess@bpseducation.com" >customersuccess@bpseducation.com </a> to confirm that your LMS has been set up correctly in our system. </p></li>
+                <ul><li>- Provide your school name and the link for your course in the email.</li></ul>
+                <li>2. Click &lt;<strong>Link</strong>&gt; button to copy the content permanent URL and paste into your course.</li>
+              </ol>
+            </p>
+          </div>
+          <a class="a2a_button_copy_link" target="" href="#copy_link" rel="nofollow noopener"><span class="a2a_s_link a2a_img_text hw-share-link-only">Link</span></a><br />
+        {% endif %}
+        {{ addtoany_html|raw }}
+      {% endif %}
+      {% if universal_button_placement == 'after' %}
+        {{ universal_button }}
+      {% endif %}
+    </span>
+  {% endif %}
+{% endspaceless %}

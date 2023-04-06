@@ -1,0 +1,65 @@
+// Select
+//
+// Replaces the browser default select with a custom one, mostly pulled from
+// https://primer.github.io/.
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
+  font-family: $form-select-font-family;
+  @include font-size($form-select-font-size);
+  font-weight: $form-select-font-weight;
+  line-height: $form-select-line-height;
+  color: $primary;
+  background-color: $form-select-bg;
+  background-image: escape-svg($form-select-indicator);
+  background-repeat: no-repeat;
+  background-position: $form-select-bg-position;
+  background-size: $form-select-bg-size;
+  border: 1px solid $secondary-dark;
+  @include border-radius($form-select-border-radius, 0);
+  @include box-shadow($form-select-box-shadow);
+  appearance: none;
+  &:focus {
+    border-color: $form-select-focus-border-color;
+    outline: 0;
+    @if $enable-shadows {
+      @include box-shadow($form-select-box-shadow, $form-select-focus-box-shadow);
+    } @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: $form-select-focus-box-shadow;
+    }
+  }
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+    display: none;
+  }
+  &:disabled {
+    color: $form-select-disabled-color;
+    background-color: $form-select-disabled-bg;
+    border-color: $form-select-disabled-border-color;
+  }
+  // Remove outline from select box in FF
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $form-select-color;
+  }
+}
+.form-select-small-tablet {
+  padding-top: $form-select-padding-y-small-tablet;
+  padding-bottom: $form-select-padding-y-small-tablet;
+  padding-left: $form-select-padding-x-small-tablet;
+  @include font-size($form-select-font-size-small-tablet);
+}
+.form-select-large-tablet {
+  padding-top: $form-select-padding-y-large-tablet;
+  padding-bottom: $form-select-padding-y-large-tablet;
+  padding-left: $form-select-padding-x-large-tablet;
+  @include font-size($form-select-font-size-large-tablet);
+}
+
+
+

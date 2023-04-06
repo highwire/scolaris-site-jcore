@@ -1,0 +1,19 @@
+uuid: 0b205049-ddba-4a30-b445-1e4b595b8af5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.mime_type
+field_name: mime_type
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

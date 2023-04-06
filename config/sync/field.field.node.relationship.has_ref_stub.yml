@@ -1,0 +1,21 @@
+uuid: 62703464-c600-416a-a915-218e1f959ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_ref_stub
+    - node.type.relationship
+id: node.relationship.has_ref_stub
+field_name: has_ref_stub
+entity_type: node
+bundle: relationship
+label: has-ref-stub
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

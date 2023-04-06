@@ -1,0 +1,21 @@
+uuid: 256a72ce-e1e4-4f07-b4eb-2fbe55697f93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.fpage
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.fpage
+field_name: fpage
+entity_type: node
+bundle: item_cover
+label: fpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

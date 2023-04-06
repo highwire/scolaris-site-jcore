@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-12 col-medium-tablet-12 col-desktop-12">
+        {% include "@atoms/text/_heading.twig" with { 
+            heading: myaccount_top.badge_heading 
+        } only %}
+        {% include "@atoms/text/_heading.twig" with { 
+            heading: myaccount_top.heading 
+        } only %}
+        {% include "@atoms/text/_paragraph.twig" with { 
+            paragraph: myaccount_top.paragraph 
+        } only %}
+    </div>
+</div>
+<div class="my-account__list">         
+    {% include "@atoms/text/_heading.twig" with { 
+        heading: getlist.heading 
+    } only %}
+    {% include "@atoms/text/_paragraph.twig" with { 
+        paragraph: getlist.paragraph 
+    } only %}
+    {% include "@atoms/forms/_checkbox.twig" with { 
+        checkbox: getlist.checkbox 
+    } only %}
+</div>
+<div class="myaccount__submit">
+    {% include "@atoms/button/_button.twig" with { 
+        button: submit.button 
+    } only %}
+</div>

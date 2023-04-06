@@ -1,0 +1,21 @@
+uuid: 64b7a245-5e10-46fb-b8ed-8a16fe3dfe7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_title
+    - node.type.journal
+  module:
+    - text
+id: node.journal.issue_title
+field_name: issue_title
+entity_type: node
+bundle: journal
+label: issue-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 12cab515-2747-4dcc-a638-63dc00bad5f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.has_figures_or_tables
+field_name: has_figures_or_tables
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

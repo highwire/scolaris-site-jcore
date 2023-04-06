@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: video_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/media/_video.twig' %}
+  {% endblock content %}
+{% endembed %}

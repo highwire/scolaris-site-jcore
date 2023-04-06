@@ -1,0 +1,21 @@
+uuid: 616f44be-805f-44c2-8ee4-43f464c28027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_atom_release
+    - node.type.item_cover
+  module:
+    - datetime
+id: node.item_cover.date_atom_release
+field_name: date_atom_release
+entity_type: node
+bundle: item_cover
+label: date-atom-release
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

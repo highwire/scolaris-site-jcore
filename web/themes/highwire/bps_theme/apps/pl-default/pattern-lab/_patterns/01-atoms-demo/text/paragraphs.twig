@@ -1,0 +1,13 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: paragraph_multi_demo
+  }
+%}
+  {% block content %}
+    {% for paragraph in paragraphs %}
+        {% include "@atoms/text/_paragraph.twig" %}   
+    {% else %}
+        <p>Standard paragraph</p>
+    {% endfor %}
+  {% endblock content %}
+{% endembed %}

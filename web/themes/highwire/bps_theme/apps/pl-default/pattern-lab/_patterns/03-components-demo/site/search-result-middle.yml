@@ -1,0 +1,44 @@
+---
+organisms_only: true
+search_result_middle:
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: search-result__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: search-result__content-type
+      text: Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: search-result__heading
+      button:
+        href: "#"
+        title: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_description:
+  - paragraph:
+      class: search-result__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis
+        nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia
+        molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes,
+        facilisis metus primis pharetra cubilia lacus enim.
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title: Show full description
+      text: Show full description
+      class: search-result__toggle-click
+     
+  sourceLink:
+    href: "#"
+    title: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+    text: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante

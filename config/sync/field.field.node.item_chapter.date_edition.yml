@@ -1,0 +1,21 @@
+uuid: df076a51-55c8-4d19-aed9-35e1d6288fd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_edition
+    - node.type.item_chapter
+  module:
+    - datetime
+id: node.item_chapter.date_edition
+field_name: date_edition
+entity_type: node
+bundle: item_chapter
+label: date-edition
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

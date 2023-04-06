@@ -1,0 +1,8 @@
+{% if children %}
+{{ highwire_tabs_links }}
+<div{{ attributes }}>
+  {% block content %}
+  {{ children }}
+  {% endblock %}
+</div>
+{% endif %}

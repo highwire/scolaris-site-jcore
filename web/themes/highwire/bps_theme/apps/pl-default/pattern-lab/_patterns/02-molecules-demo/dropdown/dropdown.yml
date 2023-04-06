@@ -1,0 +1,17 @@
+dropdown:
+  id: 'dropdownMenuButton'
+  title: 'Dropdown example'
+  menu:
+  - value: Book
+    href: url1
+  - value: Journals
+    href: url2
+  - value: Reference
+    href: url3
+  # menu:
+  #   0: 'Item one'
+  #   1: 'Item two'
+  #   2: 'Item three'
+  #   3: 'dropdown_divider'
+  #   4: 'Item 4'
+  arrow: 'menu_arrow'  

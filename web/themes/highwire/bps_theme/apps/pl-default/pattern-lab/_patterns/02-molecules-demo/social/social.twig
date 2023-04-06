@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: social_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/social/_social.twig' %}
+  {% endblock content %}
+{% endembed %}

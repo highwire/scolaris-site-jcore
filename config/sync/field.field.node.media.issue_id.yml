@@ -1,0 +1,21 @@
+uuid: 52229b5c-4cf6-4389-8dde-8212b907b1ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_id
+    - node.type.media
+  module:
+    - text
+id: node.media.issue_id
+field_name: issue_id
+entity_type: node
+bundle: media
+label: issue-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,14 @@
+{% set index =  checkbox.index ? checkbox.index : loop.index %}
+
+<div class="form-check {{checkbox.formclass}}">
+  <input class="form-check-input " type="checkbox" name="{{ checkbox.name }}" id="{{ checkbox.prefix }}{{ index }}" value="{{ checkbox.value }}">
+  <label class="form-check-label " for="{{checkbox.prefix}}{{ index }}">
+	{% if icon.suffix %}
+		<i class="{{ icon.prefix }}-{{ icon.suffix }}"></i>
+	{% endif %}
+    {{ checkbox.label }}
+	{% if checkbox.countclass %}
+		<span class="{{ checkbox.countclass }}">{{ checkbox.count }}</span>
+	{% endif %}
+  </label>
+</div>

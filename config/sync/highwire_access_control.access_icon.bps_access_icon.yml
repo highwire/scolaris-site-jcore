@@ -1,0 +1,10 @@
+uuid: 5a558dc6-4739-4f16-be4e-99b8727767f2
+langcode: en
+status: true
+dependencies: {  }
+id: bps_access_icon
+label: 'bps access icon'
+access_control_rules:
+  - online_access
+  - full_text
+config: {  }

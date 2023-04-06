@@ -1,0 +1,19 @@
+uuid: d89cc897-f0e7-4d89-ba14-408907d5bf7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.title_text_linktitle
+    - field.storage.block_content.field_search_link_text
+id: block_content.title_text_linktitle.field_search_link_text
+field_name: field_search_link_text
+entity_type: block_content
+bundle: title_text_linktitle
+label: 'Search link text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

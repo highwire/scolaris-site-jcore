@@ -1,0 +1,21 @@
+uuid: 1e623c45-5115-47e3-8c74-1a73ea1441a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.elocation_id
+    - node.type.journal_volume
+  module:
+    - text
+id: node.journal_volume.elocation_id
+field_name: elocation_id
+entity_type: node
+bundle: journal_volume
+label: elocation-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: b492dfd0-fee2-4f78-b820-f89a7225877c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition
+    - node.type.item_part
+  module:
+    - text
+id: node.item_part.edition
+field_name: edition
+entity_type: node
+bundle: item_part
+label: edition
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

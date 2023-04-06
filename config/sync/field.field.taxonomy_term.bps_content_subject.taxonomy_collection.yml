@@ -1,0 +1,19 @@
+uuid: 19bf2905-17d7-40e8-a18e-2bf2b168f5a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.taxonomy_collection
+    - taxonomy.vocabulary.bps_content_subject
+id: taxonomy_term.bps_content_subject.taxonomy_collection
+field_name: taxonomy_collection
+entity_type: taxonomy_term
+bundle: bps_content_subject
+label: Collection
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+{% extends "@components/layouts/_two-column.twig" %}
+{% block main %}
+	{% include "@components/site/_cms-content.twig" with {
+		cms_items: cms_items,		
+		blockquote: blockquote,
+		cms_subitems: cms_subitems
+	} only %}
+{% endblock %}
+
+{% block sidebar %}
+	{% include "@components/sidebar/_sidebar.twig" with {
+		sidenavLoop: sidenavLoop
+	} only %}
+{% endblock %}

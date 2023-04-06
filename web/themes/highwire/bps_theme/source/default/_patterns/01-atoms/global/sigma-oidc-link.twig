@@ -1,0 +1,7 @@
+{% if url is not empty %}
+<a href="{{ url }}" class="{{ classes }}">{% spaceless %}
+  {% block link_content %}
+  {% if icon %}{% include ["@atoms/icons/icon--" ~ icon ~ ".twig", "@atoms/icons/icon.twig"] %}&nbsp;&nbsp;{% endif %}{{ title|default('Manage access') }}
+  {% endblock %}
+{% endspaceless %}</a>
+{% endif %}

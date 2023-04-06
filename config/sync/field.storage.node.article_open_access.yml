@@ -1,0 +1,18 @@
+uuid: 4b0cc00f-2c08-4819-a928-0976bb11ec49
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.article_open_access
+field_name: article_open_access
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

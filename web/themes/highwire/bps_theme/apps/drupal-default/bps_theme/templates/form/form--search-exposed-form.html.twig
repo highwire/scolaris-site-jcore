@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<div class="search">
+  <div class="container">
+    <div class="search__row">
+      <div class="col-12 col-desktop-10">
+        <form{{ attributes.addClass('d-flex input-group earch-filter-right') }}>
+          {{ element.form_build_id }}
+          {{ element.form_id }}
+          {{ element.form_token }}
+          {{ element.query }}
+          <div data-drupal-selector="edit-actions" class="form-actions form-group mx-3" id="edit-actions--2">
+            {{ element.actions.submit }}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

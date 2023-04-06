@@ -1,0 +1,11 @@
+{% if image.url|default(true) %}
+	<picture>
+		{% if source_media %}
+			{% for item in source_media %}
+				<source media="{{ item.img_media }}" srcset="{{ item.img_srcset }}">
+			{% endfor %}
+		{% endif %}
+		{% include "@atoms/images/_image.twig" %}
+	</picture>
+{% endif %}
+

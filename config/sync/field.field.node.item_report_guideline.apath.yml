@@ -1,0 +1,19 @@
+uuid: f326d3e9-f346-4762-adbf-a6a02f1c3a28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.apath
+    - node.type.item_report_guideline
+id: node.item_report_guideline.apath
+field_name: apath
+entity_type: node
+bundle: item_report_guideline
+label: Apath
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

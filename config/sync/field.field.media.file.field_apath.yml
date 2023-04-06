@@ -1,0 +1,21 @@
+uuid: 6ad9bfb5-0560-4761-9010-f80951220352
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_apath
+    - media.type.file
+_core:
+  default_config_hash: uwdQypa5smsDndusPYwOYJRDZH9NF3_D9kDJRKD4ek8
+id: media.file.field_apath
+field_name: field_apath
+entity_type: media
+bundle: file
+label: apath
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,63 @@
+// Accordion Setting:
+@import "accordion/accordion";
+
+// Banner Setting:
+@import "banner/banner";
+
+// Card Setting
+@import "card/card";
+
+// Carousal Setting:
+@import "carousal/carousal";
+
+// Footer Setting:
+@import "footer/footer";
+
+// Header Setting:
+@import "header/header";
+
+// Layout Setting:
+@import "layouts/layout";
+
+// forms Setting:
+@import "forms/login";
+@import "forms/search";
+
+// Modal Popup Setting:
+@import "modal/close";
+@import "modal/modal";
+
+// Sidebar Setting:
+@import "sidebar/sidebar";
+
+// Table Setting:
+@import "table/table";
+
+// Offcanvas Setting:
+@import "offcanvas/offcanvas";
+
+
+
+// --------------------------------- //
+
+// Custom Component Setting
+
+@import "site/home";
+
+@import "site/cms";
+
+@import "site/custom-collection";
+
+@import "site/subject-browse";
+
+@import "site/journal-browse";
+
+@import "site/journal-article";
+
+@import "site/journal-book-page";
+
+@import "site/search-results";
+
+@import "site/my-account";
+
+@import "site/table-of-content";

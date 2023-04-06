@@ -1,0 +1,24 @@
+uuid: 4ac90c30-cfeb-428f-a553-9ee973ddb7df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_contributors
+    - node.type.journal_article
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: contributors
+id: node.journal_article.hwmd_contributors
+field_name: hwmd_contributors
+entity_type: node
+bundle: journal_article
+label: 'HighWire Markup Display - Contributors'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

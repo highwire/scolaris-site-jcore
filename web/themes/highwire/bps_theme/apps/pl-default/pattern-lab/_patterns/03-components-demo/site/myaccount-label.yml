@@ -1,0 +1,172 @@
+---
+organisms_only: true
+myaccount_top:
+  badge_heading:
+    level: '6'
+    class: my-account__badge__title
+    text: My Account
+  heading:
+    level: '2'
+    class: my-account__main-heading
+    text: Labels
+  paragraph:
+    class: my-account__main-description
+    text: Manage your Labels.  
+myaccount_shortby:  
+  select:
+    labelcontent: Sort by
+    group: my-account__filter
+    labelclass: 
+    class: my-account__filter-form-select    
+    title: Select Title
+    name: Select Name
+    options:
+    - value: '1'
+      text: Newest first
+    - value: '2'
+      text: A - Z
+myaccount_middle:
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: my-account__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: my-account__add-date
+      text:  <span> Added on :</span>  09 June 2021
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: my-account__card-heading
+      button:
+        href: "#"
+        title: Title eros dictum 
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_link:  
+  - button:
+      type: button
+      togglemodal: modal
+      targetmodal: '#account-alertEditlabel'          
+      text: Edit
+      classes: my-account__edit
+  - button:
+      type: button
+      togglemodal: modal
+      targetmodal: '#account-alertDelete'          
+      text: Delete
+      classes: my-account__delete   
+  sourceLink:
+    href: "#"
+    title: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+    text: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+myaccount_bottom:
+  OrderbyBottomLeft:
+    class: 
+    content: Show
+  OrderbyBottomRight:
+    class: 
+    content: per page
+  pageBottomCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'
+addlabel:
+  heading:
+      level: '6'
+      class: my-account__addlabel__heading
+      text:  Organize your content by creating and applying one or more labels to an item.
+  button:
+      type: button
+      togglemodal: modal
+      targetmodal: '#account-alertAddlabel'  
+      text:  Add Label 
+      classes: my-account__addlabel__button
+myaccountlabel_add:
+  modalPopup:
+    modaltargetid: account-alertAddlabel
+    modal_type: modal-small-tablet
+    modalHeading:
+      level: 6
+      class: modal-title
+      text: My Account Add Label  
+    myaccount_addlabelContent:
+    - modalInput:
+        type: text
+        id: id
+        placeholder: Label Name 
+        style: '' 
+    closeButton:
+      info: Close
+      togglemodal: modal
+      type: button
+      style: secondary-light 
+      text: Cancel
+      closemodal: modal
+    saveButton:
+      type: button
+      style: primary 
+      text: Save
+myaccounts_delete:
+  modalPopup:
+    modaltargetid: account-alertDelete
+    modal_type: modal-small-tablet
+    modalHeading:
+      level: 6
+      class: modal-title
+      text:   
+    myaccount_deleteContent:
+    - alertheading:
+        level: '3'
+        text: Are you sure?
+      alertdesc:
+        text: Do you really want to delete these records? This process cannot be undone  
+    closeButton:
+      info: Close
+      togglemodal: modal
+      type: button
+      style: secondary-light 
+      text: Cancel
+      closemodal: modal
+    saveButton:
+      type: button
+      style: primary 
+      text: Delete       
+myaccountlabel_edit:
+  modalPopup:
+    modaltargetid: account-alertEditlabel
+    modal_type: modal-small-tablet
+    modalHeading:
+      level: 6
+      class: modal-title
+      text: My Account Edit Label
+    myaccount_editlabelContent:
+    - modalInput:
+        type: 
+        value: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+        id: id        
+        style: ''          
+    closeButton:
+      info: Close
+      togglemodal: modal
+      type: button
+      style: secondary-light 
+      text: Cancel
+      closemodal: modal
+    saveButton:
+      type: button
+      style: primary 
+      text: Save                

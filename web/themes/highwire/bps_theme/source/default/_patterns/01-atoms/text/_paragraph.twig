@@ -1,0 +1,8 @@
+{% if paragraph.text is not null %}
+  <p {% if paragraph.class is not null %}class="{{paragraph.class}}"{% endif %}>
+    {% if paragraph.label is not null %}
+      <span class="meta-label">{{paragraph.label}}</span>
+    {% endif %}
+    {{paragraph.text|raw}}
+  </p>
+{% endif %}

@@ -1,0 +1,10 @@
+uuid: 60cf7789-04a1-457c-81c5-2888b4060d2c
+langcode: en
+status: true
+dependencies: {  }
+id: abstract_search
+label: 'Abstract Search'
+profile_id: abstract
+configuration: {  }
+dw_logging: null
+exists_field: book_has_abstract

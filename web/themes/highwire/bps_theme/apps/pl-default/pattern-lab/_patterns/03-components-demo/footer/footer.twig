@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: footer_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/footer/_footer.twig' %}
+  {% endblock content %}
+{% endembed %}

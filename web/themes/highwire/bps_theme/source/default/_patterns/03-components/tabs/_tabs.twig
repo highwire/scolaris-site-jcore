@@ -1,0 +1,50 @@
+{% if organisms_only %}
+	<div class="container">
+{% endif %}
+	<ul class="nav nav-tabs" role="tablist">
+	    {% if navtabs_item is not empty %}
+			{% for item in navtabs_item %} 
+				{% if item.title is not empty %}
+					<li class="nav-item">
+						<a class="nav-link {{item.active}}" href="#tab-{{item.id}}" aria-controls="tab-{{item.id}}" role="tab" data-bs-toggle="tab">
+							{{item.title}}
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	</ul>
+	<div class="tab-content {{tabcontent_class}}">
+		{% for item in navtabs_content %} 
+			<div role="tabpanel" class="tab-pane {{item.class}} {{item.active}}" id="tab-{{item.id}}">
+				{% if item.myaccount_shortby %}
+					<div class="my-account__filter-wrapper">                
+						{% include "@atoms/forms/_select.twig" with { select: item.myaccount_shortby } only %}
+					</div>
+				{% endif %}
+				{% if item.journal_artical_cms %}
+					{{item.journal_artical_cms}}
+				{% endif %}
+				{% if item.journal_article_card %}
+					{% for i in item.journal_article_card %}	
+						<article class="article-section">
+							{% include "@components/card/_card-lr-column.twig" with {
+								card_lr_column: i.card_lr_column
+							} only %}							
+						</article>
+					{% endfor %}
+				{% endif %}
+				{% if item.book_listing_items %}
+					<article class="book-page-list">
+						{% include "@molecules/grouping/_listing-group.twig" with {
+							listgroupClass: item.book_listgroupClass,
+							listing_items: item.book_listing_items
+						} only %}
+					</article>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+{% if organisms_only %}
+	</div>
+{% endif %}

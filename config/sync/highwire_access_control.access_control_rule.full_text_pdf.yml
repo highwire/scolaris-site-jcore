@@ -1,0 +1,28 @@
+uuid: 79649a20-6788-4cfc-91ad-6d2f59751603
+langcode: en
+status: true
+dependencies: {  }
+id: full_text_pdf
+label: 'Full Text PDF'
+description: 'Access to full text pdf for item-bits content'
+rule_type: file
+role: full-text
+scope: download
+target: variant
+language: en
+content_type: application/pdf
+file_field: pdf
+file_field_bundles:
+  item_back_matter: item_back_matter
+  item_chapter: item_chapter
+  item_cover: item_cover
+  item_front_matter: item_front_matter
+  item_monograph: item_monograph
+  item_part: item_part
+  item_report_guideline: item_report_guideline
+  item_section: item_section
+  item_test_review: item_test_review
+ac_denied_action: source_redirect
+ac_denied_action_conf: {  }
+ac_denied_message: 'Log-in to access free PDF or view purchase options.'
+concurrency_limit_message: ''

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: accordion_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/accordion/_accordion.twig' %}
+  {% endblock content %}
+{% endembed %}

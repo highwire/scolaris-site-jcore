@@ -1,0 +1,19 @@
+uuid: 758be095-d80d-4281-a58d-2df1a87d9954
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.video_id
+field_name: video_id
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

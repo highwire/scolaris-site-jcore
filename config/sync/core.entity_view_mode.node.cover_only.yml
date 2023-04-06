@@ -1,0 +1,10 @@
+uuid: a503d1e7-400d-4b20-99af-22d184b9c32c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.cover_only
+label: 'Cover Only'
+targetEntityType: node
+cache: true

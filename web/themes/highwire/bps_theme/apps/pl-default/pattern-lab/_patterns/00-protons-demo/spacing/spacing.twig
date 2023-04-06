@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: spacing_demo
+  }
+%}
+  {% block content %}
+    {% include '@protons/spacing/_spacing.twig' %}
+  {% endblock content %}
+{% endembed %}

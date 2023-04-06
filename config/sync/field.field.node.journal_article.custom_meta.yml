@@ -1,0 +1,37 @@
+uuid: b88a1866-5c7e-4027-8aa2-bc1fcdb6b75a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.custom_meta
+    - node.type.journal_article
+  module:
+    - double_field
+id: node.journal_article.custom_meta
+field_name: custom_meta
+entity_type: node
+bundle: journal_article
+label: custom-meta
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

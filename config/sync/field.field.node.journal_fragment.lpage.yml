@@ -1,0 +1,21 @@
+uuid: 925a16de-1199-4539-b333-1ff04a40755a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.journal_fragment
+  module:
+    - text
+id: node.journal_fragment.lpage
+field_name: lpage
+entity_type: node
+bundle: journal_fragment
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

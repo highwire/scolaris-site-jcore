@@ -1,0 +1,21 @@
+uuid: dd446f91-1e0f-47ac-8a5c-17fded74f054
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition_id
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.edition_id
+field_name: edition_id
+entity_type: node
+bundle: item_monograph
+label: edition-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

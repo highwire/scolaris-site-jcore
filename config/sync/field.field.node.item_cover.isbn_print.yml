@@ -1,0 +1,21 @@
+uuid: 8f64b850-ea10-48b1-b839-fb22c4b54004
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_print
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.isbn_print
+field_name: isbn_print
+entity_type: node
+bundle: item_cover
+label: isbn-print
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

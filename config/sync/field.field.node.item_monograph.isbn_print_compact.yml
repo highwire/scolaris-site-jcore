@@ -1,0 +1,21 @@
+uuid: 12b67044-f915-4d99-a8bb-83356192b19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_print_compact
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.isbn_print_compact
+field_name: isbn_print_compact
+entity_type: node
+bundle: item_monograph
+label: isbn-print-compact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

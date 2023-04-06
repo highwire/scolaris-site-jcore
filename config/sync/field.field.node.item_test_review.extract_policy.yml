@@ -1,0 +1,19 @@
+uuid: 28d45da4-c64a-422d-99dd-b20eca370695
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.extract_policy
+    - node.type.item_test_review
+id: node.item_test_review.extract_policy
+field_name: extract_policy
+entity_type: node
+bundle: item_test_review
+label: 'Extract Policy'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

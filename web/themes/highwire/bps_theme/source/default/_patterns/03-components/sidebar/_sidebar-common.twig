@@ -1,0 +1,40 @@
+{% if backlink %}
+    <div class="sidebar-back">
+        {% include "@atoms/button/_anchor-link.twig" with {
+            href: backlink.href,
+            title: backlink.title,
+            text: backlink.text
+        } only %}
+    </div>
+{% endif %}
+{% if search_form %}
+    <div class="sidebar-search">		
+        {% include "@molecules/forms/_searchbar.twig" with search_form %} 
+    </div>
+{% endif %}
+<div class="sidebar">
+    {% if heading %}
+        {% include "@atoms/text/_heading-5.twig" with {
+            heading: heading
+        } only %}
+    {% endif %}
+    {% if listing_items %}
+        {% include "@molecules/grouping/_listing.twig" with {
+            listing_items: listing_items
+        } only %}
+    {% endif %}
+    {% if listing_checkbox %}
+        {% include "@molecules/grouping/_listing-checkbox.twig" with {
+            listing_checkbox: listing_checkbox
+        } only %}
+    {% endif %}
+    {% if showmore %}
+        <div class="show-more">
+            {% include "@atoms/button/_anchor-link.twig" with {
+                href: showmore.href,
+                title: showmore.title,
+                text: showmore.text
+            } only %}
+        </div>
+    {% endif %}
+</div>

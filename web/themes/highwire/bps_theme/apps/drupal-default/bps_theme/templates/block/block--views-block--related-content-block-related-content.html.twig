@@ -1,0 +1,44 @@
+{% if journals_sidebar %}
+  {% for item in journals_sidebar %}	
+    {% if item.show_related_block %}      
+      <div class="sidebar-article">
+        {% include "@atoms/text/_heading-5.twig" with {
+          heading: {
+            text: item.block_heading
+          }
+        } only %}
+        {% if item.related_article %}
+          {% for i in item.related_article %} 
+            <div class="sidebar-article-wrapper">          
+                {% if i.image %}
+                  <div class="sidebar-article-image">								
+                    {% include "@atoms/images/_image.twig" with {
+                      image: i.image
+                    } only %}
+                {% endif %}
+                  <div class="clearfix">
+                    {% if i.node_type %}
+                      {% include "@atoms/text/_heading-6.twig" with {
+                        heading: {
+                          text: i.node_type          
+                        }
+                      } only %}
+                    {% endif %}
+                    {% if i.node_title %}
+                      {% include "@atoms/button/_anchor-link.twig" with {
+                        text: i.node_title,
+                        href: i.node_link,
+                        title: i.node_title
+                      } only %}
+                    {% endif %}
+                  </div>
+                {% if i.image %}
+                </div>
+                {% endif %}
+            </div>
+          {% endfor %}						
+        {% endif %}      
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}

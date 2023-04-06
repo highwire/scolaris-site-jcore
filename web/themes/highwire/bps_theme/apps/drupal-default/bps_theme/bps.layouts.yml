@@ -1,0 +1,190 @@
+# Particle Layouts
+# @see apps/drupal-default/particle_theme/templates/layout/layout.html.twig
+particle_one_column:
+  label: 'Container Column'
+  category: 'Particle Columns: 1'
+  description: A single column layout.
+  class: '\Drupal\particle_helper\Plugin\Layout\ParticleLayout'
+  path: layout
+  template: layout
+  default_region: main
+  icon_map:
+    - [content]
+  regions:
+    main:
+      label: Particle Main Content
+      region_classes: ['layout__region', 'layout__region--main', 'w-full']
+
+particle_one_column_breakout:
+  label: 'Breakout Column'
+  category: 'Particle Columns: 1'
+  description: A single column layout that breaks out of the site container.
+  class: '\Drupal\particle_helper\Plugin\Layout\ParticleLayout'
+  path: layout
+  template: layout
+  default_region: main
+  icon_map:
+    - [content]
+  regions:
+    main:
+      label: Particle Main Content
+      region_classes: ['layout__region', 'layout__region--main', 'w-breakout']
+
+particle_two_column_3_1:
+  label: 'Two Columns: 3:1'
+  category: 'Particle Columns: 2'
+  description: A two column layout with 2/3 main and 1/3 aside sections.
+  class: '\Drupal\particle_helper\Plugin\Layout\ParticleLayout'
+  path: layout
+  template: layout
+  default_region: main
+  icon_map:
+    - [top]
+    - [main, main, aside]
+    - [bottom]
+  regions:
+    main:
+      label: Particle Main
+      region_classes:
+        [
+          'layout__region',
+          'layout__region--main',
+          'w-full',
+          'md:w-2/3',
+          'pr-6',
+          'md:pr-8',
+        ]
+    aside:
+      label: Particle Sidebar
+      region_classes:
+        ['layout__region', 'layout__region--aside', 'w-full', 'md:w-1/3']
+
+particle_three_column_1_1:
+  label: 'Three Columns: 1:1'
+  category: 'Particle Columns: 3'
+  description: A three column layout with equal 1/3 width columns.
+  class: '\Drupal\particle_helper\Plugin\Layout\ParticleLayout'
+  path: layout
+  template: layout
+  default_region: main
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [bottom]
+  regions:
+    first:
+      label: Particle First
+      region_classes:
+        [
+          'layout__region',
+          'layout__region--first',
+          'w-full',
+          'md:w-1/3',
+          'pr-6',
+          'md:pr-8',
+        ]
+    second:
+      label: Particle Second
+      region_classes:
+        [
+          'layout__region',
+          'layout__region--second',
+          'w-full',
+          'md:w-1/3',
+          'pr-6',
+          'md:pr-8',
+        ]
+    third:
+      label: Particle Third
+      region_classes:
+        ['layout__region', 'layout__region--third', 'w-full', 'md:w-1/3']
+
+particle_four_column_1_1:
+  label: 'Four Columns: 1:1'
+  category: 'Particle Columns: 4'
+  description: A four column layout with equal 1/4 width columns.
+  class: '\Drupal\particle_helper\Plugin\Layout\ParticleLayout'
+  path: layout
+  template: layout
+  default_region: main
+  icon_map:
+    - [top]
+    - [first, second, third, fourth]
+    - [bottom]
+  regions:
+    first:
+      label: Particle First
+      region_classes:
+        [
+          'layout__region',
+          'layout__region--first',
+          'w-full',
+          'md:w-1/3',
+          'pr-6',
+          'md:pr-8',
+        ]
+    second:
+      label: Particle Second
+      region_classes:
+        [
+          'layout__region',
+          'layout__region--second',
+          'w-full',
+          'md:w-1/3',
+          'pr-6',
+          'md:pr-8',
+        ]
+    third:
+      label: Particle Third
+      region_classes:
+        [
+          'layout__region',
+          'layout__region--third',
+          'w-full',
+          'md:w-1/3',
+          'pr-6',
+          'md:pr-8',
+        ]
+    fourth:
+      label: Particle Fourth
+      region_classes:
+        ['layout__region', 'layout__region--fourth', 'w-full', 'md:w-1/3']
+bps_layout__lhs:
+  label: BPS 2 Column with LHS
+  category: BPS Layouts
+  theme_hook: bps_page_layout
+  default_region: main
+  row_classes:
+    main:
+      - row--2col-lhs
+  regions:
+    content_top:
+      label: Content top
+      row: top
+      class: col-xs-12
+    lhs:
+      label: Left-Hand Sidebar
+      class: col-xs-12
+      row: main
+    main:
+      label: Main content
+      class: col-xs-12
+      row: main
+    content_bottom:
+      label: Content bottom
+      row: bottom
+      class: col-xs-12
+bps_layout__front:
+  label: BPS Front page
+  category: BPS Layouts
+  theme_hook: bps_page_layout
+  default_region: main
+  regions:
+    main:
+      label: Main content
+      class: main-container home
+      row: main
+    content_bottom:
+      label: Tools Grid
+      row: bottom
+      class: col-xs-12 homepage__tools

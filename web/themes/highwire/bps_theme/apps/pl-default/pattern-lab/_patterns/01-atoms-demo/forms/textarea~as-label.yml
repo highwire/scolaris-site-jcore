@@ -1,0 +1,6 @@
+---
+textarea:
+  labelcontent: Textarea Label
+  class: form-control
+  placeholder: Textarea Placeholder
+  name: Textarea Name

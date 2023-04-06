@@ -1,0 +1,11 @@
+uuid: 549a6e4e-b508-438e-912c-b35f79e655fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.society
+id: node.society
+target_entity_type_id: node
+target_bundle: society
+default_langcode: site_default
+language_alterable: false

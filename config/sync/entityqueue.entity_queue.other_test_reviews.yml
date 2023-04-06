@@ -1,0 +1,25 @@
+uuid: 72b3ad0e-437e-4b02-ac7d-5db17dc5f209
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: other_test_reviews
+label: 'Other Test Reviews'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      item_test_review: item_test_review
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,21 @@
+uuid: c7fb4cb8-97c6-4188-92d4-15a14244e4de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.description
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.description
+field_name: description
+entity_type: node
+bundle: item_monograph
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,24 @@
+buttons_size: 32
+additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_linkedin\"></a>\r\n<a class=\"a2a_button_google_plus\"></a>\r\n"
+additional_css: ".a2a_i[href=\"/#aol_mail\"], .a2a_i[href=\"/#yahoo_mail\"] {\r\n  display: none;\r\n}"
+additional_js: "a2a_config.callbacks.push({\r\n  share: function(data) {\r\n    // Do what you need with the data object here\r\n    if (data.service == 'Copy Link' && data.node) {\r\n      var modal = data.node.closest('.modal.in');\r\n      if (modal) {\r\n        jQuery(document).off('focusin.bs.modal');\r\n        var linkText = a2a.gEl('a2a_copy_link_text');\r\n        if (modalID = modal.getAttribute('id')) {\r\n          linkText.setAttribute('data-modal-id', modalID);\r\n          a2a.add_event(linkText, \"click\", function(e) {\r\n            var modalID = this.getAttribute('data-modal-id');\r\n            var modalElem = document.getElementById(modalID);\r\n            this.removeAttribute('data-modal-id');\r\n            if (modalElem) {\r\n              jQuery(document).on('focusin.bs.modal');\r\n              var modal = jQuery(modalElem).data('bs.modal');\r\n              modal.enforceFocus();\r\n              setTimeout(function(){jQuery(modalElem).trigger('focus')}, 700);\r\n            }\r\n          });\r\n        }\r\n      }\r\n    }\r\n  }\r\n});\r\na2a_config.menu_type = \"mail\";\r\na2a_config.exclude_services = [\"aol_mail\", \"yahoo_mail\"]; // Broken - using CSS as a hack until this is fixed.\r\na2a_config.thanks = { postShare: false, ad: false };\r\n"
+universal_button: none
+custom_universal_button: ''
+universal_button_placement: before
+no_3p: false
+entities:
+  media: 1
+  node: 1
+  comment: 1
+  block_content: 0
+  contact_message: 0
+  entity_subqueue: 0
+  file: 0
+  menu_link_content: 0
+  path_alias: 0
+  search_api_task: 0
+  shortcut: 0
+  taxonomy_term: 0
+  user: 0
+_core:
+  default_config_hash: 9YPlBuinIKLe5jVEf-aIhZvKFn77i18yD4CrNR0BbVQ

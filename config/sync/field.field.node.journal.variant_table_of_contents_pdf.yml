@@ -1,0 +1,27 @@
+uuid: 7ad9e27d-b4fe-4b4a-8c04-2161e1a08c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.variant_table_of_contents_pdf
+    - node.type.journal
+  module:
+    - file
+id: node.journal.variant_table_of_contents_pdf
+field_name: variant_table_of_contents_pdf
+entity_type: node
+bundle: journal
+label: variant-table-of-contents-pdf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,20 @@
+uuid: b76275a4-1863-466d-a1a1-a5e9cfeb97f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_foxycart_customer_id
+field_name: field_foxycart_customer_id
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

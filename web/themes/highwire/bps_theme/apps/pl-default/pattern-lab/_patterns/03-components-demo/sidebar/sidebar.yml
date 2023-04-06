@@ -1,0 +1,85 @@
+---
+sidenavLoop:
+  heading:
+    level: '5'
+    class: sidebar__heading
+    text: Heading 
+  listgroupClass: sidebar   
+  listing_items:
+  - urls_class: sidebar__listgroup_item
+    active: active
+    urls: "#"
+    content: The current link item
+    sub_group:
+    - urls: "#"
+      content: Sub Link 1
+    - urls: "#"
+      content: Sub Link 2
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: A second link item
+    sub_group:
+    - urls: "#"
+      content: Sub Link 1
+    - urls: "#"
+      content: Sub Link 2
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: A third link item
+    sub_group:
+    - urls: "#"
+      content: Sub Link 1
+    - urls: "#"
+      content: Sub Link 2
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: A fourth link item
+    sub_group:
+    - urls: "#"
+      content: Sub Link 1
+    - urls: "#"
+      content: Sub Link 2
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: ''
+    loopradio:
+    - radiobox:
+        formclass: mb-2 
+        name: publish-date
+        value: include-all
+        label: Include all
+        index: 1
+    - radiobox:
+        formclass: mb-2
+        name: publish-date
+        value: custom-date
+        label: Include date published
+        index: 2
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: ''
+    filter_tag:
+    - checkbox:
+        formclass: mb-2
+        name: filter-tag
+        value: practical-filter
+        label: Practical applications
+        index: 1
+        countclass: float-end
+        count: 123
+    - checkbox:
+        formclass: mb-2
+        name: filter-tag
+        value: video-filter
+        label: Videos
+        index: 2
+        countclass: float-end
+        count: 105
+    - checkbox:
+        formclass: mb-2
+        name: filter-tag
+        value: audio-filter
+        label: Audio
+        index: 3
+        countclass: float-end
+        count: 85

@@ -1,0 +1,21 @@
+uuid: d4104629-f726-44f4-b5ab-f3a947239b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.journal
+  module:
+    - text
+id: node.journal.lpage
+field_name: lpage
+entity_type: node
+bundle: journal
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

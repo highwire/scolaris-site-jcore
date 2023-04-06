@@ -1,0 +1,85 @@
+// Lists
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+@mixin list-body {
+  font-size: $font-size-base;
+  line-height: $line-height-base;  
+  list-style: none;
+  & li::before {
+    content: "\2022";
+    color: $info;
+    font-weight: bold;
+    display: inline-block;
+    width: .8rem;
+    margin-left: -1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    line-height: 1.5rem;
+  }
+}
+
+@mixin list-bodyOrder {
+
+  & li {
+    counter-increment: list;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    list-style: none;
+  }
+  /* Outout the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+  & li::before {   
+    content: counter(list) ".";
+    color: $info;    
+    display: inline-block;
+    width: .8rem;
+    margin-left: -1rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: 1.5rem;
+  }
+}
+
+@mixin list-largeOrder {
+  & li {
+    counter-increment: list;
+    font-size: 1.313rem;
+    line-height: 1.875rem;
+    list-style: none;
+  }
+  & li::before {   
+    content: counter(list) ".";
+    color: $info;    
+    display: inline-block;   
+    margin-left: -1.3rem;    
+    vertical-align: middle;
+    line-height: 1.875rem;
+    width: 1.2rem;
+  }
+}
+@mixin list-largeUnorder {
+  & li {   
+    font-size: 1.313rem;
+    line-height: 1.875rem;
+    list-style: none;
+  }
+  & li::before {   
+    content: "\2022";
+    color: $info;    
+    display: inline-block;   
+    margin-left: -1.3rem;    
+    vertical-align: middle;
+    line-height: 1.875rem;
+    font-size: 2rem;
+    width: 1.1rem;
+  }
+}
+
+
+
+
+
+

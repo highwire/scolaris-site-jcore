@@ -1,0 +1,25 @@
+uuid: ae027055-782f-49bf-9181-1c7268eb9f46
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c878a43a-19fc-4dd5-90b4-2f707371a457'
+  module:
+    - block_content
+  theme:
+    - bps
+id: footersocialicon_2
+theme: bps
+region: footer_1
+weight: -7
+provider: null
+plugin: 'block_content:c878a43a-19fc-4dd5-90b4-2f707371a457'
+settings:
+  id: 'block_content:c878a43a-19fc-4dd5-90b4-2f707371a457'
+  label: 'Footer Social icon'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

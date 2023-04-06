@@ -1,0 +1,10 @@
+uuid: a4db60b5-6a99-41cd-b886-013719f10171
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.other_test_reviews
+label: 'Test Reviews'
+targetEntityType: node
+cache: true

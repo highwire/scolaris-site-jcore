@@ -1,0 +1,9 @@
+name: BPS Ecommerce
+description: Foxycart integration for BPS.
+package: BPS
+dependencies:
+  - highwire_content
+  - highwire_ecommerce
+  - highwire_access_control
+type: module
+core: 8.x

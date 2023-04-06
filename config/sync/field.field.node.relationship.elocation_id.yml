@@ -1,0 +1,21 @@
+uuid: b761b301-2742-4727-a989-554909d862b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.elocation_id
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.elocation_id
+field_name: elocation_id
+entity_type: node
+bundle: relationship
+label: elocation-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

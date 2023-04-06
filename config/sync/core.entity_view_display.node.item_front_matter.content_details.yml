@@ -1,0 +1,210 @@
+uuid: 133d4aa7-4f56-4fc8-8f17-96c619db259f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_details
+    - field.field.node.item_front_matter.apath
+    - field.field.node.item_front_matter.archived
+    - field.field.node.item_front_matter.atom_id
+    - field.field.node.item_front_matter.authors_full_name
+    - field.field.node.item_front_matter.binary
+    - field.field.node.item_front_matter.book_has_abstract
+    - field.field.node.item_front_matter.book_has_body
+    - field.field.node.item_front_matter.book_part_label
+    - field.field.node.item_front_matter.book_part_type
+    - field.field.node.item_front_matter.chapter_type
+    - field.field.node.item_front_matter.children
+    - field.field.node.item_front_matter.contributors_xml
+    - field.field.node.item_front_matter.corpus
+    - field.field.node.item_front_matter.counts
+    - field.field.node.item_front_matter.cover_image
+    - field.field.node.item_front_matter.date_atom_release
+    - field.field.node.item_front_matter.date_atom_updated
+    - field.field.node.item_front_matter.date_edition
+    - field.field.node.item_front_matter.date_ppub
+    - field.field.node.item_front_matter.date_print_publication
+    - field.field.node.item_front_matter.description
+    - field.field.node.item_front_matter.disclaimer
+    - field.field.node.item_front_matter.doi
+    - field.field.node.item_front_matter.edition
+    - field.field.node.item_front_matter.edition_id
+    - field.field.node.item_front_matter.editors_full_name
+    - field.field.node.item_front_matter.extract_policy
+    - field.field.node.item_front_matter.fpage
+    - field.field.node.item_front_matter.hwmd_abstract_book
+    - field.field.node.item_front_matter.hwmd_full_text_book
+    - field.field.node.item_front_matter.hwmd_table_of_contents_book_
+    - field.field.node.item_front_matter.instructor_material
+    - field.field.node.item_front_matter.isbn_ebook
+    - field.field.node.item_front_matter.isbn_ebook_compact
+    - field.field.node.item_front_matter.isbn_print
+    - field.field.node.item_front_matter.isbn_print_compact
+    - field.field.node.item_front_matter.item_type
+    - field.field.node.item_front_matter.keywords
+    - field.field.node.item_front_matter.lpage
+    - field.field.node.item_front_matter.mime_type
+    - field.field.node.item_front_matter.parent
+    - field.field.node.item_front_matter.parent_book
+    - field.field.node.item_front_matter.pdf
+    - field.field.node.item_front_matter.permissions
+    - field.field.node.item_front_matter.publisher
+    - field.field.node.item_front_matter.registered_test
+    - field.field.node.item_front_matter.related_objects
+    - field.field.node.item_front_matter.section_title
+    - field.field.node.item_front_matter.subject_groups
+    - field.field.node.item_front_matter.subtitle
+    - field.field.node.item_front_matter.supp_content_type
+    - field.field.node.item_front_matter.supplementary_material
+    - field.field.node.item_front_matter.taxonomy_terms
+    - field.field.node.item_front_matter.title_plain
+    - field.field.node.item_front_matter.type_id
+    - node.type.item_front_matter
+  module:
+    - field_group
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_action_tools:
+      children:
+        - hw_tag_sign_up
+        - hw_marker_sign_up
+        - highwire_citations_download
+        - addtoany
+        - ccc_permissions_link
+      parent_name: ''
+      weight: 5
+      format_type: highwire_html_list
+      format_settings:
+        id: ''
+        classes: ''
+        list_type: ul
+      label: 'Action Tools'
+      region: content
+id: node.item_front_matter.content_details
+targetEntityType: node
+bundle: item_front_matter
+mode: content_details
+content:
+  addtoany:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  authors_full_name:
+    type: text_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  ccc_permissions_link:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  doi:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  highwire_citations_download:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  hw_marker_sign_up:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  hw_tag_sign_up:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  parent:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  title_plain:
+    type: text_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  access_icon_bps_access_icon: true
+  apath: true
+  archived: true
+  atom_id: true
+  binary: true
+  book_has_abstract: true
+  book_has_body: true
+  book_part_label: true
+  book_part_type: true
+  bps_focus_view: true
+  bps_toc_pager: true
+  chapter_type: true
+  children: true
+  contributors_xml: true
+  corpus: true
+  counts: true
+  cover_image: true
+  date_atom_release: true
+  date_atom_updated: true
+  date_edition: true
+  date_ppub: true
+  date_print_publication: true
+  description: true
+  disclaimer: true
+  edition: true
+  edition_id: true
+  editors_full_name: true
+  extract_policy: true
+  fpage: true
+  hw_alerts_sign_up: true
+  hwmd_abstract_book: true
+  hwmd_full_text_book: true
+  hwmd_table_of_contents_book_: true
+  instructor_material: true
+  isbn_ebook: true
+  isbn_ebook_compact: true
+  isbn_print: true
+  isbn_print_compact: true
+  item_type: true
+  keywords: true
+  langcode: true
+  lpage: true
+  mime_type: true
+  parent_book: true
+  pdf: true
+  permissions: true
+  prev_next_pager: true
+  publisher: true
+  registered_test: true
+  related_objects: true
+  section_title: true
+  subject_groups: true
+  subtitle: true
+  supp_content_type: true
+  supplementary_material: true
+  taxonomy_terms: true
+  type_id: true

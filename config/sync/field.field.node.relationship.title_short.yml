@@ -1,0 +1,21 @@
+uuid: c04f0d49-430c-4a75-8221-21dd0c93e404
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_short
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.title_short
+field_name: title_short
+entity_type: node
+bundle: relationship
+label: title-short
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

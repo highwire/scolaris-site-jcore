@@ -1,0 +1,21 @@
+uuid: 57180e6d-7ac6-4eae-b418-f965e7e4fed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cover_date
+    - node.type.media
+  module:
+    - text
+id: node.media.cover_date
+field_name: cover_date
+entity_type: node
+bundle: media
+label: cover-date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

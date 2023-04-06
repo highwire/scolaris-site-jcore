@@ -1,0 +1,8 @@
+uuid: bc57ec5c-1ac8-4f60-8887-7ee55a489665
+langcode: en
+status: true
+dependencies: {  }
+id: footer-social-menu
+label: 'Footer Social Menu'
+description: ''
+locked: false

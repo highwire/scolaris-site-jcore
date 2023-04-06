@@ -1,0 +1,22 @@
+uuid: 8359ab93-146a-42ee-af21-fc2b29a3a154
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_metatag
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  highwire_metatag:
+    metatags_profile: ''
+    metatags_view_mode: ''
+name: item_report_guideline
+type: item_report_guideline
+description: 'Auto generated HighWire content type for item-report-guideline'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
