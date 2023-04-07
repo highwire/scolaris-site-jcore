@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %} 
+
+    <div class="banner" style="background-image:url({{file_url(row.content['#row']._entity.field_banner_image.entity.uri.value)}})">		
+	    <div class="container">
+	      <div class="row">
+		      <div class="col-large-tablet-8 col-desktop-6">            
+            {% if row.content['#row']._entity.field_banner_caption[0].value|raw %}
+              {% include "@atoms/text/_heading-6.twig" with {
+                heading: {
+                  text : row.content['#row']._entity.field_banner_caption[0].value|raw
+                }
+              } only %}
+            {% endif %}
+            {% if row.content['#row']._entity.field_bannerheading[0].value|raw %}
+              {% include "@atoms/text/_heading-1.twig" with {
+                heading: {
+                  text : row.content['#row']._entity.field_bannerheading[0].value|raw
+                }
+              } only %}
+            {% endif %}
+            {% if row.content['#row']._entity.field_b[0].value|raw %}
+              {% include "@atoms/text/_paragraph.twig" with {
+                paragraph: {
+                  text : row.content['#row']._entity.field_b[0].value|raw
+                }
+              } only %}
+            {% endif %}
+          </div>
+	      </div>
+	    </div>
+    </div> 
+{% endfor %}

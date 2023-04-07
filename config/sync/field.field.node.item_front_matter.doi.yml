@@ -1,0 +1,21 @@
+uuid: 59a24dcb-4f78-4b96-9543-e4f1c56f0d56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.doi
+field_name: doi
+entity_type: node
+bundle: item_front_matter
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

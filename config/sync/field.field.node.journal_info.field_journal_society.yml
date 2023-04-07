@@ -1,0 +1,25 @@
+uuid: 6967fba9-68fa-4c96-8fbb-5ea9bbae655f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal_society
+    - node.type.journal_info
+id: node.journal_info.field_journal_society
+field_name: field_journal_society
+entity_type: node
+bundle: journal_info
+label: Society
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: attach_to_journal_info_entity_ref
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

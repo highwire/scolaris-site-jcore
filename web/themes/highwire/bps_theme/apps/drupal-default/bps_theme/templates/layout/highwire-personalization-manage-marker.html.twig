@@ -1,0 +1,50 @@
+<div{{attributes}}>
+	<div{{content_attributes}}>
+		{% include "@components/site/_search-result-middle.twig" with {
+            favorite_loop: [{
+                image: { 
+                    src: result.img,
+                    href: result.url, 
+                    title: result.title
+                },
+                fav_action: {
+                    date: marker_link_date,
+                    href: marker_link,
+                    modaltargetid: modaltargetid,
+                    text: "Remove from favourites" ,
+                    popupdata: marker_popupdata
+                },
+                card_heading: [{ 
+                    heading: {
+                        text: result.type, 
+                        level:6
+                    }
+                }],
+                card_heading_link: [{ 
+                    anchorHead: {
+                        level:4 , 
+                        button: { 
+                            href: result.url, 
+                            title: result.title, 
+                            text: result.title 
+                        } 
+                    }
+                }],
+                card_description: [{ 
+                    paragraph: { 
+                        class: 'search-result__description', 
+                        text: result.short_description
+                    } 
+                }],
+                card_link: result.img,
+                sourceLink: { 
+                    href: result.url, 
+                    title: '', 
+                    text: result.title 
+                },
+                access_icon_placeholder: access_icon_placeholder
+            }]
+        } only %}
+		{{ children }}
+	</div>
+</div>

@@ -1,0 +1,5 @@
+name: BPS Core
+description: Core functionality for the Scolaris BPS site
+package: 'Scolaris BPS'
+type: module
+core: 8.x

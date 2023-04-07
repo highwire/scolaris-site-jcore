@@ -1,0 +1,53 @@
+<div id="{{carousel.id}}" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner container">
+		<div class="carousel-indicators">
+			{% for item in carousel.bs_item %}
+				<button type="button" data-bs-target="#{{carousel.id}}" data-bs-slide-to="{{item.current}}" class="{{item.active}}" aria-current="{{item.status}}"></button>
+			{% endfor %}
+			<button class="carousel-indicators-next" type="button" data-bs-target="#{{carousel.id}}" data-bs-slide="next">
+        <svg viewBox="0 0 238.003 238.003">
+					<path d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"></path>
+				</svg>
+			</button>
+		</div>
+    {% for item in carousel.slide_item %}
+			<div class="carousel-item {{item.active}}">
+				<div class="row">
+					<div class="col-12 col-medium-tablet-5 carousel-left">
+						{% if item.top_caption %}
+							{% include "@atoms/text/_heading-6.twig" with {
+								heading: item.top_caption				
+							} only %}
+						{% endif %}
+						{% if item.heading %}
+							{% include "@atoms/text/_heading-1.twig" with {
+								heading: item.heading				
+							} only %}
+						{% endif %}
+						{% if item.description %}
+							{% include "@atoms/text/_paragraph.twig" with { 
+								paragraph: item.description 
+							} only %}
+						{% endif %}
+						{% if item.button %}
+							{% include "@atoms/button/_button.twig" with { 
+								button: item.button 
+							} only %}
+						{% endif %}
+					</div>
+					<div class="col-12 col-medium-tablet-7">
+						<div class="carousel-cover-image">						
+							{% include "@atoms/images/_image.twig" with {
+								image: {
+									title: item.title,
+									alt: item.alt,
+									src: item.src
+								}
+							} only %}
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+  </div>
+</div>

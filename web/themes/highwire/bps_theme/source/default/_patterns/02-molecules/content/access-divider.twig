@@ -1,0 +1,80 @@
+{% if user_access %}
+  <div class="clearfix access-divider"></div>
+{% else %}
+  <div class="accordion" id="{{ panelId|default('access-panel') }}">
+    <div class="accordion-item login-accordion">
+      {% include "@molecules/accordion/_accordion-head.twig" with {
+        "id": panelId|default('access-panel'),
+        "accordion_level": "3",
+        "heading_content": "Access this content",
+        "accordionLeftIconBg": "leftBg article__accordian_wrapper__lock",
+        "accordionLeftIcon": "feather-lock",
+        "accordionRightIconBg": "right-toggle-icon article__accordian_wrapper__toggle",
+        "collapsed": "collapsed article__accordian_wrapper",
+        "showhide": ""
+      } only %}
+      <div id="collapse-{{ panelId|default('access-panel') }}" class="accordion-collapse collapse" data-bs-parent="#{{ panelId|default('access-panel') }}" aria-labelledby="heading-{{ panelId|default('access-panel') }}">
+        <div class="accordion-body p-0 bg-secondary-light">
+          {% set show_container_right = user_access_already is not empty or pricing_items is not empty or purchase_children is not empty  ? true : false %}
+          <div class='journals-login-register-content {% if show_container_right or show_jnl_subscription_message %}access-container--2col{% else %}access-container--1col{% endif %}'>
+            <div class="accordian_wrap">
+              <div class='accordian_wrap__accordian_login'>
+                <div class="article__accrodian_righthead">
+                  <div class="access-already-title">
+                    {{ "Should have access already?"|t }}
+                  </div>
+                  <a href="/FAQs" target="_blank">Read our FAQs</a>
+                </div>
+                <div class="access-container__account-menu">
+                  {% if not logged_in %}
+                    {% include "@atoms/global/login-link.twig" with { classes: "article__accrodian_rightbtn" } %}
+                  {% endif %}
+                </div>
+              </div>
+              {% if show_container_right or show_jnl_subscription_message %}
+                <div class='accordian_wrap__accordian_info'>
+                  {% block no_access_content %}
+                    <div{{ attributes }} class="{{ classes }} login-register-content-left">
+                      <div class="login-register-wrapper">
+                        {% if show_jnl_subscription_message %}
+                          <div class="subscription-msg">
+                            <h3>Subscribe to print and online journals via credit card:</h3>
+                            <p>
+                              <a href="http://www.bpspub.com/journals.html" target="_blank">www.bpspub.com/journals.html</a>
+                            </p>
+                            <h3>Contact our subscription office:</h3>
+                            <p>
+                              BPS Publishing<br>
+                              Subscription Office<br>
+                              PO Box 361<br>
+                              Birmingham AL 35201-0361<br>
+                              Ph: 1-800-633-4931<br>
+                              Outside the US/Canada: 205-995-1567<br>
+                              Fax: 205-995-1588<br>
+                              Email: <a href="mailto:bpspub@subscriptionoffice.com" target="_blank">bpspub@subscriptionoffice.com</a>
+                            </p>
+                          </div>
+                        {% else %}
+                          <div class="subscription-box">
+                            {{ user_access_already }}
+                            {{ pricing_items }}
+                            {% if purchase_children.title %}
+                              <h3>{{ purchase_children.title }}</h3>
+                            {% endif %}
+                            {% if purchase_children.text %}
+                              <p>{{ purchase_children.text }}</p>
+                            {% endif %}
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endblock %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

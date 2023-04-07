@@ -1,0 +1,10 @@
+uuid: 51f7cd3f-06ce-472d-ba99-e89757ac129f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.collection_detail_short_desc
+label: 'Collection Detail Short Desc'
+targetEntityType: node
+cache: true

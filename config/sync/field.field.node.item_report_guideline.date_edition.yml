@@ -1,0 +1,21 @@
+uuid: 42f0857a-1fdb-423e-9bd7-7a8144aa46e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_edition
+    - node.type.item_report_guideline
+  module:
+    - datetime
+id: node.item_report_guideline.date_edition
+field_name: date_edition
+entity_type: node
+bundle: item_report_guideline
+label: date-edition
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: 84e938d0-b34a-410d-bfc5-535e773535b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.relationship
+id: node.relationship.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: relationship
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

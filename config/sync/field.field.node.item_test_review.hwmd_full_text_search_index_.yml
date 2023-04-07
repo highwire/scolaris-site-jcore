@@ -1,0 +1,24 @@
+uuid: 6c10fb8c-1242-45cf-b6ff-c1816d916ca1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_full_text_search_index_
+    - node.type.item_test_review
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: full_text_search_index_
+id: node.item_test_review.hwmd_full_text_search_index_
+field_name: hwmd_full_text_search_index_
+entity_type: node
+bundle: item_test_review
+label: 'HighWire Markup Display - Full text (search index)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

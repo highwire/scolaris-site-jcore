@@ -1,0 +1,9 @@
+<form class="d-flex input-group {% if search_form.search_filter_left %} {{search_form.search_filter_left}} {% endif %} {% if search_form.search_filter_right %} {{search_form.search_filter_right}} {% endif %}" {% if search_form.search_autocomplete %} id="{{ search_form.search_autocomplete }}" {% endif %}>
+	<div class="{{search_form.search_position}} {{search_form.icon_search}}">
+		{% include "@atoms/forms/_input-text.twig"  with 
+		{field: search_form.field}
+		only %}		
+	</div>
+	{% include "@atoms/button/_button.twig" with { button : search_form.button } only %}
+</form>
+

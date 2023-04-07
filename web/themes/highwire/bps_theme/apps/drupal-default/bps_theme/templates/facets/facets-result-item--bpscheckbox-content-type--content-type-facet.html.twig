@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a facet result item.
+ *
+ * Available variables:
+ * - value: The item value.
+ * - raw_value: The raw item value.
+ * - show_count: If this facet provides count.
+ * - count: The amount of results.
+ * - is_active: The item is active.
+ * - facet: The facet for this result item.
+ *   - id: the machine name for the facet.
+ *   - label: The facet label.
+ *
+ * @ingroup themeable
+ */
+#}
+{% set content_types = {
+    'Include all': 'Include all',
+    'journal': 'Periodicals',
+    'journal_article': 'Periodical articles',
+    'item_report_guideline': 'Reports & guidelines',
+    'item_chapter': 'Chapters',
+    'item_monograph': 'Monographs',
+    'item_test_review': 'Test reviews',
+    'journal_issue': 'Periodical issues',
+    'journal_volume': 'Periodical volume'
+} %}
+{% if is_active %}
+  <span class="facet-item__status js-facet-deactivate">(-)</span>
+{% endif %}
+<span class="facet-item__value">{{ content_types[value] }}</span>
+{% if show_count %}
+  <span class="facet-item__count" {{ count == 0 ? 'disabled="disabled"':''}}>{{ count }}</span>
+{% endif %}

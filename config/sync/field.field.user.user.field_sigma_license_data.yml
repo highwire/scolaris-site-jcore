@@ -1,0 +1,22 @@
+uuid: 5b744ae7-362f-40ce-a4f0-a29f96a364b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sigma_license_data
+  module:
+    - user
+_core:
+  default_config_hash: _iA72o6odDA6mUCvllnyyhfNL3Kjky6K0R6Xwrf8hS0
+id: user.user.field_sigma_license_data
+field_name: field_sigma_license_data
+entity_type: user
+bundle: user
+label: 'Sigma License Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

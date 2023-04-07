@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: journal_article_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/site/_journal-article.twig' %}
+  {% endblock content %}
+{% endembed %}

@@ -1,0 +1,21 @@
+uuid: ab5f7c00-e98a-4260-bc51-757ba717f296
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.journal_issue
+id: node.journal_issue.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: journal_issue
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

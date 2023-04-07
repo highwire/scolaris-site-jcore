@@ -1,0 +1,10 @@
+{% embed "@molecules/global/highwire-tabs.twig" %}
+{% block content %}
+  {{ parent() }}
+  {% if sidebar %}
+  <div class="col--rhs col-xs-12">
+    {{ sidebar }}
+  </div>
+  {% endif %}
+{% endblock %}
+{% endembed %}

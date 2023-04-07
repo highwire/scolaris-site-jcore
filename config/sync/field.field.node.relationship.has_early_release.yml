@@ -1,0 +1,21 @@
+uuid: df21bf5d-f6a0-4d29-b2ac-c31a21a4c9e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_early_release
+    - node.type.relationship
+id: node.relationship.has_early_release
+field_name: has_early_release
+entity_type: node
+bundle: relationship
+label: has-early-release
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 244c1b9f-348c-43b6-93f1-0f75b5931404
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: hw_content
+label: 'hw content'
+type: 'canonical_entities:node'
+pattern: '[node:cpath_long]'
+selection_criteria:
+  21332b84-896a-45af-aefb-fcdce610ecbc:
+    id: node_type
+    bundles:
+      journal: journal
+      journal_article: journal_article
+      journal_fragment: journal_fragment
+      journal_issue: journal_issue
+      journal_volume: journal_volume
+      media: media
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 21332b84-896a-45af-aefb-fcdce610ecbc
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,69 @@
+// One Column Approach
+.bs-1col {
+  @extend .row;
+  .bs-region {
+    @extend .column-order;
+    @extend .col-12;
+  }
+}
+
+// Two Column left and right
+.bs-2col-section {
+    @extend .row;
+    &--25-75 {
+        .bs-region {
+            @extend .column-order;
+            @extend .col-12;
+            &--first {                
+                @extend .col-medium-tablet-6;
+                @extend .col-large-tablet-4;
+                @extend .col-desktop-4;
+                flex: 0 0 auto !important;
+            }
+            &--second {
+                @extend .col-medium-tablet-6;
+                @extend .col-large-tablet-8;
+                @extend .col-desktop-8;
+                flex: 0 1 auto !important;
+            }
+        }
+    }
+    &--50-50 {
+        .bs-region {
+            @extend .column-order;
+            @extend .col-12;    
+            &--first {
+                @extend .col-medium-tablet-12;
+                @extend .col-large-tablet-6;
+                @extend .col-desktop-6;
+            }    
+            &--second {
+                @extend .col-medium-tablet-12;
+                @extend .col-large-tablet-6;
+                @extend .col-desktop-6;
+            }
+        }
+    }
+}
+
+// Two column top, left, right and bottom
+.bs-2col {
+    @extend .row;
+    .bs-region {
+        @extend .column-order;
+        @extend .col-12;
+        &--left {
+            @extend .col-medium-tablet-5;
+            @extend .col-large-tablet-4;
+            @extend .col-desktop-3;
+            flex: 0 0 auto;
+            margin-bottom: 1.5rem;
+        }
+        &--right {
+            @extend .col-medium-tablet-7;
+            @extend .col-large-tablet-8;
+            @extend .col-desktop-9;
+            flex: 0 1 auto;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<div class="form-check form-switch {{switch.class}}">
+	{% if switch.labelcontent %}
+		<label class="form-check-label">{{switch.labelcontent}}</label>
+	{% endif %}
+	<input class="form-check-input" type="checkbox" id="{{switch.id}}" {% if switch.checked %}checked="{{switch.checked}}"{% endif %}>
+	<span class="toggle-text" data-label-on="{{switch.enable}}" data-label-off="{{switch.disable}}"></span>
+</div>

@@ -1,0 +1,21 @@
+uuid: 4b6e6136-2b49-4a62-baa1-407ae9b6d458
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.book_part_type
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.book_part_type
+field_name: book_part_type
+entity_type: node
+bundle: item_report_guideline
+label: book-part-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

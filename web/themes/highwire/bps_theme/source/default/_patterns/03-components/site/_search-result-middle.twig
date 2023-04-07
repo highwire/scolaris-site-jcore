@@ -1,0 +1,60 @@
+{% for item in favorite_loop %}
+	<div class="row">
+		<div class="col-12 favorite-left">
+			{% include "@atoms/images/_image.twig" with {
+				image: item.image
+			} only %}
+		</div>
+		<div class="col-12 favorite-right">
+			{% if item.fav_action.date and item.fav_action.text %}
+				<div class="favorite-action">
+					<span class="item-date">{{ item.fav_action.date }}</span>
+					{% include "@components/modal/_modal-popup.twig" with {
+						modalPopup:{
+							class: 'highwire-modal-trigger',
+							modalButton_click: true,
+							modaltargetid: item.fav_action.modaltargetid,
+							buttonText: item.fav_action.text,
+							modalHeading: {
+								text: 'Remove favourites',
+							},
+							popupdata: item.fav_action.popupdata,
+							saveButton: {
+								class: 'btn btn-danger',
+								href: item.fav_action.href,
+								text: 'Delete'
+							},
+							closeButton: {
+								classes: 'btn-primary',
+								text: 'Cancel',
+								closemodal: 'modal'
+							}
+						}
+					} only %}
+				</div>
+			{% endif %}
+
+			{% include "@molecules/card/_card-body.twig" with {
+				card_heading: item.card_heading,
+				card_heading_link: item.card_heading_link,
+				card_description: item.card_description,
+				card_link: item.card_link
+			} only %}
+
+			{% if item.access_icon_placeholder %}
+				<div class="search-content-type">
+					<span>{{ item.access_icon_placeholder }}</span>
+				</div>
+			{% endif %}
+
+			{% if item.source %}
+				<div class="source-link">
+					<span> Source:</span>
+					{% include "@atoms/button/_button.twig" with {
+						button: item.sourceLink
+					} only %}
+				</div>
+				{% endif %}
+		</div>
+	</div>
+{% endfor %}

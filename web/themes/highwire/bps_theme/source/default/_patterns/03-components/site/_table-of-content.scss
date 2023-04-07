@@ -1,0 +1,45 @@
+.page-node-type-item-monograph,
+.page-node-type-item-report-guideline,
+.page-node-type-item-chapter,
+.page-node-type-item-front-matter,
+.page-node-type-item-back-matter {
+  .item-list__toc {
+    li {
+      border: none !important;
+      h2 {
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 400;
+        font-family: $font-family-sans-serif;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+        a {
+          font-size: 1.25rem;
+          line-height: 1.6;
+          display: block;
+          color: $primary;
+        }
+      }
+      ul {
+        margin-left: 30px;
+        margin-bottom: 15px;
+      }
+      &.toc-expanded {
+        >article>h2>a {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.page-node-type-item-chapter {
+  #edit-group-monograph-contents > div > article > h2 {
+		display: none;
+	}
+}
+.page-node-type-item-front-matter,
+.page-node-type-item-back-matter {
+  #edit-group-contents > div > article > h2 {
+    display: none;
+  }
+}

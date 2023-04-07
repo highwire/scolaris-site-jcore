@@ -1,0 +1,38 @@
+uuid: 00e77f0e-9e91-4ea7-9f5b-aeb78c74de27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.variant_small_image
+    - node.type.journal_volume
+  module:
+    - image
+id: node.journal_volume.variant_small_image
+field_name: variant_small_image
+entity_type: node
+bundle: journal_volume
+label: variant-small-image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler_settings: {  }
+field_type: image

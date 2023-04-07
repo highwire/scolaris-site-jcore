@@ -1,0 +1,21 @@
+uuid: 9bcb21e5-babf-459e-a768-54f1157945ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.member_network
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.member_network
+field_name: member_network
+entity_type: node
+bundle: item_monograph
+label: member-network
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

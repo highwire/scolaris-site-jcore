@@ -1,0 +1,44 @@
+{% include "@components/card/_card-lr-column.twig" with {
+  card_lr_column:[{
+    left_col_width: 'article__card-image',
+    middle_col_width: 'article__card-content',
+    leftimage:{
+      title: cover_image_title,
+      alt: cover_image_alt,
+      href: url,
+      src: cover_image_uri
+    },
+    card_heading_link: [{
+      anchorHead: {
+        level: 5,
+        class: "article__heading",
+        button: {
+          href: url,
+          text: html_entity_decoded_title
+        }
+      }
+    }],
+    card_description:[{
+      paragraph:{
+        class: 'article__authorname',
+        label:'Edited by: ',
+        text: journal_editors
+      }
+    }],
+    card_type_item:[{
+      label:'ISSN',
+      value:journal.eissn,
+      card_status:'(online)'
+    }],
+    card_link:[{
+      href: '#',
+      class:'article__btn show-click-toggle',
+      text:'Show description'
+    }, {
+      href: current_issue_link['#url'],
+      class:'article__btn-calender-icon',
+      text:'Latest issue'
+    }],
+    card_toggle: journal_description
+  }]
+} only %}

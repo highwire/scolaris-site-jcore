@@ -1,0 +1,21 @@
+uuid: 9854de1f-522a-4eee-ae89-eb309dd03c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.children
+    - node.type.item_front_matter
+id: node.item_front_matter.children
+field_name: children
+entity_type: node
+bundle: item_front_matter
+label: children
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+{% for item in cms_items %}
+	{% include "@atoms/text/_heading.twig" with {
+		heading: item.heading
+	} only %}
+	{% for desc in item.cms_description %}
+		{% include "@atoms/text/_paragraph.twig" with {
+			paragraph: desc.paragraph
+		} only %}
+	{% endfor %}	
+{% endfor %}
+{% include "@atoms/text/_blockquote.twig"with {
+		blockquote: blockquote
+	} only %}
+{% for item in cms_subitems %}
+	{% include "@atoms/text/_heading.twig" with {
+		heading: item.heading
+	} only %}
+	{% for desc in item.cms_description %}
+		{% include "@atoms/text/_paragraph.twig" with {
+			paragraph: desc.paragraph
+		} only %}
+	{% endfor %}	
+{% endfor %}

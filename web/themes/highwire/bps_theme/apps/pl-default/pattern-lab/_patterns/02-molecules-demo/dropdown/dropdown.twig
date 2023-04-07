@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: dropdown_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/dropdown/_dropdown.twig' %}
+  {% endblock content %}
+{% endembed %}

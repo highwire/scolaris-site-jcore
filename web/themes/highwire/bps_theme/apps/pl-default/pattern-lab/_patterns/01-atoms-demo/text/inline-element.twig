@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: inline_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/text/_inline-element.twig' %}
+  {% endblock content %}
+{% endembed %}

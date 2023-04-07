@@ -1,0 +1,9 @@
+<picture>
+	{% include "@atoms/images/_image.twig" with {
+		image: {
+			src: image.src,
+			alt: image.alt,
+			title: image.title
+		}
+	} only %}
+</picture>

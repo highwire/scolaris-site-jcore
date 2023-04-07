@@ -1,0 +1,16 @@
+<table class="table table-border">
+	<thead>
+		{% embed "@molecules/table/_table-head.twig" %}
+			{% block heading %}
+				{{th.content}}
+			{% endblock %}
+		{% endembed %}
+	</thead>
+	<tbody>
+		{% for item in table_item %}
+			{% include "@molecules/table/_table-body.twig" with {
+				contents: item.td_loop
+			} only %}					
+		{% endfor %}
+	</tbody>
+</table>

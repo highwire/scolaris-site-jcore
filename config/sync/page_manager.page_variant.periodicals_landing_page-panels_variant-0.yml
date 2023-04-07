@@ -1,0 +1,144 @@
+uuid: 1ea26426-4d9d-45b9-aa85-0885f462add5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.periodicals_landing_page
+    - system.menu.main
+    - views.view.all_periodicals
+  content:
+    - 'block_content:landing_page_header:fa9fc498-00d3-4e54-9004-2edf1913eaf0'
+  module:
+    - adnuntius
+    - block_content
+    - panels
+    - system
+    - views
+id: periodicals_landing_page-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    08b71c50-bf74-48c6-ad8c-63ca33b49c34:
+      id: 'block_content:fa9fc498-00d3-4e54-9004-2edf1913eaf0'
+      label: 'Periodical Listing Page Header'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: right
+      weight: -1
+      uuid: 08b71c50-bf74-48c6-ad8c-63ca33b49c34
+      context_mapping: {  }
+    ffc26c8a-193b-49b6-93a0-1b90e0f46922:
+      id: 'system_menu_block:main'
+      label: 'Main navigation'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: -2
+      uuid: ffc26c8a-193b-49b6-93a0-1b90e0f46922
+      context_mapping: {  }
+    fe9d6db6-c775-489b-a8a8-acbf024f3af3:
+      id: 'views_block:all_periodicals-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 0
+      uuid: fe9d6db6-c775-489b-a8a8-acbf024f3af3
+      context_mapping: {  }
+    f5892284-3aef-4a95-8d5b-e4cc4407930b:
+      id: adnuntius_block
+      label: 'Slot 1 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: f5892284-3aef-4a95-8d5b-e4cc4407930b
+      auid: '0000000000221579'
+      invocation_method: div
+      context_mapping: {  }
+    088644c6-c9e4-4f9e-8dc0-0ff0fd0558b7:
+      id: adnuntius_block
+      label: 'Slot 2 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 088644c6-c9e4-4f9e-8dc0-0ff0fd0558b7
+      auid: 000000000022157a
+      invocation_method: div
+      context_mapping: {  }
+    c860059c-bc7a-4237-ad31-79ec658bd7d9:
+      id: adnuntius_block
+      label: 'Slot 3 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: c860059c-bc7a-4237-ad31-79ec658bd7d9
+      auid: 000000000022157c
+      invocation_method: div
+      context_mapping: {  }
+    ecac6425-9ca0-4652-99f0-627f28d6f68e:
+      id: adnuntius_block
+      label: 'Slot 4 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: ecac6425-9ca0-4652-99f0-627f28d6f68e
+      auid: 000000000022157d
+      invocation_method: div
+      context_mapping: {  }
+    88b204aa-e5bd-4e83-8139-b01a99cd4f9b:
+      id: adnuntius_block
+      label: 'Slot 5 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 88b204aa-e5bd-4e83-8139-b01a99cd4f9b
+      auid: '0000000000221588'
+      invocation_method: div
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 444dea3c-9cad-4b09-b44f-bbc314cb4401
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+  page_title: Periodicals
+  storage_type: page_manager
+  storage_id: periodicals_landing_page-panels_variant-0
+  builder: standard
+page: periodicals_landing_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,13 @@
+{% include "@components/site/_journal-browse-carousal.twig" with {		
+	journal_browse_carousal: [{
+        heading: {
+            text: heading_registered
+        },
+        card_link_items: registered
+    }, {
+        heading: {
+            text: heading_unregistered
+        },
+        card_link_items: unregistered
+    }]
+} only %}

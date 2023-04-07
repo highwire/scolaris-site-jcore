@@ -1,0 +1,21 @@
+uuid: b20a3f3c-5446-46c7-881e-b3922982e281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.type_id
+    - node.type.item_part
+  module:
+    - text
+id: node.item_part.type_id
+field_name: type_id
+entity_type: node
+bundle: item_part
+label: type-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 8bbf1ab8-90e0-46fc-b1ca-3484b569206b
+langcode: en
+status: true
+dependencies: {  }
+id: collection_detail_short_desc_profile
+label: 'Collection Detail Short Desc Profile'
+profile_id: abstract
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: truncate
+      processor_config:
+        config:
+          max_length: '300'
+          word_safe: '1'
+          min_wordsafe_length: '10'
+          add_ellipsis: '1'
+          strip_tags: '1'
+          allowable_tags: '<p><ul><ol><em><strong><span><h4><h5><h6><cite><code>'
+          text_collapsed: 'Show full content'
+          text_expanded: 'Hide full content'
+          toggle_full_text: 0
+    weight: '1'
+dw_logging: null
+exists_field: ''

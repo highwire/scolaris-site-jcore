@@ -1,0 +1,37 @@
+uuid: 9511b26c-d2ff-4c17-88a3-91484a4a5baf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.test_publisher
+    - node.type.item_monograph
+  module:
+    - double_field
+id: node.item_monograph.test_publisher
+field_name: test_publisher
+entity_type: node
+bundle: item_monograph
+label: test-publisher
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

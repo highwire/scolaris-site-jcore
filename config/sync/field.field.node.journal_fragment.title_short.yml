@@ -1,0 +1,21 @@
+uuid: 516fb9f6-1933-41ae-bfd4-097888597eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_short
+    - node.type.journal_fragment
+  module:
+    - text
+id: node.journal_fragment.title_short
+field_name: title_short
+entity_type: node
+bundle: journal_fragment
+label: title-short
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

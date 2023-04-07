@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: headerc_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/header/_header.twig' %}
+  {% endblock content %}
+{% endembed %}

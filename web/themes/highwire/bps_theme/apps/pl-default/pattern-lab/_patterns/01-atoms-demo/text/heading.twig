@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: heading_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/text/_heading.twig' %}
+  {% endblock content %}
+{% endembed %}

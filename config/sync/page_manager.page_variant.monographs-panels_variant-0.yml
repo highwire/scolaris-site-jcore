@@ -1,0 +1,155 @@
+uuid: 461bfb58-f5db-48cf-aadb-540db8825ed1
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.monographs
+    - system.menu.main
+    - views.view.bjep_monograph_other
+    - views.view.bjep_monograph_series
+  content:
+    - 'block_content:title_text_linktitle:1238c276-aaeb-4981-ac97-c0362f874e8e'
+  module:
+    - adnuntius
+    - block_content
+    - panels
+    - system
+    - views
+id: monographs-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    c9fd2d11-3c02-463e-a379-c72df3258205:
+      id: 'block_content:1238c276-aaeb-4981-ac97-c0362f874e8e'
+      label: 'Monographs browse introduction area'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: right
+      weight: -1
+      uuid: c9fd2d11-3c02-463e-a379-c72df3258205
+      context_mapping: {  }
+    ccbffff1-5b5c-4c10-9759-a4f7e935f1f9:
+      id: 'system_menu_block:main'
+      label: 'Main navigation'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: -4
+      uuid: ccbffff1-5b5c-4c10-9759-a4f7e935f1f9
+      context_mapping: {  }
+    9d8a6aa2-7d8a-427b-9f0f-ab52b78e274d:
+      id: 'views_block:bjep_monograph_series-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 0
+      uuid: 9d8a6aa2-7d8a-427b-9f0f-ab52b78e274d
+      context_mapping: {  }
+    917df428-711d-4b2a-8694-e69d8c2b30c7:
+      id: 'views_block:bjep_monograph_other-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 1
+      uuid: 917df428-711d-4b2a-8694-e69d8c2b30c7
+      context_mapping: {  }
+    7691bef2-e1cd-4d13-b3e2-4f69ae30ab03:
+      id: adnuntius_block
+      label: 'Slot 1 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 7691bef2-e1cd-4d13-b3e2-4f69ae30ab03
+      auid: '0000000000221579'
+      invocation_method: div
+      context_mapping: {  }
+    ccd9955c-d2fe-4ae8-8388-326344e287c2:
+      id: adnuntius_block
+      label: 'Slot 2 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: ccd9955c-d2fe-4ae8-8388-326344e287c2
+      auid: 000000000022157a
+      invocation_method: div
+      context_mapping: {  }
+    fdcf5414-5ca2-44cd-bb09-7c0d44e25c8a:
+      id: adnuntius_block
+      label: 'Slot 3 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: fdcf5414-5ca2-44cd-bb09-7c0d44e25c8a
+      auid: 000000000022157c
+      invocation_method: div
+      context_mapping: {  }
+    e31dfa66-fbf3-41ad-b6ad-0dcd288e3962:
+      id: adnuntius_block
+      label: 'Slot 4 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: e31dfa66-fbf3-41ad-b6ad-0dcd288e3962
+      auid: 000000000022157d
+      invocation_method: div
+      context_mapping: {  }
+    d8da1709-664d-4d2c-8278-1d31f7d41c6b:
+      id: adnuntius_block
+      label: 'Slot 5 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: d8da1709-664d-4d2c-8278-1d31f7d41c6b
+      auid: '0000000000221588'
+      invocation_method: div
+      context_mapping: {  }
+  id: panels_variant
+  uuid: bbb8dc60-6b1e-4826-9101-577468e7e3a5
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes: {  }
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: monographs-panels_variant-0
+  builder: standard
+page: monographs
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

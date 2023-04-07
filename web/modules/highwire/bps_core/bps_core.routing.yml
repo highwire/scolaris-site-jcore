@@ -1,0 +1,6 @@
+bps_core.download.item_type_content_export:
+  path: '/bps-download/content-export/{item_type}'
+  defaults:
+    _controller: '\Drupal\bps_core\Controller\Download::downloadItemTypeExport'
+  requirements:
+    _permission: 'access content'

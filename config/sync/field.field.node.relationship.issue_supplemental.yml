@@ -1,0 +1,21 @@
+uuid: 61c82189-6ca4-4cf1-8a2f-2ab66b145cda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_supplemental
+    - node.type.relationship
+id: node.relationship.issue_supplemental
+field_name: issue_supplemental
+entity_type: node
+bundle: relationship
+label: issue-supplemental
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

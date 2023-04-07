@@ -1,0 +1,21 @@
+uuid: a5a7ac3b-516b-4532-ad86-ad4fdae4f501
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.page_count
+    - node.type.journal_fragment
+  module:
+    - text
+id: node.journal_fragment.page_count
+field_name: page_count
+entity_type: node
+bundle: journal_fragment
+label: page-count
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

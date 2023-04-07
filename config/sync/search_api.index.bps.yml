@@ -1,0 +1,537 @@
+uuid: 2b1cee80-b4a5-4a90-9bcf-9c8ce788a2c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - node
+    - search_api
+    - highwire_search
+  config:
+    - field.storage.node.apath
+    - field.storage.node.article_series_title
+    - field.storage.node.article_type
+    - field.storage.node.authors_full_name
+    - field.storage.node.chapter_type
+    - field.storage.node.children
+    - field.storage.node.title_plain
+    - field.storage.node.corpus
+    - field.storage.node.date_epub_original
+    - field.storage.node.doi
+    - field.storage.node.early_release
+    - field.storage.node.extract_policy
+    - field.storage.node.issue
+    - field.storage.node.issue_title
+    - field.storage.node.journal_abbrv_title
+    - field.storage.node.journal_eissn
+    - field.storage.node.journal_pissn
+    - field.storage.node.journal_title
+    - field.storage.node.keywords
+    - field.storage.node.member_network
+    - field.storage.node.parent
+    - field.storage.node.date_ppub
+    - field.storage.node.registered_test
+    - field.storage.node.subtitle
+    - field.storage.node.summary
+    - field.storage.node.taxonomy_terms
+    - field.storage.node.test_publisher
+    - field.storage.node.test_type
+    - field.storage.node.title_short
+    - field.storage.node.version_current
+    - field.storage.node.volume
+    - search_api.server.bps_solr
+    - core.entity_view_mode.node.abstract_search
+    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.full_text_markup
+    - core.entity_view_mode.node.search_short_description
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    advanced:
+      index_prefix: ''
+id: bps
+name: BPS
+description: ''
+read_only: false
+field_settings:
+  abstract_search:
+    label: 'Abstract Search'
+    property_path: rendered_item
+    type: text
+    boost: !!float 3
+    configuration:
+      roles:
+        administrator: administrator
+      view_mode:
+        'entity:node':
+          item_chapter: abstract_search
+          item_monograph: abstract_search
+          item_report_guideline: abstract_search
+          item_test_review: abstract_search
+          journal: abstract_search
+          journal_article: abstract_search
+          journal_fragment: ''
+          journal_info: search_short_description
+          journal_issue: ''
+          journal_volume: ''
+  apath:
+    label: Apath
+    datasource_id: 'entity:node'
+    property_path: apath
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.apath
+  article_series_title:
+    label: article-series-title
+    datasource_id: 'entity:node'
+    property_path: article_series_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.article_series_title
+  article_type:
+    label: article-type
+    datasource_id: 'entity:node'
+    property_path: article_type
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.article_type
+  article_type_facet:
+    label: article-type-facet
+    datasource_id: 'entity:node'
+    property_path: article_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.article_type
+  authors_full_name:
+    label: authors-full-name
+    datasource_id: 'entity:node'
+    property_path: authors_full_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.authors_full_name
+  authors_full_name_facet:
+    label: authors-full-name-facet
+    datasource_id: 'entity:node'
+    property_path: authors_full_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.authors_full_name
+  chapter_type_facet:
+    label: chapter-type-facet
+    datasource_id: 'entity:node'
+    property_path: chapter_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.chapter_type
+  children_facet:
+    label: children-Facet
+    datasource_id: 'entity:node'
+    property_path: children
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.children
+  corpus:
+    label: Corpus
+    datasource_id: 'entity:node'
+    property_path: corpus
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.corpus
+  date_epub_original:
+    label: date-epub-original
+    datasource_id: 'entity:node'
+    property_path: date_epub_original
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.date_epub_original
+  date_ppub_facet:
+    label: 'Published Date (Facets)'
+    datasource_id: 'entity:node'
+    property_path: date_ppub
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.date_ppub
+  doi:
+    label: doi
+    datasource_id: 'entity:node'
+    property_path: doi
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.doi
+  early_release:
+    label: early-release
+    datasource_id: 'entity:node'
+    property_path: early_release
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.early_release
+  extract_policy:
+    label: 'Extract Policy'
+    datasource_id: 'entity:node'
+    property_path: extract_policy
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.extract_policy
+  first:
+    label: 'keywords » Text'
+    datasource_id: 'entity:node'
+    property_path: 'keywords:first'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.keywords
+  fulltext_search:
+    label: 'Full Text Search'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        administrator: administrator
+      view_mode:
+        'entity:node':
+          item_chapter: full_text_markup
+          item_monograph: full_text_markup
+          item_report_guideline: full_text_markup
+          item_test_review: full_text_markup
+          journal: full_text_markup
+          journal_article: full_text_markup
+          journal_fragment: ''
+          journal_info: full
+          journal_issue: ''
+          journal_volume: ''
+  issue:
+    label: issue
+    datasource_id: 'entity:node'
+    property_path: issue
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.issue
+  issue_facet:
+    label: issue-facet
+    datasource_id: 'entity:node'
+    property_path: issue
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.issue
+  issue_title:
+    label: issue-title
+    datasource_id: 'entity:node'
+    property_path: issue_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.issue_title
+  journal_abbrv_title:
+    label: journal-abbrv-title
+    datasource_id: 'entity:node'
+    property_path: journal_abbrv_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.journal_abbrv_title
+  journal_eissn:
+    label: journal-eissn
+    datasource_id: 'entity:node'
+    property_path: journal_eissn
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.journal_eissn
+  journal_pissn:
+    label: journal-pissn
+    datasource_id: 'entity:node'
+    property_path: journal_pissn
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.journal_pissn
+  journal_title:
+    label: journal-title
+    datasource_id: 'entity:node'
+    property_path: journal_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.journal_title
+  journal_title_facet:
+    label: journal-title-facet
+    datasource_id: 'entity:node'
+    property_path: journal_title
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.journal_title
+  member_network:
+    label: member-network
+    datasource_id: 'entity:node'
+    property_path: member_network
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.member_network
+  member_network_facet:
+    label: member-network-facet
+    datasource_id: 'entity:node'
+    property_path: member_network
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.member_network
+  parent_facet:
+    label: parent-Facet
+    datasource_id: 'entity:node'
+    property_path: parent
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.parent
+  publication_title_facet:
+    label: publication-title-facet
+    datasource_id: 'entity:node'
+    property_path: title_plain
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.title_plain
+  registered_test:
+    label: registered-test
+    datasource_id: 'entity:node'
+    property_path: registered_test
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.registered_test
+  source_facet:
+    label: 'Content source (Facets)'
+    datasource_id: 'entity:node'
+    property_path: title_plain
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.title_plain
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  subtitle:
+    label: subtitle
+    datasource_id: 'entity:node'
+    property_path: subtitle
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.subtitle
+  summary:
+    label: summary
+    datasource_id: 'entity:node'
+    property_path: summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.summary
+  taxonomy_terms:
+    label: taxonomy-terms
+    datasource_id: 'entity:node'
+    property_path: taxonomy_terms
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.taxonomy_terms
+  taxonomy_terms_facet:
+    label: taxonomy-terms-facet
+    datasource_id: 'entity:node'
+    property_path: taxonomy_terms
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.taxonomy_terms
+  test_publisher_facet:
+    label: 'test-publisher » Facet'
+    datasource_id: 'entity:node'
+    property_path: 'test_publisher:first'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.test_publisher
+  test_type_facet:
+    label: 'test-type » Facet'
+    datasource_id: 'entity:node'
+    property_path: 'test_type:first'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.test_type
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  title_plain:
+    label: title-plain
+    datasource_id: 'entity:node'
+    property_path: title_plain
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.title_plain
+  title_short:
+    label: title-short
+    datasource_id: 'entity:node'
+    property_path: title_short
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.title_short
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uuid:
+    label: UUID
+    datasource_id: 'entity:node'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - node
+  version_current:
+    label: version-current
+    datasource_id: 'entity:node'
+    property_path: version_current
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.version_current
+  volume:
+    label: volume
+    datasource_id: 'entity:node'
+    property_path: volume
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.volume
+  volume_facet:
+    label: volume-facet
+    datasource_id: 'entity:node'
+    property_path: volume
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.volume
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - item_chapter
+        - item_monograph
+        - item_report_guideline
+        - item_test_review
+        - journal
+        - journal_article
+        - journal_fragment
+        - journal_info
+        - journal_issue
+        - journal_volume
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  freebird_search_substitute_date:
+    date_epub_original:
+      enabled: 1
+      target: journal_article
+      condition: early_release
+      substitute: date_epub_original
+    date_ppub_facet:
+      enabled: 1
+      target: journal_article
+      condition: early_release
+      substitute: date_epub_original
+    all_fields: false
+    weights:
+      preprocess_index: -15
+  hierarchy:
+    fields:
+      taxonomy_terms: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  html_filter:
+    all_fields: false
+    fields:
+      - abstract_search
+      - article_series_title
+      - first
+      - fulltext_search
+      - issue_title
+      - journal_abbrv_title
+      - subtitle
+      - title
+    title: false
+    alt: false
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: bps_solr

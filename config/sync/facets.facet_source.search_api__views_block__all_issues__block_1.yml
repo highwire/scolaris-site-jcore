@@ -1,0 +1,12 @@
+uuid: b748bcbf-6f3f-4007-b35c-6cb2482b69ca
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__all_issues__block_1
+name: 'search_api:views_block__all_issues__block_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

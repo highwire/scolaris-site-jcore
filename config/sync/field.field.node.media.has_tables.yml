@@ -1,0 +1,21 @@
+uuid: c3fab73a-31e6-4a7f-a2b6-d3fd238dd5bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_tables
+    - node.type.media
+id: node.media.has_tables
+field_name: has_tables
+entity_type: node
+bundle: media
+label: has-tables
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

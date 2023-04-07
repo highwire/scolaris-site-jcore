@@ -1,0 +1,66 @@
+{% if molecules_only %}
+	<div class="container">
+{% endif %}
+	<div class="list-group {{ listgroupClass }}">
+		{% for item in listing_items %}
+			{% if item.content is not empty %}
+				<a href="{{item.urls}}" title="{{item.content}}" {% if item.urls_class %}class="{{item.urls_class}} {{item.active}} {{item.dsiabled}}"{% endif %} {% if item.urls_id %}id="{{item.urls_id}}"{% endif %} {% if item.togglemodal %}data-bs-toggle="{{item.togglemodal}}" data-bs-target="#{{item.modaltargetid}}"{% endif %}>
+					{{item.content}}
+					{% if item.icon %}
+						{% include "@atoms/images/_icons.twig" with {
+							icon: item.icon
+						} only %}
+					{% endif %}
+				</a>
+				{% if item.sub_group %}
+					<div class="sub-list-group">
+						{% for i in item.sub_group %}
+							<a href="{{i.urls}}" title="{{i.content}}" {% if i.urls_class %}class="{{i.urls_class}}"{% endif %} {% if i.urls_id %}id="{{i.urls_id}}"{% endif %}>
+								{{i.content}}
+							</a>
+							{% if item.sub_sub_group %}
+								<div class="sub-sub-list-group">
+									{% for j in item.sub_sub_group %}
+										<a href="{{j.urls}}" title="{{j.content}}" {% if j.urls_class %}class="{{j.urls_class}}"{% endif %} {% if j.urls_id %}id="{{j.urls_id}}"{% endif %}>
+											{{j.content}}
+										</a>
+									{% endfor %}
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+				{% endif %}
+			{% endif %}
+			{% if item.loopradio %}
+				<div class="sub-list-form">
+					{% for publishdate in item.loopradio %}
+						{% include "@atoms/forms/_radiobox.twig" with {
+							radiobox: publishdate.radiobox
+						} only %}
+					{% endfor %}
+					<div class="listgroup__date">
+						<div class="listgroup__date-from">
+							<label for="publish-from-date">From</label>
+							<input type="text" class="input-form-control-light" id="publish-from-date">
+						</div>
+						<div class="listgroup__date-to">
+							<label for="publish-to-date">To</label>
+							<input type="text" class="input-form-control-light" id="publish-to-date">
+						</div>
+					</div>
+				</div>
+			{% endif %}
+			
+			{% if item.filter_tag %}
+				{% for filter in item.filter_tag %}
+					{% include "@atoms/forms/_checkbox.twig" with {
+						checkbox: filter.checkbox
+					} only %}
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+{% if molecules_only %}
+	</div>
+{% endif %}
+

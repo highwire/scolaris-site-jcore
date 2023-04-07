@@ -1,0 +1,27 @@
+---
+inline:
+  class: d-block mb-1 fw-bold
+  content: Search our articles
+field:
+  type: text
+  id: search-control-id
+  placeholder: Please Enter
+btn_type: submit
+btn_class: btn btn-desktop btn-primary
+btn_label: Search
+search_form:
+  search_filter_right: search-filter-right
+  search_autocomplete: form-search
+  search_position: search__position
+  icon_search: search__icon
+  field:
+    type: text
+    id: id
+    placeholder: Search this site
+    style: 'search__formcontrol'
+  button:
+    type: submit
+    style: search
+    text: Search
+    
+

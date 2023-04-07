@@ -1,0 +1,21 @@
+{% if journals_sidebar %}
+  {% for item in journals_sidebar %}
+    {% if item.show_test_type_block %}
+    <div class="sidebar-article">
+      {% include "@atoms/text/_heading-5.twig" with {
+              heading: {
+                text: item.block_heading,
+                class: item.block_head_class,
+              }
+      } only %}
+      {% if item.listing_items %}
+        <div class="sidebar-article-wrapper">
+          {% include "@molecules/grouping/_listing.twig" with {
+            listing_items: item.listing_items
+          } only %}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}

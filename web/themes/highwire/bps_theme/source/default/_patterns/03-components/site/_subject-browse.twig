@@ -1,0 +1,67 @@
+{% for item in subject_browse_top %}
+	{% include "@atoms/text/_heading.twig" with {
+		heading: item.heading
+	} only %}
+	{% include "@atoms/text/_paragraph.twig" with {
+		paragraph: item.paragraph
+	} only %}
+	<div class="subject__divider">
+		<div class="row">
+			<div class="col-12 col-large-tablet-12 col-desktop-12  ">
+				{% include "@atoms/text/_inline-element.twig" with {
+					inline: subject_top.OrderbyText
+				} only %}
+				<div class="subject__filter">
+					{% for item in subject_top.orderbyFilter %}					
+						{% include "@atoms/button/_button.twig" with {
+							button: item.button
+						} only %}					
+					{% endfor %}
+				</div>
+			</div>
+		</div>			
+	</div>		
+{% endfor %}
+
+{% for item in subject_browse_bottom %}
+	<div class="row ">
+		<div class="col-12 col-small-tablet-5 ">
+			{% include "@atoms/text/_heading.twig" with {
+				heading: item.heading
+			} only %}
+		</div>
+		<div class="col-12 col-small-tablet-7 text-small-tablet-end ">
+			{% include "@atoms/button/_button.twig" with {
+				button: item.button
+			} only %}
+		</div>
+	</div>
+	<div class="subject__divider">
+	{% include "@components/card/_card-slider.twig" with {
+		card_link_items: item.card_link_items
+	} only %}		
+	</div>
+{% endfor %}
+
+{% for item in latest_articles %}		
+	<div class="row ">
+		<div class="col-12 col-small-tablet-5 ">
+			{% include "@atoms/text/_heading.twig" with {
+				heading: item.heading
+			} only %}
+		</div>
+		<div class="col-12 col-small-tablet-7 text-small-tablet-end ">
+			{% include "@atoms/button/_button.twig" with {
+				button: item.button
+			} only %}
+		</div>
+	</div>		
+{% endfor %}
+
+{% for item in latest_article_section %}	
+	<article class="">
+		{% include "@components/card/_card-lr-column.twig" with {
+			card_lr_column: item.card_lr_column
+		} only %}
+	</article>
+{% endfor %}

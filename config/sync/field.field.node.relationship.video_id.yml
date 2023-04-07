@@ -1,0 +1,21 @@
+uuid: f8c29940-04a0-4be6-a354-6b8210c59c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.video_id
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.video_id
+field_name: video_id
+entity_type: node
+bundle: relationship
+label: video-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 2b53142f-3746-49bc-816d-05058c58e296
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.isbn_print
+field_name: isbn_print
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

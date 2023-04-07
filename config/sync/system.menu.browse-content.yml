@@ -1,0 +1,8 @@
+uuid: 7a2c1e4d-3a82-46c1-95ee-530d844c7bc5
+langcode: en
+status: true
+dependencies: {  }
+id: browse-content
+label: 'Browse Content'
+description: ''
+locked: false

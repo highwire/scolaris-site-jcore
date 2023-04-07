@@ -1,0 +1,21 @@
+uuid: d8d056be-abec-4948-9e81-ac39b115646d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.supp_content_type
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.supp_content_type
+field_name: supp_content_type
+entity_type: node
+bundle: item_monograph
+label: supp-content-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

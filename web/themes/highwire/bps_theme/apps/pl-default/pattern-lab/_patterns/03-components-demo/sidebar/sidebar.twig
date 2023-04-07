@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: sidebar_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/sidebar/_sidebar.twig' %}
+  {% endblock content %}
+{% endembed %}

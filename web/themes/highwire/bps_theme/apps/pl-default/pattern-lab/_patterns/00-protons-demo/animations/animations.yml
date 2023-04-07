@@ -1,0 +1,7 @@
+animation_demo:
+  title: 'Animations'
+  content:
+    lead: 'Demonstration of our Particle Animations.'
+    summary:
+      'Provide contextual feedback messages for typical user actions with the
+      handful of available and flexible Animations.'

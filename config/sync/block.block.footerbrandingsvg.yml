@@ -1,0 +1,25 @@
+uuid: fd0a79d1-73b8-4830-9b9c-432cb803acaa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dd467f6f-e731-4577-91be-4f0098395f33'
+  module:
+    - block_content
+  theme:
+    - bps
+id: footerbrandingsvg
+theme: bps
+region: footer_1
+weight: -9
+provider: null
+plugin: 'block_content:dd467f6f-e731-4577-91be-4f0098395f33'
+settings:
+  id: 'block_content:dd467f6f-e731-4577-91be-4f0098395f33'
+  label: 'Footer branding svg'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

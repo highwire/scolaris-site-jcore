@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: audio_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/media/_audio.twig' %}
+  {% endblock content %}
+{% endembed %}

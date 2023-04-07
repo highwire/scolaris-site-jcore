@@ -1,0 +1,11 @@
+uuid: d6788f74-4875-4e32-b995-d0b3c0bb64c4
+langcode: en
+status: true
+dependencies: {  }
+name: item_part
+type: item_part
+description: 'Auto generated HighWire content type for item-part'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

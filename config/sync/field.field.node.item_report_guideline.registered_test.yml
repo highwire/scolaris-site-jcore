@@ -1,0 +1,21 @@
+uuid: 181f6b09-ccb2-41c5-9e1f-f611df7d5e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.registered_test
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.registered_test
+field_name: registered_test
+entity_type: node
+bundle: item_report_guideline
+label: registered-test
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

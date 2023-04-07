@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: button_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/button/_button.twig' %}
+  {% endblock content %}
+{% endembed %}

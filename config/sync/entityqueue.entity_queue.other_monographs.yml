@@ -1,0 +1,25 @@
+uuid: bc685040-6433-4f96-b094-997d80056b43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: other_monographs
+label: 'Other monographs'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      item_monograph: item_monograph
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,21 @@
+{% if rows|length > 0 %}
+{%
+  set classes = [
+    'page-layout',
+    'page-layout--' ~ layout.id|clean_class,
+  ]
+%}
+<div{{ attributes|without('class') }} class="{{ attributes.class }} {{ classes|join(' ') }}">
+  {% for row_id, row in rows %}
+    <div class="page-wrapper--{{ row_id|clean_class }}">
+        {% block row %}
+          {% include "@components/layouts/row.twig" with { 
+            regions: row, 
+            row_id: row_id, 
+            extra_classes: row_classes[row_id]|default([]) 
+          } %}
+        {% endblock %}
+    </div>
+  {% endfor %}
+</div>
+{% endif %}

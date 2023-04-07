@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: icons_demo
+  }
+%}
+  {% block content %}
+    {% include '@protons/icons/_icons.twig' %}
+  {% endblock content %}
+{% endembed %}

@@ -1,0 +1,158 @@
+.cc {
+  &-top {
+    border-bottom: 1px solid $secondary-dark;
+    padding-bottom: 1.875rem;
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+    .card-left {
+      max-width: 188px;
+      @include media-breakpoint-down(small-tablet) {
+          margin-bottom: 20px;
+          max-width: 100%;
+      }
+      picture img {
+        display: block;
+        height: auto;
+        width: 165px;
+        margin: 0;
+        max-height: inherit;
+      }
+      + .card-content {
+        max-width: calc(100% - 188px);
+        @include media-breakpoint-down(small-tablet) {
+          max-width: 100%;
+        }
+      }
+    }
+    .card-content {
+      p:last-child {
+        margin-bottom: 0;
+      }
+      .download-pdf {
+        @extend .btn;
+        @extend .btn-primary;
+        @extend .btn-small-tablet;
+        font-family: $font-family-sans-serif;
+        font-size: 1rem;
+        &:before {
+          color: inherit;
+          font-family: "feather";
+          font-size: 1.375rem;
+          line-height: 1.375rem;
+          margin-right: 5px;
+          @extend .align-middle;
+          @extend .feather-file;
+        }
+      }
+    }
+  }
+  &-bottom {
+    &-include {
+      border-bottom: 1px solid $secondary-dark;
+      padding: 1rem 0;
+      font-size: 1.25rem;
+      font-family: $font-family-monospace;
+      font-weight: 500;
+    }
+    .card-container {
+      padding: 1rem 0;
+      border-bottom: 1px solid $secondary-dark;
+      .card-content {
+        .sub-ttile {
+          font-size: 1rem;
+          margin-bottom: 5px;
+          font-weight: 600;
+          color: $danger;
+          font-family: $font-family-sans-serif;
+        }
+      }
+    }
+    .content-list-block {
+      @extend .row;
+      position: relative;
+      @include media-breakpoint-up(small-tablet) {
+        margin: -0.5rem 0 3.5rem;
+      }
+      .collection-col {
+        @extend .col-12;
+        @include media-breakpoint-up(small-tablet) {
+          width: 50%;
+          &:nth-child(2n+1) {
+            &::after {
+              content: "";
+            }
+          }
+        }
+        @include media-breakpoint-up(medium-tablet) {
+          width: 33.33333%;
+          &:nth-child(3n+1) {
+            &::after {
+              content: "";
+            }
+          }
+        }
+        @include media-breakpoint-up(large-tablet) {
+          width: 25%;
+          &:nth-child(4n+1) {
+            &::after {
+              content: "";
+            }
+          }
+        }
+        @include media-breakpoint-up(desktop) {
+          width: 20%;
+          &:nth-child(5n+1) {
+            &::after {
+              content: "";
+            }
+          }
+        }
+        &::after {
+          border-bottom: 1px solid $secondary;              
+          height: 1px;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          margin: 20px 0;
+        }
+      }
+      .card {
+        margin-top: 2.5rem;
+        border: none;
+        &--image {
+          height: 212px;
+          align-items: center;
+          display: inline-flex;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          border: 1px solid $secondary;
+          justify-content: center;
+          width: 152px;
+          img {
+            height: auto;
+            max-width: 150px;
+            max-height: 210px;
+            width: auto;
+          }
+        }
+        &-body {
+          padding: 0;
+          margin-top: 15px;
+          a {
+            font-weight: 600;
+          }
+          h5 {
+            font-size: 1rem;
+            line-height: 24px;
+            a {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

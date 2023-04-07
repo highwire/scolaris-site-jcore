@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: accordion-body_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/accordion/_accordion-body.twig' %}
+  {% endblock content %}
+{% endembed %}

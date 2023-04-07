@@ -1,0 +1,27 @@
+---
+carousel:
+  id: carousel-component
+  bs_item:
+  - current: 0
+    active: active
+    status: true
+  - current: 1
+    active: 
+    status: 
+  - current: 2
+    active: 
+    status: 
+  slide_item:
+  - src: ../../../assets/images/home-banner.jpg
+    alt: Alt - 1
+    active: active
+    caption: Carousal Captions - 1
+  - src: ../../../assets/images/home-banner.jpg
+    alt: Alt - 2
+    active:
+    caption: Carousal Captions - 2
+  - src: ../../../assets/images/home-banner.jpg
+    alt: Alt - 3
+    active:
+    caption: Carousal Captions - 3
+  controls: true

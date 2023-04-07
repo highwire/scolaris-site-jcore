@@ -1,0 +1,21 @@
+uuid: a1cf7768-c342-4288-9305-ab20da1dc89c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent
+    - node.type.item_test_review
+id: node.item_test_review.parent
+field_name: parent
+entity_type: node
+bundle: item_test_review
+label: parent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: bbefb0d5-598c-4fb5-a502-e71b86b25597
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_toc
+    - node.type.media
+  module:
+    - text
+id: node.media.issue_toc
+field_name: issue_toc
+entity_type: node
+bundle: media
+label: issue-toc
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

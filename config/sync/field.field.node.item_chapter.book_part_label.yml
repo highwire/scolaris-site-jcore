@@ -1,0 +1,21 @@
+uuid: 0718189e-ed7f-4c10-a689-774cdaaad7f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.book_part_label
+    - node.type.item_chapter
+  module:
+    - text
+id: node.item_chapter.book_part_label
+field_name: book_part_label
+entity_type: node
+bundle: item_chapter
+label: book-part-label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

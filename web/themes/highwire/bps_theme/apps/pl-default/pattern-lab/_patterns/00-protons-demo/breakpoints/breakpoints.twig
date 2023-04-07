@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: breakpoint_demo
+  }
+%}
+  {% block content %}
+    {% include '@protons/breakpoints/_breakpoints.twig' %}
+  {% endblock content %}
+{% endembed %}

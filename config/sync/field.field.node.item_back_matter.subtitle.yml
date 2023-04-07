@@ -1,0 +1,21 @@
+uuid: f620cb17-1119-401b-b033-6577a0560c52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subtitle
+    - node.type.item_back_matter
+  module:
+    - text
+id: node.item_back_matter.subtitle
+field_name: subtitle
+entity_type: node
+bundle: item_back_matter
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

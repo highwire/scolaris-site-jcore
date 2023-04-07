@@ -1,0 +1,14 @@
+{% if label or purchase_link %}
+<div class="purchase-offer-item">
+  <span class="access-type">
+    <span>{{ label }}</span>
+    &nbsp;
+    <span class="access-info">
+      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+      <span class="sr-only">{{ info }}</span>
+    </span>
+    &nbsp;&nbsp;
+  </span>
+  {{ purchase_link }}
+</div>
+{% endif %}

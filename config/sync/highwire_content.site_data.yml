@@ -1,0 +1,613 @@
+highwire_content_site_data:
+  bpsworks:
+    id: bpsworks
+    publisher-id: bps
+    status: development
+    type: umbrella
+    name: 'British Psychological Society'
+    abbrev:
+      medline: bpsworks
+      publisher: bpsworks
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'https://explore.bps.org.uk:4040'
+      legacy: 'http://hwmaint.bpsworks.bps.com'
+      legacy_development: 'http://hwmaint.bpsworks.bps.com:4040'
+      production: 'https://explore.bps.org.uk'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsadm:
+    id: bpsadm
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Assessment and Development Matters'
+    abbrev:
+      publisher: bpsadm
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'https://explore.bps.org.uk/content/bpsadm:4040'
+      legacy: 'https://hwmaint.bpsadm.bps.org'
+      legacy_development: 'https://hwmaint.bpsadm.bps.org:4040'
+      production: 'https://explore.bps.org.uk/content/bpsadm'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpscpf:
+    id: bpscpf
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Clinical Psychology Forum'
+    abbrev:
+      publisher: bpscpf
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpscpf:4040'
+      legacy: 'http://hwmaint.bpscpf.bps.org'
+      legacy_development: 'http://hwmaint.bpscpf.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpscpf'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsdcps:
+    id: bpsdcps
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'DCP-S Review'
+    abbrev:
+      publisher: bpsdcps
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsdcps:4040'
+      legacy: 'http://hwmaint.bpsdcps.bps.org'
+      legacy_development: 'http://hwmaint.bpsdcps.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsdcps'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsdeb:
+    id: bpsdeb
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'DECP Debate'
+    abbrev:
+      publisher: bpsdeb
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsdeb:4040'
+      legacy: 'http://hwmaint.bpsdeb.bps.org'
+      legacy_development: 'http://hwmaint.bpsdeb.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsdeb'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsdev:
+    id: bpsdev
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Developmental Psychology Forum'
+    abbrev:
+      publisher: bpsdev
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsdev:4040'
+      legacy: 'http://hwmaint.bpsdev.bps.org'
+      legacy_development: 'http://hwmaint.bpsdev.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsdev'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsecp:
+    id: bpsecp
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Educational and Child Psychology'
+    abbrev:
+      publisher: bpsecp
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsecp:4040'
+      legacy: 'http://hwmaint.bpsecp.bps.org'
+      legacy_development: 'http://hwmaint.bpsecp.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsecp'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsfpop:
+    id: bpsfpop
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'FPOP Bulletin: Psychology of Older People'
+    abbrev:
+      publisher: bpsfpop
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsfpop:4040'
+      legacy: 'http://hwmaint.bpsfpop.bps.org'
+      legacy_development: 'http://hwmaint.bpsfpop.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsfpop'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsfu:
+    id: bpsfu
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Forensic Update'
+    abbrev:
+      publisher: bpsfu
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsfu:4040'
+      legacy: 'http://hwmaint.bpsfu.bps.org'
+      legacy_development: 'http://hwmaint.bpsfu.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsfu'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpshpp:
+    id: bpshpp
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'History & Philosophy of Psychology'
+    abbrev:
+      publisher: bpshpp
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpshpp:4040'
+      legacy: 'http://hwmaint.bpshpp.bps.org'
+      legacy_development: 'http://hwmaint.bpshpp.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpshpp'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpshpu:
+    id: bpshpu
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Health Psychology Update'
+    abbrev:
+      publisher: bpshpu
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpshpu:4040'
+      legacy: 'http://hwmaint.bpshpu.bps.org'
+      legacy_development: 'http://hwmaint.bpshpu.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpshpu'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsicpr:
+    id: bpsicpr
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'International Coaching Psychology Review'
+    abbrev:
+      publisher: bpsicpr
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsicpr:4040'
+      legacy: 'http://hwmaint.bpsicpr.bps.org'
+      legacy_development: 'http://hwmaint.bpsicpr.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsicpr'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsneur:
+    id: bpsneur
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'The Neuropsychologist'
+    abbrev:
+      publisher: bpsneur
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'https://explore.bps.org.uk/content/bpsneur:4040'
+      legacy: 'https://hwmaint.bpsneur.bps.org'
+      legacy_development: 'https://hwmaint.bpsneur.bps.org:4040'
+      production: 'https://explore.bps.org.uk/content/bpsneur'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsopm:
+    id: bpsopm
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'OP Matters'
+    abbrev:
+      publisher: bpsopm
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsopm:4040'
+      legacy: 'http://hwmaint.bpsopm.bps.org'
+      legacy_development: 'http://hwmaint.bpsopm.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsopm'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpspag:
+    id: bpspag
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'PsyPag Quarterly'
+    abbrev:
+      publisher: bpspag
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpspag:4040'
+      legacy: 'http://hwmaint.bpspag.bps.org'
+      legacy_development: 'http://hwmaint.bpspag.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpspag'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpspowe:
+    id: bpspowe
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Psychology of Women and Equalities Section Review'
+    abbrev:
+      publisher: bpspowe
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpspowe:4040'
+      legacy: 'http://hwmaint.bpspowe.bps.org'
+      legacy_development: 'http://hwmaint.bpspowe.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpspowe'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpspsr:
+    id: bpspsr
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Psychotherapy Section Review'
+    abbrev:
+      publisher: bpspsr
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpspsr:4040'
+      legacy: 'http://hwmaint.bpspsr.bps.org'
+      legacy_development: 'http://hwmaint.bpspsr.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpspsr'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsptr:
+    id: bpsptr
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Psychology Teaching Review'
+    abbrev:
+      publisher: bpsptr
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsptr:4040'
+      legacy: 'http://hwmaint.bpsptr.bps.org'
+      legacy_development: 'http://hwmaint.bpsptr.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsptr'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsqmip:
+    id: bpsqmip
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'QMiP Bulletin'
+    abbrev:
+      publisher: bpsqmip
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsqmip:4040'
+      legacy: 'http://hwmaint.bpsqmip.bps.org'
+      legacy_development: 'http://hwmaint.bpsqmip.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsqmip'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsspr:
+    id: bpsspr
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Social Psychological Review'
+    abbrev:
+      publisher: bpsspr
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsspr:4040'
+      legacy: 'http://hwmaint.bpsspr.bps.org'
+      legacy_development: 'http://hwmaint.bpsspr.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsspr'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpstalk:
+    id: bpstalk
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Psych- Talk'
+    abbrev:
+      publisher: bpstalk
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpstalk:4040'
+      legacy: 'http://hwmaint.bpstalk.bps.org'
+      legacy_development: 'http://hwmaint.bpstalk.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpstalk'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpstcp:
+    id: bpstcp
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'The Coaching Psychologist'
+    abbrev:
+      publisher: bpstcp
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpstcp:4040'
+      legacy: 'http://hwmaint.bpstcp.bps.org'
+      legacy_development: 'http://hwmaint.bpstcp.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpstcp'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpstran:
+    id: bpstran
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Transpersonal Psychology Review'
+    abbrev:
+      publisher: bpstran
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpstran:4040'
+      legacy: 'http://hwmaint.bpstran.bps.org'
+      legacy_development: 'http://hwmaint.bpstran.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpstran'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsvern:
+    id: bpsvern
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Vernon Wall Lecture'
+    abbrev:
+      publisher: bpsvern
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsvern:4040'
+      legacy: 'http://hwmaint.bpsvern.bps.org'
+      legacy_development: 'http://hwmaint.bpsvern.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsvern'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpswlb:
+    id: bpswlb
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'The Work Life Balance Bulletin: a DOP Publication'
+    abbrev:
+      publisher: bpswlb
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpswlb:4040'
+      legacy: 'http://hwmaint.bpswlb.bps.org'
+      legacy_development: 'http://hwmaint.bpswlb.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpswlb'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpscog:
+    id: bpscog
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'The Cognitive Psychology Bulletin'
+    abbrev:
+      publisher: bpscog
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpscog:4040'
+      legacy: 'http://hwmaint.bpscog.bps.org'
+      legacy_development: 'http://hwmaint.bpscog.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpscog'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsfpid:
+    id: bpsfpid
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'FPID Bulletin: The Bulletin of the Faculty for People with Intellectual Disabilities'
+    abbrev:
+      publisher: bpsfpid
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsfpid:4040'
+      legacy: 'http://hwmaint.bpsfpid.bps.org'
+      legacy_development: 'http://hwmaint.bpsfpid.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsfpid'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsper:
+    id: bpsper
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Psychology of Education Review'
+    abbrev:
+      publisher: bpsper
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsper:4040'
+      legacy: 'http://hwmaint.bpsper.bps.org'
+      legacy_development: 'http://hwmaint.bpsper.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsper'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpscep:
+    id: bpscep
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Consciousness and Experience'
+    abbrev:
+      publisher: bpscep
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpscep:4040'
+      legacy: 'http://hwmaint.bpscep.bps.org'
+      legacy_development: 'http://hwmaint.bpscep.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpscep'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpscpr:
+    id: bpscpr
+    umbrella: bpsworks
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Counselling Psychology Review'
+    abbrev:
+      publisher: bpscpr
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpscpr:4040'
+      legacy: 'http://hwmaint.bpscpr.bps.org'
+      legacy_development: 'http://hwmaint.bpscpr.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpscpr'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpscypf:
+    id: bpscypf
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'The Child & Family Clinical Psychology Review'
+    abbrev:
+      publisher: bpscypf
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpscypf:4040'
+      legacy: 'http://hwmaint.bpscypf.bps.org'
+      legacy_development: 'http://hwmaint.bpscypf.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpscypf'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpsepis:
+    id: bpsepis
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Educational Psychology in Scotland'
+    abbrev:
+      publisher: bpsepis
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpsepis:4040'
+      legacy: 'http://hwmaint.bpsepis.bps.org'
+      legacy_development: 'http://hwmaint.bpsepis.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpsepis'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpssepr:
+    id: bpssepr
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Sport & Exercise Psychology Review'
+    abbrev:
+      publisher: bpssepr
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpssepr:4040'
+      legacy: 'http://hwmaint.bpssepr.bps.org'
+      legacy_development: 'http://hwmaint.bpssepr.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpssepr'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'
+  bpssex:
+    id: bpssex
+    umbrella: bpsjournals
+    publisher-id: bps
+    status: development
+    type: journal
+    name: 'Psychology of Sexualities Review'
+    abbrev:
+      publisher: bpssex
+    url:
+      ac_service: 'http://bpsworks-ac.highwire.org'
+      ac_service_development: 'http://bpsworks-ac-dev.highwire.org'
+      development: 'http://explore.bps.org.uk/content/bpssex:4040'
+      legacy: 'http://hwmaint.bpssex.bps.org'
+      legacy_development: 'http://hwmaint.bpssex.bps.org:4040'
+      production: 'http://explore.bps.org.uk/content/bpssex'
+    alert-types:
+      production: 'announcements,toc_alerts,toc_awareness_alerts'

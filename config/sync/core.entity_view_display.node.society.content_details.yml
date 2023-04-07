@@ -1,0 +1,49 @@
+uuid: 83a0c062-9a22-42f5-b25e-a74ff5e46fe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_details
+    - field.field.node.society.field_society_log
+    - field.field.node.society.field_society_website
+    - image.style.society_logo_300_150_
+    - node.type.society
+  module:
+    - image
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.society.content_details
+targetEntityType: node
+bundle: society
+mode: content_details
+content:
+  field_society_log:
+    weight: 0
+    label: above
+    settings:
+      image_style: society_logo_300_150_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_society_website:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

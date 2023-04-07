@@ -1,0 +1,19 @@
+uuid: 60cf9b44-e14d-4cda-833e-cbaec2b4e585
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.atom_type
+field_name: atom_type
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

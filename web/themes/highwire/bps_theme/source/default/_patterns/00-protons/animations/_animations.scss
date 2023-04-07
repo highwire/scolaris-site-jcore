@@ -1,0 +1,27 @@
+// Animations Setting
+@mixin animation_transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+.animate-fade {
+    @include animation_transition(opacity, 0.3s, ease-out);
+    &:hover {
+        opacity: 0;
+    }
+}
+.animate-move {
+    > .demo-shape {
+        @include animation_transition(all, 0.8s, ease-in-out);
+    }
+}
+.demo-animate {
+    background-color: $info;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1em;
+    margin-bottom: 1rem;
+    text-align: center;
+}

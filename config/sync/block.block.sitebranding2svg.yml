@@ -1,0 +1,25 @@
+uuid: 26471c90-c72a-40d1-97df-8b3e54fb5a12
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cd28e4b9-0f0c-4d28-8409-7225aad8fa53'
+  module:
+    - block_content
+  theme:
+    - bps
+id: sitebranding2svg
+theme: bps
+region: header_branding_2
+weight: 0
+provider: null
+plugin: 'block_content:cd28e4b9-0f0c-4d28-8409-7225aad8fa53'
+settings:
+  id: 'block_content:cd28e4b9-0f0c-4d28-8409-7225aad8fa53'
+  label: 'site branding 2 svg'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

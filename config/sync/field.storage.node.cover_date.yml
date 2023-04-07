@@ -1,0 +1,19 @@
+uuid: 5670a9be-e825-42bf-bce2-613b4e846ec6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.cover_date
+field_name: cover_date
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

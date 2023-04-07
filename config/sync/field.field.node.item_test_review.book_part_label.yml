@@ -1,0 +1,21 @@
+uuid: d7f4e984-478f-4660-a02b-b10cac82ab40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.book_part_label
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.book_part_label
+field_name: book_part_label
+entity_type: node
+bundle: item_test_review
+label: book-part-label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

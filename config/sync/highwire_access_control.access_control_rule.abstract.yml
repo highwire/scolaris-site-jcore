@@ -1,0 +1,19 @@
+uuid: d3958dd2-c2da-4b8e-8c8a-9861e9d4df98
+langcode: en
+status: true
+dependencies: {  }
+id: abstract
+label: Abstract
+description: 'AC check for journal abstracts.'
+rule_type: content
+role: abstract
+scope: any
+target: variant
+language: en
+content_type: application/xhtml+xml
+file_field: ''
+file_field_bundles: {  }
+ac_denied_action: default
+ac_denied_action_conf: {  }
+ac_denied_message: ''
+concurrency_limit_message: ''

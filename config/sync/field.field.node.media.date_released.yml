@@ -1,0 +1,21 @@
+uuid: 5efa58d0-702d-40b5-aed6-30e7f79f1fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_released
+    - node.type.media
+  module:
+    - datetime
+id: node.media.date_released
+field_name: date_released
+entity_type: node
+bundle: media
+label: date-released
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

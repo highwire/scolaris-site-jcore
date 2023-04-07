@@ -1,0 +1,77 @@
+$component: ".search";
+#{$component} {     
+    @extend .py-4;
+    background: $light-yellow;
+    &__row{
+        @extend .row;
+        @extend .justify-content-center;  
+    } 
+    &__formcontrol{
+        @extend .form-control;
+        @extend .form-control-large-tablet;
+        max-height: 3.75rem;
+        min-height: 3.75rem;
+        margin: 0;
+        background-image: none !important;
+        border-color: $primary-dark;
+        padding-right: 45px;
+        @include media-breakpoint-down(medium-tablet) {
+            padding-right: 60px;
+        }
+        &::placeholder {
+            color: $primary-light;
+        }
+    } 
+    &__icon:after{
+        font-size: 1.5rem;
+        top: 50%;
+        margin-top: -18px;
+        color: $primary-light;
+        right: 15px;
+        content: "\e9c1";
+        font-family: "feather";
+        @extend .align-middle;
+        @extend .position-absolute;         
+    } 
+    &__position{      
+         @extend .d-flex;    
+         @extend .flex-fill;    
+         @extend .position-relative;        
+    }
+    .form-actions {        
+        @include media-breakpoint-down(medium-tablet) {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            margin: 0;
+            &::after {
+                content: "\e9c1";
+                font-family: "feather";
+                font-size: 1.5rem;
+                color: $white;
+                position: absolute;
+                top: 10px;
+                z-index: 10;
+                right: 12px;
+                pointer-events: none;
+            }
+        }
+        .btn-search{
+            @extend .btn-large-tablet;
+            margin-left: 0.5rem !important;
+            @extend .btn-danger;
+            @extend .rounded;
+            max-height: 60px;
+            @include media-breakpoint-down(	medium-tablet) {
+                margin-left: 0 !important;
+                margin-top: 0;
+                font-size: 0;
+                padding: 11px 24px 12px;           
+            }
+            &:hover,
+            &:focus {
+                background-color: $danger-dark;
+            }
+        }
+    } 
+}

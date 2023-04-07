@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-12 col-medium-tablet-12 col-desktop-12">
+        {% include "@atoms/text/_heading.twig" with { 
+            heading: myaccount_top.badge_heading 
+        } only %}
+        {% include "@atoms/text/_heading.twig" with { 
+            heading: myaccount_top.heading 
+        } only %}
+        {% include "@atoms/text/_paragraph.twig" with { 
+            paragraph: myaccount_top.paragraph 
+        } only %}
+    </div>
+</div>
+
+{% if navtabs_item %}
+    {% include "@components/tabs/_tabs.twig" with {
+        navtabs_id: navtabs_id,
+        navtabs_item: navtabs_item,
+        tabcontent_class: tabcontent_class,
+        navtabs_content: navtabs_content
+    } only %}
+{% endif %}
+{% include "@components/modal/_modal-popup.twig" with {
+    modalPopup: myaccounts_delete.modalPopup
+} only %}

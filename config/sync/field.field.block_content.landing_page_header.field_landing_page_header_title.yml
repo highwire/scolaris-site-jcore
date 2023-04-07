@@ -1,0 +1,19 @@
+uuid: 3082a4bd-0282-45de-abde-cf2c0543a547
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.landing_page_header
+    - field.storage.block_content.field_landing_page_header_title
+id: block_content.landing_page_header.field_landing_page_header_title
+field_name: field_landing_page_header_title
+entity_type: block_content
+bundle: landing_page_header
+label: 'Landing Page Header Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 2fdbefa6-204f-47df-8f9d-b08394a2368b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_ref_links
+    - node.type.relationship
+id: node.relationship.has_ref_links
+field_name: has_ref_links
+entity_type: node
+bundle: relationship
+label: has-ref-links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

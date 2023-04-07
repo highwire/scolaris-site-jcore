@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: cardlink_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/card/_card-link-without-row.twig' %}
+  {% endblock content %}
+{% endembed %}

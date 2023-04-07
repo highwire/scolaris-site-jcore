@@ -1,0 +1,14 @@
+{% if not user_access %}
+<div{{ attributes }}>
+  {% block content %}
+  {{ user_access_already }}
+  {{ pricing_items }}
+  {% if purchase_children.title %}
+  <h3>{{ purchase_children.title }}</h3>
+  {% endif %}
+  {% if purchase_children.text %}
+  <p>{{ purchase_children.text }}</p>
+  {% endif %}
+  {% endblock %}
+</div>
+{% endif %}

@@ -1,0 +1,29 @@
+uuid: 2e7f30bc-b88d-403e-b566-7b8654f8ffe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.registered_test_icon.field_registered_test_icon_image
+    - field.field.node.registered_test_icon.field_test_review_name
+    - node.type.registered_test_icon
+  module:
+    - user
+id: node.registered_test_icon.teaser
+targetEntityType: node
+bundle: registered_test_icon
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  bps_focus_view: true
+  bps_toc_pager: true
+  field_registered_test_icon_image: true
+  field_test_review_name: true
+  langcode: true
+  prev_next_pager: true

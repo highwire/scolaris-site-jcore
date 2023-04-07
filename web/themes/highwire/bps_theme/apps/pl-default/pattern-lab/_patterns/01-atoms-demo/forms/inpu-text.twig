@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: input_text_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/forms/_input-text.twig' %}
+  {% endblock content %}
+{% endembed %}

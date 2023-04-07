@@ -1,0 +1,21 @@
+uuid: 32d84a28-13a6-4caa-bb6c-3e42b53947b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent_book
+    - node.type.item_back_matter
+id: node.item_back_matter.parent_book
+field_name: parent_book
+entity_type: node
+bundle: item_back_matter
+label: parent-book
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

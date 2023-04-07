@@ -1,0 +1,17 @@
+---
+organisms_only: true
+tabcontent_class: border-bottom pt-4 pb-4
+navtabs_item:
+- active: active
+  id: 1
+  title: Title 1
+- active: ''
+  id: 2
+  title: Title 2
+navtabs_content:
+- active: active
+  id: 1
+  journal_artical_cms: Content 1
+- active: ''
+  id: 2
+  journal_artical_cms: Content 2

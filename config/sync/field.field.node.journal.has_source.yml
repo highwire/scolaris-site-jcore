@@ -1,0 +1,21 @@
+uuid: 5832b2b4-b0ee-4945-b614-a689681f33d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_source
+    - node.type.journal
+id: node.journal.has_source
+field_name: has_source
+entity_type: node
+bundle: journal
+label: has-source
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

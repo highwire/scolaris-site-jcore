@@ -1,0 +1,21 @@
+uuid: 87e9e880-0dab-4f15-a263-8cc044703f1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: Dno2BayXWB7Vo8Ci2KY1upo6U3e5r8HiyV6xdlRvyjc
+id: user.field_sigma_license_data
+field_name: field_sigma_license_data
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

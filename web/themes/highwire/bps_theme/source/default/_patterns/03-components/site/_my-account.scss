@@ -1,0 +1,342 @@
+.path-my-account {
+  section.block-highwire-personalization {
+    margin-bottom: 2.5rem;
+    display: block;
+    padding: 1.5rem 1rem;
+    border: 1px solid $black;
+    position: relative;
+  }
+  .panel-body {
+    padding: 0px 20px 20px 20px;
+    margin-top: 0;
+    @extend .clearfix;
+    .highwire-personalization-manage-saved-search-panel__search-link {
+      float: left;
+      .saved-search-execute-label {
+        margin-left: 5px;
+      }
+    }
+    .highwire-personalization-manage-saved-search-panel__alert-status {
+      float: right;
+    }
+  }
+  .main-container {
+    .highwire-personalization-user-info {    
+      padding: 20px 15px;
+      border: none;
+      line-height: 24px;
+      background: $light-yellow;
+      font-weight: normal;
+      margin: -24px -16px 15px -16px;
+      &__name {
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      &__email {
+        margin-bottom: 5px;
+      }
+      &__logout {
+        a {
+          @extend .btn;
+          @extend .btn-small-tablet;
+          @extend .btn-primary-dark;
+        }
+      }
+    }
+    .highwire-personalization-admin-nav {
+      ul {
+        @extend .list-group;
+      }
+    }
+  }
+  .list-group {
+    margin-bottom: -1px;
+    li {
+      list-style: none;
+      border-bottom: 1px solid $info-light;
+      a {
+        padding: 10px 0;
+        display: block;
+        color: $black;
+      }
+      &.active,
+      &:hover,
+      &:focus {
+        a {
+          text-decoration: underline;
+          color: $black;
+        }
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+  .highwire-personalization-manage {
+    &-list-tools {
+      display: flex;
+      margin-bottom: 1.25rem;
+      justify-content: space-between;
+      .form-type-select {
+        display: flex;
+        align-items: center;
+        &:nth-child(2) {
+          margin-left: auto;
+        }
+        .control-label {
+          font-family: 500;
+        }
+        .select-wrapper {
+          margin-left: 15px;
+          width: 160px;
+          .form-control {
+            padding: 8px 12px;
+            height: auto;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+    &-alert-panel__links {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      a {
+        margin: 0 !important;
+      }
+    }
+    &-tag-panel__title {
+      @extend .h4;
+      font-family: $font-family-monospace;
+      width: 100%;
+      margin-bottom: 1rem;
+    }    
+    &-tag-panel__links,
+    &-alert-panel__links,
+    &-saved-search-panel__links {
+      .item-list__highwire_personalization_manage_links {
+        list-style: none;
+        padding: 0;
+        li {
+          display: inline-block;
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #highwire-tags-sort-form-1 {
+    margin-top: 1rem;
+  }
+  .highwire-modal-trigger {
+    @extend .btn;
+    @extend .btn-small-tablet;
+    @extend .btn-danger;
+  }
+  .modal-body,
+  .ui-widget-content {
+    .form-text {
+      @extend .form-control;
+      max-width: 100%;
+    }
+  }
+  .highwire-personalization-manage-list-tools {
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid $info-light;
+    border-bottom: 1px solid $info-light;
+    justify-content: space-between;
+    margin-bottom: -1px;
+    @include media-breakpoint-down(small-tablet) {
+      display: block;
+    }
+    .js-form-type-select {
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-down(small-tablet) {
+        margin-top: 15px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      label {
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      select {
+        padding: 7px 35px 7px 12px !important;
+      }
+    }
+  }
+  .form-group {
+    .highwire-modal-trigger {
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    #highwire-tags-sort-form-1 {
+      margin-top: 0;
+    }
+  }
+  #block-mainpagecontent {
+    .container {
+      padding: 0;
+      max-width: inherit;
+    }
+    .form-actions {
+      input[data-drupal-selector=edit-submit] {
+        @extend .btn;
+        @extend .btn-primary-dark;
+        @extend .btn-small-tablet;
+        font-family: $font-family-sans-serif;
+        margin: 5px;
+      }
+      input[data-drupal-selector=edit-cancel] {
+        @extend .btn;
+        @extend .btn-outline-primary-dark;
+        @extend .btn-small-tablet;
+        font-family: $font-family-sans-serif;
+      }
+    }
+  }
+  .highwire-personalization-manage-list {
+    li.toc-expanded {
+      border-bottom: 1px solid $info-light;
+      padding: 1rem 0;
+      margin: 0;
+      &:first-child {
+        border-top: 1px solid $info-light;
+      }
+      .highwire-personalization-manage-alert-panel {
+        position: relative;
+        .highwire-alerts-form__title {
+          @extend .h4;
+          width: calc(100% - 175px);
+          display: block;
+          @include media-breakpoint-down(small-tablet) {
+            width: calc(100% - 85px);
+          }
+        }
+        .highwire-checkbox-slider__title {
+          width: 100%;
+          margin: 10px 0 0 0;
+          display: block;
+        }
+        .highwire-checkbox-slider__slider {
+            width: 100px;
+            position: absolute;
+            top: 8px;
+            font-size: 1rem;
+            right: 65px;
+            @include media-breakpoint-down(small-tablet) {
+              position: static;
+              margin: 15px 0 10px;
+            }
+            .highwire-checkbox-slider__switch {
+              font-size: 18px;
+            }
+            &::after {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+        }
+        .form-actions {
+          margin: 10px -5px 0;
+        }
+      }
+      .highwire-personalization-manage-tag-panel__links {
+        float: none;
+        margin: 0;
+        .item-list__highwire_personalization_manage_links {
+          li {
+            margin-right: 10px;
+            &:last-child {
+              margin-left: 0;
+              a.highwire-modal-trigger {
+                @extend .btn-primary-dark;
+              }
+            }
+          }
+        }
+      }
+      .highwire-personalization-manage-saved-search-panel {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        position: relative;
+        &__links {
+          margin: 0 !important;
+          position: absolute;
+          right: 0;
+          top: 0;
+          .item-list__highwire_personalization_manage_links {
+            li {
+              &:first-child {
+                margin-right: 10px;
+                a {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        &__search-link {
+          font-family: $font-family-monospace;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          .saved-search-execute-label {
+            font-size: 0.875rem;
+            padding-left: 5px;
+          }
+        }
+        &__created-date {
+          color: $secondary-dark;
+          font-size: .875rem;
+          display: inline-block;
+          margin-right: 15px;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          @include media-breakpoint-down(small-tablet) {
+            display: block;
+            margin: 0;
+          }
+        }
+        &__alert-status {
+          font-size: 14px;
+          position: absolute;
+          text-transform: capitalize;
+          background: $light-yellow;
+          border: 1px solid $secondary;
+          border-radius: 4px;
+          padding: 5px 10px;
+          color: $black;
+          right: 155px;
+          top: 0;
+          font-weight: 600;
+          @include media-breakpoint-down(small-tablet) {
+            position: static;
+            margin: 5px 0 10px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .item-list__empty {
+    text-align: center;
+    padding: 25px 30px;
+    font-size: 1.125rem;
+    color: $danger;
+    background: $light-yellow;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+}
+#favorite-action {
+  .modal-body-wrapper {
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.8;
+  }
+}

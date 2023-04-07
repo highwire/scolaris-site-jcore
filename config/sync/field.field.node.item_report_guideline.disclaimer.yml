@@ -1,0 +1,21 @@
+uuid: fdea60e6-4a92-49a3-b612-973569c4f357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.disclaimer
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.disclaimer
+field_name: disclaimer
+entity_type: node
+bundle: item_report_guideline
+label: disclaimer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: breadcrumb_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/breadcrumb/_breadcrumb.twig' %}
+  {% endblock content %}
+{% endembed %}

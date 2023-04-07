@@ -1,0 +1,21 @@
+uuid: ea9a4e70-e89b-4beb-afb6-d59c179fbf3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contributors_xml
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.contributors_xml
+field_name: contributors_xml
+entity_type: node
+bundle: item_test_review
+label: contributors-xml
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

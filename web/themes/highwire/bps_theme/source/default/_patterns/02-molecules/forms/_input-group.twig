@@ -1,0 +1,37 @@
+<div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+<br />
+<label for="exampleColorInput" class="form-label">Color picker</label>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+{% if form-radio-label %}
+	<div class="form-check">
+		<input class="form-check-input" type="radio" {% if form-radio-value %}value="{{form-radio-value}}"{% endif %} {% if form-radio-id %}id="{{form-radio-id}}"{% endif %} {% if form-radio-disabled %}disabled="disabled"{% endif %} {% if form-radio-checked %}checked="checked"{% endif %}>
+		<label class="form-check-label" for="{{form-radio-id}}">{{form-radio-label}}</label>
+	</div>
+{% endif %}
+
+{% if form-check-label %}
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" {% if form-check-value %}value="{{form-check-value}}"{% endif %} {% if form-check-id %}id="{{form-check-id}}"{% endif %} {% if form-check-disabled %}disabled="disabled"{% endif %} {% if form-check-checked %}checked="checked"{% endif %}>
+		<label class="form-check-label" for="{{form-check-id}}">{{form-check-label}}</label>
+	</div>
+{% endif %}
+
+{% if form-switch-label %}
+	<div class="form-check form-switch">
+		<input class="form-check-input" type="checkbox" {% if form-switch-value %}value="{{form-switch-value}}"{% endif %} {% if form-switch-id %}id="{{form-switch-id}}"{% endif %} {% if form-switch-disabled %}disabled="disabled"{% endif %} {% if form-switch-checked %}checked="checked"{% endif %}>
+		<label class="form-check-label" for="{{form-switch-id}}">{{form-switch-label}}</label>
+	</div>
+{% endif %}
+
+{% if form-input-text-label %}
+	<div class="{{form-input-text-class}}">
+		<label for="{{form-input-text-id}}" class="form-label">{{form-input-text-label}}</label>
+		<input type="email" class="form-control" id="{{form-input-text-id}}" placeholder="{{form-input-text-placeholder}}">
+	</div>
+{% endif %}
+

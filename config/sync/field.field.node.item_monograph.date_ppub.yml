@@ -1,0 +1,21 @@
+uuid: 0003665b-22d2-4b8b-a454-c47c3eb1add7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_ppub
+    - node.type.item_monograph
+  module:
+    - datetime_range
+id: node.item_monograph.date_ppub
+field_name: date_ppub
+entity_type: node
+bundle: item_monograph
+label: date-ppub
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

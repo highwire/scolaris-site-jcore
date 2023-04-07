@@ -1,0 +1,21 @@
+uuid: 1c7d0a33-5339-49d3-b1ca-33572bd2051c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section_title
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.section_title
+field_name: section_title
+entity_type: node
+bundle: item_test_review
+label: section-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

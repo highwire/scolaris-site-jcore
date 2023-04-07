@@ -1,0 +1,11 @@
+{% embed "page.html.twig" %}
+  {% block main %}
+    {% include "@organisms/container/main--topics.twig" with {
+  "content_top_alt": page.content_top_alt,
+  "content_top": page.content_top,
+  "content": page.content,
+  "browse_topic": page.browse_topic,
+  "content_bottom": page.content_bottom,
+  } %}
+  {% endblock %}
+{% endembed %}

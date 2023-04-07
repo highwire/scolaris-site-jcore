@@ -1,0 +1,21 @@
+uuid: 3c9417d6-c8b5-496e-9f56-d91f50479a16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.doi
+field_name: doi
+entity_type: node
+bundle: item_report_guideline
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

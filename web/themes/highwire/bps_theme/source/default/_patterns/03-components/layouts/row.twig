@@ -1,0 +1,13 @@
+{% if regions|length > 0 %}
+  <div class="row--{{ row_id }} {{ extra_classes|join(' ') }}">
+    {% for region in regions %}
+      {% if region.content %}
+        {% block region_content %}
+          <div{{ region.attributes }}>
+            {{ region.content }}
+          </div>
+        {% endblock %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

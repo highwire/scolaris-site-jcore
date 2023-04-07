@@ -1,0 +1,5 @@
+ac_rule: online_access
+no_discount_contentkey: ''
+discountflag_name: member-discount-yes
+ecom_discount: '30'
+no_discount_contentvalue: ''

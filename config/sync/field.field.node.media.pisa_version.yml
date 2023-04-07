@@ -1,0 +1,21 @@
+uuid: fda3d5a4-e6e4-42ec-a20a-73fd96e95650
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pisa_version
+    - node.type.media
+  module:
+    - text
+id: node.media.pisa_version
+field_name: pisa_version
+entity_type: node
+bundle: media
+label: pisa-version
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: myaccount_alerts_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/site/_myaccount-alerts.twig' %}
+  {% endblock content %}
+{% endembed %}

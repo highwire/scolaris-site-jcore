@@ -1,0 +1,18 @@
+uuid: 9c1657b4-7af9-4ab5-97b5-19dae0097241
+langcode: en
+status: true
+dependencies: {  }
+id: table_of_contents_journals_
+label: 'Table of Contents (Journals)'
+configurations:
+  -
+    markup_profile: table_of_contents
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_issue
+log: false
+render_placeholder: false

@@ -1,0 +1,19 @@
+uuid: 25307c2d-c606-4de2-b161-04c28c6e3963
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.parent_volume
+field_name: parent_volume
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

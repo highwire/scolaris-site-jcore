@@ -1,0 +1,45 @@
+$component: ".user-login-form";
+#{$component} {
+    .form-item {
+        margin-bottom: 20px;
+        label {
+            display: block;
+            font-weight: 500;
+        }
+        .form-text {
+            margin-top: 0.25rem;
+            font-size: .875em;
+            padding: 10px;
+            color: $black;
+            @include media-breakpoint-down(small-tablet) {
+                width: 100%;
+            }
+        }
+        .description {
+            margin-top: 5px;
+            font-size: 14px;
+            color: $secondary-dark;
+        }
+    }
+    .form-actions {
+        margin: 0 !important;
+        .form-submit {
+            @extend .btn;
+            @extend .btn-danger;
+        }
+    }
+}
+.mlr-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.plr-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.main-container {
+    .main-container {
+        padding: 0 !important;
+        max-width: inherit !important;
+    }
+}

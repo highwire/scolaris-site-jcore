@@ -1,0 +1,21 @@
+uuid: 1564b2ed-9359-4c70-9344-527d8bec9c63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.type_id
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.type_id
+field_name: type_id
+entity_type: node
+bundle: item_report_guideline
+label: type-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

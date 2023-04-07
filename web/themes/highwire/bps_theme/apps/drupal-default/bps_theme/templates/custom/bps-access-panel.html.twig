@@ -1,0 +1,6 @@
+{% include "@molecules/content/access-divider.twig" with {
+    attributes: attributes|without('class', 'id'),
+    classes: attributes.class,
+    panelId: attributes.id
+  }
+%}

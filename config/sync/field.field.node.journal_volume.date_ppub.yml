@@ -1,0 +1,21 @@
+uuid: 921a7ce6-9a6a-4068-ab70-a1fc344a644f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_ppub
+    - node.type.journal_volume
+  module:
+    - datetime_range
+id: node.journal_volume.date_ppub
+field_name: date_ppub
+entity_type: node
+bundle: journal_volume
+label: date-ppub
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

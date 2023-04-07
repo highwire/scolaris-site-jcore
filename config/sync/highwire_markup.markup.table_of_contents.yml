@@ -1,0 +1,35 @@
+uuid: a018c473-e57b-416e-9684-6cacabbcba7f
+langcode: en
+status: true
+dependencies: {  }
+id: table_of_contents
+label: 'Table of Contents'
+profile_id: toc
+configuration:
+  view_mode_for_article: toc_list
+  view_mode_for_article_browse_info: toc_list
+  view_mode_for_item_back_matter: toc_list
+  view_mode_for_item_chapter: toc_list
+  view_mode_for_item_cover: toc_list
+  view_mode_for_item_monograph: toc_list
+  view_mode_for_item_part: toc_list
+  view_mode_for_item_report_guideline: toc_list
+  view_mode_for_item_section: toc_list
+  view_mode_for_item_test_review: toc_list
+  view_mode_for_journal: toc_list
+  view_mode_for_journal_article: toc_list
+  view_mode_for_journal_fragment: toc_list
+  view_mode_for_journal_info: toc_list
+  view_mode_for_journal_issue: toc_list
+  view_mode_for_journal_volume: toc_list
+  view_mode_for_media: toc_list
+  view_mode_for_news_article: toc_list
+  view_mode_for_page: toc_list
+  view_mode_for_registered_test_icon: toc_list
+  view_mode_for_relationship: toc_list
+  view_mode_for_society: toc_list
+  toc_wrapper_class: ''
+  toc_section_class: ''
+  display_flat_toc: 0
+dw_logging: null
+exists_field: ''

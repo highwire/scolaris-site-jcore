@@ -1,0 +1,10 @@
+uuid: 5e9a3222-8932-40e7-82dd-c9085fcd5838
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.cct_browse
+label: 'CCT Browse'
+targetEntityType: block_content
+cache: true

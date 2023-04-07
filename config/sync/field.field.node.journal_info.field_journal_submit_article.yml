@@ -1,0 +1,21 @@
+uuid: 7fb89be9-6bd3-4a06-af51-4535a1ac1bb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal_submit_article
+    - node.type.journal_info
+  module:
+    - text
+id: node.journal_info.field_journal_submit_article
+field_name: field_journal_submit_article
+entity_type: node
+bundle: journal_info
+label: 'Submit an article'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

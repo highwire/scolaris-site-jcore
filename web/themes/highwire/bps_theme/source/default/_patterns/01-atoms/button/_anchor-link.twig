@@ -1,0 +1,55 @@
+{% if text %}
+  <a
+    {% if authorinfo %}
+      href="javascript://"
+    {% else %}
+      href="{{ href }}"
+    {% endif %}
+    {% if title %}
+      title="{{ title }}"
+    {% endif %}
+    {% if target %}
+      target="{{ target }}"
+    {% endif %}
+    {% if class %}
+      class="{{ class }}"
+    {% endif %}
+    {% if modalPopuptarget %}
+      data-bs-toggle="modal"
+      data-bs-target="#{{ modalPopuptarget }}"
+    {% endif %}
+    {% if authorinfo %}
+      data-bs-toggle="popover"
+      data-bs-trigger="focus"
+      data-bs-placement="bottom"
+      data-bs-original-title="{{ authortitle }}"
+      data-bs-content="{{ authorinfo }}"
+    {% endif %}>
+    {{ text }}
+    {% if authorinfo %}
+      <span class="authorinfo"></span>
+    {% endif %}
+  </a>
+{% endif %}
+
+{% if text_withoutpopup %}
+  {{ text_withoutpopup }}
+{% endif %}
+
+{% if modaldata %}
+  {% include "@components/modal/_modal-popup.twig" with {
+    modalPopupdata: modaldata,
+    modalPopup: {
+      modaltargetid: modalPopuptarget,
+      modalHeading: {
+        class: "modal-title",
+        text: title
+      },
+      closeButton: {
+        text: 'Close',
+        classes: "btn-outline-primary",
+        closemodal: "modal"
+      }
+    }
+  } only %}
+{% endif %}

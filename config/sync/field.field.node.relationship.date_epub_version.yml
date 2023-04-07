@@ -1,0 +1,21 @@
+uuid: 36786be0-1317-4d87-8890-fb6b410add37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_epub_version
+    - node.type.relationship
+  module:
+    - datetime_range
+id: node.relationship.date_epub_version
+field_name: date_epub_version
+entity_type: node
+bundle: relationship
+label: date-epub-version
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

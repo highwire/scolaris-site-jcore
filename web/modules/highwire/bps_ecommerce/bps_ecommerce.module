@@ -1,0 +1,97 @@
+<?php
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_theme().
+ */
+function bps_ecommerce_theme() {
+  return [
+    'bps_access_panel' => [
+      'template' => 'bps-access-panel',
+      'variables' => ['user_access' => FALSE, 'user_access_already' => [], 'pricing_items' => [], 'purchase_children' => [], 'access_content_type' => ''],
+    ],
+    'bps_purchase_offer' => [
+      'template' => 'bps-purchase-offer',
+      'variables' => ['product' => [], 'purchase_offers' => [], 'purchase_link' => ''],
+    ],
+    'bps_purchase_offer_item' => [
+      'template' => 'bps-purchase-offer-item',
+      'variables' => ['type' => '', 'duration' => '', 'purchase_link' => ''],
+    ],
+  ];
+}
+
+/**
+ * Implements template_preprocess_THEME().
+ */
+function template_preprocess_bps_access_panel(&$variables) {
+  $variables['attributes']['class'][] = 'bps-access-panel';
+  $variables['attributes']['class'][] = !empty($variables['user_access']) ? 'user-access' : 'user-no-access';
+}
+
+/**
+ * Implements template_preprocess_THEME().
+ */
+function template_preprocess_bps_purchase_offer(&$variables) {
+  $variables['attributes']['class'][] = 'bps-purchase-offer';
+  $variables['attributes']['class'][] = 'product';
+}
+
+/**
+ * Implements template_preprocess_THEME().
+ */
+function template_preprocess_bps_purchase_offer_item(&$variables) {
+  // Add access label & info text based on type.
+  if (!empty($variables['type'])) {
+    switch($variables['type']) {
+      case 'perpetual':
+        $variables['label'] = t('Perpetual access');
+        $variables['info'] = t('You will have access to this version of the content. Future versions may not be covered.');
+        break;
+  
+      case 'rental':
+        $variables['label'] = !empty($variables['duration']) ? $variables['duration'] : t('Rental access');
+        $variables['info'] = !empty($variables['duration']) ? t('You will have online access to this content for @duration. You should download the PDF for perpetual usage.', ['@duration' => $variables['duration']]) : t('You will have access to this content for the specified period, including any updates during that period.');
+        break;
+    }
+  }
+  if ($variables['logged_in'] == FALSE) {
+    $current_path = \Drupal::service('path.current')->getPath();
+    $target_path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+    $variables['purchase_link']["#url"] = Url::fromRoute('openid_connect_sams_sigma.wayfless-url', ['target' => $target_path]);
+  }
+}
+
+/**
+ * Implements hook_library_info_build().
+ */
+function bps_ecommerce_library_info_alter(&$libraries, $extension) {
+  // Add bps_ecommerce/bps_ecommerce as a dependency of highwire_ecommerce/highwire_ecommerce_foxycart.
+  if ($extension == 'highwire_ecommerce') {
+    if (isset($libraries['highwire_ecommerce_foxycart'])) {
+      // @see bps_ecommerce_js_alter().
+      $libraries['highwire_ecommerce_foxycart']['dependencies'][] = 'bps_ecommerce/bps_ecommerce';
+    }
+  }
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function bps_ecommerce_js_alter(&$javascript, $assets) {
+  // Ensure bps_ecommerce/bps_ecommerce gets loaded after highwire_ecommerce/highwire_ecommerce_foxycart.
+  // @TODO: remove when https://www.drupal.org/node/1945262 gets released.
+  $lib_discovery = \Drupal::service('library.discovery');
+
+  // Look up paths to js files from library definition.
+  $hw_ecom_foxycart_lib = $lib_discovery->getLibraryByName('highwire_ecommerce', 'highwire_ecommerce_foxycart');
+  $bps_ecom_lib = $lib_discovery->getLibraryByName('bps_ecommerce', 'bps_ecommerce');
+  $hw_ecom_foxycart_js = !empty($hw_ecom_foxycart_lib['js'][0]['data']) ? $hw_ecom_foxycart_lib['js'][0]['data'] : '';
+  $bps_ecom_js = !empty($bps_ecom_lib['js'][0]['data']) ? $bps_ecom_lib['js'][0]['data'] : '';
+
+  // Set weight of bps_ecommerce/bps_ecommerce to just higher than highwire_ecommerce/highwire_ecommerce_foxycart
+  if (!empty($javascript[$hw_ecom_foxycart_js]) && !empty($javascript[$bps_ecom_js])) {
+    $javascript[$bps_ecom_js]['weight'] = $javascript[$hw_ecom_foxycart_js]['weight'] + 0.001;
+  }
+}

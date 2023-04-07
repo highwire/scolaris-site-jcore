@@ -1,0 +1,21 @@
+uuid: 4d28b20c-69f9-48f0-935c-8a2fbec0fb76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_atom_release
+    - node.type.item_monograph
+  module:
+    - datetime
+id: node.item_monograph.date_atom_release
+field_name: date_atom_release
+entity_type: node
+bundle: item_monograph
+label: date-atom-release
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

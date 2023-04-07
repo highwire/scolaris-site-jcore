@@ -1,0 +1,8 @@
+uuid: 78083754-1883-47fc-92fc-8ac44f58f64b
+langcode: en
+status: true
+dependencies: {  }
+id: publisher_editable
+label: 'Publisher Editable'
+revision: 0
+description: 'Blocks designed to be edited and maintained by the publisher.'

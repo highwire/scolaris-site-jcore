@@ -1,0 +1,14 @@
+{% if blockquote.content %}
+<figure class="blockquote-wrapper">
+	<blockquote class="blockquote {{blockquote.modifier}}">
+	  <p>{{blockquote.content}}</p>
+	  </blockquote>
+	<figcaption class="blockquote-footer {{blockquote.footermodifier}}">
+    {{blockquote.footer_content}}
+  </figcaption>
+  </figure>
+{% endif %}
+
+
+
+

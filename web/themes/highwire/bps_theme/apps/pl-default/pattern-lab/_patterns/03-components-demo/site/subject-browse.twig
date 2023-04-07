@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: subject_browse_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/site/_subject-browse.twig' %}
+  {% endblock content %}
+{% endembed %}

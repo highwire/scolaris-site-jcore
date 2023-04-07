@@ -1,0 +1,21 @@
+uuid: fb830ea9-696f-4c8f-a8b0-e1aecc47e1f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_atom_updated
+    - node.type.item_report_guideline
+  module:
+    - datetime
+id: node.item_report_guideline.date_atom_updated
+field_name: date_atom_updated
+entity_type: node
+bundle: item_report_guideline
+label: date-atom-updated
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

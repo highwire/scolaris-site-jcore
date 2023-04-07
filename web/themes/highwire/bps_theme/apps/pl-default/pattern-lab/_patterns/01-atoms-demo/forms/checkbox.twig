@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: checkbox_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/forms/_checkbox.twig' %}
+  {% endblock content %}
+{% endembed %}

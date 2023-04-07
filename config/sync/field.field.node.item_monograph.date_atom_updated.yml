@@ -1,0 +1,21 @@
+uuid: b0b68be5-daae-4524-9c82-b60c6cbc5bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_atom_updated
+    - node.type.item_monograph
+  module:
+    - datetime
+id: node.item_monograph.date_atom_updated
+field_name: date_atom_updated
+entity_type: node
+bundle: item_monograph
+label: date-atom-updated
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

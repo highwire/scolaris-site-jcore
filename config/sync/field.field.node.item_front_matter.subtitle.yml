@@ -1,0 +1,21 @@
+uuid: 3f8c39d1-57b1-4d62-839c-006a25318599
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subtitle
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.subtitle
+field_name: subtitle
+entity_type: node
+bundle: item_front_matter
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

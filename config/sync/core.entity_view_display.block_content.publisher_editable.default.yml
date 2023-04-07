@@ -1,0 +1,39 @@
+uuid: 5146bda8-c2c3-49cc-b91e-9eefc6a58060
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.publisher_editable
+    - field.field.block_content.publisher_editable.body
+    - field.field.block_content.publisher_editable.field_display_sub_title
+    - field.field.block_content.publisher_editable.field_display_title
+  module:
+    - text
+id: block_content.publisher_editable.default
+targetEntityType: block_content
+bundle: publisher_editable
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_display_sub_title:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

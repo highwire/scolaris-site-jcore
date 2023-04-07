@@ -1,0 +1,25 @@
+uuid: 96e2d189-d4b5-4e88-a376-d6d17d575d34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test_review_name
+    - node.type.registered_test_icon
+id: node.registered_test_icon.field_test_review_name
+field_name: field_test_review_name
+entity_type: node
+bundle: registered_test_icon
+label: 'Test review name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: attach_to_test_review_entity
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

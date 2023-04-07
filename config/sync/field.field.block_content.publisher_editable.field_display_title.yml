@@ -1,0 +1,21 @@
+uuid: 7f5190b4-b6e7-4c34-b426-6d966b13ed45
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.publisher_editable
+    - field.storage.block_content.field_display_title
+  module:
+    - text
+id: block_content.publisher_editable.field_display_title
+field_name: field_display_title
+entity_type: block_content
+bundle: publisher_editable
+label: 'Display Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

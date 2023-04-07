@@ -1,0 +1,21 @@
+uuid: f2bc2164-5251-499a-92dd-cac219995a4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent_journal
+    - node.type.media
+id: node.media.parent_journal
+field_name: parent_journal
+entity_type: node
+bundle: media
+label: parent-journal
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

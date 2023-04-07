@@ -1,0 +1,21 @@
+uuid: e7195475-e720-4df0-8fb5-d8097672297a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.authors_full_name
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.authors_full_name
+field_name: authors_full_name
+entity_type: node
+bundle: item_test_review
+label: authors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

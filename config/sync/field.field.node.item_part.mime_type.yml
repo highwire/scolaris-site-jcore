@@ -1,0 +1,21 @@
+uuid: 7d55d538-29c5-4a10-8140-af9fa71780f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.mime_type
+    - node.type.item_part
+  module:
+    - text
+id: node.item_part.mime_type
+field_name: mime_type
+entity_type: node
+bundle: item_part
+label: mime-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

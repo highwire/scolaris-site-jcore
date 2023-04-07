@@ -1,0 +1,19 @@
+uuid: 3d050349-5dd6-4d77-9762-f6cd127ec28d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal_impact_factor
+    - node.type.journal_info
+id: node.journal_info.field_journal_impact_factor
+field_name: field_journal_impact_factor
+entity_type: node
+bundle: journal_info
+label: 'Impact Factor Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

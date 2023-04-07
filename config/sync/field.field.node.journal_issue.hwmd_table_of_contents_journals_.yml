@@ -1,0 +1,24 @@
+uuid: abe5bdaa-dfd9-4067-97c8-68c09e72f9c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_table_of_contents_journals_
+    - node.type.journal_issue
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: table_of_contents_journals_
+id: node.journal_issue.hwmd_table_of_contents_journals_
+field_name: hwmd_table_of_contents_journals_
+entity_type: node
+bundle: journal_issue
+label: 'HighWire Markup Display - Table of Contents (Journals)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

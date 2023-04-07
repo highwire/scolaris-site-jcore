@@ -1,0 +1,16 @@
+<ul class="font-ul">
+    {% for item in font_family %}
+        <li>
+            <div class="font-name">
+                <span class="font-left">Font Name:</span> {{ item.name }}
+            </div>
+            <div class="font-code">
+                <span class="font-left">Font Code:</span> {{ item.code }}
+            </div>
+            <div class="font-weight">
+                <span class="font-left">Font Weight:</span> <span class="badge bg-primary">{{ item.weight }}</span>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+

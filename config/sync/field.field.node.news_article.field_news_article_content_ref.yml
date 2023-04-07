@@ -1,0 +1,25 @@
+uuid: 26935068-bb3b-4175-9a4c-a172d774d38f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_article_content_ref
+    - node.type.news_article
+id: node.news_article.field_news_article_content_ref
+field_name: field_news_article_content_ref
+entity_type: node
+bundle: news_article
+label: 'Attach to Journal Entity Ref'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: attach_to_journal_entity_ref
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: d7974ea2-5410-4375-9673-f2790b390f55
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_metatag
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  highwire_metatag:
+    metatags_profile: ''
+    metatags_view_mode: ''
+name: item_monograph
+type: item_monograph
+description: 'Auto generated HighWire content type for item-monograph'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: cardlr_column_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/card/_card-lr-column.twig' %}
+  {% endblock content %}
+{% endembed %}

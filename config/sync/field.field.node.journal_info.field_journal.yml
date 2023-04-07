@@ -1,0 +1,25 @@
+uuid: 8e2625ab-7799-4d02-bfd1-e3ac19e3469e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal
+    - node.type.journal_info
+id: node.journal_info.field_journal
+field_name: field_journal
+entity_type: node
+bundle: journal_info
+label: Journal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: attach_to_journal_entity
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

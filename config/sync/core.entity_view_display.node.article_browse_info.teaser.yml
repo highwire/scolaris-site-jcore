@@ -1,0 +1,34 @@
+uuid: e79107c0-7fbf-4684-8216-d38117a066be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article_browse_info.body
+    - field.field.node.article_browse_info.field_image
+    - node.type.article_browse_info
+  module:
+    - text
+    - user
+id: node.article_browse_info.teaser
+targetEntityType: node
+bundle: article_browse_info
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  langcode: true

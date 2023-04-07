@@ -1,0 +1,6 @@
+---
+field:
+  type: text
+  id: id
+  placeholder: Placeholder
+  labelcontent: Label Text

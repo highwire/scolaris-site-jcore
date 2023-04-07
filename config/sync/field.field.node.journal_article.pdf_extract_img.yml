@@ -1,0 +1,27 @@
+uuid: f1e2a414-2aa1-46a9-a531-1ec7ea86e284
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pdf_extract_img
+    - node.type.journal_article
+  module:
+    - file
+id: node.journal_article.pdf_extract_img
+field_name: pdf_extract_img
+entity_type: node
+bundle: journal_article
+label: pdf-extract-img
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

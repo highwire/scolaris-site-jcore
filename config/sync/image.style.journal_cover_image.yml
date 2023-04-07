@@ -1,0 +1,15 @@
+uuid: 6846ad36-6d7b-4789-8b03-e1b9b2be9b86
+langcode: en
+status: true
+dependencies: {  }
+name: journal_cover_image
+label: 'journal cover image'
+effects:
+  bd99ed4c-1202-4c19-a9cb-25ca55de917c:
+    uuid: bd99ed4c-1202-4c19-a9cb-25ca55de917c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 240
+      anchor: center-center

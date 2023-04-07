@@ -1,0 +1,21 @@
+uuid: 1cb92cad-53b6-48b0-acb6-c6a07150ca68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.archived
+    - node.type.item_back_matter
+id: node.item_back_matter.archived
+field_name: archived
+entity_type: node
+bundle: item_back_matter
+label: archived
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

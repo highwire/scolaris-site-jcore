@@ -1,0 +1,10 @@
+uuid: 597884a7-85df-43cf-950f-16a26adf5d13
+langcode: en
+status: true
+dependencies: {  }
+id: full_text_search_index_
+label: 'Full Text (Search Index)'
+profile_id: fulltext
+configuration: {  }
+dw_logging: null
+exists_field: book_has_body

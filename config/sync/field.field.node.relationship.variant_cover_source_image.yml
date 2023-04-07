@@ -1,0 +1,38 @@
+uuid: ed7a7c75-c5eb-41f7-b959-e857b4410fb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.variant_cover_source_image
+    - node.type.relationship
+  module:
+    - image
+id: node.relationship.variant_cover_source_image
+field_name: variant_cover_source_image
+entity_type: node
+bundle: relationship
+label: variant-cover-source-image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler_settings: {  }
+field_type: image

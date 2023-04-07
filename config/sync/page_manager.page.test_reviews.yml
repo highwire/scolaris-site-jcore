@@ -1,0 +1,12 @@
+uuid: f57eab84-8e5e-48fe-9e78-596f0ccd11f7
+langcode: en
+status: true
+dependencies: {  }
+id: test_reviews
+label: 'Test reviews'
+description: ''
+use_admin_theme: false
+path: /test-reviews
+access_logic: and
+access_conditions: {  }
+parameters: {  }

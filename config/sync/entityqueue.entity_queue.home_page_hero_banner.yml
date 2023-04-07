@@ -1,0 +1,25 @@
+uuid: cc877bfa-8625-4766-b39c-de3dac27700c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: home_page_hero_banner
+label: 'Home page hero banner'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: false
+  reverse: false
