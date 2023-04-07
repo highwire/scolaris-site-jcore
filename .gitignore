@@ -1,4 +1,4 @@
-# Ignore binaries.
+# Ignore binaries files.
 /bin
 
 # Ignore non-custom parts of Drupal.
