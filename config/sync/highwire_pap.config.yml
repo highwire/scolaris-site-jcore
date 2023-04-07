@@ -1,0 +1,5 @@
+alias: 'Early View'
+landing_page_path: '/content/{corpus_node}/early/recent'
+landing_page_text: 'Early View articles are peer-reviewed articles which have been accepted for publication and made available in advance of publication of the issue in which they will appear - providing authors and readers with rapid access to the journal''s latest research. Each article is subsequently enhanced by copy-editing, proofreading, typesetting and article layout, and will be published in printable PDF format, with a fully linked full-text version.'
+pap_header_id: '26'
+article_view_id: published_ahead_of_print-block_1

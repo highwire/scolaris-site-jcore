@@ -1,0 +1,17 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: image_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/images/_image.twig' with {
+      image: {
+        src: paths.images ~ '/logo.png',
+        alt: 'Site Logo',
+        title: 'Site Logo',
+        width: '320',
+        height: '90'
+      }
+    } %}
+  {% endblock content %}
+{% endembed %}

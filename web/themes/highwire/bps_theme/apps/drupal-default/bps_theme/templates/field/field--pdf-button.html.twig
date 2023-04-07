@@ -1,0 +1,14 @@
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    'download-pdf',
+  ]
+%}
+<div {{ attributes.addClass(classes) }}>
+  {% for item in items %}
+    <a href="{{ item.content }}" target="pdfframe" class="action-download">{{ "Download PDF"|t }}</a>
+  {% endfor %}
+</div>

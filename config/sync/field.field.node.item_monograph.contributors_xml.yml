@@ -1,0 +1,21 @@
+uuid: 38ffa832-9756-4a07-a98f-4e60bfedb92d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contributors_xml
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.contributors_xml
+field_name: contributors_xml
+entity_type: node
+bundle: item_monograph
+label: contributors-xml
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

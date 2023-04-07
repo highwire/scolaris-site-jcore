@@ -1,0 +1,24 @@
+uuid: 82ebed6c-041c-4c85-9fb2-768939f9fd1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_table_of_contents_book_
+    - node.type.item_front_matter
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: table_of_contents_book_
+id: node.item_front_matter.hwmd_table_of_contents_book_
+field_name: hwmd_table_of_contents_book_
+entity_type: node
+bundle: item_front_matter
+label: 'HighWire Markup Display - Table of Contents (Book)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

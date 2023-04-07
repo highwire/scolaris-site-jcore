@@ -1,0 +1,27 @@
+uuid: 26633f07-15da-4003-9ab8-3e4afff2a830
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.binary
+    - node.type.item_report_guideline
+  module:
+    - file
+id: node.item_report_guideline.binary
+field_name: binary
+entity_type: node
+bundle: item_report_guideline
+label: binary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

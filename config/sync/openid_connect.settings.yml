@@ -1,0 +1,14 @@
+always_save_userinfo: true
+connect_existing_users: false
+override_registration_settings: true
+userinfo_mappings:
+  timezone: zoneinfo
+  path: 0
+  field_hw_preferences_captured: 0
+  field_organization_logo: 0
+  field_sigma_license_data: raw_user_info
+  field_sigma_organization_name: 0
+  field_sigma_user_type: 0
+  user_picture: 0
+_core:
+  default_config_hash: kli1Xws0l--Y-jy-9ZTGApFO_EFk9DMawoetjMk76Ro

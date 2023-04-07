@@ -1,0 +1,116 @@
+{
+  "dataListOption": [
+    {
+      "value": "value 1"
+    },
+    {
+      "value": "value 2"
+    },
+    {
+      "value": "value 3"
+    }
+  ],
+  "source_media": [
+    {
+      "img_media": "(min-width:650px)",
+      "img_srcset": "../../../assets/images/512X512.png"
+    },
+    {
+      "img_media": "(min-width:465px)",
+      "img_srcset": "../../../assets/images/512X512.png"
+    }
+  ],
+  "th_loop": [
+    {
+      "content": "S.No"
+    },
+    {
+      "content": "First Name"
+    },
+    {
+      "content": "Last Name"
+    }
+  ],
+  "table_item": [
+    {
+      "td_loop": [
+        {
+          "content": 1
+        },
+        {
+          "content": "Test1"
+        },
+        {
+          "content": "Data1"
+        }
+      ]
+    },
+    {
+      "td_loop": [
+        {
+          "content": 2
+        },
+        {
+          "content": "Test2"
+        },
+        {
+          "content": "Data2"
+        }
+      ]
+    }
+  ],
+  "card_heading": [
+    {
+      "heading": {
+        "level": "6",
+        "class": "mt-4 text-info",
+        "text": "Research Article"
+      }
+    }
+  ],
+  "card_heading_link": [
+    {
+      "anchorHead": {
+        "level": "4",
+        "class": "",
+        "button": {
+          "href": "#",
+          "title": "Clients' Willingness to Incorporate Religion or Spirituality in Counseling",
+          "text": "Clients' Willingness to Incorporate Religion or Spirituality in Counseling",
+          "class": "text-info"
+        }
+      }
+    }
+  ],
+  "card_description": [
+    {
+      "paragraph": {
+        "class": "",
+        "text": "<em>Rehabilitation Research, Policy, and Education</em> 35(1): 2-17"
+      }
+    }
+  ],
+  "card_link": [
+    {
+      "button": {
+        "href": "#",
+        "class": "btn btn-secondary-light me-3",
+        "text": "show abstract"
+      }
+    },
+    {
+      "button": {
+        "href": "#",
+        "class": "btn btn-secondary-light me-3",
+        "text": "View article"
+      }
+    },
+    {
+      "button": {
+        "href": "#",
+        "class": "btn btn-secondary-light",
+        "text": "Download PDF"
+      }
+    }
+  ]
+}

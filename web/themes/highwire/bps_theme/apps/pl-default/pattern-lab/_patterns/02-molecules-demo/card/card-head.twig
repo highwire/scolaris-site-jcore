@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: card-head_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/card/_card-head.twig' %}
+  {% endblock content %}
+{% endembed %}

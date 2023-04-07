@@ -1,0 +1,156 @@
+---
+page_name: my-account  
+show_search: true
+order_2_1: order_2_1
+left_column_width: col-medium-tablet-4 col-desktop-3
+main_column_width: col-medium-tablet-8 col-desktop-9
+myaccount_top:
+  heading:
+    level: '2'
+    class: my-account__main-heading
+    text: My Content
+  paragraph:
+    class: my-account__main-description
+    text: You have full-text access to the following content
+myaccount_filter:  
+  select:
+    labelcontent: Type
+    group: my-account__filter
+    labelclass: 
+    class: my-account__filter-form-select  
+    title: All content types
+    name: All
+    options:
+    - value: item_book
+      text: Books
+    - value: item_chapter
+      text: Book Chapters
+    - value: item_reference_book
+      text: Reference Works
+    - value: item_journal
+      text: Journals
+    - value: item_journal_issue
+      text: Journal Issues
+    - value: item_journal_artical
+      text: Journal Articals
+myaccount_middle:
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: my-account__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: my-account__add-date
+      text:  Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: my-account__card-heading
+      button:
+        href: "#"
+        title: Title eros dictum 
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_description: 
+  - paragraph:
+      class: my-account__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes, facilisis metus primis pharetra cubilia lacus enim. 
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title:  Show full description 
+      text:  Show full description 
+      class: my-account__toggle-click  
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: my-account__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: my-account__add-date
+      text:  Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: my-account__card-heading
+      button:
+        href: "#"
+        title: Title eros dictum 
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  ribbon_name: Journal
+  flag_item:
+  - button:
+      href: "#"
+      title: Access
+      text: Access
+      class: access-icon
+  card_description: 
+  - paragraph:
+      class: my-account__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes, facilisis metus primis pharetra cubilia lacus enim. 
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title:  Show full description 
+      text:  Show full description 
+      class: my-account__toggle-click  
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: my-account__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: my-account__add-date
+      text:  Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: my-account__card-heading
+      button:
+        href: "#"
+        title: Title eros dictum 
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  ribbon_name: Journal
+  flag_item:
+  - button:
+      href: "#"
+      title: Access
+      text: Access
+      class: access-icon
+  card_description: 
+  - paragraph:
+      class: my-account__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes, facilisis metus primis pharetra cubilia lacus enim. 
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title:  Show full description 
+      text:  Show full description 
+      class: my-account__toggle-click
+myaccount_bottom:
+  OrderbyBottomLeft:
+    class: 
+    content: Show
+  OrderbyBottomRight:
+    class: 
+    content: per page
+  pageBottomCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'

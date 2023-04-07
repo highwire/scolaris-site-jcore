@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Bootstrap Layouts: "2 Columns" template.
+ *
+ * Available layout variables:
+ * - wrapper: Wrapper element for the layout container.
+ * - attributes: Wrapper attributes for the layout container.
+ *
+ * Available region variables:
+ * - left
+ * - right
+ *
+ * Each region variable contains the following properties:
+ * - wrapper: The HTML element to use to wrap this region.
+ * - attributes: The HTML attributes to use on the wrapper for this region.
+ * - content: The content to go inside the wrapper for this region.
+ */
+#}
+{%
+  set classes_row = []
+%}
+{%
+  set classes_left = [
+    'column-order',
+    'col-12'
+  ]
+%}
+{%
+  set classes_right = [
+    'column-order',
+    'col-12'
+  ]
+%}
+<{{ wrapper }}{{ attributes.addClass(classes_row) }}>
+  {{ title_suffix.contextual_links }}
+
+  {% if left.content %}
+  <{{ left.wrapper }}{{ left.attributes.addClass(classes_left) }}>
+    {{ left.content }}
+  </{{ left.wrapper }}>
+  {% endif %}
+
+  {% if right.content %}
+  <{{ right.wrapper }}{{ right.attributes.addClass(classes_right) }}>
+    {{ right.content }}
+  </{{ right.wrapper }}>
+  {% endif %}
+
+</{{ wrapper }}>

@@ -1,0 +1,21 @@
+uuid: b52b3526-00a5-4943-a0eb-9f502d412e71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_ref_links
+    - node.type.media
+id: node.media.has_ref_links
+field_name: has_ref_links
+entity_type: node
+bundle: media
+label: has-ref-links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

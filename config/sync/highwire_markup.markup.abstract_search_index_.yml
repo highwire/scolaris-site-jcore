@@ -1,0 +1,25 @@
+uuid: 27b71855-c09e-41b8-a706-950c1d178ff1
+langcode: en
+status: true
+dependencies: {  }
+id: abstract_search_index_
+label: 'Abstract (Search Index)'
+profile_id: abstract
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: truncate
+      processor_config:
+        config:
+          max_length: '320'
+          word_safe: '1'
+          min_wordsafe_length: '10'
+          add_ellipsis: '1'
+          strip_tags: '1'
+          allowable_tags: '<p><ul><ol><em><strong><span><h4><h5><h6><cite><code>'
+          toggle_full_text: '1'
+          text_collapsed: 'Show full description'
+          text_expanded: 'Hide full description'
+    weight: '1'
+dw_logging: null
+exists_field: ''

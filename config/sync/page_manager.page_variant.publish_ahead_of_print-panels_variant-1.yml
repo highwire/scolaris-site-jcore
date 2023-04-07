@@ -1,0 +1,53 @@
+uuid: 492cb882-0b83-4285-9e79-07c1492bfd01
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.publish_ahead_of_print
+  module:
+    - ctools
+    - panels
+_core:
+  default_config_hash: ypOMoEnA9KYK4GAu_AdYTLyJrgwxf6mo8hTRHAy8FrA
+id: publish_ahead_of_print-panels_variant-1
+label: Default
+variant: panels_variant
+variant_settings:
+  blocks:
+    be06af27-b5a1-4002-8437-0eedcc1c4854:
+      id: 'entity_view:node'
+      label: 'Content Header'
+      provider: ctools
+      label_display: '0'
+      view_mode: header_published_ahead_of_print
+      region: top
+      weight: -10
+      uuid: be06af27-b5a1-4002-8437-0eedcc1c4854
+      context_mapping:
+        entity: corpus_node
+    2866ac99-5a66-4f87-b017-4184b9318d41:
+      id: 'entity_view:node'
+      label: 'Article List (view)'
+      provider: ctools
+      label_display: '0'
+      view_mode: view_published_ahead_of_print_articles
+      region: left
+      weight: -1
+      uuid: 2866ac99-5a66-4f87-b017-4184b9318d41
+      context_mapping:
+        entity: corpus_node
+  id: panels_variant
+  uuid: 55fb49a1-6f82-4a91-bb50-af89881bc8c9
+  label: null
+  weight: 0
+  page_title: ''
+  storage_type: page_manager
+  storage_id: publish_ahead_of_print-panels_variant-1
+  builder: standard
+  layout: ''
+  layout_settings: {  }
+page: publish_ahead_of_print
+weight: -10
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

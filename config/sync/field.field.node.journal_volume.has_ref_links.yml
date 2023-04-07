@@ -1,0 +1,21 @@
+uuid: 0a21446d-5c14-45b8-8be1-5452d7581f21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_ref_links
+    - node.type.journal_volume
+id: node.journal_volume.has_ref_links
+field_name: has_ref_links
+entity_type: node
+bundle: journal_volume
+label: has-ref-links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

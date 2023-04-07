@@ -1,0 +1,11 @@
+uuid: c320bf2c-608f-4a25-8317-e6784d9ca7c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.registered_test_icon
+id: node.registered_test_icon
+target_entity_type_id: node
+target_bundle: registered_test_icon
+default_langcode: site_default
+language_alterable: false

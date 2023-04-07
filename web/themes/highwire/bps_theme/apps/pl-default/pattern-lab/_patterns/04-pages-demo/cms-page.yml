@@ -1,0 +1,75 @@
+---
+page_name: about
+show_search: true
+sidenavLoop:
+- heading:
+    level: '5'
+    text: Company Information
+  listing_items:
+    active: active
+    url: "#"
+    title: About
+    content: About
+    sub_group:
+    - url: "#"
+      title: Sub page 1
+      content: Sub page 1
+    - url: "#"
+      title: Sub page 2
+      content: Sub page 2
+    url: "#"
+    title: Help
+    content: Help
+    url: "#"
+    title: Permissions
+    content: Permissions
+    url: "#"
+    title: Privacy policy
+    content: Privacy policy
+cms_items:
+- heading:
+    level: '1'
+    text: Heading level 1 page title
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar, risus inceptos egestas nascetur bibendum facilisi felis, dapibus eros metus per platea. Porttitor consectetur sociosqu nostra varius eu fermentum eget, pellentesque quisque posuere diam bibendum amet phasellus vulputate, quam sit dictum dui ligula venenatis. Laoreet quisque gravida sit morbi vitae convallis, mollis quis magnis viverra pharetra lacinia, parturient sapien dolor malesuada purus. Maecenas tristique semper ante suspendisse curabitur ad tortor vestibulum, magna parturient tempor consectetur curae ultrices libero aptent.'
+blockquote:
+  modifier: 
+  content: Aliquet metus vel nisi lacinia dictum amet porttitor natoque, eros aptent eu viverra class semper nunc, nullam lacus aliquam lectus felis erat morbi. Dictum tellus malesuada tortor libero velit ultrices parturient placerat bibendum dictumst, penatibus sapien magna facilisis porta fames interdum sollicitudin torquent dolor per, nunc blandit laoreet natoque hendrerit pharetra tempus sociis at.”
+  footermodifier: 
+  footer_content: Blockquote subtitle  
+cms_subitems:
+- heading:
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar, risus inceptos egestas nascetur bibendum facilisi felis, dapibus eros metus per platea. Porttitor consectetur sociosqu nostra varius eu fermentum eget, pellentesque quisque posuere diam bibendum amet phasellus vulputate, quam sit dictum dui ligula venenatis.'
+- heading:
+    level: '2'
+    text: Heading level 2
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar, risus inceptos egestas nascetur bibendum facilisi felis, dapibus eros metus per platea. Porttitor consectetur sociosqu nostra varius eu fermentum eget, pellentesque quisque posuere diam bibendum amet phasellus vulputate, quam sit dictum dui ligula venenatis. Laoreet quisque gravida sit morbi vitae convallis, mollis quis magnis viverra pharetra lacinia, parturient sapien dolor malesuada purus. Maecenas tristique semper ante suspendisse curabitur ad tortor vestibulum, magna parturient tempor consectetur curae ultrices libero aptent.'
+- heading:
+    level: '3'
+    text: Heading level 3
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar, risus inceptos egestas nascetur bibendum facilisi felis, dapibus eros metus per platea. Porttitor consectetur sociosqu nostra varius eu fermentum eget, pellentesque quisque posuere diam bibendum amet phasellus vulputate, quam sit dictum dui ligula venenatis. Laoreet quisque gravida sit morbi vitae convallis, mollis quis magnis viverra pharetra lacinia, parturient sapien dolor malesuada purus. Maecenas tristique semper ante suspendisse curabitur ad tortor vestibulum, magna parturient tempor consectetur curae ultrices libero aptent.'
+- heading:
+    level: '4'
+    text: Heading level 4
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar, risus inceptos egestas nascetur bibendum facilisi felis, dapibus eros metus per platea. Porttitor consectetur sociosqu nostra varius eu fermentum eget, pellentesque quisque posuere diam bibendum amet phasellus vulputate, quam sit dictum dui ligula venenatis. Laoreet quisque gravida sit morbi vitae convallis, mollis quis magnis viverra pharetra lacinia, parturient sapien dolor malesuada purus. Maecenas tristique semper ante suspendisse curabitur ad tortor vestibulum, magna parturient tempor consectetur curae ultrices libero aptent.'  
+- heading:
+    level: '5'
+    text: Heading level 5
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar.'
+- heading:
+    level: '6'
+    text: Heading level 6
+  cms_description:
+  - paragraph:
+      text: 'Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis, ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus sociosqu libero congue duis metus, in maecenas euismod felis sed. Viverra ac netus venenatis purus fusce pulvinar.'

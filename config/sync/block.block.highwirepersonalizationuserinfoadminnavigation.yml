@@ -1,0 +1,29 @@
+uuid: 4b7b21b4-9a1f-4d98-b864-507c7f63725c
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_personalization
+    - system
+  theme:
+    - bps
+id: highwirepersonalizationuserinfoadminnavigation
+theme: bps
+region: sidebar_first
+weight: 0
+provider: null
+plugin: highwire_p13n_admin_nav
+settings:
+  id: highwire_p13n_admin_nav
+  label: 'HighWire Personalization: User Info & Admin Navigation'
+  provider: highwire_personalization
+  label_display: '0'
+  show_user_info: 1
+  show_nav: 1
+  log_out_link_text: 'Log out'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/my-account\r\n/my-account/*"
+    negate: false
+    context_mapping: {  }

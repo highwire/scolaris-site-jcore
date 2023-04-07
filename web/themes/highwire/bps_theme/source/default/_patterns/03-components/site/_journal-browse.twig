@@ -1,0 +1,19 @@
+<div class="journal-browse-top ">		
+	<div class="journals-browse-inner col-12 col-desktop-8 col-large-desktop-9">
+		{% include "@molecules/card/_card-body.twig" with {
+			card_heading: journal_browse_heading,
+			card_description: journal_browse_description,
+			card_link: journal_browse_action
+		} only %}
+	</div>
+</div>	
+{% for item in journal_browse_bottom %}	
+	<article class="article">
+		{% include "@components/card/_card-lr-column.twig" with {
+			card_lr_column: item.card_lr_column
+		} only %}
+	</article>
+{% endfor %}
+<div class="col-12">
+	{% include "@molecules/grouping/_pagination.twig" %}
+</div>

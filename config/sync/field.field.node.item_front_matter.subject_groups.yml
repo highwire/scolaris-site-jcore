@@ -1,0 +1,37 @@
+uuid: 21f54914-6916-4781-8f57-8ffc90851fc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subject_groups
+    - node.type.item_front_matter
+  module:
+    - double_field
+id: node.item_front_matter.subject_groups
+field_name: subject_groups
+entity_type: node
+bundle: item_front_matter
+label: subject-groups
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

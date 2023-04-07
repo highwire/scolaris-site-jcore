@@ -1,0 +1,21 @@
+uuid: efbc9d77-5c9f-4c7f-a5d4-9825665d7dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.atom_id
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.atom_id
+field_name: atom_id
+entity_type: node
+bundle: item_test_review
+label: atom-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

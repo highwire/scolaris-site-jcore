@@ -1,0 +1,5 @@
+{% if heading.text %}
+	<h3 {% if heading.class %}class="{{ heading.class }}"{% endif %}>
+		{{ heading.text | raw }}
+	</h3>
+{% endif %}

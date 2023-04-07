@@ -1,0 +1,56 @@
+uuid: 8ffd1ccd-6be4-4970-9c36-68a82e0d87ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - system.menu.browse-content
+    - views.view.homepage_highlights_carousel
+  module:
+    - panels
+    - system
+    - views
+id: homepage-panels_variant-1
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    c44f86c0-2422-4441-a291-9f3bf127371b:
+      id: 'system_menu_block:browse-content'
+      label: 'Browse Content'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: main
+      weight: -10
+      uuid: c44f86c0-2422-4441-a291-9f3bf127371b
+      context_mapping: {  }
+    deea65a0-c8ec-43b6-af6d-72c3e93bfe45:
+      id: 'views_block:homepage_highlights_carousel-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content_bottom
+      weight: 0
+      uuid: deea65a0-c8ec-43b6-af6d-72c3e93bfe45
+      context_mapping: {  }
+  id: panels_variant
+  uuid: b96287e1-bef1-40a5-8c63-151a99ed8412
+  label: null
+  weight: 0
+  layout: bps_layout__front
+  layout_settings:
+    label: Homepage
+  page_title: Homepage
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-1
+  builder: standard
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

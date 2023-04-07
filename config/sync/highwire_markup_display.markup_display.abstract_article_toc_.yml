@@ -1,0 +1,18 @@
+uuid: a36f0a3f-e237-4588-99f3-13e2f4857dbb
+langcode: en
+status: true
+dependencies: {  }
+id: abstract_article_toc_
+label: 'Abstract (Article ToC)'
+configurations:
+  -
+    markup_profile: journal_abstract
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_article
+log: false
+render_placeholder: false

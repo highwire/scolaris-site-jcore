@@ -1,0 +1,21 @@
+uuid: 030eb80c-c68f-45e8-882a-532f54503470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.authors_full_name
+    - node.type.journal_fragment
+  module:
+    - text
+id: node.journal_fragment.authors_full_name
+field_name: authors_full_name
+entity_type: node
+bundle: journal_fragment
+label: authors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

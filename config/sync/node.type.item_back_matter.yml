@@ -1,0 +1,11 @@
+uuid: ec32cbd6-8819-4378-8adf-bcda66ea5bf5
+langcode: en
+status: true
+dependencies: {  }
+name: item_back_matter
+type: item_back_matter
+description: 'Auto generated HighWire content type for item-back-matter'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

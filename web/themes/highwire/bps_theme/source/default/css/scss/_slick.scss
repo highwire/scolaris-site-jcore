@@ -1,0 +1,247 @@
+// Configuration
+@import "functions";
+@import "mixins";
+@import "utilities";
+
+.slick-slider {
+	position: relative;
+	margin: 0 -12px;
+	padding-bottom: 0rem;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	&:focus {
+		outline: none;
+	}
+	&.dragging {
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	display: flex;
+	align-items: baseline;
+}
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	&:after {
+		clear: both;
+	}
+}
+.slick-track:before,
+.slick-track:after {
+	display: table;
+	content: '';
+}
+.slick-loading {
+	.slick-track {
+		visibility: hidden;
+	}
+	.slick-slide {
+		visibility: hidden;
+	}
+}
+.slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	margin: 0 12px;
+	a {
+		outline: none;
+		display: inline-block;
+		vertical-align: top;		
+	}
+	picture {
+		display: inline-flex;
+		align-items: flex-end;
+		height: 225px;
+		width: 165px;
+	}
+	img {
+		display: block;
+		max-width: 165px;
+		max-height: 225px;
+		width: 165px;
+	}
+	&.slick-loading {
+		img {
+			display: none;
+		}
+	}
+	&.dragging {
+		img {
+			pointer-events: none;
+		}
+	}
+}
+[dir='rtl'] {
+	.slick-slide {
+		float: right;
+	}
+}
+.slick-initialized {
+	.slick-slide {
+		display: block;
+	}
+}
+.slick-vertical {
+	.slick-slide {
+		display: block;
+		height: auto;
+		border: 1px solid transparent;
+	}
+}
+.slick-arrow {
+	font-family: 'Feather';
+	background: none;
+	font-size: 0;
+	border: none;
+	position: absolute;
+	top: -23px;
+	margin-top: -34px;
+	background: $danger;
+	transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	color: $white;
+	border-radius: 50%;
+	padding: 0;
+	z-index: 10;
+	height: 34px;
+	width: 34px;
+	line-height: normal;
+	&.slick-hidden {
+		display: none;
+	}
+	&.slick-prev {
+		left: auto;
+		right: 60px;
+		&:before {
+			content: "\e92f";
+			font-size: 28px;
+		}
+	}
+	&.slick-next {
+		right: 15px;
+		&:before {
+			content: "\e930";
+			font-size: 28px;
+		}
+	}
+	&.slick-disabled {
+		opacity: 0.3;
+	}
+	&:hover {
+		background: $primary-dark;
+		color: $white;
+	}
+}
+
+/* SLICK: DOTS */
+.slick-dots {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	.slick-active {
+		button {
+			border: 0;
+			height: 13px;
+			width: 13px;
+			background-color: $info;
+		}
+	}
+	li {
+		display: flex;
+		align-items: center;
+		margin: 0 4px;
+		padding: 0;
+		height: 11px;
+		width: 11px;
+		button {
+			background-color: $primary;
+			border: none;
+			border-radius: 50%;
+			opacity: 1;
+			display: block;
+			height: 13px;
+			width: 13px;
+			outline: none;
+			line-height: 0px;
+			font-size: 0px;
+			cursor: pointer;
+		}
+	}
+}
+
+$slider: ".slider";
+#{$slider} {
+	&__main__heading {
+		margin-bottom: 1.125rem;
+		@include media-breakpoint-down(large-tablet) {
+			margin-bottom: .5rem;
+		}
+	}
+	&__right-link {
+		font-size: 1rem;
+		line-height: 2.625rem;
+		margin-bottom: 1rem;
+		&:after {
+			content: "\e930";
+			font-family: "feather";
+			vertical-align: middle;
+			font-size: 1.5rem;
+			top: -1px;
+			position: relative;
+			:hover {
+				color: inherit;
+			}
+		}
+		@include media-breakpoint-down(large-tablet) {
+			margin-bottom: 1rem;
+		}
+	}
+	&__slick__description {
+		padding-top: 12px;
+		padding-left: 0;
+		padding-right: 0;
+		p {
+			margin-bottom: 0px;
+			font-size: 1rem;
+		}
+	}
+	&__img__fluid {
+		@extend .img-fluid !optional;
+	}
+}

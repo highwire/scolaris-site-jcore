@@ -1,0 +1,28 @@
+{% extends "@components/layouts/_base.twig" %}
+{% block content %}	
+	<div class="container {{ page_name }}">	
+		<div class="row">
+			<div class="column-order col-12 {{ left_column_width }} {{ order_3_1 }} mt-4">
+				{% block Leftsidebar %}					
+					<div class="p-3 border bg-secondary-light column_box">
+						Left Section
+					</div>
+				{% endblock %}
+			</div>
+			<div class="column-order col-12 {{ main_column_width }} {{ order_3_2 }} mt-4">
+				{% block main %}
+					<div class="p-3 border bg-secondary-light column_box">
+						Main Section
+					</div>
+				{% endblock %}
+			</div>
+			<div class="column-order col-12 {{ right_column_width }} {{ order_3_3 }} mt-4">
+				{% block rightsidebar %}
+					<div class="p-3 border bg-secondary-light column_box">
+						Right Section
+					</div>
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

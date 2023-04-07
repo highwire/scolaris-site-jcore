@@ -1,0 +1,21 @@
+uuid: 097f1826-4f0f-424f-bcdd-f938c9c5c806
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.disclaimer
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.disclaimer
+field_name: disclaimer
+entity_type: node
+bundle: item_monograph
+label: disclaimer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

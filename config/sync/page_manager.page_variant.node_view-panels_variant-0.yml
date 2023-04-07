@@ -1,0 +1,153 @@
+uuid: bd70cd02-57d3-41ba-83d1-06dac16e70dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - adnuntius
+    - bps_content_display
+    - bps_core
+    - bps_search
+    - ctools
+    - panels
+id: node_view-panels_variant-0
+label: Journal
+variant: panels_variant
+variant_settings:
+  blocks:
+    697439d5-2a40-4978-9cc0-84e9760b7876:
+      id: news_articles
+      label: 'Periodical news'
+      provider: bps_core
+      label_display: visible
+      region: right
+      weight: -4
+      uuid: 697439d5-2a40-4978-9cc0-84e9760b7876
+      context_mapping:
+        node: node
+    8f4b51c1-4229-488b-89a2-ef0fe896a15d:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: full
+      region: left
+      weight: -5
+      uuid: 8f4b51c1-4229-488b-89a2-ef0fe896a15d
+      context_mapping:
+        entity: node
+    a7add3e3-dd9c-4bae-8f58-f4291b4aa384:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: content_details
+      region: top
+      weight: -3
+      uuid: a7add3e3-dd9c-4bae-8f58-f4291b4aa384
+      context_mapping:
+        entity: node
+    c7349115-5a20-4e26-a6eb-c80b18f6393b:
+      id: searchBrowse
+      label: 'Search browse block'
+      provider: bps_search
+      label_display: '0'
+      region: left
+      weight: -6
+      uuid: c7349115-5a20-4e26-a6eb-c80b18f6393b
+      context_mapping: {  }
+    ef18af18-d7c6-4646-8b26-dc25efee7f31:
+      id: adnuntius_block
+      label: 'Slot 7 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: top
+      weight: -1
+      uuid: ef18af18-d7c6-4646-8b26-dc25efee7f31
+      auid: 000000000022158d
+      invocation_method: div
+      context_mapping: {  }
+    bc0a705f-f098-4e64-886c-ada9dd5cae8f:
+      id: adnuntius_block
+      label: 'Slot 6 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: right
+      weight: 0
+      uuid: bc0a705f-f098-4e64-886c-ada9dd5cae8f
+      auid: 000000000022158a
+      invocation_method: div
+      context_mapping: {  }
+    3d154e24-cefc-4065-b473-9e077badbbc6:
+      id: adnuntius_block
+      label: 'Slot 8 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: bottom
+      weight: 0
+      uuid: 3d154e24-cefc-4065-b473-9e077badbbc6
+      auid: '0000000000221590'
+      invocation_method: div
+      context_mapping: {  }
+    69f30f74-9f1e-42b0-be65-1aae726bc0f7:
+      id: bps_pdf_only_message
+      label: 'PDF Only Message'
+      provider: bps_content_display
+      label_display: '0'
+      region: top
+      weight: -2
+      uuid: 69f30f74-9f1e-42b0-be65-1aae726bc0f7
+      context_mapping:
+        node: node
+  id: panels_variant
+  uuid: 6bb7a6db-34e8-4167-810e-b825244e3e28
+  label: null
+  weight: 0
+  layout: bs_2col_stacked
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes: {  }
+      add_layout_class: 0
+      attributes: 'class|journal-page journal-article row journals-articles-middle'
+    regions:
+      top:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+      left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-9'
+      right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-3 article__rightbar'
+      bottom:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: '[node:title]'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      journal: journal
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

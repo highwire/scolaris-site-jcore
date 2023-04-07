@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: carousal_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/carousal/_carousal.twig' %}
+  {% endblock content %}
+{% endembed %}

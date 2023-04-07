@@ -1,0 +1,12 @@
+uuid: 533fdf1f-a2cf-42f1-87ea-156b49b4c151
+langcode: en
+status: true
+dependencies: {  }
+id: reports_guidelines
+label: 'Reports & Guidelines'
+description: ''
+use_admin_theme: false
+path: /reports-guidelines
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,21 @@
+uuid: 30014766-429e-492a-8bcc-4ae00d214c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.supp_content_type
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.supp_content_type
+field_name: supp_content_type
+entity_type: node
+bundle: item_front_matter
+label: supp-content-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

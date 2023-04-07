@@ -1,0 +1,21 @@
+uuid: 0cf3632a-9c3d-41d7-b32d-6f2a96265709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.summary
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.summary
+field_name: summary
+entity_type: node
+bundle: relationship
+label: summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

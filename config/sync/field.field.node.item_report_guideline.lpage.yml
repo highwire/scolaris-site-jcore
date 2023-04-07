@@ -1,0 +1,21 @@
+uuid: 88465091-d966-4907-8212-3c9d268b98fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.lpage
+field_name: lpage
+entity_type: node
+bundle: item_report_guideline
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

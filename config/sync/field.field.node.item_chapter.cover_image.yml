@@ -1,0 +1,38 @@
+uuid: e7ab358a-6e78-4eae-ab12-122e8d8e40dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cover_image
+    - node.type.item_chapter
+  module:
+    - image
+id: node.item_chapter.cover_image
+field_name: cover_image
+entity_type: node
+bundle: item_chapter
+label: cover-image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler_settings: {  }
+field_type: image

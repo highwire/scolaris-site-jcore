@@ -1,0 +1,9 @@
+{% extends "@components/layouts/_one-column.twig" %}
+{% block main %}
+	<div class="container">
+		{% include "@components/site/_custom-collections.twig" with {
+      ccb_top: ccb_top,
+      ccb_bottom: ccb_bottom
+    } only %}
+  </div>
+{% endblock %}

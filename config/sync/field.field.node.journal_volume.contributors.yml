@@ -1,0 +1,21 @@
+uuid: e8f605e8-a1f7-46aa-8e4d-b5c1c743e075
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contributors
+    - node.type.journal_volume
+  module:
+    - text
+id: node.journal_volume.contributors
+field_name: contributors
+entity_type: node
+bundle: journal_volume
+label: contributors
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

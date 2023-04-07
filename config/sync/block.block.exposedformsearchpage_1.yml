@@ -1,0 +1,23 @@
+uuid: 7671be99-049f-450a-9ace-16efc80957e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - bps
+id: exposedformsearchpage_1
+theme: bps
+region: search
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

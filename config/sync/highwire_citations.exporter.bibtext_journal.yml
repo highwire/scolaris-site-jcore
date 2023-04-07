@@ -1,0 +1,15 @@
+uuid: d94b673f-ef4a-4edc-8758-cdc50c248cfa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ls6G1J_rNTO8zBcCuOUxcWdkly_LHJuXD-SUFcsFQ6U
+title: 'BibText Journal'
+id: bibtext_journal
+export_plugin: bibtext
+label: null
+format_type: null
+citations_tokens: "author|[node:authors_full_name]\r\ntitle|[node:title]\r\nvolume|[]\r\nnumber|[]\r\npages|[]\r\nyear|[]\r\ndoi|[]\r\npublisher|[]\r\nissn|[]\r\nURL|[]\r\neprint|[]\r\njournal|[]"
+content_types: null
+content_type_prefix: null
+citations_markup: null

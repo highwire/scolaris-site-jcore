@@ -1,0 +1,30 @@
+uuid: be398fc4-1222-45d6-a97a-2adecd72b49a
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.variant_small_image
+field_name: variant_small_image
+entity_type: node
+type: image
+settings:
+  target_type: file
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

@@ -1,0 +1,21 @@
+uuid: 6b350dcd-dcc6-42ed-a02d-96f28798ad52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.doi
+field_name: doi
+entity_type: node
+bundle: relationship
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

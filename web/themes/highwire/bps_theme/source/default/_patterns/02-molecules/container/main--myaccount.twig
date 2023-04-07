@@ -1,0 +1,62 @@
+{% if page_title %}	
+  <div class="content-page-title">{{ page_title }}</div>	
+{% endif %}
+<main role="main" class="container main-container my-account {{ attributes.class }}" {{ atttributes|without('class', 'role') }}>
+  {% block content_top_alt %}
+    {% if content_top_alt %}
+      <div class="content-top-alt bg--alt">
+          {{ content_top_alt }}
+      </div>
+    {% endif %}
+  {% endblock %}
+  {% block content_top %}
+    {% if content_top %}
+      <div class="content-top">
+          {{ content_top }}
+      </div>
+    {% endif %}
+  {% endblock %}
+  {% block main_content %}
+      {% if sidebar_first and sidebar_second %}
+        {% set colum_first_sidebar = 'col-medium-tablet-3 col-desktop-3' %}
+        {% set colum_second_sidebar = 'col-medium-tablet-3 col-desktop-3' %}
+        {% set colum_content = 'col-medium-tablet-6 col-desktop-6' %}
+      {% elseif sidebar_first %}
+        {% set colum_first_sidebar = 'col-medium-tablet-4 col-desktop-3' %}
+        {% set colum_content = 'col-medium-tablet-8 col-desktop-9' %}
+      {% elseif sidebar_second %}
+        {% set colum_second_sidebar = 'col-medium-tablet-4 col-desktop-3' %}
+        {% set colum_content = 'col-medium-tablet-8 col-desktop-9' %}
+      {% else %}
+      {% endif %}
+      <div class="row">
+        {% block sidebar_first %}
+        {% if sidebar_first %}
+          <aside class="column-order col-12 {{ colum_first_sidebar }}" role="complementary">
+            {{ sidebar_first }}
+          </aside>
+        {% endif %}
+        {% endblock %}
+        {% block content %}
+          <section{{ content_attributes|without('class') }} class="{{ content_attributes.class }} column-order col-12 annotation-page {{ colum_content }}">
+            <a id="main-content"></a>
+            {{ content }}
+          </section>
+        {% endblock %}
+        {% block sidebar_second %}
+          {% if sidebar_second %}
+            <aside class="column-order col-12 {{ colum_second_sidebar }}" role="complementary">
+              {{ sidebar_second }}
+            </aside>
+          {% endif %}
+        {% endblock %}
+    </div>
+  {% endblock %}
+  {% block content_bottom %}
+    {% if content_bottom %}
+      <div class="content-bottom">
+          {{ content_bottom }}
+      </div>
+    {% endif %}
+  {% endblock %}
+</main>

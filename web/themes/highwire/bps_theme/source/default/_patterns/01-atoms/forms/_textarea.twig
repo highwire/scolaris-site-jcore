@@ -1,0 +1,11 @@
+{% if textarea.labelcontent %}
+	<div class="clearfix {{textarea.group}}">
+		<label for="{{textarea.id}}" class="form-label">{{textarea.labelcontent}}</label>
+		<textarea class="{{ textarea.class }}" name="{{ textarea.name }}" placeholder="{{ textarea.placeholder }}" required="{{ textarea.required }}"></textarea>
+		{% if textarea.helptext %}
+			<div class="help-text">{{ textarea.helptext }}</div>
+		{% endif %}
+	</div>
+{% else %}
+	<textarea class="{{ textarea.class }}" name="{{ textarea.name }}" placeholder="{{ textarea.placeholder }}" required="{{ textarea.required }}"></textarea>
+{% endif %}

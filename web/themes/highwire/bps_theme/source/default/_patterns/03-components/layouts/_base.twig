@@ -1,0 +1,11 @@
+{% if show_header|default(true) %}
+  {% include "@components/header/_header.twig" %}
+{% endif %}
+<!-- Start role=main -->
+<div role="main">
+	{% block content %}{% endblock %}
+</div>
+<!-- End role=main -->
+{% if show_footer|default(true) %}
+  {% include "@components/footer/_footer.twig" %}
+{% endif %}

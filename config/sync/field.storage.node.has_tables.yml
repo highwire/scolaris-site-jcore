@@ -1,0 +1,18 @@
+uuid: db5d1cf6-ab45-485f-8c55-fc00e573ae22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.has_tables
+field_name: has_tables
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

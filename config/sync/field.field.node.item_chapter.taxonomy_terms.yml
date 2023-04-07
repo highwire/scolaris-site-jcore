@@ -1,0 +1,21 @@
+uuid: 8d15e7ad-153f-42fd-810d-c5402c39d6ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.item_chapter
+id: node.item_chapter.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: item_chapter
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

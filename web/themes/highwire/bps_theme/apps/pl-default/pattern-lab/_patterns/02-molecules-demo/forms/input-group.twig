@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: input-group_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/forms/_input-group.twig' %}
+  {% endblock content %}
+{% endembed %}

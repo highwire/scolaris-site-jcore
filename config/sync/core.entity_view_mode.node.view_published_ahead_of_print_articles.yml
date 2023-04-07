@@ -1,0 +1,12 @@
+uuid: 526d330b-d3f1-4e0f-9617-0f663f86d964
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ixwWLNsAFVRREYjAdhlmp86uRQwiGSK-glxWngsoQXo
+id: node.view_published_ahead_of_print_articles
+label: 'View: Published Ahead of Print - Articles'
+targetEntityType: node
+cache: true

@@ -1,0 +1,21 @@
+uuid: 03083a6a-9a79-4fec-803b-3832b3b5b39f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_ebook_compact
+    - node.type.item_section
+  module:
+    - text
+id: node.item_section.isbn_ebook_compact
+field_name: isbn_ebook_compact
+entity_type: node
+bundle: item_section
+label: isbn-ebook-compact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

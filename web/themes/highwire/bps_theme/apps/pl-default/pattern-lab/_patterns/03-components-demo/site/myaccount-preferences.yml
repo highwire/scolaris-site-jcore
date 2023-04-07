@@ -1,0 +1,36 @@
+---
+organisms_only: true
+myaccount_top:
+  badge_heading:
+    level: '6'
+    class: my-account__badge__title
+    text: My Account
+  heading:
+    level: '3'
+    class: my-account__main-heading
+    text: Profile & Privacy
+  paragraph:
+    class: my-account__main-description
+    text: Manage your privacy & policy.
+getlist:
+  heading:
+      level: '5'
+      class: my-account__getlist_heading
+      text:  Get on the list!  
+  paragraph:
+    class: my-account__text
+    text: Join our email list for free content, new publication alerts and special offers.
+  checkbox:
+    formclass: my-account__checkbox
+    name: checkbox
+    value: Subscribe
+    label: Subscribe
+    prefix: Subscribe  
+submit:
+  button:
+    href: "#"
+    title:  Save changes
+    text:  Save changes 
+    class: my-account__button  
+
+ 

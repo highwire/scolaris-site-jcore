@@ -1,0 +1,34 @@
+<div class="cc-top">
+  {% if ccb_top.heading_label %}
+    {% include "@atoms/text/_heading-1.twig" with {
+      heading: ccb_top.heading_label
+    } only %}
+  {% endif %}
+  {% include "@components/card/_card-lr-column.twig" with {
+    card_lr_column: ccb_top.cardlist
+  } only %}
+</div>
+<div class="cc-bottom">
+  {% if ccb_bottom.include_label %}
+    <div class="cc-bottom-include">
+      {{ ccb_bottom.include_label }}
+    </div>
+  {% endif %}
+  {% if ccb_bottom.cardlist %}
+    {% include "@components/card/_card-lr-column.twig" with {
+      card_lr_column: ccb_bottom.cardlist
+    } only %}
+  {% endif %}
+  {% if ccb_bottom.card_items %}
+    <div class="content-list-block">
+      {% for item in ccb_bottom.card_items %}
+        <div class="collection-col">
+          {% include '@components/card/_card-item.twig' with {
+            image: item.image,
+            anchorHead: item.anchorlink
+          } only %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,23 @@
+uuid: 57dab5ac-a0f7-4c62-97da-e7f0b79b2c08
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: QGs7xpMXXlJs74JktLCgUZ29YTaiJ9VJmny6Cfj8T8Y
+id: taxonomy_term.taxonomy_collection
+field_name: taxonomy_collection
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

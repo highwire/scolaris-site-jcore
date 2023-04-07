@@ -1,0 +1,58 @@
+uuid: 735e5130-0a4e-4741-a2c6-0b6badbd97cd
+langcode: en
+status: true
+dependencies: {  }
+id: full_text
+label: 'Full text'
+profile_id: fulltext
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: binaryuri
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: mathml
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: nlmfigures
+      processor_config:
+        config:
+          size: variant_large_image
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: bpscontribsplain
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: bpscrosschapterlinks
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: bps_brightcove
+      processor_config:
+        config:
+          bc_video:
+            xpath: ''
+            width: '480'
+            height: '270'
+          bc_audio:
+            xpath: ''
+            width: '480'
+            height: '80'
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: openurl
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: replace_tag
+      processor_config:
+        config:
+          replace_tag: b|strong
+    weight: '1'
+dw_logging: null
+exists_field: book_has_body

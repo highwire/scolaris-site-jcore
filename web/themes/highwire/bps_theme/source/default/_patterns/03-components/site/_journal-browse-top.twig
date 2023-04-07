@@ -1,0 +1,22 @@
+<div class="journal-browse-top">
+  {% for item in journal_browse_top %}
+    {% include "@atoms/text/_heading-2.twig" with {
+      heading: item.heading
+    } only %}
+    {% include "@atoms/text/_paragraph.twig" with {
+      paragraph: item.paragraph
+    } only %}
+    <div class="row">
+      <div class="col-12 col-small-tablet-6 col-desktop-7">
+        {% include "@atoms/button/_button.twig" with {
+          button: item.book_alert
+        } only %}
+      </div>
+      <div class="col-12 col-small-tablet-6 col-desktop-5">
+        {% include "@atoms/button/_button.twig" with {
+          button: item.show_all_link
+        } only %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

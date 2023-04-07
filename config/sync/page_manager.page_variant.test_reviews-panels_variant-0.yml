@@ -1,0 +1,154 @@
+uuid: 82fc1a50-f261-4fc7-a744-13c29eb0bead
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.test_reviews
+    - system.menu.main
+    - views.view.registered_test_reviews
+  content:
+    - 'block_content:title_text_linktitle:d48403a2-d47c-4592-9fc0-be7b91420422'
+  module:
+    - adnuntius
+    - block_content
+    - panels
+    - system
+    - views
+id: test_reviews-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    44b17cb2-24c2-4bec-ac36-8220d86a6534:
+      id: 'block_content:d48403a2-d47c-4592-9fc0-be7b91420422'
+      label: 'Test reviews introduction area'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: right
+      weight: -1
+      uuid: 44b17cb2-24c2-4bec-ac36-8220d86a6534
+      context_mapping: {  }
+    cf1d7851-e83b-4115-8f27-b82c4234ee1e:
+      id: 'views_block:registered_test_reviews-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 0
+      uuid: cf1d7851-e83b-4115-8f27-b82c4234ee1e
+      context_mapping: {  }
+    b41a7eaf-ba22-4092-a6a9-afe26b3d2462:
+      id: 'system_menu_block:main'
+      label: 'Main navigation'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: -10
+      uuid: b41a7eaf-ba22-4092-a6a9-afe26b3d2462
+      context_mapping: {  }
+    def71795-0e19-40f9-9312-c62c44c7e840:
+      id: 'views_block:registered_test_reviews-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 1
+      uuid: def71795-0e19-40f9-9312-c62c44c7e840
+      context_mapping: {  }
+    963a0ffc-bb8c-4df9-a09f-a6f281eac69d:
+      id: adnuntius_block
+      label: 'Slot 1 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 963a0ffc-bb8c-4df9-a09f-a6f281eac69d
+      auid: '0000000000221579'
+      invocation_method: div
+      context_mapping: {  }
+    5e5213d7-320a-4e75-a95b-bc2a0424f4d3:
+      id: adnuntius_block
+      label: 'Slot 2 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 5e5213d7-320a-4e75-a95b-bc2a0424f4d3
+      auid: 000000000022157a
+      invocation_method: div
+      context_mapping: {  }
+    f0c32035-dd34-4076-b640-e6efabeae9be:
+      id: adnuntius_block
+      label: 'Slot 3 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: f0c32035-dd34-4076-b640-e6efabeae9be
+      auid: 000000000022157c
+      invocation_method: div
+      context_mapping: {  }
+    1877bdd0-4a76-49a6-acfe-16a935842d6c:
+      id: adnuntius_block
+      label: 'Slot 4 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 1877bdd0-4a76-49a6-acfe-16a935842d6c
+      auid: 000000000022157d
+      invocation_method: div
+      context_mapping: {  }
+    5bdb9bab-f07c-4a0f-8219-e24f9825b0d3:
+      id: adnuntius_block
+      label: 'Slot 5 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 5bdb9bab-f07c-4a0f-8219-e24f9825b0d3
+      auid: '0000000000221588'
+      invocation_method: div
+      context_mapping: {  }
+  id: panels_variant
+  uuid: f4fcffbc-1b03-46aa-ae4a-a751b8dbf971
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes: {  }
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: test_reviews-panels_variant-0
+  builder: standard
+page: test_reviews
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

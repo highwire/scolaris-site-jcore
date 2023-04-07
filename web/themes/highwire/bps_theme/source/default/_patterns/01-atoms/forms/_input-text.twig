@@ -1,0 +1,8 @@
+{% if field.labelcontent %}
+    <div class="clearfix {{field.group}}">
+      <label for="{{field.id}}" class="form-label">{{field.labelcontent}}</label>
+      <input type="{{field.type}}" class="form-control {{ field.style }}" id="{{field.id}}" placeholder="{{field.placeholder}}" value="{{field.value}}" required="{{field.required}}">
+    </div>
+{% else %}
+    <input type="{{field.type}}" class="form-control {{ field.style }}" id="{{field.id}}" placeholder="{{field.placeholder}}" value="{{field.value}}" required="{{field.required}}">
+{% endif %}

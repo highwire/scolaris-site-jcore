@@ -1,0 +1,21 @@
+uuid: 6aa986ca-edf7-487b-ae19-46e25a73851c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_plain
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.title_plain
+field_name: title_plain
+entity_type: node
+bundle: item_test_review
+label: title-plain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

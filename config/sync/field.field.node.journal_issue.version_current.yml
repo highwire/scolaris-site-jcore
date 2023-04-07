@@ -1,0 +1,21 @@
+uuid: 18d713ca-9cdc-4d02-804a-3f4817a68745
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.version_current
+    - node.type.journal_issue
+id: node.journal_issue.version_current
+field_name: version_current
+entity_type: node
+bundle: journal_issue
+label: version-current
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

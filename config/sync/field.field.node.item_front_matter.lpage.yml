@@ -1,0 +1,21 @@
+uuid: a80094ee-45a8-4123-bc71-7574541bf64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.lpage
+field_name: lpage
+entity_type: node
+bundle: item_front_matter
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

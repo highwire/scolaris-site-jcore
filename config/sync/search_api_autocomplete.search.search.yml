@@ -1,0 +1,42 @@
+uuid: 03f3d173-316c-495c-a3f1-1de32eed0f58
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.bps
+    - views.view.search
+  module:
+    - views
+    - search_api_autocomplete
+id: search
+label: Search
+index_id: bps
+suggester_settings:
+  live_results:
+    fields:
+      - title_plain
+    view_modes:
+      'entity:node':
+        item_chapter: ''
+        item_monograph: ''
+        item_report_guideline: ''
+        item_test_review: ''
+        journal: ''
+        journal_article: ''
+        journal_fragment: ''
+        journal_issue: ''
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

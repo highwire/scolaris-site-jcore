@@ -1,0 +1,21 @@
+uuid: 9b02ac7f-ea95-4acf-94bd-e9004ee65c23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.next_atom
+    - node.type.media
+id: node.media.next_atom
+field_name: next_atom
+entity_type: node
+bundle: media
+label: next-atom
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

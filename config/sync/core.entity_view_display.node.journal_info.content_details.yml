@@ -1,0 +1,87 @@
+uuid: 00e4626a-76d6-41e7-826b-672687f0aac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_details
+    - field.field.node.journal_info.corpus
+    - field.field.node.journal_info.field_journal
+    - field.field.node.journal_info.field_journal_about
+    - field.field.node.journal_info.field_journal_cover_image
+    - field.field.node.journal_info.field_journal_description
+    - field.field.node.journal_info.field_journal_editorial_brd
+    - field.field.node.journal_info.field_journal_editors
+    - field.field.node.journal_info.field_journal_impact_factor
+    - field.field.node.journal_info.field_journal_sample_issue
+    - field.field.node.journal_info.field_journal_society
+    - field.field.node.journal_info.field_journal_submit_article
+    - node.type.journal_info
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.journal_info.content_details
+targetEntityType: node
+bundle: journal_info
+mode: content_details
+content:
+  field_journal:
+    type: entity_reference_entity_id
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_journal_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_editorial_brd:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_editors:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_society:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_journal_submit_article:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  addtoany: true
+  bps_focus_view: true
+  bps_toc_pager: true
+  corpus: true
+  field_journal_about: true
+  field_journal_cover_image: true
+  field_journal_impact_factor: true
+  field_journal_sample_issue: true
+  langcode: true
+  links: true
+  prev_next_pager: true

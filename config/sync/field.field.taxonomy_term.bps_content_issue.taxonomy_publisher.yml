@@ -1,0 +1,19 @@
+uuid: 1daf83e8-e8f7-4147-8424-bc4755d12e28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.taxonomy_publisher
+    - taxonomy.vocabulary.bps_content_issue
+id: taxonomy_term.bps_content_issue.taxonomy_publisher
+field_name: taxonomy_publisher
+entity_type: taxonomy_term
+bundle: bps_content_issue
+label: 'Publisher Code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

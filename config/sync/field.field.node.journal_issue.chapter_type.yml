@@ -1,0 +1,21 @@
+uuid: bd5df33a-a9a9-480e-b34b-b8996d49577a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.chapter_type
+    - node.type.journal_issue
+  module:
+    - text
+id: node.journal_issue.chapter_type
+field_name: chapter_type
+entity_type: node
+bundle: journal_issue
+label: chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

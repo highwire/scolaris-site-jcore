@@ -1,0 +1,73 @@
+<div class="journals-articles-top">
+  <div class="journals-articles-inner">
+    <div class="row{% if report_guideline_cover_img %} rowcol-left-2{% endif %}">
+      {% if report_guideline_cover_img %}
+        <div class="article-left-panel">
+          <picture>
+            {% include "@atoms/images/_image.twig" with {
+              image: {
+                src: report_guideline_cover_img,
+                alt: 'Card Image',
+                title: 'Card Image'
+              }
+            } only %}
+          </picture>
+        </div>
+      {% endif %}
+      <div class="article-middle-panel"> 
+        {% include "@components/site/_journal-top-content.twig" with {
+          prefix_title: prefix_title,
+          main_title: main_title,
+          suffix_title: member_network,
+          authors: authors,
+          issue_list: [{
+            label: 'ISBN (print)',
+            value: isbn_print
+          }, {
+            label: "Published",
+            value: publicationDate
+          }, {
+              issue_doi: {
+                label: "DOI: ",
+                href: "https://doi.org/"~doi,
+                title: doi,
+                class: 'article__editedby',
+                text: "https://doi.org/"~doi,
+                target: '_blank'
+              }
+          }],
+          action_tools: [{
+            title_withoutpopup: content.pdf,
+            class: "action-favorites"
+          }, {
+            title_withoutpopup: hw_marker_sign_up,
+            class: "action-favorites"
+          }, {
+            href: "#",
+            title: "Cite",
+            text: "Cite",
+            class: "action-cite",
+            popupdata: bps_citations_download,
+            modelPopup:  'bps-city-popup'
+          }, {
+            href: addtoany['#link_url'],
+            title: "Share",
+            class: "action-share",
+            text: "Share",
+            popupdata: addtoany,
+            modelPopup:  'bps-share-popup'
+          }, {
+            title_withoutpopup: hw_alerts_sign_up,
+            class: "action-bookmark"
+          }, {
+            href: ccc_permissions_link['#url'],
+            title: "Permissions",
+            text: "Permissions",
+            class: "action-permissions",
+            target: '_blank'
+          }]
+        } only %}
+      </div>
+    </div>
+  </div>
+</div>

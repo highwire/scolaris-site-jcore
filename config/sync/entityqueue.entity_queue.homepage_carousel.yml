@@ -1,0 +1,25 @@
+uuid: 62002983-a41b-46d6-be3a-4b7473911bce
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: homepage_carousel
+label: 'Homepage Carousel'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      journal_issue: journal_issue
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 9
+  act_as_queue: false
+  reverse: false

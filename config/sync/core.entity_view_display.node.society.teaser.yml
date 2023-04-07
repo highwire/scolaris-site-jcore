@@ -1,0 +1,26 @@
+uuid: 59fb644b-d9d6-44c8-9278-b96b2fad7ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.society.field_society_log
+    - field.field.node.society.field_society_website
+    - node.type.society
+  module:
+    - user
+id: node.society.teaser
+targetEntityType: node
+bundle: society
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_society_log: true
+  field_society_website: true
+  langcode: true

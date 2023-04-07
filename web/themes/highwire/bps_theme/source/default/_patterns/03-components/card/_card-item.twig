@@ -1,0 +1,40 @@
+<div class="card">
+  {% if image.src is defined %}
+    <div class="card--image">
+      {% include '@atoms/images/_image.twig' with {
+        image: {
+          alt: image.alt,
+          title: image.title,
+          href: image.href,
+          src: image.src,
+          height: image.height,
+          width: image.width
+        }
+      } only %}
+    </div>
+  {% endif %}
+  <div class="card-body">
+    {% if doi_author %}
+      <div class="publish-date-editor">
+        {{ doi_author }}
+      </div>
+    {% endif %}
+    {% if anchorHead %}
+      {% include "@atoms/text/_heading-link.twig" with {
+        anchorHead: anchorHead
+      } only %}
+    {% endif %}
+    {% if paragraph %}
+      {% include "@atoms/text/_paragraph.twig" with {
+        paragraph: paragraph
+      } only %}
+    {% endif %}
+    {% if anchorlink %}
+      {% include "@atoms/button/_anchor-link.twig" with {
+        href: anchorlink.href,
+        text: anchorlink.text,
+        title: anchorlink.title
+      } only %}
+    {% endif %}
+  </div>
+</div>

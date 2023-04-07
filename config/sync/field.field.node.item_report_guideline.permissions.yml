@@ -1,0 +1,21 @@
+uuid: 4277bf0f-18a2-4eb4-bfc5-21c6740c4bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.permissions
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.permissions
+field_name: permissions
+entity_type: node
+bundle: item_report_guideline
+label: permissions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

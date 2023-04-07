@@ -1,0 +1,21 @@
+uuid: 7831e64a-2481-43c0-807a-36c0c29f6aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_full_text
+    - node.type.journal_article
+id: node.journal_article.has_full_text
+field_name: has_full_text
+entity_type: node
+bundle: journal_article
+label: has-full-text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

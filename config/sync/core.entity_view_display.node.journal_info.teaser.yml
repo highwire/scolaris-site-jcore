@@ -1,0 +1,44 @@
+uuid: f59d18ee-fb9e-4560-8396-9e3408170867
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.journal_info.corpus
+    - field.field.node.journal_info.field_journal
+    - field.field.node.journal_info.field_journal_about
+    - field.field.node.journal_info.field_journal_cover_image
+    - field.field.node.journal_info.field_journal_description
+    - field.field.node.journal_info.field_journal_editorial_brd
+    - field.field.node.journal_info.field_journal_editors
+    - field.field.node.journal_info.field_journal_impact_factor
+    - field.field.node.journal_info.field_journal_sample_issue
+    - field.field.node.journal_info.field_journal_society
+    - field.field.node.journal_info.field_journal_submit_article
+    - node.type.journal_info
+  module:
+    - user
+id: node.journal_info.teaser
+targetEntityType: node
+bundle: journal_info
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  corpus: true
+  field_journal: true
+  field_journal_about: true
+  field_journal_cover_image: true
+  field_journal_description: true
+  field_journal_editorial_brd: true
+  field_journal_editors: true
+  field_journal_impact_factor: true
+  field_journal_sample_issue: true
+  field_journal_society: true
+  field_journal_submit_article: true
+  langcode: true

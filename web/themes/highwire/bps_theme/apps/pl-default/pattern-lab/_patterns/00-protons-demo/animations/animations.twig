@@ -1,0 +1,10 @@
+
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: animation_demo
+  }
+%}
+  {% block content %}
+    {% include '@protons/animations/animations.twig' %}
+  {% endblock content %}
+{% endembed %}

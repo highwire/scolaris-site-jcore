@@ -1,0 +1,21 @@
+uuid: 3dcc749c-4bb5-40ea-a4a3-0409ca2bcf97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.journal_fragment
+id: node.journal_fragment.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: journal_fragment
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

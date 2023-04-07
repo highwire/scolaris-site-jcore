@@ -1,0 +1,69 @@
+$page: ".journal-book-page";
+#{$page} {
+    padding-top: 3rem !important;
+    .article{
+        &__minititle{
+            margin-bottom: 1.125rem;
+            font-family: $font-family-base;
+        }
+    }
+    .book{
+        &__edition{
+            margin: 0.5rem 0 1rem;
+        }
+        &__badge{
+            @extend .badge;
+            @extend .bg-success;
+            @extend .rounded-circle;
+            @extend .align-middle;     
+            padding: 0.375rem;     
+            margin-right: 0.563rem;  
+        }
+        &__badgeicon{
+            &:before{
+                content: "\e92b";
+                font-family: "feather";
+                font-weight: normal;
+                font-size: 1.5rem;
+            } 
+        }
+        &__content{
+            font-weight: $font-weight-medium;
+            @extend .border-end;
+            @extend .me-2;
+            @extend .pe-2;  
+        }
+        &__arrow_right{
+            @extend .fs-4;
+            @extend .align-middle;
+            &:before{
+                content: "\e930";
+                font-family: "feather";
+                font-weight: normal;
+                font-size: 1.5rem;
+            }  
+        }
+        &__listing_box{
+            @extend .list-inline;
+            margin-bottom: 0.375rem;
+        }
+        &__bold_title{
+            font-weight: $font-weight-medium;
+        }
+        &__authenticated{
+            border-bottom: 1px solid $secondary;
+            padding-bottom: 1em;
+        }
+        &__image_wrap{
+            @extend .mb-4; 
+        }
+        &__topbody_wrap{
+            @extend .mb-4;
+            @extend .ps-desktop-4; 
+        }
+        &__top_image{
+            max-width: 100%;
+        }
+    }
+}
+

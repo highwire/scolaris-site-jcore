@@ -1,0 +1,38 @@
+uuid: 4af6b7f2-ac09-4251-bf59-7227e2539453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.variant_large_image
+    - node.type.media
+  module:
+    - image
+id: node.media.variant_large_image
+field_name: variant_large_image
+entity_type: node
+bundle: media
+label: variant-large-image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler_settings: {  }
+field_type: image

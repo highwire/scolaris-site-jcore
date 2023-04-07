@@ -1,0 +1,21 @@
+uuid: d1166d9e-6205-4b8b-a6bd-77130ce938a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.item_monograph
+id: node.item_monograph.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: item_monograph
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

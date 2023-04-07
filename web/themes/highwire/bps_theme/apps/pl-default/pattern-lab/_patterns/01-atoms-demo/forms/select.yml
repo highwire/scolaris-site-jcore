@@ -1,0 +1,9 @@
+---
+select:
+  title: Select Title
+  name: Select Name
+  options:
+  - value: '1'
+    text: One
+  - value: '2'
+    text: Two

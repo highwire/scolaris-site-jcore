@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: blockquote_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/text/_blockquote.twig' %}
+  {% endblock content %}
+{% endembed %}

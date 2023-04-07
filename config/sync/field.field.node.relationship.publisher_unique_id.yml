@@ -1,0 +1,21 @@
+uuid: b804b7c0-7948-4124-9cee-2e2efc0ff41d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.publisher_unique_id
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.publisher_unique_id
+field_name: publisher_unique_id
+entity_type: node
+bundle: relationship
+label: publisher-unique-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

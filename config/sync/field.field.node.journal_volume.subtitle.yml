@@ -1,0 +1,21 @@
+uuid: 2723389b-8572-4416-8d69-3f56c1619c2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subtitle
+    - node.type.journal_volume
+  module:
+    - text
+id: node.journal_volume.subtitle
+field_name: subtitle
+entity_type: node
+bundle: journal_volume
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

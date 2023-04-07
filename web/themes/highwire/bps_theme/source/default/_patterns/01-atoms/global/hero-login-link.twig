@@ -1,0 +1,7 @@
+{% import "@atoms/global/sigma-urls.twig" as sigma %}
+{% include "@atoms/global/hero-sigma-oidc-link.twig" with {
+    icon: 'key',
+    title: 'Login/Register'|t,
+    url: sigma.login
+  }
+%}

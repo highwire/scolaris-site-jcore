@@ -1,0 +1,7 @@
+{% if inline.content %}
+  {% if inline.class %}
+	<span class="{{inline.class}}">{{inline.content}}</span>
+  {% else %}
+    {{inline.content}}
+  {% endif %}
+{% endif %}

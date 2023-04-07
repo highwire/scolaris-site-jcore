@@ -1,0 +1,23 @@
+uuid: 8779d8db-d5a6-4c60-90bd-c0ae0c205cae
+langcode: en
+status: true
+dependencies: {  }
+id: full_text_book
+label: 'Full text (Book)'
+configurations:
+  -
+    markup_profile: full_text
+    access_rule: online_access
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - item_back_matter
+  - item_chapter
+  - item_front_matter
+  - item_monograph
+  - item_report_guideline
+  - item_test_review
+log: true
+render_placeholder: false

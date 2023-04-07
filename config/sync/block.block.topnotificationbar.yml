@@ -1,0 +1,25 @@
+uuid: 1cbf73c6-1e8b-40c6-9058-411788858188
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:cdc98cd9-c2da-4f9c-b303-020e36424dba'
+  module:
+    - block_content
+  theme:
+    - bps
+id: topnotificationbar
+theme: bps
+region: header_top_ads
+weight: 0
+provider: null
+plugin: 'block_content:cdc98cd9-c2da-4f9c-b303-020e36424dba'
+settings:
+  id: 'block_content:cdc98cd9-c2da-4f9c-b303-020e36424dba'
+  label: 'Top Notification Bar'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

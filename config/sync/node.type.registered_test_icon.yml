@@ -1,0 +1,18 @@
+uuid: 297f720b-9e41-416e-b089-95a31b788b1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Registered test icon'
+type: registered_test_icon
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

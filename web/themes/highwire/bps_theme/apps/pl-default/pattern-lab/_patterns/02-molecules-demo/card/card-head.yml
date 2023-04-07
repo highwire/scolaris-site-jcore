@@ -1,0 +1,11 @@
+---
+source_media:
+- img_media: "(min-width:650px)"
+  img_srcset: "../../../assets/images/512X512.png"
+- img_media: "(min-width:465px)"
+  img_srcset: "../../../assets/images/512X512.png"
+image:
+  src: "../../../assets/images/512X512.png"
+  alt: Card Image
+  title: Card Image
+  class: img-fluid

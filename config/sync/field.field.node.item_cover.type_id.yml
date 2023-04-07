@@ -1,0 +1,21 @@
+uuid: fff0fc01-a8ce-45c2-b9fa-52224e4aaa6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.type_id
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.type_id
+field_name: type_id
+entity_type: node
+bundle: item_cover
+label: type-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

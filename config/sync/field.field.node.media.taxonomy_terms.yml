@@ -1,0 +1,21 @@
+uuid: 3523da43-de4e-4a87-8447-250ca588cf67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.media
+id: node.media.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: media
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

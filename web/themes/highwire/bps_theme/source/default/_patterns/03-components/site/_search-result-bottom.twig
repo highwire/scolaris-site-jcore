@@ -1,0 +1,31 @@
+<div class="search-results-bottom">
+	<div class="row">
+		<div class="col-12 col-medium-tablet-7 col-desktop-8">
+			{{ pager }}
+			{% include "@molecules/grouping/_pagination.twig" %}
+		</div>
+		<div class="col-12 col-medium-tablet-5 col-desktop-4  text-medium-tablet-end">
+			<span class="filter-label">
+				{% include "@atoms/text/_inline-element.twig" with {
+					inline: search_result_bottom.OrderbyBottomLeft
+				} only %}
+			</span>
+			<ul class="search-results-count">
+				{% for item in search_result_bottom.pageBottomCount %}					
+					{% if item.button is not null %}
+						<li>					
+							{% include "@atoms/button/_button.twig" with {
+								button: item.button
+							} only %}			
+						</li>		
+					{% endif %}					
+				{% endfor %}
+			</ul>
+			<span class="filter-label">
+				{% include "@atoms/text/_inline-element.twig" with {
+					inline: search_result_bottom.OrderbyBottomRight
+				} only %}
+			</span>
+		</div>
+	</div>
+</div>

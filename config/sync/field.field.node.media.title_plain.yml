@@ -1,0 +1,21 @@
+uuid: 4c4a8902-0fb4-4a0f-a2f8-707e2cdc5bbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_plain
+    - node.type.media
+  module:
+    - text
+id: node.media.title_plain
+field_name: title_plain
+entity_type: node
+bundle: media
+label: title-plain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

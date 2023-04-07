@@ -1,0 +1,37 @@
+uuid: 3e3f3d99-2be4-402a-bdce-94fb59b7a1b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.counts
+    - node.type.item_report_guideline
+  module:
+    - double_field
+id: node.item_report_guideline.counts
+field_name: counts
+entity_type: node
+bundle: item_report_guideline
+label: counts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

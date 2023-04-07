@@ -1,0 +1,38 @@
+uuid: d3c508e7-934a-4bdc-9a21-c38c14d75b6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal_cover_image
+    - node.type.journal_info
+  module:
+    - image
+id: node.journal_info.field_journal_cover_image
+field_name: field_journal_cover_image
+entity_type: node
+bundle: journal_info
+label: 'Journal Cover Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

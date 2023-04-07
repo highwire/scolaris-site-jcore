@@ -1,0 +1,23 @@
+uuid: 83830645-898e-4789-9393-302bef2aa26b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.related_objects
+    - node.type.item_test_review
+  module:
+    - link
+id: node.item_test_review.related_objects
+field_name: related_objects
+entity_type: node
+bundle: item_test_review
+label: related-objects
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

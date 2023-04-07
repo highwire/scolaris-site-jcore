@@ -1,0 +1,44 @@
+uuid: 763fd013-4b8f-44ff-a074-636c7a583f81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.registered_test_icon.field_registered_test_icon_image
+    - field.field.node.registered_test_icon.field_test_review_name
+    - node.type.registered_test_icon
+  module:
+    - image
+    - user
+id: node.registered_test_icon.default
+targetEntityType: node
+bundle: registered_test_icon
+mode: default
+content:
+  field_registered_test_icon_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_test_review_name:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  bps_focus_view: true
+  bps_toc_pager: true
+  langcode: true
+  prev_next_pager: true

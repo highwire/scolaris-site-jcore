@@ -1,0 +1,21 @@
+uuid: 018f9bef-51cf-42a3-85cb-b431827872ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_is_open
+    - node.type.journal_issue
+id: node.journal_issue.issue_is_open
+field_name: issue_is_open
+entity_type: node
+bundle: journal_issue
+label: issue-is-open
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

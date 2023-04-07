@@ -1,0 +1,12 @@
+---
+select:
+  multiple: multiple
+  title: Select Title
+  name: Select Name
+  size: 5
+  class: multiselect
+  options:
+  - value: '1'
+    text: One
+  - value: '2'
+    text: Two

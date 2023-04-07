@@ -1,0 +1,21 @@
+uuid: 56bae5af-fbdc-4015-bac9-ea8879a60963
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subtitle
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.subtitle
+field_name: subtitle
+entity_type: node
+bundle: item_report_guideline
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

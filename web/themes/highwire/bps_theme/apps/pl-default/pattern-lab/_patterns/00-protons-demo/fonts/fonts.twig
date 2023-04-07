@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: fonts_demo
+  }
+%}
+  {% block content %}
+    {% include '@protons/fonts/_fonts.twig' with font_family %}
+  {% endblock content %}
+{% endembed %}

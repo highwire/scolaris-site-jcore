@@ -1,0 +1,5 @@
+form_defaults:
+  book_user_has_access_heading: 'You already have access to these chapters:'
+  book_purchase_access_heading: 'Get access to this book:'
+  chapter_purchase_chapter_heading: 'Get access to this chapter:'
+  chapter_purchase_book_heading: 'Get access to this chapter:'

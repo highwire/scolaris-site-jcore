@@ -1,0 +1,7 @@
+{% if icon %}{% include ["@atoms/icons/icon--" ~ icon ~ ".twig", "@atoms/icons/icon.twig"] with {
+  'icon_library': icon_library,
+  'icon_prefix': icon_prefix,
+  'icon': icon,
+  'extra_classes': extra_classes,
+  'icon_attributes': attributes
+} %}{% endif %}

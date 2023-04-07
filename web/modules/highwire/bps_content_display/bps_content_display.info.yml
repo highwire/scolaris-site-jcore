@@ -1,0 +1,5 @@
+name: BPS Content Display
+type: module
+description: Front-end customizations for BPS content.
+core: 8.x
+package: 'Scolaris  '

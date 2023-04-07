@@ -1,0 +1,15 @@
+uuid: f144ef57-d8b5-4998-8b1a-01c3818b93a7
+langcode: en
+status: true
+dependencies: {  }
+name: cover_results_item
+label: 'Cover Results  Item'
+effects:
+  f76ae00b-df21-4e80-8439-e97c7a3a3d4f:
+    uuid: f76ae00b-df21-4e80-8439-e97c7a3a3d4f
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false

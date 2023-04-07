@@ -1,0 +1,421 @@
+---
+page_name: search-result
+show_search: true
+order_2_1: order_2_1
+left_column_width: col-medium-tablet-4 col-desktop-3
+main_column_width: col-medium-tablet-8 col-desktop-9
+filterResultModal:
+  modalPopup:
+    modaltargetid: modal-filter-keyword
+    modal_type: modal-small-tablet
+    modalHeading:
+      level: 6
+      class: modal-title
+      text: Filter by keyword...
+    modal_filter_item:
+    - checkbox:
+        formclass: sidebar-filter__select-all
+        name: filter-modal-type
+        value: filter-all
+        prefix: filter-all-keyword
+        label: Include all
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-modal-type
+        value: filter-book
+        label: Books
+        prefix: keyword-check
+        index: 1
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-modal-type
+        value: filter-chapter
+        label: Books Chapters
+        prefix: keyword-check
+        index: 2
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-modal-type
+        value: filter-journal
+        label: Journals
+        prefix: keyword-check
+        index: 3
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-modal-type
+        value: filter-articles
+        label: Journal articles
+        prefix: keyword-check
+        index: 4
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-modal-type
+        value: filter-type1
+        label: Other content type 1
+        prefix: keyword-check
+        index: 5
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category 
+        name: filter-modal-type
+        value: filter-type2
+        label: Other content type 2
+        prefix: keyword-check
+        index: 6
+        countclass: sidebar-filter__category-count
+        count: 100
+    closeButton:
+      info: Close
+      togglemodal: modal
+      type: button
+      style: info 
+      text: Cancel
+      closemodal: modal
+    saveButton:
+      type: button
+      style: danger 
+      text: Apply
+sidenavLoop:
+- heading:
+    level: '6'
+    class: sidebar__heading
+    text: Included content types...
+  listgroupClass: sidebar-filter
+  listing_items:
+  - urls_class: sidebar__listgroup_item  
+    urls: "#"
+    content: ''
+    filter_tag:
+    - checkbox:
+        formclass: sidebar-filter__select-all
+        name: filter-content-type
+        value: filter-all
+        prefix: filter-all
+        label: Include all
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-content-type
+        value: filter-book
+        label: Books
+        prefix: type-filter
+        index: 1
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-content-type
+        value: filter-chapter
+        label: Books Chapters
+        prefix: type-filter
+        index: 2
+        countclass:  sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-content-type
+        value: filter-journal
+        label: Journals
+        prefix: type-filter
+        index: 3
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-content-type
+        value: filter-articles
+        label: Journal articles
+        prefix: type-filter
+        index: 4
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-content-type
+        value: filter-type1
+        label: Other content type 1
+        prefix: type-filter
+        index: 5
+        countclass: sidebar-filter__category-count
+        count: 100
+    - checkbox:
+        formclass: sidebar-filter__category
+        name: filter-content-type
+        value: filter-type2
+        label: Other content type 2
+        prefix: type-filter
+        index: 6
+        countclass: sidebar-filter__category-count
+        count: 100
+- heading:
+    level: '6'
+    class: sidebar-filter__result
+    text: Filter results by...
+  listgroupClass: sidebar-filter__result-wrapper 
+  listing_items:
+  - urls_class: sidebar__listgroup_item  
+    urls: "#"
+    content: Keyword
+    togglemodal: modal
+    modaltargetid: modal-filter-keyword
+   
+  - urls_class: sidebar__listgroup_item  
+    urls: "#"
+    content: Author   
+  - urls_class: sidebar__listgroup_item  
+    urls: "#"
+    content: Book / Journal title    
+  - urls_class: sidebar__listgroup_item  
+    urls: "#"
+    content: Subject    
+  - urls_class: sidebar__listgroup_item   active-date
+    urls: "#"
+    content: Publication date    
+    loopradio:
+    - radiobox:
+        formclass: sidebar-filter__radio
+        name: publish-date
+        value: include-all
+        label: Include all
+        index: 1
+    - radiobox:
+        formclass: sidebar-filter__radio
+        name: publish-date
+        value: custom-date
+        label: Include date published
+        index: 2
+search_result_top:
+  heading:
+    level: '3'
+    class: search-result__main-heading
+    text: Your search for <span>Orange</span> returned <span>816</span>
+      results
+  button:
+    href: "#"
+    title: Save Search
+    text: Save Search
+    class: search-result__save-search
+    lefticon: true    
+  OrderbyText:
+    content: 'Order by: Relevance'
+  OrderbyTopLeft:
+    content: Show
+  OrderbyTopRight:
+    content: per page
+  orderbyFilter:
+  - button:
+      href: "#"
+      title: Title
+      text: Title
+      class:
+  - button:
+      href: "#"
+      title: Date
+      text: Date
+  pageTopCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'
+      text: '100'
+search_result_middle:
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: search-result__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: search-result__content-type
+      text: Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: search-result__heading
+      button:
+        href: "#"
+        title: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_description:
+  - paragraph:
+      class: search-result__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis
+        nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia
+        molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes,
+        facilisis metus primis pharetra cubilia lacus enim.
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title: Show full description
+      text: Show full description
+      class: search-result__toggle-click
+     
+  sourceLink:
+    href: "#"
+    title: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+    text: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante  
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: search-result__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: search-result__content-type
+      text: Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: search-result__heading
+      button:
+        href: "#"
+        title: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_description:
+  - paragraph:
+      class: search-result__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis
+        nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia
+        molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes,
+        facilisis metus primis pharetra cubilia lacus enim.
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title: Show full description
+      text: Show full description
+      class: search-result__toggle-click
+     
+  sourceLink:
+    href: "#"
+    title: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+    text: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante  
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: search-result__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: search-result__content-type
+      text: Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: search-result__heading
+      button:
+        href: "#"
+        title: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_description:
+  - paragraph:
+      class: search-result__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis
+        nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia
+        molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes,
+        facilisis metus primis pharetra cubilia lacus enim.
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title: Show full description
+      text: Show full description
+      class: search-result__toggle-click
+     
+  sourceLink:
+    href: "#"
+    title: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+    text: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante  
+- image:
+    src: "../../../assets/images/250X350.png"
+    alt: Image Alt
+    title: Image Title
+    class: search-result__card-image
+  card_heading:
+  - heading:
+      level: '6'
+      class: search-result__content-type
+      text: Content type
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      class: search-result__heading
+      button:
+        href: "#"
+        title: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+        text: Title eros dictum dapibus posuere elit montes inceptos ad natoque
+  card_description:
+  - paragraph:
+      class: search-result__description
+      text: Maecenas commodo nam in convallis ut congue dis, posuere efficitur sagittis
+        nullam etiam eleifend, lorem tortor bibendum morbi dignissim lacinia. Conubia
+        molestie accumsan vehicula himenaeos parturient elit quisque feugiat montes,
+        facilisis metus primis pharetra cubilia lacus enim.
+  card_link:
+  - button:
+      href: "#"
+      righticon: true
+      title: Show full description
+      text: Show full description
+      class: search-result__toggle-click
+     
+  sourceLink:
+    href: "#"
+    title: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+    text: Dapibus inceptos vulputate consectetur ornare netus ut platea cras rhoncus
+      eleifend curae nam himenaeos non vel adipiscing tincidunt orci eu interdum tristique
+      pretium phasellus nisl dictum torquent justo leo ante
+
+search_result_bottom:
+  OrderbyBottomLeft:
+    class: 
+    content: Show
+  OrderbyBottomRight:
+    class: 
+    content: per page
+  pageBottomCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'
+      text: '100'

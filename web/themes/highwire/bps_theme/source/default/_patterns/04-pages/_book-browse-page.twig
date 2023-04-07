@@ -1,0 +1,14 @@
+{% extends "@components/layouts/_two-column.twig" %}
+{% block main %}
+	{% include "@components/site/_book-browse.twig" with {
+		book_browse_top: book_browse_top,
+		book_browse_bottom: book_browse_bottom
+	} only %}
+{% endblock %}
+
+{% block sidebar %}
+	{% include "@components/sidebar/_sidebar.twig" with {
+		sidenavLoop: sidenavLoop
+	} only %}
+{% endblock %}
+

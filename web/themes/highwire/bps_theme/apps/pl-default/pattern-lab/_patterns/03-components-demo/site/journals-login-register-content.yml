@@ -1,0 +1,58 @@
+---
+organisms_only: true
+journals_login_register_content:
+- access_left_head: Access article
+  access_left_licence: Perpetual license
+  icon:
+    prefix: feather
+    suffix: info align-middle fs-5
+  cartlink_description:
+    href: "#"
+    title: Testing text for developement Testing text for developement Testing text
+      for developement Testing text for developement Testing text for developement
+      Testing text for developement.
+    text: Testing text for developement Testing text for developement Testing text
+      for developement Testing text for developement Testing text for developement
+      Testing text for developement.
+  cart_price_symbol: "$"
+  cart_amount: '21.00'
+  button:
+    href: "#"
+    class: btn btn-small-tablet btn-primary
+    text: Add to cart
+- access_left_head: Access article
+  access_left_licence: Perpetual license
+  icon:
+    prefix: feather
+    suffix: info align-middle fs-5
+  cartlink_description:
+    href: "#"
+    title: Testing text for developement Testing text for developement Testing text
+      for developement Testing text for developement Testing text for developement
+      Testing text for developement.
+    text: Testing text for developement Testing text for developement Testing text
+      for developement Testing text for developement Testing text for developement
+      Testing text for developement.
+  cart_price_symbol: "$"
+  cart_amount: '21.00'
+  button:
+    href: "#"
+    class: btn btn-small-tablet btn-primary
+    text: Add to cart
+journals_login_register_actions:
+- heading:
+    level: '6'
+    class: mt-4 mb-3
+    text: Have access already?
+  button:
+    href: "#"
+    class: btn btn-primary mt-2 d-large-tablet-block
+    text: Log in / Register
+- button:
+    href: "#"
+    class: mt-3 d-inline-block
+    text: Redeem a voucher
+    righticon: true
+    icon:
+      prefix: feather
+      suffix: chevron-right align-middle fs-4 text-primary

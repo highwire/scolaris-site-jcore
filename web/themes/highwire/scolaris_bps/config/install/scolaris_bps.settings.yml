@@ -1,0 +1,9 @@
+# Default settings should not be located here. This file is only used to
+# override existing settings. If your theme is the one that introduces a new
+# theme setting
+
+# Disable the CDN provider so compiled source files can be used.
+cdn_provider: ''
+logo:
+  path: 'themes/scolaris_bps/logo.svg'
+  use_default: false

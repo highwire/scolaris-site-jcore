@@ -1,0 +1,236 @@
+---
+show_search: true
+page_name: journal-browse
+order_2_1: order_2_1
+left_column_width: col-medium-tablet-4 col-desktop-3
+main_column_width: col-medium-tablet-8 col-desktop-9
+sidenavLoop:
+- heading:
+    level: '5'
+    class: sidebar__heading
+    text: What we publish
+  listgroupClass: sidebar__sticky-top
+  listing_items:
+  - urls_class: sidebar__listgroup_item    
+    urls: "#"
+    content: Books   
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    active: active
+    content: Journals
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: Other content type
+
+journal_browse_heading:
+- heading:
+    level: '1'
+    class: journal__title
+    text: Journals
+journal_browse_description:
+- paragraph:
+    class: journal__description
+    text: Efficitur sed augue ad ex feugiat tincidunt rutrum montes mauris vel vitae duis nibh sodales ultricies mollis litora malesuada imperdiet tellus finibus eu pharetra nec hendrerit gravida quis in laoreet curae etiam fermentum fames convallis nam lorem suscipit odio aptent primis pulvinar dis ante aliquet luctus accumsan fusce inceptos amet.
+journal_browse_action:
+- button:
+    href: "#"
+    class: journal__btn
+    title: Policies
+    text: Policies
+- button:
+    href: "#"
+    class: journal__btn
+    title: Open action
+    text: Open action
+- button:
+    href: "#"
+    class: journal__btn
+    title: Subscriptions
+    text: Subscriptions
+- button:
+    href: "#"
+    class: journal__btn
+    title: Peer reviews
+    text: Peer reviews
+journal_browse_bottom:
+- card_lr_column:
+  - left_col_width: article__card-image
+    middle_col_width: article__card-content
+    leftsource_media:
+    - leftimg_media: "(min-width:650px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    - leftimg_media: "(min-width:465px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    leftimage:
+      src: "../../../assets/images/250X350.png"
+      alt: Card Image
+      title: Card Image
+      class: img-fluid
+    card_heading_link:
+    - anchorHead:
+        level: '5'
+        class: article__heading
+        button:
+          href: "#"
+          title: Annals of LGBTQ Public and Population Health
+          text: Annals of LGBTQ Public and Population Health
+    card_description:
+    - paragraph:
+        class: article__author-name
+        text: 'Lastname, Firstname'
+    - paragraph:
+        class: article__author-info 
+        text: 'Lastname, Firstname'           
+    - paragraph:
+        class: article__author-description
+        text: 'ISSN: 2688-4518 (online)'
+    card_link:
+    - button:
+        href: "#"
+        righticon: true
+        class: article__btn
+        title: Show description
+        text: Show description
+      
+    - button:
+        href: "#"
+        lefticon: true
+        title: Latest issue
+        text: Latest issue
+        class: article__btn-calender-icon
+- card_lr_column:
+  - left_col_width: article__card-image
+    middle_col_width: article__card-content
+    leftsource_media:
+    - leftimg_media: "(min-width:650px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    - leftimg_media: "(min-width:465px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    leftimage:
+      src: "../../../assets/images/250X350.png"
+      alt: Card Image
+      title: Card Image
+      class: img-fluid
+    card_heading_link:
+    - anchorHead:
+        level: '5'
+        class: article__heading
+        button:
+          href: "#"
+          title: Annals of LGBTQ Public and Population Health
+          text: Annals of LGBTQ Public and Population Health
+    card_description:
+    - paragraph:
+        class: article__author-name
+        text: 'Lastname, Firstname'
+    - paragraph:
+        class: article__author-info 
+        text: 'Lastname, Firstname'           
+    - paragraph:
+        class: article__author-description
+        text: 'ISSN: 2688-4518 (online)'
+    card_link:
+    - button:
+        href: "#"
+        righticon: true
+        class: article__btn
+        title: Show description
+        text: Show description
+      
+    - button:
+        href: "#"
+        lefticon: true
+        title: Latest issue
+        text: Latest issue
+        class: article__btn-calender-icon
+- card_lr_column:
+  - left_col_width: article__card-image
+    middle_col_width: article__card-content
+    leftsource_media:
+    - leftimg_media: "(min-width:650px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    - leftimg_media: "(min-width:465px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    leftimage:
+      src: "../../../assets/images/250X350.png"
+      alt: Card Image
+      title: Card Image
+      class: img-fluid
+    card_heading_link:
+    - anchorHead:
+        level: '5'
+        class: article__heading
+        button:
+          href: "#"
+          title: Annals of LGBTQ Public and Population Health
+          text: Annals of LGBTQ Public and Population Health
+    card_description:
+    - paragraph:
+        class: article__author-name
+        text: 'Lastname, Firstname'
+    - paragraph:
+        class: article__author-info 
+        text: 'Lastname, Firstname'           
+    - paragraph:
+        class: article__author-description
+        text: 'ISSN: 2688-4518 (online)'
+    card_link:
+    - button:
+        href: "#"
+        righticon: true
+        class: article__btn
+        title: Show description
+        text: Show description
+      
+    - button:
+        href: "#"
+        lefticon: true
+        title: Latest issue
+        text: Latest issue
+        class: article__btn-calender-icon
+- card_lr_column:
+  - left_col_width: article__card-image
+    middle_col_width: article__card-content
+    leftsource_media:
+    - leftimg_media: "(min-width:650px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    - leftimg_media: "(min-width:465px)"
+      leftimg_srcset: "../../../assets/images/250X350.png"
+    leftimage:
+      src: "../../../assets/images/250X350.png"
+      alt: Card Image
+      title: Card Image
+      class: img-fluid
+    card_heading_link:
+    - anchorHead:
+        level: '5'
+        class: article__heading
+        button:
+          href: "#"
+          title: Annals of LGBTQ Public and Population Health
+          text: Annals of LGBTQ Public and Population Health
+    card_description:
+    - paragraph:
+        class: article__author-name
+        text: 'Lastname, Firstname'
+    - paragraph:
+        class: article__author-info 
+        text: 'Lastname, Firstname'           
+    - paragraph:
+        class: article__author-description
+        text: 'ISSN: 2688-4518 (online)'
+    card_link:
+    - button:
+        href: "#"
+        righticon: true
+        class: article__btn
+        title: Show description
+        text: Show description
+      
+    - button:
+        href: "#"
+        lefticon: true
+        title: Latest issue
+        text: Latest issue
+        class: article__btn-calender-icon                        
+        

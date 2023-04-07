@@ -1,0 +1,21 @@
+uuid: c86b03d7-97e5-47a6-b2ee-b36b03814298
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.supp_content_type
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.supp_content_type
+field_name: supp_content_type
+entity_type: node
+bundle: item_report_guideline
+label: supp-content-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

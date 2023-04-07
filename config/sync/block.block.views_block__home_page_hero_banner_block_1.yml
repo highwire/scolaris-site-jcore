@@ -1,0 +1,30 @@
+uuid: d1614d93-cb30-4cb2-81fd-3f9eed36d685
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page_hero_banner
+  module:
+    - system
+    - views
+  theme:
+    - bps
+id: views_block__home_page_hero_banner_block_1
+theme: bps
+region: header_banner
+weight: 0
+provider: null
+plugin: 'views_block:home_page_hero_banner-block_1'
+settings:
+  id: 'views_block:home_page_hero_banner-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

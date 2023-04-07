@@ -1,0 +1,21 @@
+uuid: 3a2f1a4f-9f1f-4c0d-9aeb-41289ca439d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.article_type
+    - node.type.media
+  module:
+    - text
+id: node.media.article_type
+field_name: article_type
+entity_type: node
+bundle: media
+label: article-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

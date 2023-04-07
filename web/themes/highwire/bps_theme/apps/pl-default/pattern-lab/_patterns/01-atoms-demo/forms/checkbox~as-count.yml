@@ -1,0 +1,8 @@
+---
+checkbox:
+  name: checkbox
+  value: checkbox
+  label: Checkbox Text
+  index: 2
+  count: 10
+  color: primary

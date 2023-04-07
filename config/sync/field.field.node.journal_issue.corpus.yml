@@ -1,0 +1,19 @@
+uuid: fa935813-25ba-4da5-9e36-8aef76bae700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.corpus
+    - node.type.journal_issue
+id: node.journal_issue.corpus
+field_name: corpus
+entity_type: node
+bundle: journal_issue
+label: Corpus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: searchbar_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/forms/_searchbar.twig' %}
+  {% endblock content %}
+{% endembed %}

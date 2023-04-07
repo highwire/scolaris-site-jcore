@@ -1,0 +1,28 @@
+{% include "@components/site/_custom-collections.twig" with {
+  ccb_top: {
+    heading_label: {
+      text: collection_name
+    },
+    cardlist: [{
+      left_col_width: 'article__card-image',
+      middle_col_width: 'article__card-content',
+      leftimage:{
+        class:'img-fluid',
+        title: collection_name,
+        alt: collection_name,
+        src: featured_image_src
+      },
+      card_description:[{
+        paragraph:{
+          text: collection_intro|raw
+        }
+      }],
+      card_download_pdf: card_download_pdf
+    }]
+  },
+  ccb_bottom: {
+    include_label: collection_heading,
+    cardlist: ccb_bottom.cardlist
+  }
+} only %}
+{{ pager }}

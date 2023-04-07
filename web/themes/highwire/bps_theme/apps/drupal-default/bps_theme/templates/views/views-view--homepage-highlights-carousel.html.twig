@@ -1,0 +1,12 @@
+<div class="highlight-section">
+   {% include "@atoms/text/_heading-2.twig" with {
+      heading: {
+         text:'Highlights'
+      }
+   } only %}
+   <div class="slick-slider six">
+      {% include "@components/card/_card-slider.twig" with {
+         card_link_items: issue
+      } only %}
+   </div>
+</div>

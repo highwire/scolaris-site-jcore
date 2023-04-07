@@ -1,0 +1,19 @@
+uuid: e7091471-b103-48f5-806d-8a944bb18dca
+langcode: en
+status: true
+dependencies: {  }
+id: full_text
+label: 'Full text'
+description: 'Access to full text markup.'
+rule_type: content
+role: full-text
+scope: ''
+target: variant
+language: en
+content_type: application/xhtml+xml
+file_field: ''
+file_field_bundles: {  }
+ac_denied_action: default
+ac_denied_action_conf: {  }
+ac_denied_message: ''
+concurrency_limit_message: ''

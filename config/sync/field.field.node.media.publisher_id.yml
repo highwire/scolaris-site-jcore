@@ -1,0 +1,21 @@
+uuid: cc28b584-ce14-40fc-98fe-9b939d42834c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.publisher_id
+    - node.type.media
+  module:
+    - text
+id: node.media.publisher_id
+field_name: publisher_id
+entity_type: node
+bundle: media
+label: publisher-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

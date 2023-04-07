@@ -1,0 +1,21 @@
+uuid: b9716239-67b5-43b9-916e-ae434db86d0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_binary_id
+    - media.type.file
+_core:
+  default_config_hash: pW3Xxn2DZ6Fo32HGLvRDdTPaGsLRWaDy9R_1DviI_fA
+id: media.file.field_binary_id
+field_name: field_binary_id
+entity_type: media
+bundle: file
+label: 'Binary Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

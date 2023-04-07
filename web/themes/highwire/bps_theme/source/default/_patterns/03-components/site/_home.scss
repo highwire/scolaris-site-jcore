@@ -1,0 +1,191 @@
+// Home
+$page: ".home";
+#{$page} {
+  padding-top: 2.5rem !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0;
+  .contextual-region {
+    position: static;
+  }
+  .slick-arrow {
+    top: -23px;
+    &.slick-prev {
+      left: auto;
+      right: 65px;
+    }  
+    &.slick-next {
+      right: 25px;
+    }
+  }
+}
+.path-frontpage {
+  .carousel { 
+    padding: 40px 0;
+    background-image: $gradient-yw;
+    &-inner {
+      @include media-breakpoint-down(medium-tablet) {
+        overflow: visible;
+        margin-bottom: 30px;
+      }
+    }
+    &-left {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-down(medium-tablet) {
+        order: 2;
+        margin-top: 24px;
+      }
+      h6 {
+        margin-top: -20px;
+        @include media-breakpoint-down(medium-tablet) {
+          margin-top: 0;
+        }
+      }
+      p {
+        min-height: 72px;
+      }
+    }
+    &-cover-image {
+      height: 245px;
+      @include media-breakpoint-up(medium-tablet) {
+        height: 310px;
+      }
+      @include media-breakpoint-up(desktop) {
+        height: 390px;
+      }
+      img {
+        border-radius: 5px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+  .slick-slide {
+    margin: 0px 24px;
+    &.six {
+      margin: 0;
+    }
+  }
+  #block-mainpagecontent > .container {
+    max-width: inherit;
+    padding: 0;
+    .highlight-section,
+    .periodical-highlight {
+      @extend .container;
+    }
+  }
+}
+.highlight-section {
+  padding-bottom: 3rem;
+  h2 {
+    position: relative;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    padding-right: 85px;
+  }
+  &::before {
+    background-color: $light-orange;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    content: "";
+    left: 0;
+  }
+  .card-body {
+    padding: 0;
+    margin-top: 15px;
+    display: block;
+    p {
+      font-size: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+      line-height: 24px;
+      letter-spacing: -0.22px;
+    }
+  }
+}
+.path-frontpage {
+  .main-container {
+    padding: 0;
+    margin: 0;
+  }
+  .main-content-container {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+}
+.periodical-highlight {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      width: 100%;
+      @include media-breakpoint-up(small-tablet) {
+        width: 50%;
+      }
+      @include media-breakpoint-up(medium-tablet) {
+        width: 33.33%;
+      }
+      @include media-breakpoint-up(large-tablet) {
+        width: auto;
+      }
+      a {
+        border: 1px solid $primary-dark;
+        margin: 1rem;
+        color: $primary-dark;
+        display: block;
+        font-size: 1.125rem;
+        padding: 12px 30px;
+        border-radius: 26px;
+        background: linear-gradient(to right, $primary-dark 50%, transparent 50%);
+        background-size: 200% 98%;
+        background-position: right bottom;
+        transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        @include media-breakpoint-down(large-tablet) {
+          margin: 10px;
+          font-size: 1rem;
+        }
+        &:hover,
+        &.active {
+          border: 1px solid $primary-dark;
+          background-position: left bottom;
+          color: $white !important;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+//  banner start
+.banner {
+  &__button {
+    &:hover,
+    &:focus {
+      color: $danger-dark;
+      text-decoration: none;
+    }
+    &:after {
+      content: "\e930";
+      color: $danger;
+    }
+  }
+}

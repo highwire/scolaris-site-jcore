@@ -1,0 +1,21 @@
+uuid: 79c1198d-32ab-4793-8b65-f839ffb53d21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_source
+    - node.type.media
+id: node.media.has_source
+field_name: has_source
+entity_type: node
+bundle: media
+label: has-source
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

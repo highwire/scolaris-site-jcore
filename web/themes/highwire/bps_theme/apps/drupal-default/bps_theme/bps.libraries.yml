@@ -1,0 +1,36 @@
+# Define theme library CSS and JS assets along with dependent libraries.
+# The paths below are set to default DRUPAL_DIST variable. If you change the
+# DRUPAL_DIST path, update here.
+core:
+  css:
+    theme:
+      ../../../dist/app-drupal/assets/css/style.css:
+        preprocess: true
+  js:
+     ../../../dist/app-drupal/assets/js/custom/custom-theme.js:
+      preprocess: true
+  # See all in Drupal's `core/core.libraries.yml`
+  dependencies:
+    - particle/jquery
+    - core/drupal
+    - core/drupalSettings
+# Create a custom jQuery library that will override the Drupal core jQuery library
+# See `libraries-override` in particle.info.yml
+jquery:
+  js:
+    ../../../dist/app-drupal/assets/drupal-jquery.js:
+      preprocess: true
+      weight: -20
+
+focus_view:
+  css:
+    theme:
+      dest/focus_view.css: {}
+  
+bps-toc:
+  js:
+    js/lib/bps-toc.js: { minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

@@ -1,0 +1,5 @@
+{% if icon %}
+  {% set icon_library = icon_library is not defined ? 'fas' : icon_library %}
+  {% set icon_prefix = icon_prefix is not defined ? 'fa' : icon_prefix %}
+  <span class="{{ icon_library }} {{ icon_prefix }}-{{ icon }} {{ extra_classes }} {{ icon_attributes.class }}" aria-hidden="true" {{ icon_attributes|without('class') }}></span>
+{% endif %}

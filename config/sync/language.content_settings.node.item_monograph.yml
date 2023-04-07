@@ -1,0 +1,11 @@
+uuid: fe7bfb46-10b3-41a2-a25a-03135811f26c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.item_monograph
+id: node.item_monograph
+target_entity_type_id: node
+target_bundle: item_monograph
+default_langcode: site_default
+language_alterable: false

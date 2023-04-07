@@ -1,0 +1,21 @@
+uuid: f2edfec5-c75d-4545-96d9-fbe0fed9e57b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.instructor_material
+    - node.type.item_monograph
+id: node.item_monograph.instructor_material
+field_name: instructor_material
+entity_type: node
+bundle: item_monograph
+label: instructor-material
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

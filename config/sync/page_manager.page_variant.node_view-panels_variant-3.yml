@@ -1,0 +1,88 @@
+uuid: 315184d6-3023-4a11-a026-9ec3d28a3d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - system.menu.footer-right
+    - system.menu.footer-right-2
+    - system.menu.footer-right-3
+  module:
+    - ctools
+    - node
+    - panels
+    - system
+id: node_view-panels_variant-3
+label: 'CMS pages'
+variant: panels_variant
+variant_settings:
+  blocks:
+    0324b691-2e6c-4952-abc3-8d31a448f090:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: default
+      region: right
+      weight: 0
+      uuid: 0324b691-2e6c-4952-abc3-8d31a448f090
+      context_mapping:
+        entity: node
+    5f95a20e-8941-4739-8eae-5678cde1eac3:
+      id: 'system_menu_block:footer-right-2'
+      label: Resources
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 0
+      uuid: 5f95a20e-8941-4739-8eae-5678cde1eac3
+      context_mapping: {  }
+    5522466a-b2d9-4898-86b6-074433c0078b:
+      id: 'system_menu_block:footer-right-3'
+      label: Legal
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 1
+      uuid: 5522466a-b2d9-4898-86b6-074433c0078b
+      context_mapping: {  }
+    9c16a6cf-7dd5-49f9-9445-774d2bf089a8:
+      id: 'system_menu_block:footer-right'
+      label: Information
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 0
+      uuid: 9c16a6cf-7dd5-49f9-9445-774d2bf089a8
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 4899d66e-7e45-4bc1-a6b0-107e10ea2a14
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings: {  }
+  page_title: '[node:title]'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-3
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

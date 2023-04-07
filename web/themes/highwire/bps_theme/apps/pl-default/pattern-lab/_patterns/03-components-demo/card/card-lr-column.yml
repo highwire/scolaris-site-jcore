@@ -1,0 +1,37 @@
+---
+organisms_only: true
+card_lr_column:
+- left_col_width: col-large-tablet-4 col-desktop-3
+  middle_col_width: col-large-tablet-8 col-desktop-9
+  leftsource_media:
+  - leftimg_media: "(min-width:650px)"
+    leftimg_srcset: "../../../assets/images/256X256.png"
+  - leftimg_media: "(min-width:465px)"
+    leftimg_srcset: "../../../assets/images/256X256.png"
+  leftimage:
+    src: "../../../assets/images/256X256.png"
+    alt: Card Image
+    title: Card Image
+    class: card-img-top
+  card_heading:
+  - heading:
+      level: '5'
+      class: card-title
+      text: Card title
+  card_heading_link:
+  - anchorHead:
+      level: '4'
+      button:
+        href: "#"
+        title: card-title
+        text: card-title
+  card_description:
+  - paragraph:
+      class: card-text
+      text: Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+  card_link:
+  - button:
+      href: "#"
+      class: btn btn-primary
+      text: Link

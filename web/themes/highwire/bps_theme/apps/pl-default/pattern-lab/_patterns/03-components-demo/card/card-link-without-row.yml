@@ -1,0 +1,22 @@
+---
+organisms_only: true
+card_link_items:
+- colwidth: col-12 col-large-tablet-4 col-desktop-3
+  title: Card Title
+  href: "#"
+  class: card-wrapper
+  body: ps-0 pe-0
+  source_media:
+  - img_media: "(min-width:650px)"
+    img_srcset: "../../../assets/images/520x270.png"
+  - img_media: "(min-width:465px)"
+    img_srcset: "../../../assets/images/520x270.png"
+  image:
+    src: "../../../assets/images/520x270.png"
+    alt: Card Image
+    title: Card Image
+    class: img-fluid
+  heading:
+    level: '5'
+    class: mb-0
+    text: Card title

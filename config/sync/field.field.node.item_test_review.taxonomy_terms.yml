@@ -1,0 +1,21 @@
+uuid: 774bef92-8585-46c2-b320-b5f102fc8607
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_terms
+    - node.type.item_test_review
+id: node.item_test_review.taxonomy_terms
+field_name: taxonomy_terms
+entity_type: node
+bundle: item_test_review
+label: taxonomy-terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

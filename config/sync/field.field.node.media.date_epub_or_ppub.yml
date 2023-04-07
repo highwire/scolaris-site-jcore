@@ -1,0 +1,21 @@
+uuid: 602e8bb6-dec3-4150-9e7c-4941ec33d41f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_epub_or_ppub
+    - node.type.media
+  module:
+    - datetime_range
+id: node.media.date_epub_or_ppub
+field_name: date_epub_or_ppub
+entity_type: node
+bundle: media
+label: date_epub_or_ppub
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

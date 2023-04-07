@@ -1,0 +1,21 @@
+uuid: 5fba6f8d-7a60-4868-86c8-08e3e2342024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.doi
+field_name: doi
+entity_type: node
+bundle: item_test_review
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

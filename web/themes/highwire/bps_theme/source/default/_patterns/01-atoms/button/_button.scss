@@ -1,0 +1,88 @@
+// Buttons Setting
+
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    line-height: 1.5rem;
+    color: $body-color;
+    text-align: center;
+    text-decoration: none;
+    white-space: null;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.688rem 1.125rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, transparent 50%, white 50%);
+    background-size: 200% 98%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;  
+    &:hover,
+    &:focus,
+    &.active {
+        color: $body-color;
+        text-decoration: none;
+        background-position: left bottom;
+        box-shadow: none !important;
+    }  
+    .btn-check:focus + &,
+    &:focus {
+        outline: 0;
+    }  
+    &:disabled,
+    &.disabled,
+    fieldset:disabled & {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+        @include box-shadow(none);
+    }
+}
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+// Link buttons  
+.btn-link {
+    font-weight: $font-weight-normal;
+    color: $btn-link-color;
+    text-decoration: $link-decoration;
+    &:hover {
+        color: $btn-link-hover-color;
+        text-decoration: none;
+    }  
+    &:focus {
+        text-decoration: none;
+    }  
+    &:disabled,
+    &.disabled {
+        color: $btn-link-disabled-color;
+    }
+}
+
+// Button Sizes
+.btn-large-tablet {
+    @include button-size($btn-padding-y-large-tablet, $btn-padding-x-large-tablet, $btn-font-size-large-tablet, $btn-border-radius-large-tablet);
+    line-height: 1.775rem;
+}  
+.btn-small-tablet {
+    @include button-size($btn-padding-y-small-tablet, $btn-padding-x-small-tablet, $btn-font-size-small-tablet, $btn-border-radius-small-tablet);
+    padding: 0.313rem 1rem;
+    line-height: 1.5rem;
+}
+
