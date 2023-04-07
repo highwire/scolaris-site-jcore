@@ -1,0 +1,24 @@
+uuid: d6dc175b-2493-4a6f-b8f5-eff24dbdef90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_foxycart_customer_id
+  module:
+    - user
+id: user.user.field_foxycart_customer_id
+field_name: field_foxycart_customer_id
+entity_type: user
+bundle: user
+label: 'Foxycart Customer Id'
+description: 'The id for the user/customer in Foxycart.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

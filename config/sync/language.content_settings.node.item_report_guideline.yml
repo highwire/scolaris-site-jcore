@@ -1,0 +1,11 @@
+uuid: 9fa05203-38d9-4831-8a95-99059fcbac28
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.item_report_guideline
+id: node.item_report_guideline
+target_entity_type_id: node
+target_bundle: item_report_guideline
+default_langcode: site_default
+language_alterable: false

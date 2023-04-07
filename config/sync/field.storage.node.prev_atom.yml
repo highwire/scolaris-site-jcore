@@ -1,0 +1,19 @@
+uuid: a564dab1-60af-4b93-9fe1-a7d61b63f98c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.prev_atom
+field_name: prev_atom
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

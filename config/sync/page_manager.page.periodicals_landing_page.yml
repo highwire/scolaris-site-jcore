@@ -1,0 +1,12 @@
+uuid: 11d272f6-42e0-4b7d-908e-a17fa51b7799
+langcode: en
+status: true
+dependencies: {  }
+id: periodicals_landing_page
+label: 'Periodicals Landing Page'
+description: ''
+use_admin_theme: false
+path: /periodicals
+access_logic: and
+access_conditions: {  }
+parameters: {  }

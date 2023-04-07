@@ -1,0 +1,25 @@
+uuid: d6bbd4e9-f762-459c-92d4-b7a3bec5b817
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer-right-3
+  module:
+    - system
+  theme:
+    - bps
+id: footerright3_3
+theme: bps
+region: header_top_ads
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer-right-3'
+settings:
+  id: 'system_menu_block:footer-right-3'
+  label: 'Footer right 3'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

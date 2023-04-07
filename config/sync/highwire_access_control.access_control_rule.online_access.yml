@@ -1,0 +1,19 @@
+uuid: bc773ce9-1fb8-4920-911d-8aa830dc6e82
+langcode: en
+status: true
+dependencies: {  }
+id: online_access
+label: 'Online access'
+description: 'AC3 rule to look for "online" scope.'
+rule_type: content
+role: full-text
+scope: online
+target: variant
+language: ''
+content_type: ''
+file_field: ''
+file_field_bundles: {  }
+ac_denied_action: default
+ac_denied_action_conf: {  }
+ac_denied_message: ''
+concurrency_limit_message: ''

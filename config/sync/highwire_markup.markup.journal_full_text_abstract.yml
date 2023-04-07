@@ -1,0 +1,34 @@
+uuid: 6c6dd391-14ab-476b-b0b8-291f4af31571
+langcode: en
+status: true
+dependencies: {  }
+id: journal_full_text_abstract
+label: 'Journal Full Text Abstract'
+profile_id: abstract
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: sassuri
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: mathml
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: delete
+      processor_config:
+        config:
+          xpath: ''
+          selector: ''
+          preserve_children: 0
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: replace_tag
+      processor_config:
+        config:
+          replace_tag: ''
+    weight: '1'
+dw_logging: null
+exists_field: has_abstract

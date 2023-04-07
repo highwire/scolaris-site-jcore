@@ -1,0 +1,21 @@
+uuid: 12dbbd17-3ada-4a1e-9736-340030315995
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.supplementary_material
+    - node.type.item_cover
+id: node.item_cover.supplementary_material
+field_name: supplementary_material
+entity_type: node
+bundle: item_cover
+label: supplementary-material
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

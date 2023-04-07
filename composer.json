@@ -1,0 +1,145 @@
+{
+    "name": "highwire/scolaris-site-bps",
+    "description": "Site specific repository for BPS",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "discard-changes": true,
+        "process-timeout": 0,
+        "theme-directories": [
+            "web/themes/highwire/bps_theme"
+        ]
+    },
+    "require": {
+        "highwire/freebird": "dev-PLATFORM1-2508",
+        "highwire/freebird-scaffold": "^2.1.1",
+        "drupal/console": "^1.0.2",
+        "drupal/devel": "^1.0@RC",
+        "drush/drush": "^8",
+        "bower-asset/jquery-ui-slider-pips": "^1.11",
+        "cweagans/composer-patches": "^1.6.0",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "vlucas/phpdotenv": "^4.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "whichbrowser/parser": "^2.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "drupal/structure_sync": "^2.0",
+	"drupal/view_unpublished": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.2",
+        "behat/mink": "^1.7",
+        "behat/mink-selenium2-driver": "^1.3",
+        "behat/mink-extension": "^2.2",
+        "behat/mink-goutte-driver": "~1.2",
+        "drupal/drupal-extension": "~3.0",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsstream": "~1.2",
+        "symfony/css-selector": "~2.8"
+    },
+    "extra": {
+        "patches": {
+            "drupal/search_api_solr": {
+                "Unable to uninstall base theme and subtheme at the same time.": "https://www.drupal.org/files/issues/2020-10-28/3001430-5.patch"
+            },
+            "drupal/google_analytics": {
+                "Support new Google Analytics 4.": "https://www.drupal.org/files/issues/2020-11-19/3178179-13.patch"
+            }
+        },        
+        "composer-exit-on-patch-failure": true,
+        "enable-patching": true,
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "web/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ]
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "freebird": {
+            "type": "git",
+            "url": "git@github.com:highwire/freebird.git"
+        },
+        "freebird-scaffold": {
+            "type": "git",
+            "url": "git@github.com:highwire/freebird-scaffold.git"
+        },
+        "hwphp": {
+            "type": "git",
+            "url": "git@github.com:highwire/hwphp.git"
+        },
+        "elasticeq": {
+            "type": "git",
+            "url": "git@github.com:phayes/elasticentityquery.git"
+        },
+        "marcrecords": {
+            "type": "git",
+            "url": "git@github.com:highwire/marc-records-client-php.git"
+        },
+        "pdata": {
+            "type": "git",
+            "url": "git@github.com:highwire/personalization-data-client-php.git"
+        },
+        "pclient": {
+            "type": "git",
+            "url": "git@github.com:highwire/personalization-client-php.git"
+        },
+        "casatoken": {
+            "type": "git",
+            "url": "git@github.com:highwire/casa-token-client-php.git"
+        },
+        "transfertoken": {
+            "type": "git",
+            "url": "https://github.com/highwire/transfer-token-client-php.git"
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/FreebirdHandler.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+            "FreebirdComposer\\CommandHandler::provisionSettings",
+            "HighWireSite\\composer\\FreebirdHandler::setupFreebirdCode",
+            "FreebirdComposer\\CommandHandler::compileThemes"
+        ],
+        "post-update-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+            "FreebirdComposer\\CommandHandler::provisionSettings",
+            "HighWireSite\\composer\\FreebirdHandler::setupFreebirdCode",
+            "FreebirdComposer\\CommandHandler::compileThemes"
+        ]
+    }
+}

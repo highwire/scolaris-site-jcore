@@ -1,0 +1,21 @@
+uuid: b2bc214f-278d-4fc6-8608-a88269bb5112
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section_title
+    - node.type.item_part
+  module:
+    - text
+id: node.item_part.section_title
+field_name: section_title
+entity_type: node
+bundle: item_part
+label: section-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

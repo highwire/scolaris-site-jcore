@@ -1,0 +1,21 @@
+uuid: 5e43d7f1-02c7-4452-888b-ee9323667e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_print_compact
+    - node.type.item_chapter
+  module:
+    - text
+id: node.item_chapter.isbn_print_compact
+field_name: isbn_print_compact
+entity_type: node
+bundle: item_chapter
+label: isbn-print-compact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

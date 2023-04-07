@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: searchresult_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/site/_search-result.twig' %}
+  {% endblock content %}
+{% endembed %}

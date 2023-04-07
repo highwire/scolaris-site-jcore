@@ -1,0 +1,214 @@
+---
+show_search: true
+tabcontent_class: article__tabcontent-body
+journal_authenticated: journal-article__journal-authenticated
+journals_articles_top:
+- right_col_width: col-large-tablet-4 col-desktop-3
+  middle_col_width: col-large-tablet-8 col-desktop-9
+  right_modified_class: article__top_right
+  middle_modified_class: article__top_left
+  rightsource_media:
+  - rightimg_media: "(min-width:650px)"
+    rightimg_srcset: "../../../assets/images/128X128.png"
+  - rightimg_media: "(min-width:465px)"
+    rightimg_srcset: "../../../assets/images/128X128.png"
+  rightimage:
+    src: "../../../assets/images/128X128.png"
+    alt: Card Image
+    title: Card Image
+    class: article__top-image
+  card_rightheading:
+  - heading:
+      level: '6'
+      class: article__image_title
+      text: 'This chapter appears in:'
+  card_rightlink:
+  - button:
+      class: article__image_link
+      href: "#"
+      title: Adipiscing faucibus dapibus ullamcorper pellentesque ultricies
+      text: Adipiscing faucibus dapibus ullamcorper pellentesque ultricies
+  - button:
+      class: article__latest_edition
+      href: "#"
+      title: View latest edition
+      text: '<a href="#" title="Keyword" class="article__latest-edition"><span class="article__latest-edition__edition-badge"><span class="article__latest-edition__badge-inner"></span></span> View latest edition <span class="article__rightarrow"></span></a>'
+  card_heading:
+  - heading:
+      level: '5'
+      class: article__subtitle
+      text: Book chapter
+  - heading:
+      level: '1'
+      class: article__title
+      text: '7: Chapter title sit risus potenti aliquet nibh sollicitudin turpis malesuada elit euismod tincidunt vivamus tellus pretium condimentum'
+  card_heading_link:
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  card_description:
+  - paragraph:
+      class: article__detail
+      text: '<span>DOI: <strong>1234/XYZ</strong></span>'
+  card_link:
+  - button:
+      href: "#"
+      class: action-download
+      title: Download PDF
+      text: Download PDF
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-favorites
+      title: Add to favorites
+      text: Add to favorites
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-cite
+      title: Cite
+      text: Cite
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-permissions
+      title: Permissions
+      text: Permissions
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-share
+      title: Share
+      text: Share
+      lefticon: true
+  - button:
+      href: "#"
+      class: action-alerts
+      title: Alerts
+      text: Alerts
+      lefticon: true
+accordion_login: false
+articles_search_form:
+  search_filter_right: search-filter-right
+  search_position: journal-article__searchbox__search-field 
+  field:
+    type: text
+    id: id
+    placeholder: Search within this book
+    style: 'journal-article__searchbox__article-form-input'
+  button:
+    type: submit
+    style: search-submit 
+    text: Search
+    lefticon: true
+navtabs_item:
+- active: active
+  id: 1
+  title: Chapter
+- active: ''
+  id: 2
+  title: Book contents
+- title: ''
+navtabs_content:
+- active: active
+  id: 1
+  journal_artical_cms: Process-oriented dynamic testing aims to investigate the processes children use to solve cognitive tasks, and evaluate changes in these processes as a result of training. For the current study, a dynamic complex figure task was constructed, using the graduated prompts approach, to investigate the processes involved in solving a complex figure task and changes in these processes as a consequence of training. A new process-oriented measure was developed, which used computer-automated scoring to evaluate children's organization in drawing the figure. Participants were 106 regular primary school children (M = 7.8 years, standard deviation [SD] = 0.42 years). The graduated prompts training led to significantly more progression in complex figure drawing accuracy from pre-test to post-test, compared to unguided control. The level of organization of the figure also became more advanced as a result of training, as reflected by the highest category of organization being attained by trained children only. However, the training did not lead to transfer from the trained domain to an inductive reasoning task.
+- active: ''
+  id: 2
+  journal_artical_cms: Content 2
+journals_action_top: true
+journals_action_bottom: false
+journals_tabs_click:
+- button:
+    href: "#"
+    lefticon: true
+    title: Focus
+    text: Focus
+    class: article__focus_link
+- button:
+    href: "#"
+    lefticon: true
+    title: Previous
+    text: Previous
+    class: article__previous_link
+- button:
+    href: "#"
+    righticon: true
+    title: Next
+    text: Next
+    class: article__next_link
+journals_sidebar:
+- heading:
+    level: '5'
+    class: article__related_heading
+    text: Related content
+  related_article:
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Book chapter
+    button:
+      href: "#"
+      title: Arcu est netus nisi leo sollicitudin lectus tellus ultricies sem phasellus quisque facilisis eleifend mollis at ad ornare neque senectus
+      text: Arcu est netus nisi leo sollicitudin lectus tellus ultricies sem phasellus quisque facilisis eleifend mollis at ad ornare neque senectus
+      class: article__sidecontent_link
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+- heading:
+    level: '5'
+    class: article__heading_keyword
+    text: Keywords
+  ullisting_class: article__sidecontent_list
+  listing_items:
+  - urls: "#"
+    content: dynamic testing
+  - urls: "#"
+    content: process measurement
+  - urls: "#"
+    content: complex figure
+  - urls: "#"
+    content: gradual prompts
+  - urls: "#"
+    content: computer-automated scoring
+- heading: false
+  listing_items: false

@@ -1,0 +1,21 @@
+uuid: 94ba3721-48b2-4b92-ad4e-accac52b7b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.mime_type
+    - node.type.item_back_matter
+  module:
+    - text
+id: node.item_back_matter.mime_type
+field_name: mime_type
+entity_type: node
+bundle: item_back_matter
+label: mime-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

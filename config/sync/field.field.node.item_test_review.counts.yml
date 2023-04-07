@@ -1,0 +1,37 @@
+uuid: e5ad85e3-7d80-427f-81c5-8a28a69379d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.counts
+    - node.type.item_test_review
+  module:
+    - double_field
+id: node.item_test_review.counts
+field_name: counts
+entity_type: node
+bundle: item_test_review
+label: counts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

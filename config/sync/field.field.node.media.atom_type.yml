@@ -1,0 +1,21 @@
+uuid: 521f2b9e-de8e-44bb-b90c-7a92af6c7557
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.atom_type
+    - node.type.media
+  module:
+    - text
+id: node.media.atom_type
+field_name: atom_type
+entity_type: node
+bundle: media
+label: atom-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

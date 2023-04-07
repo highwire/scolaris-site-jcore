@@ -1,0 +1,40 @@
+drupal.bps_search.facets:
+  version: VERSION
+  js:
+    js/facets.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+
+drupal.bps_search.facets-daterange:
+  version: VERSION
+  js:
+    js/facets-daterange.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - bps_search/parsley.parsleyjs
+
+drupal.bps_search.google-analytics:
+  version: VERSION
+  js:
+    js/bps_search_ga.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupalSettings
+
+parsley.parsleyjs:
+  remote: https://github.com/guillaumepotier/Parsley.js
+  version: 2.8.0
+  license:
+    name: MIT
+    url: https://github.com/guillaumepotier/Parsley.js/blob/master/LICENSE
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js:
+      { type: external, minified: true }
+  dependencies:
+    - core/jquery

@@ -1,0 +1,21 @@
+uuid: b6f1fc22-d255-4098-9dc1-a0a292f4bc70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_short
+    - node.type.media
+  module:
+    - text
+id: node.media.title_short
+field_name: title_short
+entity_type: node
+bundle: media
+label: title-short
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

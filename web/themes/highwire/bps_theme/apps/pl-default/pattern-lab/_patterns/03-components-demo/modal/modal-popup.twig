@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: modal_popup_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/modal/_modal-popup.twig' %}
+  {% endblock content %}
+{% endembed %}

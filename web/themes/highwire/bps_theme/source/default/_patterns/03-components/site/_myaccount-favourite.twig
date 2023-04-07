@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-12 col-medium-tablet-12 col-desktop-12">
+        {% include "@atoms/text/_heading.twig" with { heading: myaccount_top.badge_heading } only %}
+        {% include "@atoms/text/_heading.twig" with { heading: myaccount_top.heading } only %}
+        {% include "@atoms/text/_paragraph.twig" with { paragraph: myaccount_top.paragraph } only %}
+    </div>
+</div>
+<div class="my-account__divider">
+    <div class="my-account__filter-wrapper">                
+        {% include "@atoms/forms/_select.twig" with { select: myaccount_filter.select } only %}
+        {% include "@atoms/forms/_select.twig" with { select: myaccount_shortby.select } only %}
+        </div>
+</div>
+{% for item in myaccount_middle %}
+    <div class="my-account__listing-wrapper">
+        <div>
+            {% include "@atoms/images/_image.twig" with { image: item.image } only %}
+        </div>
+        <div>
+            {% include "@molecules/card/_card-body.twig" with { 
+                card_heading: item.card_heading,
+                card_heading_link: item.card_heading_link, 
+                card_description: item.card_description, 
+                card_link: item.card_link 
+            } only %}
+            <div class="my-account__source-link">
+                <span> Source:</span>
+                {% include "@atoms/button/_button.twig" with { button: item.sourceLink } only %}
+            </div>
+        </div>
+    </div>
+{% endfor %} 
+<div class="my-account__pagination-divider">
+    <div class="row">
+        <div class="col-12 col-medium-tablet-7 col-desktop-8">
+            {% include "@molecules/grouping/_pagination.twig" %}
+        </div>
+        <div class="col-12 col-medium-tablet-5 col-desktop-4 text-medium-tablet-end">
+            {% include "@atoms/text/_inline-element.twig" with {
+                inline: myaccount_bottom.OrderbyBottomLeft
+            } only %}
+            <div class="my-account__page-seperator">
+                {% for item in myaccount_bottom.pageBottomCount %}					
+                    {% include "@atoms/button/_button.twig" with {
+                        button: item.button
+                    } only %}					
+                {% endfor %}
+            </div>
+            {% include "@atoms/text/_inline-element.twig" with {
+                inline: myaccount_bottom.OrderbyBottomRight
+            } only %}
+        </div>
+    </div>
+</div>
+{% include "@components/modal/_modal-popup.twig" with {
+    modalPopup: myaccounts_delete.modalPopup
+} only %}

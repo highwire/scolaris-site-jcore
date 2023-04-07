@@ -1,0 +1,43 @@
+---
+organisms_only: true
+search_result_top:
+  heading:
+    level: '3'
+    class: search-result__main-heading
+    text: Your search for <span>Orange</span> returned <span>816</span>
+      results
+  button:
+    href: "#"
+    title: Save Search
+    text: Save Search
+    class: search-result__save-search
+    lefticon: true    
+  OrderbyText:
+    content: 'Order by: Relevance'
+  OrderbyTopLeft:
+    content: Show
+  OrderbyTopRight:
+    content: per page
+  orderbyFilter:
+  - button:
+      href: "#"
+      title: Title
+      text: Title
+      class:
+  - button:
+      href: "#"
+      title: Date
+      text: Date
+  pageTopCount:
+  - button:
+      href: "#"
+      title: '10'
+      text: '10'
+  - button:
+      href: "#"
+      title: '50'
+      text: '50'
+  - button:
+      href: "#"
+      title: '100'
+      text: '100'

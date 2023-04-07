@@ -1,0 +1,20 @@
+uuid: 01ba15de-60d8-484f-837e-b3999633bb3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_markup_display
+    - node
+id: node.hwmd_abstract_book
+field_name: hwmd_abstract_book
+entity_type: node
+type: HWMarkupDisplay
+settings:
+  case_sensitive: false
+module: highwire_markup_display
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

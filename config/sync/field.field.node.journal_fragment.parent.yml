@@ -1,0 +1,21 @@
+uuid: 520bfc60-a980-49c7-a4b0-820546ab8cc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent
+    - node.type.journal_fragment
+id: node.journal_fragment.parent
+field_name: parent
+entity_type: node
+bundle: journal_fragment
+label: parent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

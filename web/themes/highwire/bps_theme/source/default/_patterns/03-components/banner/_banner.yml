@@ -1,0 +1,16 @@
+---
+bannerSrc: "../../../assets/images/home-banner.jpg"
+bannerHeading:
+  level: '1'
+  class: banner__heading
+  text: Habitasse maximus sociosqu
+bannerParagraph:
+  class: banner__subHeading
+  text: Sed cubilia hendrerit diam condimentum proin commodo nullam phasellus bibendum
+    scelerisque iaculis justo consectetur blandit laoreet aenean imperdiet maximus
+    posuere
+bannerLink:
+  href: "#"
+  class: banner__button
+  text: Volutpat metus turpis dolor
+ 

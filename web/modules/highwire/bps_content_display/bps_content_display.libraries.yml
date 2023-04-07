@@ -1,0 +1,32 @@
+drupal.bps_content_display.views-carousel: 
+  version: VERSION
+  js:
+    js/views-carousel.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - bps_content_display/swiper.swiperjs
+
+swiper.swiperjs:
+  remote: https://github.com/nolimits4web/Swiper
+  version: 4.0.5
+  license:
+    name: MIT
+    url: https://github.com/nolimits4web/Swiper/blob/master/LICENSE
+  css:
+    component:
+      https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css: { type: external, minified: true }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+
+viewincontext:
+  version: VERSION
+  js:
+    js/mediaqueries.js: {}
+    js/viewincontext.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

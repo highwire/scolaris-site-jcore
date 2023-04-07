@@ -1,0 +1,8 @@
+uuid: ecc4474a-fcb7-4338-8f46-c62c1d6cfffb
+langcode: en
+status: true
+dependencies: {  }
+name: bps-content-subject
+vid: bps_content_subject
+description: 'British Psychological Society Subjects Taxonomy'
+weight: 0

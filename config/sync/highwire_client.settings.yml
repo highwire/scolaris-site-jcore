@@ -1,0 +1,305 @@
+highwire_client_configuration:
+  debug_all: 0
+  disable_all_cache: 0
+  'hwphpclient:access-control':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      access_control_context: bpsworks
+      publisher_id: bps
+  'hwphpclient:concurrency-ticket-store':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings: {  }
+  'hwphpclient:cct-collections':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      publisher_id: ''
+  'hwphpclient:catalog':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      publisher_id: bps
+  'hwphpclient:foxycart-user':
+    env: custom
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      api_token: VTfRZaQQMUxfuCUYlnPgX9ACB3y3v81WdayDB4ti4tLSAq27izBfIQbgaqMG
+  'hwphpclient:a4d-extract':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:date':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:alerts':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:capture':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:saved-search':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:markers':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:features':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:workspaces':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:tags':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:taggings':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:preferences':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:report-data':
+    env: production
+    custom_url: ''
+    timeout: '300'
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:atom-lite':
+    env: production
+    custom_url: ''
+    timeout: '300'
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:atom-lite-reprocessor':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:markup':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:htmlpdf':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:binary':
+    env: production
+    custom_url: ''
+    timeout: '60'
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:sass':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:atom-collections':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:taxonomy':
+    env: production
+    custom_url: ''
+    timeout: '300'
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:atomx':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:atom':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:embargo':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:pdf-extract':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:content-sync':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:links':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:staticfs':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:usage-stats':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:transfer-token-auth':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:transfer-token-token':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:star-logger':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:marc-records':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:casa-token':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      context: bpsworks
+      subscriber_base_url: ' http://scholar.google.com/casa/bps/'
+  'hwphpclient:casa-validation':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      context: bpsworks
+  'hwphpclient:casa-vouchers':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      context: bpsworks
+  'hwphpclient:sigma-publisher':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+    extra_settings:
+      context: bpsworks
+      api_key: ''
+  'hwphpclient:site-data':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:ai-recommendations':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:three-play-plugin':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:ai-recommendations':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  'hwphpclient:three-play-plugin':
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0
+  SAMSSigma:
+    env: production
+    custom_url: ''
+    timeout: ''
+    cache_ttl: ''
+    debug: 0

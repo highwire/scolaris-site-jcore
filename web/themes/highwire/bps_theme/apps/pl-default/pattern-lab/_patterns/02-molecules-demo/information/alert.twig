@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: alert_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/information/_alert.twig' %}
+  {% endblock content %}
+{% endembed %}

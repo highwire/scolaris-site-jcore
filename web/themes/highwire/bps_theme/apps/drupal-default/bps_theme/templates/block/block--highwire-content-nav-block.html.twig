@@ -1,0 +1,18 @@
+{% if toc_sidebar_block %}
+  {% for item in toc_sidebar_block %}
+    <div class="sidebar-article sidebar-sticky">
+      {% include "@atoms/text/_heading-5.twig" with {
+        heading: {
+          text: item.block_heading,
+        }
+      } only %}
+      {% if item.listing_items %}
+        <div class="sidebar-article-wrapper">
+          {% include "@molecules/grouping/_listing.twig" with {
+            listing_items: item.listing_items
+          } only %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+{% endif %}

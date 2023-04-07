@@ -1,0 +1,38 @@
+// Configuration
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/utilities";
+
+// Utilities
+@import "scss/utilities/api";
+
+// Helpers
+@import "scss/helpers";
+
+// Base Setup
+@import "../_patterns/00-protons/base";
+
+// Atoms Setup
+@import "../_patterns/01-atoms/atoms";
+
+// Molecules Setup
+@import "../_patterns/02-molecules/molecules";
+
+// Components Setup
+@import "../_patterns/03-components/components";
+
+//Slick Slider
+@import "scss/slick";
+
+// Jquery UI Overwrite Style
+@import "scss/jquery-ui";
+
+// Article middle content style over-write
+@import "scss/editor-style";
+
+// Ad's Style
+@import "scss/ads-style";
+
+// Custom Style
+@import "scss/custom-style";

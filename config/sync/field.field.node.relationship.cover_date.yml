@@ -1,0 +1,21 @@
+uuid: 18901989-4f32-4cc0-83b2-f38a772fac48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cover_date
+    - node.type.relationship
+  module:
+    - text
+id: node.relationship.cover_date
+field_name: cover_date
+entity_type: node
+bundle: relationship
+label: cover-date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

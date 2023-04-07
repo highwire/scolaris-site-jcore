@@ -1,0 +1,21 @@
+uuid: f78b48cd-7216-46dc-916b-f815bb3c3766
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.version_current
+    - node.type.relationship
+id: node.relationship.version_current
+field_name: version_current
+entity_type: node
+bundle: relationship
+label: version-current
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

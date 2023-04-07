@@ -1,0 +1,78 @@
+<div class="journals-articles-top">
+  <div class="journals-articles-inner">
+    <div class="row{% if periodical_items %} rowcol-right-2{% endif %}">
+      <div class="article-middle-panel">
+        {% include "@components/site/_journal-top-content.twig" with {
+          prefix_title: prefix_title,
+          main_title: main_title,
+          authors: authors,
+          journal_doi : journal_doi,
+          action_tools: [{
+            title_withoutpopup: content.variant_full_text_pdf,
+            class: "action-favorites"
+          }, {
+            title_withoutpopup: hw_marker_sign_up,
+            class: "action-favorites",
+          }, {
+            href: "#",
+            title: "Cite",
+            text: "Cite",
+            class: "action-cite",
+            popupdata: bps_citations_download,
+            modelPopup:  'bps-city-popup'
+          }, {
+            href: addtoany['#link_url'],
+            title: "Share",
+            class: "action-share",
+            text: "Share",
+            popupdata: addtoany,
+            modelPopup:  'bps-share-popup'
+          }, {
+            title_withoutpopup: hw_alerts_sign_up,
+            class: "action-bookmark"
+          }, {
+            href: ccc_permissions_link['#url'],
+            title: "Permissions",
+            text: "Permissions",
+            class: "action-permissions",
+            target: '_blank'
+          }]
+        } only %}
+      </div>
+      {% if periodical_items %}
+        <div class="article-right-panel">
+          {% if periodical_items.cover_img %}
+            <picture>
+              {% include "@atoms/images/_image.twig" with {
+                image: {
+                  src: periodical_items.cover_img,
+                  alt: 'cover of ' ~ periodical_items.title,
+                  title: 'cover of ' ~ periodical_items.title
+                }
+              } only %}
+            </picture>
+          {% endif %}
+          {% include "@atoms/text/_heading.twig" with{
+            heading :{ 
+              class:'article__image_title', 
+              text: "This article appears in:", 
+              level:6
+            }
+          } only %}
+          <div class="item-title">
+            {% include "@atoms/button/_anchor-link.twig" with{
+              href: periodical_items.periodical_url,
+              text: periodical_items.title
+            } only %}
+          </div>
+          <div class="item-url">
+            {% include "@atoms/button/_anchor-link.twig" with{
+              href: periodical_items.article_url,
+              text: periodical_items.vol_issue
+            } only %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

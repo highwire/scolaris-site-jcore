@@ -1,0 +1,7 @@
+helper,helping => help
+AIDS,HIV,HIV/AIDS
+Bechterew,AS
+BREC,BECTS
+BPDCN,NK
+clonazepam,Klonopin
+HIV,AIDS

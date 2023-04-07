@@ -1,0 +1,172 @@
+{% if prefix_title %}
+  {% include "@atoms/text/_heading-5.twig" with {
+    heading: prefix_title
+  } only %}
+{% endif %}
+{% if main_title %}
+  {% include "@atoms/text/_heading-1.twig" with {
+    heading: main_title
+  } only %}
+{% endif %}
+{% if main_heading_link %}
+  {% include "@atoms/text/_heading-link.twig" with {
+    anchorHead: main_heading_link
+  } only %}
+{% endif %}
+{% if suffix_title %}
+  {% include "@atoms/text/_heading-5.twig" with {
+    heading: suffix_title
+  } only %}
+{% endif %}
+{% if authors %}
+  {% for item in authors %}
+    {% include "@atoms/text/_heading-6.twig" with {
+      heading: item
+    } only %}
+  {% endfor %}
+{% endif %}
+{% if author_link %}
+  <div class="article__authorname">
+    {% if author_label %}
+      {{ author_label }}:
+    {% endif %}
+    {% for item in author_link %}
+      {% include "@atoms/button/_anchor-link.twig" with {
+        text:  item.value
+      } only %}
+    {% endfor %}
+  </div>
+{% endif %}
+{% if editionbookchapter %}
+  <div class="book__edition">
+    {{ editionbookchapter.data }}
+  </div>
+{% endif %}
+{% if book_type_item %}
+  {% for item in book_type_item %}
+    {% if item.value != '' %}
+      <div class="article-book-isbn">
+        <span class="book-type-label">
+          {{ item.label }}{%if item.status%}{{ item.status }}{% endif %}:
+        </span>
+        {{ item.value }}
+      </div>
+      {% elseif item.issue_doi.text %}
+        <div class="journal-doi-info">
+          <span class="doi-label">{{ item.issue_doi.label }}</span>
+            {% include "@atoms/button/_anchor-link.twig" with {
+              href: item.issue_doi.href,
+              title: item.issue_doi.title,
+              class: item.issue_doi.class,
+              text: item.issue_doi.text,
+              target: item.issue_doi.target
+            } only %}
+        </div>
+      {% endif %}
+  {% endfor %}
+{% endif %}
+{% if copyright or book_type %}
+  <div class="article__info">
+    {% if book_type %}
+      <span class="article-book-isbn">
+        <span class="book-type-label">{{ book_type.text }}: </span>
+        {{ book_type.value }}
+      </span>
+    {% endif %}
+    {% if copyright %}
+      <span class="article__info__copyright">{{ copyright.text }}</span>
+    {% endif %}
+  </div>
+{% endif %}
+{% if issue_list %}
+  <ul class="article__top-card-list">
+    {% for item in issue_list %}
+      {% if item.value %}
+        <li>
+          {{ item.label }}:
+          <span>{{ item.value }}</span>
+        </li>
+      {% elseif item.issue_doi.text %}
+        <li class="journal-doi-info">
+          <span class="doi-label">{{ item.issue_doi.label }}</span>
+              {% include "@atoms/button/_anchor-link.twig" with {
+                href: item.issue_doi.href,
+                title: item.issue_doi.title,
+                class: item.issue_doi.class,
+                text: item.issue_doi.text,
+                target: item.issue_doi.target
+              } only %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
+{% if edition %}
+  <div class="book__edition">
+    {% if attribute(edition, '#is_archived') %}
+      <div>{{ "Archived Edition"|t }}</div>
+    {% endif %}
+    {% if attribute(edition, '#is_current_edition') %}
+      <span class="book__content">{{ "This is the most recent edition"|t }}</span>
+    {% else %}
+      {{ attribute(edition, '#current_edition_link') }}
+    {% endif %}
+    {% if attribute(edition, '#editions') is not empty %}
+      {% include "@components/modal/_modal-popup.twig" with {
+        modalPopup: {
+          modalButton_click: true,
+          editions: true,
+          href: "#",
+          title: "View other editions",
+          class: "book__other_edition",
+          buttonText: "View other editions",
+          popupdata: attribute(edition, '#editions'),
+          modaltargetid: "other-editions",
+          modalHeading: {
+            text: "Other Editions",
+            class: "modal-title"
+          },
+          closeButton: {
+            text: "Close",
+            closemodal: "modal"
+          }
+        }
+      } only %}
+    {% endif %}
+    {{ edition.data }}
+  </div>
+{% endif %}
+
+{% if journal_description %}
+  {% include "@atoms/text/_paragraph.twig" with {
+    paragraph: journal_description.paragraph|raw
+  } only %}
+{% endif %}
+{% if journal_doi.text %}
+  <div class="journal-doi-info">
+    <span class="doi-label">{{ journal_doi.label }}</span>
+      {% include "@atoms/button/_anchor-link.twig" with {
+        href: journal_doi.href,
+        title: journal_doi.title,
+        class: journal_doi.class,
+        text: journal_doi.text,
+        target: journal_doi.target
+      } only %}
+  </div>
+{% endif %}
+{% if action_tools %}
+  <div class="action_tools">
+    {% for item in action_tools %}
+      {% include "@atoms/button/_anchor-link.twig" with {
+        href: item.href,
+        title: item.title,
+        class: item.class,
+        text: item.text,
+        text_withoutpopup: item.title_withoutpopup,
+        modaldata: item.popupdata,
+        modalPopuptarget: item.modelPopup,
+        target: item.target
+      } only %}
+    {% endfor %}
+  </div>
+{% endif %}

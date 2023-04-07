@@ -1,0 +1,19 @@
+uuid: 143ba555-55f8-4848-831c-e94b12273322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.corpus
+    - node.type.item_monograph
+id: node.item_monograph.corpus
+field_name: corpus
+entity_type: node
+bundle: item_monograph
+label: Corpus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

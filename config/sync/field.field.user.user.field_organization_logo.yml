@@ -1,0 +1,40 @@
+uuid: 966678c4-ee85-4f2f-a6f1-c1e36705a299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organization_logo
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: b75C02bTCh192b5Bk2UUSEEzxuMXfMXkhML20piecqQ
+id: user.user.field_organization_logo
+field_name: field_organization_logo
+entity_type: user
+bundle: user
+label: 'Organization Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

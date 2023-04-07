@@ -1,0 +1,22 @@
+{% extends "@components/layouts/_base.twig" %}
+{% block content %}	
+	<div class="container {{ page_name }}">	
+		<div class="row">
+			<div class="column-order col-12 {{ left_column_width }} {{ order_2_1 }} ">
+				{% block sidebar %}
+				    <div class="p-3 border bg-secondary-light column_box">
+						Sidebar Add
+					</div>
+				{% endblock %}
+			</div>
+			
+			<div class="column-order col-12 {{ main_column_width }} {{ order_2_2 }}">	
+				{% block main %}					
+					<div class="p-3 border bg-secondary-light column_box">
+						Main Section Subtra
+					</div>
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

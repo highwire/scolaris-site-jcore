@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: progress_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/progress/_progress.twig' %}
+  {% endblock content %}
+{% endembed %}

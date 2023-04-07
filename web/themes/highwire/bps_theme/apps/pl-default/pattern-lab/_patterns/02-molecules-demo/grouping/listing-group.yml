@@ -1,0 +1,37 @@
+---
+molecules_only: true
+
+listing_items:
+- urls_class: list-group-item list-group-item-action
+  active: active
+  urls: "#"
+  content: The current link item
+  sub_group:
+  - urls: "#"
+    content: Sub Link 1
+  - urls: "#"
+    content: Sub Link 2
+- urls_class: list-group-item list-group-item-action
+  urls: "#"
+  content: A second link item
+  sub_group:
+  - urls: "#"
+    content: Sub Link 1
+  - urls: "#"
+    content: Sub Link 2
+- urls_class: list-group-item list-group-item-action
+  urls: "#"
+  content: A third link item
+  sub_group:
+  - urls: "#"
+    content: Sub Link 1
+  - urls: "#"
+    content: Sub Link 2
+- urls_class: list-group-item list-group-item-action
+  urls: "#"
+  content: A fourth link item
+  sub_group:
+  - urls: "#"
+    content: Sub Link 1
+  - urls: "#"
+    content: Sub Link 2

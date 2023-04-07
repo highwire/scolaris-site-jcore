@@ -1,0 +1,45 @@
+<ul>
+	{% for item in listing_items %}
+		<li>
+			{% if item.url is not empty %}
+				<a href="{{item.url}}" title="{{item.title}}" class="{% if item.is_active %}active{% endif %}"
+					{% if item.class %}class="{{item.class}}"{% endif %} 
+					{% if item.id %}id="{{item.id}}"{% endif %}>				   
+					{% if item.image is not empty %}
+						{% include "@atoms/images/_image.twig" with {
+							image: item.image
+						} %}
+					{% endif %}
+					{% if item.video is not empty %}
+						{% include "@atoms/media/_video.twig" with {
+							video: item.video
+						} %}
+					{% endif %}
+					{% if item.title %}
+						{{ item.title }}
+				  {% endif %}	
+					{{ item.content }}	
+				</a>				
+				{% if item.sub_group %}
+					<span class="arrow-toggle"></span>
+					<ul class="sub-list">
+						{% for i in item.sub_group %}
+							<li>
+								<a href="{{i.url}}" title="{{i.title}}"
+									{% if i.class %}class="{{i.class}}"{% endif %} 
+									{% if i.id %}id="{{i.id}}"{% endif %}>
+									{{i.content}}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			{% else %}
+				{% if item.title %}
+						{{ item.title }}
+				{% endif %}	
+				{{ item.content }}
+			{% endif %}					
+		</li>
+	{% endfor %}
+</ul>

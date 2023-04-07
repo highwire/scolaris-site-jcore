@@ -1,0 +1,21 @@
+uuid: 36c9926c-6be6-4215-974d-90b886651854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_full_text_pdf
+    - node.type.journal_fragment
+id: node.journal_fragment.has_full_text_pdf
+field_name: has_full_text_pdf
+entity_type: node
+bundle: journal_fragment
+label: has-full-text-pdf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

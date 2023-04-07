@@ -1,0 +1,66 @@
+uuid: fafb6062-c8e7-4c25-912d-39da8f49f0a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.bps
+    - views.view.search
+  module:
+    - search_api
+id: subject
+name: 'Subject Classification'
+url_alias: subject
+weight: 0
+min_count: 1
+show_only_one_result: false
+field_identifier: taxonomy_terms
+facet_source_id: 'search_api:views_page__search__page_1'
+widget:
+  type: bps_include_all_checkbox_multiple
+  config:
+    show_numbers: true
+    soft_limit: '0'
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+    separate_active_items: 1
+    display_active_items_summary: 1
+query_operator: or
+use_hierarchy: true
+expand_hierarchy: true
+enable_parent_when_child_gets_disabled: false
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: true
+processor_configs:
+  hide_non_narrowing_result_processor:
+    processor_id: hide_non_narrowing_result_processor
+    weights:
+      build: 40
+    settings: {  }
+  show_full_taxonomy_tree:
+    processor_id: show_full_taxonomy_tree
+    weights:
+      build: -20
+    settings:
+      vocabulary: bps_content_subject
+  term_weight_widget_order:
+    processor_id: term_weight_widget_order
+    weights:
+      sort: 60
+    settings:
+      sort: ASC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: none
+show_title: true

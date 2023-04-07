@@ -1,0 +1,33 @@
+{% spaceless %}
+	{% if molecules_only %}
+		<div class="navbar navbar-expand-desktop">
+	{% endif %}
+		<div class="navigation__item">
+			{% for item in navigation_dropdown %}
+				{% include "@molecules/dropdown/_dropdown.twig" with {
+					dropdown: item.dropdown
+				} only %}
+			{% endfor %}
+			{% for item in left_nav %}
+				<div class="navigation__item__menu">
+					{% include "@atoms/button/_button.twig" with {
+						button: item.button
+					} only %}
+				</div>
+			{% endfor %}
+		</div>
+		<hr class="navigation__hr">
+		<div class="navigation__right__nav">
+			{% for item in right_nav %}
+				<div class="navigation__item__menu">
+					{% include "@atoms/button/_button.twig" with {
+						button: item.button
+					} only %}
+				</div>
+			{% endfor %}
+		</div>
+	{% if molecules_only %}
+		</div>
+	{% endif %}
+{% endspaceless %}
+

@@ -1,0 +1,21 @@
+uuid: 930a6c02-7fcc-4914-aacd-e616083f0907
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal_editorial_brd
+    - node.type.journal_info
+  module:
+    - text
+id: node.journal_info.field_journal_editorial_brd
+field_name: field_journal_editorial_brd
+entity_type: node
+bundle: journal_info
+label: 'Editorial Board'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

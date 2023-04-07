@@ -1,0 +1,34 @@
+{% if listing_checkbox %}
+    <ul>
+        {% for i in listing_checkbox %}
+            <li>
+                {% include "@atoms/forms/_checkbox.twig" with {
+                    checkbox: i.parent_items 
+                } only %}
+                {% if i.child_group %}				
+                    <ul class="sub-list">
+                        {% for j in i.child_group %}
+                            <li>
+                                {% include "@atoms/forms/_checkbox.twig" with {
+                                    checkbox: j.child_items 
+                                } only %}
+                                {% if j.sub_child_group %}
+                                    <ul class="sub-child">
+                                        {% for k in j.sub_child_group %}
+                                            <li>
+                                                {% include "@atoms/forms/_checkbox.twig" with {
+                                                    checkbox: k.sub_child_items 
+                                                } only %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}                        
+                            </li>
+                        {% endfor %}
+                    </ul>	
+                {% endif %}			
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+

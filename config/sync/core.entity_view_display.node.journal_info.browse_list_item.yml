@@ -1,0 +1,127 @@
+uuid: 4364f068-5d40-49ec-823f-35d6761d6ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.browse_list_item
+    - field.field.node.journal_info.corpus
+    - field.field.node.journal_info.field_journal
+    - field.field.node.journal_info.field_journal_about
+    - field.field.node.journal_info.field_journal_cover_image
+    - field.field.node.journal_info.field_journal_description
+    - field.field.node.journal_info.field_journal_editorial_brd
+    - field.field.node.journal_info.field_journal_editors
+    - field.field.node.journal_info.field_journal_impact_factor
+    - field.field.node.journal_info.field_journal_sample_issue
+    - field.field.node.journal_info.field_journal_society
+    - field.field.node.journal_info.field_journal_submit_article
+    - node.type.journal_info
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.journal_info.browse_list_item
+targetEntityType: node
+bundle: journal_info
+mode: browse_list_item
+content:
+  corpus:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_journal:
+    type: entity_reference_label
+    weight: 11
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_journal_about:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_cover_image:
+    type: image
+    weight: 10
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_journal_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_editorial_brd:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_editors:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_impact_factor:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_journal_sample_issue:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_journal_society:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_journal_submit_article:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  bps_focus_view: true
+  bps_toc_pager: true
+  langcode: true
+  prev_next_pager: true

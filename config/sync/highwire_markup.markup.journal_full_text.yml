@@ -1,0 +1,33 @@
+uuid: 1bc3bd22-f78a-4690-9c7f-41e42ca2f81c
+langcode: en
+status: true
+dependencies: {  }
+id: journal_full_text
+label: 'Journal Full Text'
+profile_id: fulltext
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: sassuri
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: mathml
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: bpscontribsplain
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: openurl
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: replace_tag
+      processor_config:
+        config:
+          replace_tag: ''
+    weight: '1'
+dw_logging: null
+exists_field: has_full_text

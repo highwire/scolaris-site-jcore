@@ -1,0 +1,21 @@
+uuid: de69ad4a-f959-4fa5-9177-4fd5f3cad3c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.georef_id
+    - node.type.journal_volume
+  module:
+    - text
+id: node.journal_volume.georef_id
+field_name: georef_id
+entity_type: node
+bundle: journal_volume
+label: georef-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

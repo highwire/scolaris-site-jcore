@@ -1,0 +1,23 @@
+uuid: ad471ad8-5e9f-463e-968e-3e4596d3070d
+langcode: en
+status: true
+dependencies: {  }
+id: abstract_book
+label: 'Abstract (Book)'
+configurations:
+  -
+    markup_profile: abstract
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - item_back_matter
+  - item_chapter
+  - item_front_matter
+  - item_monograph
+  - item_report_guideline
+  - item_test_review
+log: true
+render_placeholder: false

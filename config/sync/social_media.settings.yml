@@ -1,0 +1,80 @@
+social_media:
+  facebook_share:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: '1'
+    attributes: "target|_blank\r\nclass|facebook-share"
+  facebook_msg:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+  linkedin:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+  twitter:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: '2'
+    attributes: ''
+  pinterest:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+  google_plus:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+  email:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+    enable_forward: 0
+    show_forward: '1'

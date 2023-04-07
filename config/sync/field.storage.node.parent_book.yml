@@ -1,0 +1,19 @@
+uuid: ab3c79f9-8ad1-40d0-afa5-b317b708fd71
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.parent_book
+field_name: parent_book
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

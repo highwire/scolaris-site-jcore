@@ -1,0 +1,21 @@
+uuid: d53efad6-02f1-4880-8e5d-7444b12fe8ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_is_open
+    - node.type.media
+id: node.media.issue_is_open
+field_name: issue_is_open
+entity_type: node
+bundle: media
+label: issue-is-open
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

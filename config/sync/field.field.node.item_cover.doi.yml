@@ -1,0 +1,21 @@
+uuid: 5fb05be0-6018-4045-89d0-227c207bea2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.doi
+field_name: doi
+entity_type: node
+bundle: item_cover
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

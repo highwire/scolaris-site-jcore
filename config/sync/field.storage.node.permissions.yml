@@ -1,0 +1,19 @@
+uuid: 8b4bfab1-8bfd-4433-a0c0-bf118fd31043
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.permissions
+field_name: permissions
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

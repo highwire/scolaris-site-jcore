@@ -1,0 +1,21 @@
+uuid: a800d6a7-1e08-42ff-80f2-6a3b4dcab10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.atom_id
+    - node.type.item_part
+  module:
+    - text
+id: node.item_part.atom_id
+field_name: atom_id
+entity_type: node
+bundle: item_part
+label: atom-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

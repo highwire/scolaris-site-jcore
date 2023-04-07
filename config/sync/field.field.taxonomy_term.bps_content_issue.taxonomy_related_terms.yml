@@ -1,0 +1,19 @@
+uuid: 0d9cc4a2-20c5-4522-b231-ab5011a83444
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.taxonomy_related_terms
+    - taxonomy.vocabulary.bps_content_issue
+id: taxonomy_term.bps_content_issue.taxonomy_related_terms
+field_name: taxonomy_related_terms
+entity_type: taxonomy_term
+bundle: bps_content_issue
+label: 'Related Terms'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: myaccount_preference_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/site/_myaccount-preferences.twig' %}
+  {% endblock content %}
+{% endembed %}

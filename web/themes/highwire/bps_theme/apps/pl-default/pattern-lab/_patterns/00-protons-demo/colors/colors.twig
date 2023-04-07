@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: color_demo
+  }
+%}
+  {% block content %}
+    {% include '@protons/colors/_colors.twig' with colors %}
+  {% endblock content %}
+{% endembed %}

@@ -1,0 +1,110 @@
+// Subject Browse
+
+$page: ".subject-browse";
+#{$page} {
+  .card-container {
+    border-top: 1px solid $secondary;
+    margin-bottom: 2.188rem;
+    @extend .pt-4;    
+  }
+
+  .subject__divider {
+    border-bottom: 1px solid $secondary;
+    padding-bottom: 2rem;   
+    @extend .mb-4;    
+  }
+
+  .subject {
+    &__title {
+      @extend .mb-4;  
+      color: $headings-color;
+    }
+    &__description {
+      @extend p;
+      @extend .mb-4;  
+    }
+    &__filter__text {
+      font-weight: $font-weight-medium;
+    }
+    &__filter {     
+      @extend .d-inline-flex;
+      @include media-breakpoint-down(small-tablet) {
+        margin-top: 1rem;
+      }
+      a {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        border-right: 1px solid $secondary;
+        padding: 0 0.375rem;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  .latest__article {
+    &-sub-heading {
+      @extend p;
+      color: $danger;
+      font-family: $font-family-base;
+      margin-bottom: 0.5rem;
+    }
+    &-heading {
+      @extend h4;
+      margin-bottom: 0.75rem;
+    }
+    &-author-name {      
+      @extend .d-inline-block;
+      padding-right: 7px;
+      margin-right: 7px;
+      border-right: 1px solid $secondary;
+      @extend .mb-0;
+    }
+    &-author-sub {
+      @extend .d-inline-block;
+      color: $primary;
+      @extend .mb-0;
+    }
+    &-author-description {
+      margin-bottom: 1.125rem;
+    }
+    &-btn {
+      @extend .border-end;
+      padding-right: 0.313rem;
+      margin-right: 0.313rem;
+      &:after {
+        content: "\e92e";
+        font-family: "feather";
+        @extend .align-middle;
+        font-size: 1.5rem;
+        top: -1px;
+      }
+    }
+
+    &-btn-no-icon {
+      @extend .latest__article-btn;
+      &:after {
+        content: none;
+      }
+    }
+    &-btn-download-icon {
+      @extend .latest__article-btn;
+      @extend .border-end-0;
+      &:after {
+        content: none;
+      }
+      &:before {
+        content: "\e955";
+        font-family: "feather";
+        @extend .align-middle;
+        font-size: 1.5rem;
+        top: -1px;
+      }
+    }
+  }
+
+  .slick-slide {
+    margin: 0px 11px;
+  }
+}

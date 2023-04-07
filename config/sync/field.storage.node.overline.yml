@@ -1,0 +1,19 @@
+uuid: 21c1d48d-11bf-4efa-a586-e5ecce7c2f86
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.overline
+field_name: overline
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

@@ -1,0 +1,21 @@
+uuid: 8815188b-5e0e-41b6-be38-94e2f8da7370
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_plain
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.title_plain
+field_name: title_plain
+entity_type: node
+bundle: item_monograph
+label: title-plain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

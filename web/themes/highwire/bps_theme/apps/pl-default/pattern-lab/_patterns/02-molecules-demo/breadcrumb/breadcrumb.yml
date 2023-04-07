@@ -1,0 +1,12 @@
+---
+nav_breadcrumb_class: d-block
+ullisting_class: breadcrumb
+listing_items:
+- listingli_class: breadcrumb-item
+  urls_class: urls-class
+  urls: "#"
+  content: Home
+- listingli_class: breadcrumb-item active
+  urls_class: urls-class
+  urls: "#"
+  content: Data

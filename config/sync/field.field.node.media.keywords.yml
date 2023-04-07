@@ -1,0 +1,37 @@
+uuid: 3bfc4f6c-2ebb-4d02-9445-7e5aa837b1dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.keywords
+    - node.type.media
+  module:
+    - double_field
+id: node.media.keywords
+field_name: keywords
+entity_type: node
+bundle: media
+label: keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

@@ -1,0 +1,21 @@
+uuid: 872f8b45-e855-4981-b5d7-bd25ca0de5c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.instructor_material
+    - node.type.item_report_guideline
+id: node.item_report_guideline.instructor_material
+field_name: instructor_material
+entity_type: node
+bundle: item_report_guideline
+label: instructor-material
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

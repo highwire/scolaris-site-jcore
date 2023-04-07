@@ -1,0 +1,34 @@
+uuid: 92a8f558-a084-46a7-b6bd-8c349d80458b
+langcode: en
+status: true
+dependencies: {  }
+id: abstract
+label: Abstract
+profile_id: abstract
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: binaryuri
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: mathml
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: delete
+      processor_config:
+        config:
+          xpath: ''
+          selector: ''
+          preserve_children: 0
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: replace_tag
+      processor_config:
+        config:
+          replace_tag: b|strong
+    weight: '1'
+dw_logging: null
+exists_field: book_has_abstract

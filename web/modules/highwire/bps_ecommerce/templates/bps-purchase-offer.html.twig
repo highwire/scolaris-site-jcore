@@ -1,0 +1,12 @@
+<div{{ attributes }}>
+  {% if product is not empty %}
+  <div class="highwire-ecommerce-product-title">{{ product }}</div>
+  {% endif %}
+  {% if purchase_offers is not empty %}
+  <ul class="list-unstyled list-purchase-offers">
+    {% for purchase_offer in purchase_offers %}
+    <li>{{ purchase_offer }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

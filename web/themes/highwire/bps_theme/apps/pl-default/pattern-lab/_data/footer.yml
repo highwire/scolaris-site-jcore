@@ -1,0 +1,70 @@
+---
+footer_logo:
+  image:
+    src: "../../../assets/images/logo-white.svg"
+    title: The british psychological society Logo
+    alt: The british psychological society Logo   
+    class: brand__logo    
+footer_toplist:
+- heading:
+    level: '5'
+    text: Content
+  listing_items:
+  - url: "#"
+    content: Books
+    title: Books
+  - url: "#"
+    content: Journals
+    title: Journals
+  - url: "#"
+    content: Reference
+    title: Reference
+- heading:
+    level: '5'
+    text: Information for
+  listing_items:
+  - url: "#"
+    content: Students
+    title: Students
+  - url: "#"
+    content: Educators
+    title: Educators
+  - url: "#"
+    content: Institutions
+    title: Institutions
+  - url: "#"
+    content: Authors
+    title: Authors
+  - url: "#"
+    content: Societies
+    title: Societies
+  - url: "#"
+    content: Advertisers
+    title: Advertisers
+- heading:
+    level: '5'
+    text: Company info
+  listing_items:
+  - url: "#"
+    content: About
+    title: About
+  - url: "#"
+    content: Help
+    title: Help
+  - url: "#"
+    content: Permissions
+    title: Permissions
+  - url: "#"
+    content: Privacy Policy
+    title: Privacy Policy
+  - url: "#"
+    content: Terms of use
+    title: Terms of use
+copyright:
+  content: "&copy; 2021 HighWire Press, Inc. All rights reserved."
+social_item:
+- button:
+    href: "#"
+    text: Follow Springer Publishing on Facebook
+    title: Follow Springer Publishing on Facebook    
+    leftstackclass: stack-large circle 

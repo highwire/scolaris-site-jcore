@@ -1,0 +1,21 @@
+uuid: 65dd8ee0-a1a5-47e5-b9f2-4e2f8b643d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.type_id
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.type_id
+field_name: type_id
+entity_type: node
+bundle: item_front_matter
+label: type-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

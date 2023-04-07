@@ -1,0 +1,18 @@
+uuid: ba21165e-502b-49d1-abf1-3a74fb914a2a
+langcode: en
+status: true
+dependencies: {  }
+id: collection_detail
+label: 'Collection Detail'
+configurations:
+  -
+    markup_profile: collection_detail_short_desc_profile
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_article
+log: false
+render_placeholder: false

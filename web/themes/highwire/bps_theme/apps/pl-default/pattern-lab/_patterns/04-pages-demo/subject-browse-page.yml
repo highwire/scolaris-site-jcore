@@ -1,0 +1,509 @@
+---
+page_name: subject-browse
+show_search: true
+order_2_1: order_2_1
+left_column_width: col-medium-tablet-4 col-desktop-3
+main_column_width: col-medium-tablet-8 col-desktop-9
+sidenavLoop:
+- heading:
+    level: '5'
+    class: sidebar__heading
+    text: Subjects
+  listgroupClass: sidebar__sticky-top
+  listing_items:
+  - urls_class: sidebar__listgroup_item
+    active: active
+    urls: "#"
+    content: Subject title
+    sub_group:
+    - urls: "#"
+      content: Sub Page 1
+      sub_sub_group:
+      - urls: "#"
+        content: Exam Prep and Study Tools
+    - urls: "#"
+      content: Sub Page 2
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: Subject title
+  - urls_class: sidebar__listgroup_item
+    urls: "#"
+    content: Subject title
+    
+
+subject_browse_top:
+  - heading:
+      level: '1'
+      class: subject__title
+      text: Subject title
+    paragraph:
+      class: subject__description
+      text: >-
+        Nostra magna lacinia pretium efficitur sagittis mollis quam mi quis,
+        ante purus hac sem urna nascetur ullamcorper interdum etiam netus, vitae
+        vel dis ac lorem suspendisse a amet. Porta pellentesque faucibus
+        sociosqu libero congue duis metus, in maecenas euismod felis sed.
+        Viverra ac netus venenatis purus fusce pulvinar, risus inceptos egestas
+        nascetur bibendum facilisi felis, dapibus eros metus per platea.
+subject_top:
+  OrderbyText:
+    content: 'On this page:'
+    class: subject__filter__text
+  orderbyFilter:
+    - button:
+        href: '#'
+        title: Books
+        text: Books
+    - button:
+        href: '#'
+        title: Journals
+        text: Journals
+    - button:
+        href: '#'
+        title: Latest articles
+        text: Latest articles
+subject_browse_bottom:
+  - heading:
+      level: '2'
+      class: slider__main__heading
+      text: Books
+    button:
+      href: '#'
+      class: slider__right-link
+      text: Show all Books in Subject title
+    card_link_items:
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+  - heading:
+      level: '2'
+      class: slider__main__heading
+      text: Journals
+    button:
+      href: '#'
+      class: slider__right-link
+      text: Show all Journals in Subject title
+    card_link_items:
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+      - title: Card Title
+        href: '#'
+        class: null
+        body: slider__slick__description
+        source_media:
+          - img_media: '(min-width:650px)'
+            img_srcset: ../../../assets/images/250X350.png
+          - img_media: '(min-width:465px)'
+            img_srcset: ../../../assets/images/250X350.png
+        image:
+          src: ../../../assets/images/250X350.png
+          alt: Card Image
+          title: Card Image
+          class: slider__img__fluid
+        paragraph:
+          class: null
+          text: >-
+            Aptent eleifend primis sodales dapibus integer rutrum tempus sed
+            curabitur
+latest_articles:
+  - heading:
+      level: '2'
+      class: slider__main__heading
+      text: Latest articles
+    button:
+      href: '#'
+      class: slider__right-link
+      text: Show all Articles in Subject title
+latest_article_section:
+  - card_lr_column:
+      - left_col_width: false
+        middle_col_width: col-desktop-12
+        card_heading:
+          - heading:
+              level: '6'
+              class: latest__article-sub-heading
+              text: Subtitle
+        card_heading_link:
+          - anchorHead:
+              level: '4'
+              class: latest__article-heading
+              button:
+                href: '#'
+                class: null
+                title: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+                text: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+        card_description:
+          - paragraph:
+              class: latest__article-author-name
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-sub
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-description
+              text: Journal title duis nam id in enim interdum urna
+        card_link:
+          - button:
+              href: '#'
+              class: latest__article-btn
+              title: Show abstract
+              text: Show abstract
+          - button:
+              href: '#'
+              class: latest__article-btn-no-icon
+              title: View article
+              text: View article
+          - button:
+              href: '#'
+              class: latest__article-btn-download-icon
+              title: Download PDF
+              text: Download PDF
+  - card_lr_column:
+      - left_col_width: false
+        middle_col_width: col-desktop-12
+        card_heading:
+          - heading:
+              level: '6'
+              class: latest__article-sub-heading
+              text: Subtitle
+        card_heading_link:
+          - anchorHead:
+              level: '4'
+              class: latest__article-heading
+              button:
+                href: '#'
+                class: null
+                title: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+                text: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+        card_description:
+          - paragraph:
+              class: latest__article-author-name
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-sub
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-description
+              text: Journal title duis nam id in enim interdum urna
+        card_link:
+          - button:
+              href: '#'
+              class: latest__article-btn
+              title: Show abstract
+              text: Show abstract
+          - button:
+              href: '#'
+              class: latest__article-btn-no-icon
+              title: View article
+              text: View article
+          - button:
+              href: '#'
+              class: latest__article-btn-download-icon
+              title: Download PDF
+              text: Download PDF
+  - card_lr_column:
+      - left_col_width: false
+        middle_col_width: col-desktop-12
+        card_heading:
+          - heading:
+              level: '6'
+              class: latest__article-sub-heading
+              text: Subtitle
+        card_heading_link:
+          - anchorHead:
+              level: '4'
+              class: latest__article-heading
+              button:
+                href: '#'
+                class: null
+                title: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+                text: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+        card_description:
+          - paragraph:
+              class: latest__article-author-name
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-sub
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-description
+              text: Journal title duis nam id in enim interdum urna
+        card_link:
+          - button:
+              href: '#'
+              class: latest__article-btn
+              title: Show abstract
+              text: Show abstract
+          - button:
+              href: '#'
+              class: latest__article-btn-no-icon
+              title: View article
+              text: View article
+          - button:
+              href: '#'
+              class: latest__article-btn-download-icon
+              title: Download PDF
+              text: Download PDF
+  - card_lr_column:
+      - left_col_width: false
+        middle_col_width: col-desktop-12
+        card_heading:
+          - heading:
+              level: '6'
+              class: latest__article-sub-heading
+              text: Subtitle
+        card_heading_link:
+          - anchorHead:
+              level: '4'
+              class: latest__article-heading
+              button:
+                href: '#'
+                class: null
+                title: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+                text: >-
+                  Title eros dictum dapibus posuere elit montes inceptos ad
+                  natoque
+        card_description:
+          - paragraph:
+              class: latest__article-author-name
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-sub
+              text: 'Lastname, Firstname'
+          - paragraph:
+              class: latest__article-author-description
+              text: Journal title duis nam id in enim interdum urna
+        card_link:
+          - button:
+              href: '#'
+              class: latest__article-btn
+              title: Show abstract
+              text: Show abstract
+          - button:
+              href: '#'
+              class: latest__article-btn-no-icon
+              title: View article
+              text: View article
+          - button:
+              href: '#'
+              class: latest__article-btn-download-icon
+              title: Download PDF
+              text: Download PDF

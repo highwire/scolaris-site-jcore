@@ -1,0 +1,23 @@
+uuid: 0cb8fda2-b3bb-4151-bbf5-7aa1fda4c00b
+langcode: en
+status: true
+dependencies: {  }
+id: full_text_search_index_
+label: 'Full text (search index)'
+configurations:
+  -
+    markup_profile: full_text_search_index_
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - item_chapter
+  - item_monograph
+  - item_report_guideline
+  - item_test_review
+  - journal
+  - journal_article
+log: false
+render_placeholder: false

@@ -1,0 +1,21 @@
+uuid: 8d787790-35bd-440d-b1e8-700de760a43e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.archived
+    - node.type.item_front_matter
+id: node.item_front_matter.archived
+field_name: archived
+entity_type: node
+bundle: item_front_matter
+label: archived
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

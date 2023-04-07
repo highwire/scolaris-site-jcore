@@ -1,0 +1,118 @@
+uuid: b4689f71-200e-459a-a9e1-c7b011b3f519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.journal_info.corpus
+    - field.field.node.journal_info.field_journal
+    - field.field.node.journal_info.field_journal_about
+    - field.field.node.journal_info.field_journal_cover_image
+    - field.field.node.journal_info.field_journal_description
+    - field.field.node.journal_info.field_journal_editorial_brd
+    - field.field.node.journal_info.field_journal_editors
+    - field.field.node.journal_info.field_journal_impact_factor
+    - field.field.node.journal_info.field_journal_sample_issue
+    - field.field.node.journal_info.field_journal_society
+    - field.field.node.journal_info.field_journal_submit_article
+    - node.type.journal_info
+  module:
+    - image
+    - text
+    - user
+id: node.journal_info.default
+targetEntityType: node
+bundle: journal_info
+mode: default
+content:
+  corpus:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_journal:
+    weight: 11
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_journal_about:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_cover_image:
+    weight: 13
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_journal_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_editorial_brd:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_editors:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_journal_impact_factor:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_journal_sample_issue:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_journal_society:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_journal_submit_article:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

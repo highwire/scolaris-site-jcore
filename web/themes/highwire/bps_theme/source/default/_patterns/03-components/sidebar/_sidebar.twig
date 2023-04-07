@@ -1,0 +1,24 @@
+<div class="sidebar">
+	{% for item in sidenavLoop %}
+		{% if item.heading %}
+			{% include "@atoms/text/_heading.twig" with {
+				heading: item.heading
+			} only %}
+		{% endif %}
+		{% if item.profilelink %}
+			<div class="sidebar__email">
+				<span>{{ item.email }}</span>
+			</div>
+			<div class="clearfix mb-5">
+				{% include "@atoms/button/_button.twig" with {
+					button: item.profilelink
+				} only %}
+			</div>
+		{% endif %}
+		{% if item.listing_items %}
+			{% include "@molecules/grouping/_listing.twig" with {
+				listing_items: item.listing_items
+			} only %}
+		{% endif %}
+	{% endfor %}
+</div>

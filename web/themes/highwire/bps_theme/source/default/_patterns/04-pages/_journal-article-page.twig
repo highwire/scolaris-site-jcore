@@ -1,0 +1,22 @@
+{% extends "@components/layouts/_one-column.twig" %}
+{% block main %}
+	<div class="container">
+		{% include "@components/site/_journal-article.twig" with {
+			journals_articles_top: journals_articles_top,
+			journal_authenticated: journal_authenticated,
+			accordion_wrapper_id: accordion_wrapper_id,
+			accordion_login: accordion_login,
+			articles_search_form: articles_search_form,
+			tabcontent_class: tabcontent_class,
+			navtabs_item: navtabs_item,
+			navtabs_content: navtabs_content,
+			journals_action_top: journals_action_top,
+			journals_action_bottom: journals_action_bottom,
+			journals_tabs_click: journals_tabs_click,
+			articleHead: articleHead,
+			journal_article_section: journal_article_section,
+			journals_sidebar: journals_sidebar
+		} only %}	
+	</div>
+{% endblock %}
+

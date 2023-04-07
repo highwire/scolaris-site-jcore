@@ -1,0 +1,26 @@
+uuid: 0b0b32e4-ff3d-434a-b037-b9d918d3dc0a
+langcode: en
+status: true
+dependencies: {  }
+id: issue_pdf
+label: 'Issue PDF'
+description: 'Access to full text pdf for Journal issue content type'
+rule_type: file
+role: full-text
+scope: download
+target: variant
+language: en
+content_type: application/pdf
+file_field: enclosures
+file_field_bundles:
+  journal_issue: journal_issue
+  journal: 0
+  journal_article: 0
+  journal_fragment: 0
+  journal_volume: 0
+  media: 0
+  relationship: 0
+ac_denied_action: source_redirect
+ac_denied_action_conf: {  }
+ac_denied_message: 'Log-in to access free PDF or view purchase options.'
+concurrency_limit_message: ''

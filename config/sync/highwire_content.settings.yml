@@ -1,0 +1,5530 @@
+highwire_content_configuration:
+  content:
+    item-bits-bpsworks:
+      - bpsworks
+    scolaris-journal:
+      - bpsadm
+      - bpscpf
+      - bpsdcps
+      - bpsdeb
+      - bpsdev
+      - bpsecp
+      - bpsfpop
+      - bpsfu
+      - bpshpp
+      - bpshpu
+      - bpsicpr
+      - bpsneur
+      - bpsopm
+      - bpspag
+      - bpspowe
+      - bpspsr
+      - bpsptr
+      - bpsqmip
+      - bpsspr
+      - bpstalk
+      - bpstcp
+      - bpstran
+      - bpsvern
+      - bpswlb
+      - bpscog
+      - bpsfpid
+      - bpsper
+      - bpscep
+      - bpscpr
+      - bpscypf
+      - bpsepis
+      - bpssepr
+      - bpssex
+      - bpsopo
+  taxonomy:
+    - bps/content/subject
+highwire_content_content_sync_enabled: 0
+highwire_content_content_environment: production
+highwire_content_content_updates_enabled: 0
+highwire_content_content_type_labels: {  }
+highwire_content_content_type_labels_plural: {  }
+highwire_content_content_type_groupings: {  }
+highwire_corpus_page_redirect:
+  item-bits-bpsworks:
+    bpsworks: ''
+  scolaris-journal:
+    bpsadm: ''
+    bpscpf: ''
+    bpsdcps: ''
+    bpsdeb: ''
+    bpsdev: ''
+    bpsecp: ''
+    bpsfpop: ''
+    bpsfu: ''
+    bpshpp: ''
+    bpshpu: ''
+    bpsicpr: ''
+    bpsneur: ''
+    bpsopm: ''
+    bpspag: ''
+    bpspowe: ''
+    bpspsr: ''
+    bpsptr: ''
+    bpsqmip: ''
+    bpsspr: ''
+    bpstalk: ''
+    bpstcp: ''
+    bpstran: ''
+    bpsvern: ''
+    bpswlb: ''
+    bpscog: ''
+    bpsfpid: ''
+    bpsper: ''
+    bpscep: ''
+    bpscpr: ''
+    bpscypf: ''
+    bpsepis: ''
+    bpssepr: ''
+    bpssex: ''
+    bpsopo: ''
+highwire_content_type_policy_field_mapping:
+  item_back_matter:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_chapter:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_cover:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_front_matter:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_monograph:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: test_publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_part:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_report_guideline:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: test_publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_section:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_section_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  item_test_review:
+    -
+      id: archived
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: atom_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: binary
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_has_body
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: item-bits-bpsworks
+    -
+      id: book_part_label
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: book_part_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: contributors_xml
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: counts
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_release
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_atom_updated
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: date_print_publication
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: description
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: disclaimer
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: edition_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: editors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: instructor_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_ebook_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: isbn_print_compact
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: item_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: mime_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: parent_book
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: pdf
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: permissions
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: registered_test
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: related_objects
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: section_title
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: subject_groups
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supp_content_type
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: supplementary_material
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: test_publisher
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: test_type
+      drupal-type: structure
+      freebird-type: structure
+      policy: item-bits-bpsworks
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+    -
+      id: type_id
+      drupal-type: text
+      freebird-type: text
+      policy: item-bits-bpsworks
+  journal:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_first_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_article:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_fragment:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_issue:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_volume:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  media:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  relationship:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+highwire_content_type_policy_mapping:
+  item_back_matter:
+    - item-bits-bpsworks
+  item_chapter:
+    - item-bits-bpsworks
+  item_cover:
+    - item-bits-bpsworks
+  item_front_matter:
+    - item-bits-bpsworks
+  item_monograph:
+    - item-bits-bpsworks
+  item_part:
+    - item-bits-bpsworks
+  item_report_guideline:
+    - item-bits-bpsworks
+  item_section:
+    - item-bits-bpsworks
+  item_test_review:
+    - item-bits-bpsworks
+  journal:
+    - scolaris-journal
+  journal_article:
+    - scolaris-journal
+  journal_fragment:
+    - scolaris-journal
+  journal_issue:
+    - scolaris-journal
+  journal_volume:
+    - scolaris-journal
+  media:
+    - scolaris-journal
+  relationship:
+    - scolaris-journal

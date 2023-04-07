@@ -1,0 +1,21 @@
+uuid: 9fe843b1-30f4-425d-85af-058b8c735273
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition_id
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.edition_id
+field_name: edition_id
+entity_type: node
+bundle: item_front_matter
+label: edition-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

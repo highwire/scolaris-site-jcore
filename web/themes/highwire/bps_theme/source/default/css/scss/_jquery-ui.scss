@@ -1,0 +1,222 @@
+@import "functions";
+@import "mixins";
+@import "variables";
+@import "utilities";
+
+// Modal Popup Overwrite
+.ui-dialog {
+    &.ui-widget {
+        border: none;
+        max-width: 500px;
+        margin: 1.75rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        background-color: $white;
+        background-clip: padding-box;
+        font-family: $font-family-sans-serif;
+        top: 50% !important;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 0;
+        padding: 1.5rem;
+        .modal-content {
+            padding: 0;
+            .modal-body {
+                padding: 1rem 0 0;
+                p {
+                    margin-bottom: 15px !important;
+                    a {
+                        font-weight: 500;
+                        color: $info;
+                    }
+                }
+            }
+        }
+        .ui-dialog-titlebar {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $secondary;
+            padding: 0 0 1rem 0;
+            font-size: 1.125rem;
+            &::before {
+                display: none;
+            }
+            .ui-dialog-title {
+                @extend .h4;
+                @extend .modal-title;
+                margin: 0;
+            }
+            .ui-dialog-titlebar-close {
+                width: 1em;
+                height: 1em;
+                color: $black;
+                background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat !important;
+                border: 0;
+                border-radius: 0;
+                opacity: .5;
+            }
+        }
+        .ui-widget-content {
+            overflow-y: visible;
+            min-height: auto!important;
+            max-height: inherit !important;
+            padding: 0.875rem 0 0;
+            opacity: 1;
+            .modal-header {
+                display: none;
+            }
+            .highwire-hypothesis-message {
+                padding: 1.5rem 0;
+                p {
+                    margin: 0;
+                }    
+            }
+            [data-drupal-selector=edit-confirm] {
+                padding: 1.75rem 0 1rem;
+                p {
+                    line-height: 1.8;
+                    text-align: center;
+                }
+            }
+            input[data-drupal-selector=edit-tag-label] {
+                margin: 1.5rem 0 2.5rem;
+                font-family: $font-family-sans-serif;
+            }
+            input[data-drupal-selector=edit-query-text] {
+                font-family: $font-family-sans-serif;
+            }
+            .modal-footer {
+                .btn-primary {
+                    font-weight: $font-weight-medium;
+                    font-family: $font-family-sans-serif;
+                }
+            }
+            .form-actions {
+                display: flex;
+                flex-wrap: wrap;
+                flex-shrink: 0;
+                flex-direction: row-reverse;
+                padding: 0.75rem 0 0;
+                border-top: 1px solid $secondary;
+                input[data-drupal-selector=edit-submit] {
+                    @extend .btn;
+                    @extend .btn-danger;                        
+                    font-weight: $font-weight-medium;
+                    font-family: $font-family-sans-serif;
+                }
+                input[data-drupal-selector=edit-cancel] {
+                    @extend .btn;
+                    @extend .btn-primary;                        
+                    font-weight: $font-weight-medium;
+                    font-family: $font-family-sans-serif;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .form-checkboxes {
+        margin-bottom: 1rem;
+        .form-group {
+            margin-bottom: 10px;
+        }
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .highwire-personalization-add-remove-tags {
+        max-height: 48vh;
+        overflow: auto;
+    }
+    .highwire-personalization-add-remove-tags__create-tag {
+        margin: 0 0 1.5rem;
+        .form-text {
+            max-width: 100%;
+            border: 1px solid $secondary-dark;
+            padding: 5px 10px;
+            font-family: $font-family-sans-serif;
+            margin-bottom: 10px;
+        }
+        .highwire-personalization-add-remove-tags__create-tag-submit {
+            @extend .btn;
+            @extend .btn-small-tablet;
+            @extend .btn-primary;
+            border-radius: 17px;
+            margin-right: 10px;
+        }
+        .highwire-personalization-add-remove-tags__create-tag-cancel {
+            @extend .btn;
+            @extend .btn-small-tablet;
+            @extend .btn-secondary;
+            border-radius: 17px;
+        }
+    }
+    .form-type-radio, 
+    .form-type-checkbox {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        &:first-child {
+            margin-top: 0;
+        }
+        .fa-check-square, 
+        .fa-check-square {
+            display: none;
+        }
+    }
+    .modal--annotate {
+        .highwire-hypothesis-message {
+            max-height: 48vh;
+            overflow: auto;
+        }
+    }
+}
+.ui-widget-overlay {
+    background-color: $black;
+    opacity: 0.5;
+    z-index: 1020 !important;
+}
+a[data-drupal-selector=edit-create-tag-toggle] {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.ui-autocomplete {
+    z-index: 1020;
+    font-family: $font-family-sans-serif;
+    font-size: 1.25rem;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 15px 2px;
+    max-height: 60vh;
+    overflow: auto;
+}
+.highwire-saved-searches-form {
+  .form-text {
+    @extend .form-control;
+    margin: 20px 0 10px;
+  }
+  .highwire-checkbox-slider,
+  fieldset.form-wrapper {
+    margin-bottom: 30px;
+  }
+  fieldset.form-wrapper {
+    margin-top: -15px;
+    .js-form-item-frequency {
+      margin-top: 10px;
+      .form-radio {
+        @extend .form-check-input;
+      }
+      & + label {
+        cursor: pointer;
+      }
+    }
+  }
+  .highwire-checkbox-slider__slider:after {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}

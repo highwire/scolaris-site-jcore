@@ -1,0 +1,19 @@
+---
+modalPopup:
+  modalButton_click: true
+  modaltargetid: modal-id
+  modal_type: 
+  modalHeading:
+    level: 5
+    class: "modal-title"
+    text: "Modal title"
+  closeButton:
+    info: "Close"
+    togglemodal: "modal"
+    type: "button"
+    style: "secondary-light border-0 btn-medium-tablet"
+    text: "Secondary Button"
+  saveButton:
+    type: "button"
+    style: "primary border-0 btn-medium-tablet"
+    text: "Primary Button"

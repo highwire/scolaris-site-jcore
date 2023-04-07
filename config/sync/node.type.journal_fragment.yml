@@ -1,0 +1,11 @@
+uuid: 5a0ebc4e-8258-4b37-b129-5c706bb4cd51
+langcode: en
+status: true
+dependencies: {  }
+name: journal_fragment
+type: journal_fragment
+description: 'Auto generated HighWire content type for journal-fragment'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

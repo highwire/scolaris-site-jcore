@@ -1,0 +1,21 @@
+uuid: 9701ecf6-2381-477f-998e-adf86d89980d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.prev_atom
+    - node.type.journal_volume
+id: node.journal_volume.prev_atom
+field_name: prev_atom
+entity_type: node
+bundle: journal_volume
+label: prev-atom
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

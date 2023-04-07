@@ -1,0 +1,9 @@
+---
+left_column_width: col-medium-4 col-desktop-3
+main_column_width: col-medium-4 col-desktop-6
+right_column_width: col-medium-4 col-desktop-3
+order_3_1: order_3_1
+order_3_2: order_3_2
+order_3_3: order_3_3
+footer_top: true
+footer_bottom: true

@@ -1,0 +1,10 @@
+uuid: 97f686b5-7c8b-48f8-b3d7-bde06fe84ce1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.focus_view
+label: 'Focus view'
+targetEntityType: node
+cache: true

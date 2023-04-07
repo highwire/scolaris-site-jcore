@@ -1,0 +1,14 @@
+uuid: 125fdff3-e2c6-42d1-99d6-7cafa29dd20e
+langcode: en
+status: true
+dependencies: {  }
+name: periodical_image
+label: 'Periodical image'
+effects:
+  25dfc4b3-2b1a-49f6-b725-f5c16ef175b1:
+    uuid: 25dfc4b3-2b1a-49f6-b725-f5c16ef175b1
+    id: image_resize
+    weight: 1
+    data:
+      width: 256
+      height: 300

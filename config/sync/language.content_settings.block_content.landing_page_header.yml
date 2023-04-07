@@ -1,0 +1,11 @@
+uuid: 6a682a61-2335-4a44-9293-e30a77f48130
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.landing_page_header
+id: block_content.landing_page_header
+target_entity_type_id: block_content
+target_bundle: landing_page_header
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: 4f2ae837-6ad5-4522-ae12-13cb9b699e95
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_markup_display
+    - node
+id: node.hwmd_table_of_contents_journals_
+field_name: hwmd_table_of_contents_journals_
+entity_type: node
+type: HWMarkupDisplay
+settings:
+  case_sensitive: false
+module: highwire_markup_display
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

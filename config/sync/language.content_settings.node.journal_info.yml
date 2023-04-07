@@ -1,0 +1,11 @@
+uuid: 22659bf6-9a01-49a6-bdf6-e30c19508adf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.journal_info
+id: node.journal_info
+target_entity_type_id: node
+target_bundle: journal_info
+default_langcode: site_default
+language_alterable: false

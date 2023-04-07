@@ -1,0 +1,19 @@
+{% if image.href %}
+  <a href="{{ image.href }}" title="{{ image.title }}">
+    <img
+      class="{{ image.class }}"
+      alt="{{ image.alt }}"
+	  title="{{ image.title }}"
+      src="{{ image.src }}"
+      height="{{ image.height }}"
+      width="{{ image.width }}" />
+  </a>
+{% else %}
+  <img
+    class="{{ image.class }}"
+	title="{{ image.title }}"
+    alt="{{ image.alt }}"
+    src="{{ image.src }}"
+    height="{{ image.height }}"
+    width="{{ image.width }}" />
+{% endif %}

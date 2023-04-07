@@ -1,0 +1,239 @@
+---
+organisms_only: true
+tabcontent_class: article__tabcontent-body
+journal_authenticated: journal-article__journal-authenticated
+journals_articles_top:
+- right_col_width: col-large-tablet-4 col-desktop-3
+  middle_col_width: col-large-tablet-8 col-desktop-9
+  right_modified_class: article__top_right
+  middle_modified_class: article__top_left
+  rightsource_media:
+  - rightimg_media: "(min-width:650px)"
+    rightimg_srcset: "../../../assets/images/128X128.png"
+  - rightimg_media: "(min-width:465px)"
+    rightimg_srcset: "../../../assets/images/128X128.png"
+  rightimage:
+    src: "../../../assets/images/128X128.png"
+    alt: Card Image
+    title: Card Image
+    class: article__top-image
+  card_rightheading:
+  - heading:
+      level: '6'
+      class: article__image_title
+      text: 'This article appears in:'
+  card_rightlink:
+  - button:
+      class: article__image_link
+      href: "#"
+      title: Journal of Eget placerat senectus curae semper – Vol 18 Issue 1
+      text: Journal of Eget placerat senectus curae semper – Vol 18 Issue 1
+  card_heading:
+  - heading:
+      level: '5'
+      class: article__subtitle
+      text: Research Article
+  - heading:
+      level: '1'
+      class: article__title
+      text: Article title venenatis vestibulum aliquet enim
+  card_heading_link:
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  - anchorHead:
+      level: '6'
+      class: article__fullname
+      button:
+        href: "#"
+        title: Lastname, Firstname
+        text: Lastname, Firstname
+        rightspanclass: article__fullname__badge
+        rightspancontent: iD
+  card_description:
+  - paragraph:
+      class: article__detail
+      text: 'Journal of Eget placerat senectus curae semper – Vol 18 Issue 1 <span
+        class=''article__detail_inner''>DOI: <strong>1234/XYZ</strong></span>'
+  card_link:
+  - button:
+      href: "#"
+      class: article__social_btn article__download
+      title: Download PDF
+      text: Download PDF
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__favorites
+      title: Add to favorites
+      text: Add to favorites
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__cite
+      title: Cite
+      text: Cite
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__permissions
+      title: Permissions
+      text: Permissions
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__share
+      title: Share
+      text: Share
+      lefticon: true
+  - button:
+      href: "#"
+      class: article__social_btn article__alerts
+      title: Alerts
+      text: Alerts
+      lefticon: true
+accordion_login: false
+navtabs_item:
+- active: ''
+  id: 1
+  title: Article
+- active: active
+  id: 2
+  title: Figures & tables
+- active: ''
+  id: 3
+  title: Metrics
+navtabs_content:
+- active: ''
+  id: 1
+  journal_artical_cms: Content 1
+- active: active
+  id: 2
+  journal_artical_cms: "<h2>Figures</h2><p>Fames nibh imperdiet cubilia
+    a feugiat mollis natoque vulputate ultrices lectus nisi dictumst habitant viverra
+    venenatis orci purus diam ac nullam varius lacus lacinia scelerisque aptent magnis
+    dignissim montes id per egestas aliquam consequat sapien posuere congue nulla
+    litora ut.</p><h5 class='mt-5 mb-3'>Figure 1.</h5><img class='img-fluid' title='Card
+    Image' alt='Card Image' src='../../../assets/images/1980X1080.png'><div class='text-end
+    mt-4 mb-3'><a href='#' class='btn btn-medium-tablet btn-secondary-light' title='View
+    in context'><i class='feather-corner-down-left fs-5 align-text-bottom me-1'></i>View
+    in context</a></div><hr class='border-bottom mt-5 mb-5'><h2 class='mt-3'>Tables</h2><p>Fames
+    nibh imperdiet cubilia a feugiat mollis natoque vulputate ultrices lectus nisi
+    dictumst habitant viverra venenatis orci purus diam ac nullam varius lacus lacinia
+    scelerisque aptent magnis dignissim montes id per egestas aliquam consequat sapien
+    posuere congue nulla litora ut.</p><h5 class='mt-5 mb-3'>Table 1.</h5><table class='table
+    table-striped table-bordered'><thead><tr class='bg-secondary-light fs-small'><th
+    scope='col' class='fw-normal'>&nbsp;</th><th scope='col' class='fw-normal'>Long
+    multi line heading</th><th scope='col' class='fw-normal'>Short heading</th><th
+    scope='col' class='fw-normal'>Short heading</th><th scope='col' class='fw-normal'>Short
+    heading</th></tr></thead><tbody><tr><th scope='row' class='fw-normal'>Row heading</th><td>999.99</td><td>999.99</td><td>999.99</td><td>999.99</td></tr><tr><th
+    scope='row' class='fw-normal'>Row heading</th><td>999.99</td><td>999.99</td><td>999.99</td><td>999.99</td></tr><tr><th
+    scope='row' class='fw-normal'>Row heading</th><td>999.99</td><td>999.99</td><td>999.99</td><td>999.99</td></tr></tbody></table><p>Fames
+    nibh imperdiet cubilia a feugiat mollis natoque vulputate ultrices</p><div class='text-end
+    mt-4 mb-3'><a href='#' class='btn btn-medium-tablet btn-secondary-light' title='View
+    in context'><i class='feather-corner-down-left fs-5 align-text-bottom me-1'></i>View
+    in context</a></div>"
+- active: ''
+  id: 3
+  journal_artical_cms: Content 3
+journals_action_top: true
+journals_action_bottom: true
+journals_tabs_click:
+- button:
+    href: "#"
+    lefticon: true
+    title: Focus
+    text: Focus
+    class: article__focus_link
+- button:
+    href: "#"
+    lefticon: true
+    title: Previous
+    text: Previous
+    class: article__previous_link
+- button:
+    href: "#"
+    righticon: true
+    title: Next
+    text: Next
+    class: article__next_link
+journals_sidebar:
+- heading:
+    level: '5'
+    class: article__related_heading
+    text: Related content
+  related_article:
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Book chapter
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+  - heading:
+      level: '6'
+      class: article__sidecontent_heading
+      text: Article
+    button:
+      href: "#"
+      title: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      text: Dynamic Assessment and Computerized Adaptive Tests in Reading Processes
+      class: article__sidecontent_link
+- heading:
+    level: '5'
+    class: article__heading_keyword
+    text: Keywords
+  ullisting_class: article__sidecontent_list
+  listing_items:
+  - urls: "#"
+    content: dynamic testing
+  - urls: "#"
+    content: process measurement
+  - urls: "#"
+    content: complex figure
+  - urls: "#"
+    content: gradual prompts
+  - urls: "#"
+    content: computer-automated scoring
+- heading:
+    level: '5'
+    class: article__heading_table
+    text: Table of contents
+  ullisting_class: article__sidecontent_list
+  listing_items:
+  - urls: "#"
+    content: Top
+  - urls: "#"
+    content: Abstract
+  - urls: "#"
+    content: Sollicitudin feugiat mus lectus
+  - urls: "#"
+    content: Habitasse adipiscing velit turpis
+  - urls: "#"
+    content: Eros inceptos mattis erat    

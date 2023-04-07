@@ -1,0 +1,37 @@
+uuid: a3112d1c-17ce-4873-a8e3-43b0c55d5a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.counts
+    - node.type.item_monograph
+  module:
+    - double_field
+id: node.item_monograph.counts
+field_name: counts
+entity_type: node
+bundle: item_monograph
+label: counts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

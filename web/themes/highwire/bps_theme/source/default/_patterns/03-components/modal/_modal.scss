@@ -1,0 +1,287 @@
+@use "sass:math";
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and stuff
+
+
+.modal-open {
+  // Kill the scroll on the body
+  overflow: hidden;
+
+  .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+// Container that the modal scrolls within
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  // Prevent Chrome on Windows from adding a focus outline.
+  outline: 0;
+  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  // gnarly iOS Safari
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: $modal-dialog-margin;
+  // allow clicks to pass through for custom click handling to close modal
+  pointer-events: none;
+
+  // When fading in the modal, animate it to slide down
+  .modal.fade & {
+    @include transition($modal-transition);
+    transform: $modal-fade-transform;
+  }
+  .modal.show & {
+    transform: $modal-show-transform;
+  }
+
+  // When trying to close, animate focus to scale
+  .modal.modal-static & {
+    transform: $modal-scale-transform;
+  }
+}
+
+.modal-dialog-scrollable {
+  height: subtract(100%, $modal-dialog-margin * 2);
+
+  .modal-content {
+    max-height: 100%;
+    overflow: hidden;
+   
+  }
+
+  .modal-body {
+    overflow-y: auto;
+   
+  }
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: subtract(100%, $modal-dialog-margin * 2);
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  @extend .p-4;
+  display: flex;
+  flex-direction: column;
+  width: 100%; // Ensure `.modal-content` extends the full width of the parent `.modal-dialog`
+  // counteract the pointer-events: none; in the .modal-dialog
+  color: $modal-content-color;
+  pointer-events: auto;
+  background-color: $modal-content-bg;
+  background-clip: padding-box;
+  //border: $modal-content-border-width solid $modal-content-border-color;
+  //@include border-radius($modal-content-border-radius);
+  @include box-shadow($modal-content-box-shadow-mobile);
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zindex-modal-backdrop;
+  width: 100vw;
+  height: 100vh;
+  background-color: $modal-backdrop-bg;
+
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+  &.show { opacity: $modal-backdrop-opacity; }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  padding: 0px 1px 15px !important;  
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
+  padding: $modal-header-padding;
+  border-bottom: $modal-header-border-width solid $modal-header-border-color;
+  @include border-top-radius($modal-content-inner-border-radius);
+  .btn-close {
+    padding: math.div($modal-header-padding-y, 2) math.div($modal-header-padding-x, 2);
+    margin: math.div($modal-header-padding-y, -2) math.div($modal-header-padding-x, -2) math.div($modal-header-padding-y, -2) auto;
+  }
+  h4 {
+    margin-bottom: 0 !important;
+    line-height: $modal-title-line-height;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+// Title text within header
+.modal-title {
+  margin-bottom: 0;
+  line-height: $modal-title-line-height;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  padding: 20px 1px !important;
+  position: relative;
+  flex: 1 1 auto;
+  padding: $modal-inner-padding;
+  .a2a_button_facebook,
+  .a2a_button_twitter,
+  .a2a_button_google_plus {
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 1.25rem 0 0 !important;
+  }
+}
+
+// Footer (for actions)
+.modal-footer {
+  display: flex;
+  padding: 15px 1px !important;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center; // vertically center
+  justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
+  padding: $modal-inner-padding - math.div($modal-footer-margin-between, 2);
+  border-top: $modal-footer-border-width solid $modal-footer-border-color;
+  @include border-bottom-radius($modal-content-inner-border-radius);
+  > * {
+    margin: math.div($modal-footer-margin-between, 2);
+  }
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+// Scale up the modal
+@include media-breakpoint-up(small-tablet) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    max-width: $modal-medium-tablet;
+    margin: $modal-dialog-margin-y-small-tablet-up auto;
+  }
+
+  .modal-dialog-scrollable {
+    height: subtract(100%, $modal-dialog-margin-y-small-tablet-up * 2);
+  }
+
+  .modal-dialog-centered {
+    min-height: subtract(100%, $modal-dialog-margin-y-small-tablet-up * 2);
+  }
+
+  .modal-content {
+    @include box-shadow($modal-content-box-shadow-small-tablet-up);
+  }
+
+  .modal-small-tablet { max-width: $modal-small-tablet; }
+}
+
+@include media-breakpoint-up(large-tablet) {
+  .modal-large-tablet,
+  .modal-desktop {
+    max-width: $modal-large-tablet;
+  }
+}
+
+@include media-breakpoint-up(desktop) {
+  .modal-desktop { max-width: $modal-desktop; }
+}
+
+@include media-breakpoint-up(desktop) {
+  .modal-desktop,
+  .modal-large-desktop {
+    max-width: $modal-desktop;
+  }
+}
+
+@include media-breakpoint-up(large-desktop) {
+  .modal-large-desktop { max-width: $modal-large-desktop; }
+}
+
+// scss-docs-start modal-fullscreen-loop
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  $postfix: if($infix != "", $infix + "-down", "");
+
+  @include media-breakpoint-down($breakpoint) {
+    .modal-fullscreen#{$postfix} {
+      width: 100vw;
+      max-width: none;
+      height: 100%;
+      margin: 0;
+
+      .modal-content {
+        height: 100%;
+        border: 0;
+        @include border-radius(0);
+      }
+
+      .modal-header {
+        @include border-radius(0);
+      }
+
+      .modal-body {
+        overflow-y: auto;
+      }
+
+      .modal-footer {
+        @include border-radius(0);
+      }
+    }
+  }
+}
+#account-alertDelete {
+  .modal-header {
+    border: none;
+    padding: 0;
+  }
+  .my-account__alertpopup {
+    padding: 0 0 1rem;
+    @extend .text-center;
+    h3{
+      padding: 1rem 0;
+      margin: 0;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .modal-footer {
+    border: none;
+    justify-content: center;
+    padding: 0.75rem 0 1.25rem !important;
+  }
+}
+// scss-docs-end modal-fullscreen-loop

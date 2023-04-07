@@ -1,0 +1,21 @@
+uuid: 98c18b2e-6a28-49de-be72-f1a3da27c913
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_print_publication
+    - node.type.item_back_matter
+  module:
+    - text
+id: node.item_back_matter.date_print_publication
+field_name: date_print_publication
+entity_type: node
+bundle: item_back_matter
+label: date-print-publication
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

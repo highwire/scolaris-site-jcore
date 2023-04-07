@@ -1,0 +1,43 @@
+<div class="journals-login-register-content">		
+	<div class="accordian_wrap">		
+		<div class="accordian_wrap__accordian_login">
+			{% for item in journals_login_register_actions %}
+				{% include "@atoms/text/_heading.twig" with {
+					heading: item.heading,
+					heading: item.text
+				} only %}
+				{% include "@atoms/button/_button.twig" with {
+					button: item.button
+				} only %}
+			{% endfor %}
+		</div>
+		<div class="accordian_wrap__accordian_info">
+			{% for item in journals_login_register_content %}
+				<div class="login-register-content-left">
+					<div class="accordian_wrap__accordian_info__journal_txt">
+						<div class="accordian_wrap__txtwrap">
+							<span class="accordian_txttitle">{{item.access_left_head}}  </span>
+							{% include "@atoms/button/_button.twig" with {
+								button: item.cartlink_description
+							} only %}
+						</div>
+						<div class="accordian_wrap__licensewrap">
+							<span class="accordian_wrap__licensewrap__license_content">
+								{{item.access_left_licence}}
+								<span class="accordian_wrap__licensewrap__license_content_icon" data-bs-toggle="tooltip" data-bs-placement="top" title={{item.access_tooltip}}></span>
+								<span class="text-secondary">|</span>
+								<span class="accordian_wrap__licensewrap__price">
+									{{ item.cart_price_symbol }}
+									{{ item.cart_amount }}
+								</span>
+							</span>
+							{% include "@atoms/button/_button.twig" with {
+								button: item.button
+							} only %}
+						</div>						
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>		
+</div>

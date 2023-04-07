@@ -1,0 +1,148 @@
+uuid: 7fe3face-5ded-4e44-992c-1f5eeb712e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - bps_content_display
+    - bps_core
+    - bps_ecommerce
+    - bps_search
+    - ctools
+    - panels
+id: node_view-panels_variant-2
+label: issue
+variant: panels_variant
+variant_settings:
+  blocks:
+    3483f4fc-87e0-449a-8807-bf094449c448:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: content_details
+      region: top
+      weight: -2
+      uuid: 3483f4fc-87e0-449a-8807-bf094449c448
+      context_mapping:
+        entity: node
+    b2c47693-c0f5-4f8d-a161-2ece3e67c1ee:
+      id: news_articles
+      label: 'Periodical issue news'
+      provider: bps_core
+      label_display: visible
+      region: right
+      weight: 0
+      uuid: b2c47693-c0f5-4f8d-a161-2ece3e67c1ee
+      context_mapping:
+        node: node
+    c8ccf3bb-3a52-4144-bdb2-881c208e3154:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: full
+      region: left
+      weight: -1
+      uuid: c8ccf3bb-3a52-4144-bdb2-881c208e3154
+      context_mapping:
+        entity: node
+    6a30f0d1-6788-454e-a085-84cb3bb1df51:
+      id: bps_display_price
+      label: 'BPS Display Price'
+      provider: bps_ecommerce
+      label_display: '0'
+      list_titles:
+        user_access_already: 'You already have access to these :types:'
+        purchase_offers_current: 'Get access to this :type:'
+        purchase_offers_container: 'Get access to the entire :type:'
+        purchase_offers_default: 'Get access to the :type:'
+      child_offers_prompt:
+        title: 'Get access to individual :types:'
+        text: 'Open :a :type to see its purchasing options.'
+      region: top
+      weight: 0
+      uuid: 6a30f0d1-6788-454e-a085-84cb3bb1df51
+      context_mapping:
+        node: node
+      view_modes:
+        journal_article: default
+        journal_issue: default
+        journal_volume: ''
+        journal_fragment: ''
+        journal: default
+      access_control_rule: online_access
+    285c55aa-526d-4489-82a3-844c33e6dd33:
+      id: searchBrowse
+      label: 'Search browse block'
+      provider: bps_search
+      label_display: '0'
+      region: left
+      weight: -2
+      uuid: 285c55aa-526d-4489-82a3-844c33e6dd33
+      context_mapping: {  }
+    0a55f798-f42d-4f3f-b8f9-8a4e5003e583:
+      id: bps_pdf_only_message
+      label: 'PDF Only Message'
+      provider: bps_content_display
+      label_display: '0'
+      region: top
+      weight: -1
+      uuid: 0a55f798-f42d-4f3f-b8f9-8a4e5003e583
+      context_mapping:
+        node: node
+  id: panels_variant
+  uuid: 4c897b01-9530-4736-a7ce-d0b88e915301
+  label: null
+  weight: 0
+  layout: bs_2col_stacked
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: 'class|journal-page journal-article'
+    regions:
+      top:
+        wrapper: div
+        classes:
+          col-md-24: col-md-24
+        add_region_classes: 0
+        attributes: class|journals-articles-top
+      left:
+        wrapper: div
+        classes:
+          col-md-17: col-md-17
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-9'
+      right:
+        wrapper: div
+        classes:
+          col-md-7: col-md-7
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-3 article__rightbar'
+      bottom:
+        wrapper: div
+        classes:
+          col-md-24: col-md-24
+        add_region_classes: 0
+        attributes: ''
+  page_title: '[node:journal_title] [node:title]'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-2
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      journal_issue: journal_issue
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

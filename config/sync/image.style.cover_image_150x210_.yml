@@ -1,0 +1,15 @@
+uuid: 5362ca7f-c063-411e-a03b-e740af4f6a15
+langcode: en
+status: true
+dependencies: {  }
+name: cover_image_150x210_
+label: 'Cover Image (150X210)'
+effects:
+  8f4d368b-ad3b-4f63-85b4-bb22e10ae0fc:
+    uuid: 8f4d368b-ad3b-4f63-85b4-bb22e10ae0fc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 210
+      anchor: center-center

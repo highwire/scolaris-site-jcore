@@ -1,0 +1,37 @@
+{% extends "@components/layouts/_one-column.twig" %}
+{% block main %}
+	<div class="periodical-highlight container">
+		{% if navtabs_item %}
+			{% include "@components/tabs/_tabs.twig" with {
+				navtabs_id: navtabs_id,
+				navtabs_item: navtabs_item
+			} only %}
+		{% endif %}
+		{% include "@molecules/grouping/_listing.twig" with {
+			listing_items: highlight_items
+		} only %}
+	</div>
+
+	<div class="highlight-section">
+		<div class="container">
+			{% for item in Periodicals_slider %}
+				<div class="row ">
+					<div class="col-12 col-small-tablet-12 ">
+						{% include "@atoms/text/_heading.twig" with {
+							heading: item.heading
+						} only %}
+					</div>			
+					<div class="col-12 col-small-tablet-12 ">
+					<div class="slick-slider six">
+						{% include "@components/card/_card-slider.twig" with {
+							card_row_class: item.card_row_class,
+							card_link_items: item.card_link_items
+						} only %}
+					</div>
+					</div>
+				</div>	
+			{% endfor %}	
+		</div>
+	</div>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+<div class="accordion" id="{{accordion_wrapper_id}}">
+	{% for item in accordion_item %} 
+		<div class="accordion-item {{item.accordionItem}}">
+			{% include "@molecules/accordion/_accordion-head.twig" with {
+				accordion_level: item.accordion_level,
+				accordionclass: item.accordionclass,
+				id: item.id,
+				accordionLeftIconBg: item.accordionLeftIconBg,
+				accordionLeftIcon: item.accordionLeftIcon,
+				accordionRightIconBg: item.accordionRightIconBg,
+				heading_content: item.heading_content,
+				collapsed: item.collapsed
+			} only %}
+			{% include "@molecules/accordion/_accordion-body.twig" with {
+				id: item.id,
+				showhide: item.showhide,
+				accordion_wrapper_id: accordion_wrapper_id,
+				accordion_description: item.accordion_description,
+				journals_login_register_content: item.journals_login_register_content,
+				journals_login_register_actions: item.journals_login_register_actions
+			} only %}
+		</div>
+	{% endfor %}
+</div>

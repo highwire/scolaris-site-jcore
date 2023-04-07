@@ -1,0 +1,25 @@
+<div role="main">		
+    <div class="container main-container about">	
+		<div class="row"> 
+            {% if cms_nav %}
+				<div class="column-order col-12 col-medium-tablet-4 col-desktop-3 order_2_1 ">				    
+					<div class="sidebar">
+						<h5>{{ page_subtitle }}</h5>
+						{{ cms_nav }}	
+					</div>
+				</div>
+            {% else %}
+				{% if page_subtitle %}
+				<div class="column-order col-12 col-medium-tablet-4 col-desktop-3 order_2_1 ">				    
+					<div class="sidebar">
+						<h5>{{ page_subtitle }}</h5>
+					</div>
+				</div>
+				{% endif %} 
+            {% endif %}    
+			<div class="col-12 {% if cms_nav %} column-order col-medium-tablet-8 col-desktop-9 {% endif %}">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</div>

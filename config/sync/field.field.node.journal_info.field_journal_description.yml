@@ -1,0 +1,21 @@
+uuid: ffd4d090-6e23-46d8-9ffb-b9a0a336dc64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journal_description
+    - node.type.journal_info
+  module:
+    - text
+id: node.journal_info.field_journal_description
+field_name: field_journal_description
+entity_type: node
+bundle: journal_info
+label: 'Journal description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

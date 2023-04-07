@@ -1,0 +1,21 @@
+uuid: b08d883f-734c-4084-90e2-b76625aae697
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.overline
+    - node.type.journal_fragment
+  module:
+    - text
+id: node.journal_fragment.overline
+field_name: overline
+entity_type: node
+bundle: journal_fragment
+label: overline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

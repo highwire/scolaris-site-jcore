@@ -1,0 +1,27 @@
+---
+organisms_only: true
+cardlinkHead:
+  heading:
+    level: '4'
+    class: mb-4
+    text: Browse by Subject
+card_link_items:
+- colwidth: col-large-tablet-4
+  title: Card Title
+  href: "#"
+  class: card-wrapper
+  source_media:
+  - img_media: "(min-width:650px)"
+    img_srcset: "../../../assets/images/520x270.png"
+  - img_media: "(min-width:465px)"
+    img_srcset: "../../../assets/images/520x270.png"
+  image:
+    src: "../../../assets/images/520x270.png"
+    alt: Card Image
+    title: Card Image
+    class: img-fluid
+  overlay_position: bottom
+  heading:
+    level: '5'
+    class: mb-0
+    text: Card title

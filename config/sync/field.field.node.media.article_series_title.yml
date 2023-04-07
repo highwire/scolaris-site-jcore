@@ -1,0 +1,21 @@
+uuid: e1eb97ef-8796-4b0c-a560-3035cb04902f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.article_series_title
+    - node.type.media
+  module:
+    - text
+id: node.media.article_series_title
+field_name: article_series_title
+entity_type: node
+bundle: media
+label: article-series-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

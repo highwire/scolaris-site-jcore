@@ -1,0 +1,25 @@
+{% for item in journal_browse_carousal %}
+  {% if item.card_link_items %}
+    <div class="journal-browse-carousal">
+      {% if item.button %}
+        <div class="row ">
+          <div class="col-12 col-small-tablet-5">
+      {% endif %}
+      {% include "@atoms/text/_heading-3.twig" with {
+        heading: item.heading
+      } only %}
+      {% if item.button %}
+        </div>
+        <div class="col-12 col-small-tablet-7 text-small-tablet-end">
+          {% include "@atoms/button/_button.twig" with {
+            button: item.button
+          } only %}
+        </div>
+        </div>
+      {% endif %}
+      {% include "@components/card/_card-slider.twig" with {
+        card_link_items: item.card_link_items
+      } only %}
+    </div>
+  {% endif %}
+{% endfor %}

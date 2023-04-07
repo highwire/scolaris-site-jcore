@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: tabs_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/tabs/_tabs.twig' %}
+  {% endblock content %}
+{% endembed %}

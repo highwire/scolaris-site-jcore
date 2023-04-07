@@ -1,0 +1,21 @@
+uuid: b7df8953-7d55-4605-8277-e3961d9ec52f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.supp_content_type
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.supp_content_type
+field_name: supp_content_type
+entity_type: node
+bundle: item_test_review
+label: supp-content-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 59503073-1f00-44c9-b795-27a3cca074c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_corpus
+    - media.type.file
+_core:
+  default_config_hash: 7p0CM6RoJ01LLej87UWVdavS9zCudXVnwcf4Om3GlMo
+id: media.file.field_corpus
+field_name: field_corpus
+entity_type: media
+bundle: file
+label: corpus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

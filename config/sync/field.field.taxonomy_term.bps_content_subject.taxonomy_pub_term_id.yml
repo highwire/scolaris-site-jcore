@@ -1,0 +1,19 @@
+uuid: 032db8c9-d965-404e-8a38-fa3197fa5077
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.taxonomy_pub_term_id
+    - taxonomy.vocabulary.bps_content_subject
+id: taxonomy_term.bps_content_subject.taxonomy_pub_term_id
+field_name: taxonomy_pub_term_id
+entity_type: taxonomy_term
+bundle: bps_content_subject
+label: 'Publisher Term Id'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 72279002-3014-436f-8ace-8c971651b4a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.corpus
+    - node.type.item_cover
+id: node.item_cover.corpus
+field_name: corpus
+entity_type: node
+bundle: item_cover
+label: Corpus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

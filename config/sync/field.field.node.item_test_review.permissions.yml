@@ -1,0 +1,21 @@
+uuid: e76cc781-4fbf-47a9-8aa7-802fd1c102fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.permissions
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.permissions
+field_name: permissions
+entity_type: node
+bundle: item_test_review
+label: permissions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: 0f867d30-c051-4968-a193-113d1ddd4bf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.fu
+label: 'Full Title'
+targetEntityType: node
+cache: true

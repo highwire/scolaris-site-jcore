@@ -1,0 +1,6 @@
+{% import "@atoms/global/sigma-urls.twig" as sigma %}
+{% include "@atoms/global/sigma-oidc-link.twig" with {
+    title: "Log in"|t,
+    url: sigma.login
+  }
+%}

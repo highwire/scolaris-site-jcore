@@ -1,0 +1,25 @@
+uuid: a3648288-81b5-4eab-a5c0-3121b1c3c70c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-right-3
+  module:
+    - system
+  theme:
+    - bps
+id: footerright3_6
+theme: bps
+region: footer_5
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-right-3'
+settings:
+  id: 'system_menu_block:footer-right-3'
+  label: Legal
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

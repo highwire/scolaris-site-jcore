@@ -1,0 +1,23 @@
+uuid: 497196f3-36cd-4b94-ae63-eff6375d4052
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.related_objects
+    - node.type.item_chapter
+  module:
+    - link
+id: node.item_chapter.related_objects
+field_name: related_objects
+entity_type: node
+bundle: item_chapter
+label: related-objects
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

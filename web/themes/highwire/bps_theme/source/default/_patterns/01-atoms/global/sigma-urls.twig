@@ -1,0 +1,25 @@
+{% macro login() %}
+  {% set current_path = path('<current>') %}
+  {% set path_prefix = current_path|trim('/')|split('/')|first %}
+  {% set destination = path_prefix in ['admin', 'system'] ? '<front>' : current_path %}
+  {% set url = path('openid_connect_sams_sigma.wayfless-url', {}, {query: { 'openid_connect_destination': destination } }) %}
+  {{ url }}
+{% endmacro %}
+
+{% macro voucher(user_id) %}
+  {% set current_path = path('<current>') %}
+  {% set path_prefix = current_path|trim('/')|split('/')|first %}
+  {% set destination = path_prefix in ['admin', 'system'] ? '<front>' : current_path %}
+  {% set query = {
+      'openid_connect_destination': destination,
+      'login_state': 'voucher',
+      'openid_connect_connect_uid': user_id
+    }
+  %}
+
+    {% if user_id %}
+        {% set query = query|merge({'openid_connect_op': 'connect', 'login_state': 'voucher'}) %}
+    {% endif %}
+
+  {{ path('openid_connect_sams_sigma.wayfless-url', {}, {'query': query }) }}
+{% endmacro %}

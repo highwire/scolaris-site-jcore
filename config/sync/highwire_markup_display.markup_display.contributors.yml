@@ -1,0 +1,19 @@
+uuid: 31c31538-b47a-4c4a-b9c1-b67126917550
+langcode: en
+status: true
+dependencies: {  }
+id: contributors
+label: Contributors
+configurations:
+  -
+    markup_profile: contributors
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - item_report_guideline
+  - journal_article
+log: false
+render_placeholder: false

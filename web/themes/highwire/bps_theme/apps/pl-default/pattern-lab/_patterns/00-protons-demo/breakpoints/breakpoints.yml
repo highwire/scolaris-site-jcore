@@ -1,0 +1,7 @@
+breakpoint_demo:
+  title: 'Breakpoints'
+  content:
+    lead: 'Demonstration of our Particle Breakpoints.'
+    summary:
+      'Provide contextual feedback messages for typical user actions with the
+      handful of available and flexible Breakpoints which contain all devices.'

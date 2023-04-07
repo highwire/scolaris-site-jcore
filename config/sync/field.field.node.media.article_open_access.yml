@@ -1,0 +1,21 @@
+uuid: d803f239-1e12-4b64-b57d-8199dfc1773e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.article_open_access
+    - node.type.media
+id: node.media.article_open_access
+field_name: article_open_access
+entity_type: node
+bundle: media
+label: article-open-access
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,13 @@
+{% spaceless %}
+	{% if molecules_only %}
+		<table class="table table-border">
+	{% endif %}	
+		<tr>
+			{% for th in th_loop %} 
+				<th>{{th.content}}</th>
+			{% endfor %}
+		</tr>
+	{% if molecules_only %}
+		</table>
+	{% endif %}
+{% endspaceless %}

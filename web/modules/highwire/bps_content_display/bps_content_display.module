@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Contains bps_content_display.module.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Url;
+use Drupal\Core\Template\Attribute;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_theme().
+ */
+function bps_content_display_theme() {
+  return [
+    'bps_tabs' => [
+      'render element' => 'element',
+    ],
+    'bps_icon' => [
+      'render element' => 'element',
+    ],
+    'bps_toc_pager' => [
+      'variables' => ['previous_url' => NULL, 'next_url' => NULL],
+    ],
+	];
+}
+
+/**
+ * Prepares variables for Bps tabs templates.
+ *
+ * Default template: bps-tabs.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - element: An associative array containing the properties and children of
+ *     the details element. Properties used: #children.
+ *
+ */
+function template_preprocess_bps_tabs(&$variables) {
+  $element = $variables['element'];
+  $variables['children'] = (!empty($element['#children'])) ? $element['#children'] : '';
+}
+
+/**
+ * Prepares variables for BPS icon templates.
+ *
+ * Default template: bps-icon.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - element: An associative array containing the properties and children of
+ *     the details element. Properties used: #icon, #icon_prefix.
+ *
+ */
+function template_preprocess_bps_icon(&$variables) {
+  foreach(['icon', 'icon_prefix', 'icon_library'] as $key) {
+    if (!empty($variables['element']['#' . $key])) {
+      $variables[$key] = $variables['element']['#' . $key];
+    }
+  }
+}

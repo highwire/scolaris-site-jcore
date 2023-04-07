@@ -1,0 +1,21 @@
+uuid: aa6be0ad-1f60-4591-959b-9df4ad8643fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_journal_sample_issue
+field_name: field_journal_sample_issue
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

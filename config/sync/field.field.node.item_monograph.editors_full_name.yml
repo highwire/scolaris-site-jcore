@@ -1,0 +1,21 @@
+uuid: 53879f94-a417-45e7-8855-73399e62ed9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.editors_full_name
+    - node.type.item_monograph
+  module:
+    - text
+id: node.item_monograph.editors_full_name
+field_name: editors_full_name
+entity_type: node
+bundle: item_monograph
+label: editors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

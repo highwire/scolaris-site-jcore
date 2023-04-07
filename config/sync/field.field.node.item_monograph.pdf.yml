@@ -1,0 +1,27 @@
+uuid: 20623d88-0f54-4314-ab0e-8199fadff4c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pdf
+    - node.type.item_monograph
+  module:
+    - file
+id: node.item_monograph.pdf
+field_name: pdf
+entity_type: node
+bundle: item_monograph
+label: pdf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

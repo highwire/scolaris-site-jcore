@@ -1,0 +1,155 @@
+uuid: 86293cfa-b57c-4d9c-90e5-2ace738e3eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.reports_guidelines
+    - system.menu.main
+    - views.view.featured_report_guideline_carousal
+    - views.view.what_s_new_report_guideline_carousal
+  content:
+    - 'block_content:title_text_linktitle:f152d477-434b-4706-a189-e87da271026e'
+  module:
+    - adnuntius
+    - block_content
+    - panels
+    - system
+    - views
+id: reports_guidelines-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    75dd4a7b-e411-49f3-ad9e-d48a904f797b:
+      id: 'block_content:f152d477-434b-4706-a189-e87da271026e'
+      label: 'Reports & monographs introduction area'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: right
+      weight: -4
+      uuid: 75dd4a7b-e411-49f3-ad9e-d48a904f797b
+      context_mapping: {  }
+    1afde566-9ac6-43bd-98ad-f78901699796:
+      id: 'system_menu_block:main'
+      label: 'Main navigation'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: -10
+      uuid: 1afde566-9ac6-43bd-98ad-f78901699796
+      context_mapping: {  }
+    c8a43e9b-4b2c-417d-a50d-adb3cbb44f0b:
+      id: 'views_block:featured_report_guideline_carousal-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: -1
+      uuid: c8a43e9b-4b2c-417d-a50d-adb3cbb44f0b
+      context_mapping: {  }
+    41d19069-b6a0-4391-aab7-ed3861581042:
+      id: 'views_block:what_s_new_report_guideline_carousal-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: -3
+      uuid: 41d19069-b6a0-4391-aab7-ed3861581042
+      context_mapping: {  }
+    23054839-0bca-4a8b-952a-38a254755b9e:
+      id: adnuntius_block
+      label: 'Slot 1 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 23054839-0bca-4a8b-952a-38a254755b9e
+      auid: '0000000000221579'
+      invocation_method: div
+      context_mapping: {  }
+    3be12ed9-af00-4b5d-9253-14a877032659:
+      id: adnuntius_block
+      label: 'Slot 2 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 3be12ed9-af00-4b5d-9253-14a877032659
+      auid: 000000000022157a
+      invocation_method: div
+      context_mapping: {  }
+    80edcad9-9b61-4d16-9c55-ff8ad2c1f99a:
+      id: adnuntius_block
+      label: 'Slot 3 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 80edcad9-9b61-4d16-9c55-ff8ad2c1f99a
+      auid: 000000000022157c
+      invocation_method: div
+      context_mapping: {  }
+    b6fa9609-9829-4c53-99d5-d1c42b205977:
+      id: adnuntius_block
+      label: 'Slot 4 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: b6fa9609-9829-4c53-99d5-d1c42b205977
+      auid: 000000000022157d
+      invocation_method: div
+      context_mapping: {  }
+    57499801-ec4c-4834-90b2-884373a961be:
+      id: adnuntius_block
+      label: 'Slot 5 - 300X250'
+      provider: adnuntius
+      label_display: '0'
+      region: left
+      weight: 0
+      uuid: 57499801-ec4c-4834-90b2-884373a961be
+      auid: '0000000000221588'
+      invocation_method: div
+      context_mapping: {  }
+  id: panels_variant
+  uuid: bea29a6e-1a5a-42af-91a3-e3add8a88be8
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes: {  }
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes: {  }
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: reports_guidelines-panels_variant-0
+  builder: standard
+page: reports_guidelines
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

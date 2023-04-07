@@ -1,0 +1,65 @@
+<div class="search-results-top">
+	<div class="row">
+		<div class="col-12 col-medium-tablet-8 col-desktop-9">
+			{% include "@atoms/text/_heading.twig" with {
+				heading: search_result_top.heading
+			} only %}
+			<h3>
+				{% set formattedResultsCount = resultsCount|number_format %}
+				{{'Your search for'|t}} <span>{{ searchTerm }}</span> {{'returned'|t}} <span>{{ formattedResultsCount }}</span> {% if resultsCount < 2 %} {{'result'|t}}
+				{% else %} {{'results'|t}} {% endif %}
+			</h3>
+		</div>
+		<div class="col-12 col-medium-tablet-4 col-desktop-3 ">
+			{{search_result_top.button}}
+			{% include "@atoms/button/_button.twig" with {
+				button: search_result_top.button
+			} only %}
+		</div>
+	</div>
+	{% if search_result_top.orderbyFilter %}
+		<div class="search-results-top-filter">
+			<div class="row">
+				<div class="col-12 col-medium-tablet12 col-large-tablet-tablet-6 col-desktop-8">
+					<span class="filter-label">
+						{% include "@atoms/text/_inline-element.twig" with {
+							inline: search_result_top.OrderbyText
+						} only %}
+					</span>
+					<ul class="search-results-order">
+						{% for item in search_result_top.orderbyFilter %}		
+							<li>			
+								{% include "@atoms/button/_button.twig" with {
+									button: item.button
+								} only %}		
+							</li>			
+						{% endfor %}	
+					</ul>
+				</div>
+				<div class="col-12 col-medium-tablet-12 col-large-tablet-tablet-6  col-desktop-4  text-desktop-end">
+					<span class="filter-label">	
+						{% include "@atoms/text/_inline-element.twig" with {
+							inline: search_result_top.OrderbyTopLeft
+						} only %}
+					</span>
+					<ul class="search-results-count">
+						{% for item in search_result_top.pageTopCount %}
+							{% if item.button is not null %}
+								<li>					
+									{% include "@atoms/button/_button.twig" with {
+										button: item.button
+									} only %}			
+								</li>		
+							{% endif %}
+						{% endfor %}
+					</ul>
+					<span class="filter-label">
+						{% include "@atoms/text/_inline-element.twig" with {
+							inline: search_result_top.OrderbyTopRight
+						} only %}
+					</span>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+</div>

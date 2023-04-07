@@ -1,0 +1,26 @@
+uuid: 568ad2d3-3f7c-43ce-af11-a9742a1abf7d
+langcode: en
+status: true
+dependencies: {  }
+id: content_sections_nav
+label: 'Content Sections Nav'
+profile_id: fulltext
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: content_sections_nav
+      processor_config:
+        config:
+          selector_type: xpath
+          xpath: "//div[contains(@class, \"abstract-wrapper\")]/h2[1]\r\n//div[contains(@class, \"section\")]/h2[contains(@class, \"section-title\")]\r\n//div[contains(@class, \"section\")]/h2[contains(@class, \"title\")]"
+          css: ''
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: replace_tag
+      processor_config:
+        config:
+          replace_tag: b|strong
+    weight: '1'
+dw_logging: null
+exists_field: ''

@@ -1,0 +1,32 @@
+uuid: 3f42a585-8a3a-4127-ac1a-182eb3ab8ddd
+langcode: en
+status: true
+dependencies:
+  module:
+    - double_field
+    - node
+id: node.test_type
+field_name: test_type
+entity_type: node
+type: double_field
+settings:
+  storage:
+    first:
+      type: string
+      maxlength: 255
+      precision: 10
+      scale: 2
+      datetime_type: datetime
+    second:
+      type: string
+      maxlength: 255
+      precision: 10
+      scale: 2
+      datetime_type: datetime
+module: double_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

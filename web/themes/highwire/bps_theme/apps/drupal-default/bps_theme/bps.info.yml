@@ -1,0 +1,90 @@
+name: BPS Site Theme
+type: theme
+description: Custom BPS theme that will be serve as the base theme for all the scolaris ste
+base theme: scolaris_base
+core_version_requirement: ^8.8 || ^9
+libraries:
+  - bps/core
+libraries-override:
+  core/jquery: bps/jquery
+libraries-extend:
+  highwire_display/highwire_entity_view:
+    - bps/focus_view
+regions: 
+  header_top_ads: Header Top Ad's
+  header_branding_1: Header Branding 1
+  header_branding_2: Header Branding 2
+  header_nav: Header Navigation
+  header_banner: Header Banner
+  search: Search
+  browse_collections: Browse by collection
+  browse_content: Browse by content type
+  browse_topic: Browse by topic header content
+  content_top_alt: Content Top (Alt BG)
+  content_top: Content Top
+  page_title: Page Title
+  content: Content
+  sidebar_first: Primary
+  sidebar_second: Secondary
+  sidebar_ads: Sidebar Ad's
+  content_bottom: Content Bottom
+  page_top: Page top
+  footer_top: Footer top
+  footer_1: Footer 1
+  footer_2: Footer 2
+  footer_3: Footer 3
+  footer_4: Footer 4
+  footer_5: Footer 5
+  footer_social: Footer Social
+  footer_bottom_one: Footer Bottom One
+  footer_bottom_two: Footer Bottom Two
+# The paths below are set to default DRUPAL_DIST variable.
+# If you change DRUPAL_DIST path, update here.
+# component-libraries:
+#   app-drupal:
+#      assets:
+#        css: 
+#           paths:
+#             - ../../../dist/app-drupal/assets/css
+#        js:
+#           paths:
+#             - ../../../dist/app-drupal/assets/js
+#        images:
+#           paths:
+#             - ../../../dist/app-drupal/assets/images
+  # protons:
+  #   paths: []
+  # atoms: 
+  #   paths:
+  #     - ../../../dist/app-drupal/assets/atomic/_patterns/01-atoms
+  # molecules: 
+  #   paths:
+  #     - ../../../dist/app-drupal/assets/atomic/_patterns/02-molecules
+  # components:
+  #   paths:
+  #     - ../../../dist/app-drupal/assets/atomic/_patterns/03-components
+  # pages:
+  #   paths:
+  #     - ../../../source/default/assets/_patterns/04-pages
+
+component-libraries:
+  protons:
+    paths: 
+      - ../../../source/default/_patterns/00-protons
+  atoms:
+    paths:
+      - ../../../source/default/_patterns/01-atoms
+      - ../../../source/default/_patterns/01-atoms/button
+      - ../../../source/default/_patterns/01-atoms/forms
+      - ../../../source/default/_patterns/01-atoms/images
+      - ../../../source/default/_patterns/01-atoms/media
+      - ../../../source/default/_patterns/01-atoms/text     
+  molecules:
+    paths:
+      - ../../../source/default/_patterns/02-molecules
+  components:
+    paths:
+      - ../../../source/default/_patterns/03-components
+  pages:
+    paths:
+      - ../../../source/default/_patterns/04-pages 

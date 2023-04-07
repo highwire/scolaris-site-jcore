@@ -1,0 +1,16 @@
+{% extends "@components/layouts/_two-column.twig" %}
+{% block main %}
+	{% include "@components/site/_journal-browse.twig" with {
+		journal_browse_heading: journal_browse_heading,
+		journal_browse_description: journal_browse_description,
+		journal_browse_action: journal_browse_action,
+		journal_browse_bottom: journal_browse_bottom
+	} only %}
+{% endblock %}
+
+{% block sidebar %}
+	{% include "@components/sidebar/_sidebar.twig" with {
+		sidenavLoop: sidenavLoop
+	} only %}
+{% endblock %}
+

@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: listing-group_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/grouping/_listing-group.twig' %}
+  {% endblock content %}
+{% endembed %}

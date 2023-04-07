@@ -1,0 +1,21 @@
+uuid: 74a2cf1d-1b8f-4d0f-bd1c-7f62c89c7ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.member_network
+    - node.type.item_report_guideline
+  module:
+    - text
+id: node.item_report_guideline.member_network
+field_name: member_network
+entity_type: node
+bundle: item_report_guideline
+label: member-network
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

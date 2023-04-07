@@ -1,0 +1,14 @@
+uuid: f657edec-1ee4-4f07-ba68-be4d3c53b82c
+langcode: en
+status: true
+dependencies: {  }
+name: society_logo_300_150_
+label: 'Society logo(300*160)'
+effects:
+  bf2dee15-b8b0-4eaa-a64e-88e7d2b6f69c:
+    uuid: bf2dee15-b8b0-4eaa-a64e-88e7d2b6f69c
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 160

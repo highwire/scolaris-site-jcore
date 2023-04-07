@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display adnuntius ads.
+ *
+ * Available variables:
+ *   - label: The human readable name of the ad unit.
+ *   - auid: The ad unit id.
+ *   - width: The width of the ad unit.
+ *   - height: The height of the ad unit.
+ *   - invocation_method: The invocation method to be used.
+ *
+ * @see template_preprocess_adnuntius()
+ *
+ * @ingroup themeable
+ */
+#}
+<div id="adn-{{ auid }}" class="adnuntius-wrapper" style="display:none"></div>
+<script data-type="text/javascript" type="text/plain" data-mon-consent-required="marketing">(function(d, s, e, t) { e = d.createElement(s); e.type = 'text/java' + s; e.async = 'async'; e.src = 'http' + ('https:' === location.protocol ? 's' : '') + '://cdn.adnuntius.com/adn.js'; t = d.getElementsByTagName(s)[0]; t.parentNode.insertBefore(e, t); })(document, 'script');window.adn = window.adn || {}; adn.calls = adn.calls || []; adn.calls.push(function() { adn.request({ adUnits: [ {auId: '{{ auid }}', auW: {{ width }}, auH: {{ height }}, container: '{{ invocation_method }}' } ]}); });</script>

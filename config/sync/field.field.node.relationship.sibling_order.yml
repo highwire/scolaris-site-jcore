@@ -1,0 +1,23 @@
+uuid: cfbbcff2-0fdf-4a9e-abee-2dd3cb2fb141
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.sibling_order
+    - node.type.relationship
+id: node.relationship.sibling_order
+field_name: sibling_order
+entity_type: node
+bundle: relationship
+label: sibling-order
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

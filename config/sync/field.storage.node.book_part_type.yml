@@ -1,0 +1,19 @@
+uuid: 10a926c2-7e48-49ec-b3c5-8a42628ae6aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.book_part_type
+field_name: book_part_type
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

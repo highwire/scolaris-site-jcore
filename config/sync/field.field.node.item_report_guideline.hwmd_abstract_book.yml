@@ -1,0 +1,24 @@
+uuid: 2b082d65-d1a2-4fbe-97fb-64beee6ac67a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_abstract_book
+    - node.type.item_report_guideline
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: abstract_book
+id: node.item_report_guideline.hwmd_abstract_book
+field_name: hwmd_abstract_book
+entity_type: node
+bundle: item_report_guideline
+label: 'HighWire Markup Display - Abstract (Book)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

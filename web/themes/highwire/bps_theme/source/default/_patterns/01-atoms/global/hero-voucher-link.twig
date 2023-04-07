@@ -1,0 +1,6 @@
+{% import "@atoms/global/sigma-urls.twig" as sigma %}
+{% include "@atoms/global/hero-sigma-oidc-link.twig" with {
+    title: 'Redeem a voucher'|t,
+    url: sigma.voucher(user.id)
+  }
+%}

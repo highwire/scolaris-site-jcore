@@ -1,0 +1,27 @@
+{% spaceless %}
+	{% if heading_content %}
+		<h{{accordion_level}} 
+			class="accordion-header {{accordionHeadClass}}" 
+			id="heading-{{id}}">
+			<button class="accordion-button {{collapsed}}" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#collapse-{{id}}" 
+				aria-expanded="true" 
+				aria-controls="collapse-{{id}}"
+			>
+				{% if accordionLeftIcon %}
+					<span class="{{accordionLeftIconBg}}">	
+						<span class="left-lock-icon-inner"></span>				
+					</span>
+				{% endif %}
+				{{heading_content}}
+				{% if accordionRightIconBg %}
+					<span class="{{accordionRightIconBg}}">
+						<span class="toggleicon-inner"></span>
+					</span>
+				{% endif %}
+			</button>
+		</h{{accordion_level}}>
+	{% endif %}
+{% endspaceless %}

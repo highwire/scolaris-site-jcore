@@ -1,0 +1,19 @@
+uuid: 95b04994-ae0d-43a7-a9cc-67aeaa76ac5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.corpus
+    - node.type.item_report_guideline
+id: node.item_report_guideline.corpus
+field_name: corpus
+entity_type: node
+bundle: item_report_guideline
+label: Corpus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

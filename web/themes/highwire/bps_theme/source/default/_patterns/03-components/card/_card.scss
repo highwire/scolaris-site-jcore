@@ -1,0 +1,175 @@
+@use "sass:math";
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; 
+  height: $card-height;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+  > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  > .list-group {
+    border-top: inherit;
+    border-bottom: inherit;
+
+    &:first-child {
+      border-top-width: 0;
+      @include border-top-radius($card-inner-border-radius);
+    }
+
+    &:last-child  {
+      border-bottom-width: 0;
+      @include border-bottom-radius($card-inner-border-radius);
+    }
+  }
+  > .card-header + .list-group,
+  > .list-group + .card-footer {
+    border-top: 0;
+  }
+  &-row {
+    @extend .row;
+  }
+  &-row-1, 
+  &-row-2 {
+    .card-left,
+    .card-right {
+      picture {
+        img {
+          display: block;
+          width: 120px;
+          max-height: 165px;
+        }
+      }
+    }
+  }
+  &-row-1 { 
+    .card-left {
+      @extend .col-12;
+      max-width: 144px;
+      padding-right: 0;
+    }
+    .card-content {
+      @extend .col-12;
+      max-width: calc(100% - 144px);
+    }
+    .card-right {
+      @extend .col-12;
+      max-width: 144px;
+      padding-left: 0;
+    }
+  }
+  &-row-2 { 
+    .card-left {
+      @extend .col-12;
+      max-width: 144px;
+      padding-right: 0;
+    }
+    .card-content {
+      @extend .col-12;
+      max-width: calc(100% - 288px);
+    }
+    .card-right {
+      @extend .col-12;
+      max-width: 144px;
+      padding-left: 0;
+    }
+  }
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: $card-spacer-y $card-spacer-x;
+  color: $card-color;
+}
+.card-title {
+  margin-bottom: $card-title-spacer-y;
+}
+.card-subtitle {
+  margin-top: -0.5rem;
+  margin-bottom: 0;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+}
+.card-link {
+  &:hover {
+    text-decoration: none;
+  }
+
+  + .card-link {
+    margin-left: $card-spacer-x;
+  }
+}
+
+.card-header {
+  padding: $card-cap-padding-y 1rem;
+  margin-bottom: 0; // Removes the default margin-bottom of <hN>
+  color: $card-cap-color;
+  background-color: $card-cap-bg;
+  border-bottom: $card-border-width solid $card-border-color;
+
+  &:first-child {
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  }
+}
+
+.card-footer {
+  padding: $card-cap-padding-y 1rem;
+  color: $card-cap-color;
+  background-color: $card-cap-bg;
+  border-top: $card-border-width solid $card-border-color;
+
+  &:last-child {
+    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+  }
+}
+
+// Card image
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $card-img-overlay-padding;
+  @include border-radius($card-inner-border-radius);
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+}
+
+.card-img,
+.card-img-top {
+  @include border-top-radius($card-inner-border-radius);
+}
+
+.card-img,
+.card-img-bottom {
+  @include border-bottom-radius($card-inner-border-radius);
+}
+
+@include media-breakpoint-down(large-tablet) {
+  .card-container {
+    .text-end {
+      text-align: left;
+    }
+  }
+}
+
+.show-content-toggle {
+  display: none;
+  margin-top: 1rem;
+}
+.card-isbn{
+  margin-bottom: 1.125rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

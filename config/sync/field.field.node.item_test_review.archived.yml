@@ -1,0 +1,21 @@
+uuid: 5e9020d3-3234-4280-81f2-eea04c448076
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.archived
+    - node.type.item_test_review
+id: node.item_test_review.archived
+field_name: archived
+entity_type: node
+bundle: item_test_review
+label: archived
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

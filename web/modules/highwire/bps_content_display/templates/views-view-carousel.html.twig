@@ -1,0 +1,28 @@
+<div{{ wrapper_attributes }}>
+  <div{{ attributes }}>
+    {% if title %}
+      <h3>{{ title }}</h3>
+    {% endif %}
+
+    <{{ list.type }}{{ list.attributes }}>
+
+      {% for row in rows %}
+        <li{{ row.attributes }}>{{ row.content }}</li>
+      {% endfor %}
+
+    </{{ list.type }}>
+
+    {% if pagination %}
+    <div class="swiper-pagination"></div>
+    {% endif %}
+
+    {% if navigation %}
+    <div class="views-view-carousel__button-prev"></div>
+    <div class="views-view-carousel__button-next"></div>
+    {% endif %}
+
+    {% if scrollbar %}
+    <div class="swiper-scrollbar"></div>
+    {% endif %}
+  </div>
+</div>

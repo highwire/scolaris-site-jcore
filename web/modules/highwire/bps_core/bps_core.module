@@ -1,0 +1,582 @@
+<?php
+
+/**
+ * @file
+ * Core BPS bps Site module
+ */
+
+use Drupal\node\Entity\NodeType;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Database\Database;
+use Drupal\Core\Mail\MailFormatHelper;
+use Drupal\Core\Url;
+use HighWire\Utility\Str;
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\highwire_content\HighWireContent;
+use Drupal\views\Element\View;
+use Drupal\views\Views;
+use Drupal\Core\Cache\Cache;
+
+define('HW_NODE_TYPE_TOC', ['item_toc_chapter', 'item_toc_part', 'item_toc_section']);
+define('HW_NODE_TYPE_JOURNAL', 'journal');
+define('HW_NODE_TYPE_VOLUME', 'journal_volume');
+define('HW_NODE_TYPE_ISSUE', 'journal_issue');
+define('HW_NODE_TYPE_ARTICLE', 'journal_article');
+define('HW_NODE_TYPE_FRAGMENT', 'journal_fragment');
+define('HW_NODE_TYPE_CHAPTER', 'item_chapter');
+define('HW_NODE_TYPE_MONOGRAPH', 'item_monograph');
+define('HW_NODE_TYPE_REPORT_GUIDELINE', 'item_report_guideline');
+define('HW_NODE_TYPE_TEST_REVIEW', 'item_test_review');
+
+/**
+ * Implements hook_token_info()
+ */
+function bps_core_token_info() {
+  $node['type_display'] = [
+    'name' => t("Content Type (Display)"),
+    'description' => t("The content type for front-end display.")
+  ];
+  return [
+    'tokens' => ['node' => $node]
+  ];
+}
+
+/**
+* Implements hook_tokens().
+*/
+function bps_core_tokens($type, array $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+  $replacements = [];
+  if ($type == 'node' && !empty($data['node']) && $data['node'] instanceof Node) {
+    $node = $data['node'];
+    foreach ($tokens as $name => $original) {
+      if ($name == 'type_display') {
+        $type = $node->getType();
+        if (!in_array($type, bps_core_get_hw_content_types())) {
+          $replacements[$original] = $type;
+        }
+        elseif (in_array($type, bps_core_get_book_chunk_types())) {
+          $replacements[$original] = t('chapter');
+        }
+        else {
+          switch ($type) {
+            case HW_NODE_TYPE_ARTICLE:
+              $replacements[$original] = t('article');
+            break;
+            case HW_NODE_TYPE_JOURNAL:
+              $replacements[$original] = t('journal');
+            break;
+          }
+        }
+      }
+    }
+  }
+  return $replacements;
+}
+
+/**
+* Implements hook_bootstrap_layouts_class_options_alter().
+*/
+function bps_core_bootstrap_layouts_class_options_alter(&$classes, &$groups) {
+  $sizes = [
+    'xs' => t('Extra Small'),
+    'sm' => t('Small'),
+    'md' => t('Medium'),
+    'lg' => t('Large'),
+  ];
+  // Add support for 24 col grids.
+  $col = [];
+  foreach ($sizes as $size => $size_label) {
+    foreach (range(1, 24) as $column) {
+      $col["col-$size-$column"] = t('@size: @column', [
+        '@size' => $size_label,
+        '@column' => $column,
+      ]);
+    }
+  }
+  if (!empty($col)) {
+    $classes['columns'] = $col;
+  }
+}
+
+/**
+* Helper function to get HighWire-managed content types for the BPS site.
+*
+* @return array
+*   HighWire content types
+*/
+function bps_core_get_hw_content_types() {
+  $types = [];
+  $lookup = Drupal::service('highwire_content.lookup');
+  if ($lookup) {
+    $types = $lookup->getHighWireContentTypes();
+  }
+  return $types;
+}
+
+/**
+* Helper function to get journal chunk content types for the bps site.
+*
+* @return array
+*   journal chunk node types
+*/
+
+function bps_core_get_journal_chunk_types() {
+  return ['journal_article', 'journal_issue', 'journal_volume', 'journal_fragment'];
+}
+
+/**
+ * Helper function to get reference chunk content types for the BPS site.
+ *
+ * @return array
+ *   reference chunk node types
+ */
+function bps_core_get_reference_chunk_types() {
+  return ['item_toc_chapter', 'item_toc_part', 'item_toc_section', 'item_part', 'item_front_matter', 'item_back_matter', 'item_quick_reference', 'item_prescribing_guideline', 'item_clinical_guideline', 'item_procedure', 'item_patient_education'];
+}
+
+/**
+* Implements hook_entity_extra_field_info().
+*/
+function bps_core_entity_extra_field_info() {
+  $fields = [];
+  $hw_content_types = bps_core_get_hw_content_types();
+  // Display-only fields for HighWire content types.
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $node_type = $bundle->Id();
+    if ($node_type == HW_NODE_TYPE_JOURNAL) {
+      $fields['node'][$node_type]['display']['about'] = [
+        'label' => t('About'),
+        'description' => t('About this journal.'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['cover_image'] = [
+        'label' => t('Cover Image'),
+        'description' => t('Cover Image of journal'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['submit_article'] = [
+        'label' => t('Submit article'),
+        'description' => t('How to submit an article to this journal.'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['editorial_brd'] = [
+        'label' => t('Editorial Board'),
+        'description' => t('Information about the journal\'s editorial board.'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['latest_articles'] = [
+        'label' => t('Latest articles'),
+        'description' => t('Displays the latest journal articles.'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['all_issues'] = [
+        'label' => t('All issues'),
+        'description' => t('Displays all journal issues.'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['most_read'] = [
+        'label' => t('Most Read'),
+        'description' => t('Displays most read articles.'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+    }
+    if ($node_type == HW_NODE_TYPE_ARTICLE) {
+      $fields['node'][$node_type]['display']['usage_stats_table_block'] = [
+        'label' => t('Usage Stats Table'),
+        'description' => t('Ustage Statistics Table'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+      $fields['node'][$node_type]['display']['cited_by_block'] = [
+        'label' => t('Cited-By'),
+        'description' => t('Google Scholar and Crossref links'),
+        'weight' => 100,
+        'visible' => FALSE,
+      ];
+    }
+    // Add focus view link.
+    $fields['node'][$node_type]['display']['bps_focus_view'] = [
+      'label' => t('Focus view link'),
+      'description' => t('Show / exit focus view.'),
+      'visible' => FALSE,
+    ];
+    $fields['node'][$node_type]['display']['bps_toc_pager'] = [
+     'label' => t('Toc pager'),
+      'description' => t('Previous and next links based on toc structure.'),
+      'visible' => FALSE,
+    ];
+    // Content navigation.
+    $fields['node'][$node_type]['display']['prev_next_pager'] = [
+      'label' => t('Prev/Next pager'),
+      'description' => t('Previous and next links based on atom order.'),
+      'visible' => FALSE,
+    ];
+    // Add permissions link.
+    $fields['node'][$node_type]['display']['ccc_permissions_link'] = [
+      'label' => t('CCC Permissions Link'),
+      'description' => t('OpenURL link for ccc'),
+      'visible' => FALSE,
+    ];
+  }
+  return $fields;
+}
+
+/**
+* Implements hook_ENTITY_TYPE_view().
+*/
+function bps_core_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if (!HighWireContent::isHighWire($entity)) {
+    return;
+  }
+  $corpus = $entity->hasField('corpus') && !$entity->get('corpus')->isEmpty() ? $entity->get('corpus')->getString() : '';
+  $content_type = $entity->bundle();
+  // Add focus view link.
+  if ($display->getComponent('bps_focus_view')) {
+    $build['bps_focus_view'] = [
+      '#type' => 'link',
+      '#title' => [
+        'icon' => ['#type' => 'bps_icon', '#icon' => 'expand'],
+        'title' => ['#type' => 'html_tag', '#tag' => 'span', '#value' => t('Focus'), '#prefix' => ' '],
+      ],
+      '#attributes' => [
+        'class' => ['article__focus_link']
+      ],
+    ];
+    if (\Drupal::routeMatch()->getRouteName() == 'highwire_entity_view') {
+      $build['bps_focus_view']['#url'] = $entity->toUrl();
+      $build['bps_focus_view']['#title']['title']['#value'] = t('Exit focus');
+      $build['bps_focus_view']['#title']['icon']['#icon'] = 'compress';
+    } else {
+      $build['bps_focus_view']['#url'] = Url::fromRoute('highwire_entity_view', ['entity_type_id' => 'node', 'entity_id' => $entity->id(), 'view_mode_id' => ($view_mode == 'focus_view' ? 'full' : $view_mode)]);
+    }
+  }
+  // Add toc pager.
+  if ($display->getComponent('bps_toc_pager')) {
+    $block_manager = \Drupal::service('plugin.manager.block');
+    $plugin_block = $block_manager->createInstance('bps_toc_pager', []);
+    $plugin_block->setContextValue('node', $entity);
+    $render = $plugin_block->build();
+    if (!empty($render)) {
+      $build['bps_toc_pager'] = $render;
+    }
+  }
+  // Add prev/next pager.
+  if ($display->getComponent('prev_next_pager')) {
+    $plugin_block = $block_manager->createInstance('prev_next_block', ['global_walk' => TRUE]);
+    $plugin_block->setContextValue('node', $entity);
+    $render = $plugin_block->build();
+    if (!empty($render)) {
+      // Add previous & next urls to custom toc pager template.
+      $build['prev_next_pager'] = [
+        '#theme' => 'bps_toc_pager',
+        '#previous_url' => Url::fromRoute('<nolink>'),
+        '#next_url' => Url::fromRoute('<nolink>'),
+      ];
+      if (!empty($render['prev_atom']['#url'])) {
+        $build['prev_next_pager']['#previous_url'] = $render['prev_atom']['#url'];
+      }
+      if (!empty($render['next_atom']['#url'])) {
+        $build['prev_next_pager']['#next_url'] = $render['next_atom']['#url'];
+      }
+    }
+  }
+  // Add permissions link.
+  if ($display->getComponent('ccc_permissions_link')) {
+    $build['ccc_permissions_link'] = [
+      '#type' => 'link',
+      '#title' => 'Permissions',
+      '#url' => '/permissions',
+      '#attributes' => ['class' => ['btn', 'btn-secondary']],
+    ];
+  }
+  // Pseudofields for articles
+  if ($content_type == HW_NODE_TYPE_ARTICLE) {
+    // Add the usage-stats pseudofield
+    if ($display->getComponent('usage_stats_table_block')) {
+      $block_manager = \Drupal::service('plugin.manager.block');
+      $plugin_block = $block_manager->createInstance('usage_stats_table_block', [
+        'query_type' => 'monthly',
+        'views' => ['abstract', 'full', 'pdf', 'total'],
+        'date_format' => 'custom',
+        'custom_date_format' => 'M Y',
+        'limit' => '',
+      ]);
+      $plugin_block->setContextValue('node', $entity);
+      $build['usage_stats_table_block'] = [
+        '#type' => 'fieldset',
+        '#title' => 'Article usage',
+        '#attributes' => ['class' => ['usage-stats-container']],
+        'usage_stats' => $plugin_block->build()
+      ];
+    }
+    // Add the cited-by pseudofield
+    if ($display->getComponent('cited_by_block')) {
+      $block_manager = \Drupal::service('plugin.manager.block');
+      $plugin_block = $block_manager->createInstance('cited_by_block', [
+        'external_links' => ['crossref', 'google'],
+        'crossref_title' => 'Crossref',
+        'google_title' => 'Google Scholar',
+      ]);
+      $plugin_block->setContextValue('node', $entity);
+      $build['cited_by_block'] = [
+        '#type' => 'fieldset',
+        '#title' => 'Cited by',
+        '#attributes' => ['class' => ['cited-by-container']],
+        'cited_by' => $plugin_block->build()
+      ];
+    }
+    // Add the supplementary material pseudofield
+    if ($display->getComponent('supplementary_material')) {
+      $block_manager = \Drupal::service('plugin.manager.block');
+      $plugin_block = $block_manager->createInstance('supplementary_material', []);
+      $plugin_block->setContextValue('node', $entity);
+      if (!empty($plugin_block->build())) {
+        $build['supplementary_material'] = [
+          '#type' => 'fieldset',
+          '#title' => 'Supplementary files for this article',
+          '#attributes' => ['class' => ['supplementary-material-container']],
+          'supplementary_material' => $plugin_block->build()
+        ];
+      }
+    }
+  }
+  if (!empty($corpus) && ($content_type == HW_NODE_TYPE_JOURNAL || $content_type == HW_NODE_TYPE_ISSUE)) {
+    // Get display info based on view mode.
+    $journal_info = [];
+    $journal_info_display = \Drupal::entityTypeManager()->getStorage('entity_view_display')->load('node.journal_info.' . $view_mode);
+    // Fetch the journal information based on the corpus id.
+    if (!empty($journal_info_display)) {
+      $journal_info = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'journal_info', 'corpus' => $corpus]);
+      $journal_info = array_pop($journal_info);
+    }
+    if (!empty($journal_info)) {
+      // Add cache tag for journal info node.
+      $build['#cache']['tags'][] = 'node:' . $journal_info->id();
+      // Add "Edit Info" contextual link.
+      $build['#contextual_links']['node_info'] = [
+        'route_parameters' => ['node' => $journal_info->id()],
+        'metadata' => ['changed' => time()],
+      ];
+    }
+    if (!empty($journal_info)) {
+      $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+      $info_ids = ['about', 'cover_image', 'description', 'submit_article', 'society', 'editors', 'editorial_brd'];
+      foreach ($info_ids as $id) {
+        $journal_info_id = 'field_journal_' . $id;
+        // Skip if field doesn't exist or is not displayed.
+        if (!$display->getComponent($id) || !$journal_info_display->getComponent($journal_info_id) || !$journal_info->hasField($journal_info_id)) {
+          continue;
+        }
+        // Build field render array and add to journal display.
+        $field = $journal_info->get($journal_info_id);
+        $field_ele = $field->getValue();
+        $field_ele_value = $field_ele[0]['value'];
+        $field_ele_value = str_replace(['<b ','<b>','</b>'], ['<strong ','<strong>','</strong>'], $field_ele_value);
+        $field->value = $field_ele_value;
+        $field_render_ary = $view_builder->viewField($field, $journal_info_display->getComponent($journal_info_id));
+        if (!empty($field_render_ary['#items'])) {
+          $build[$id] = $field_render_ary;
+        }
+      }
+      // Add the sample-issue link
+      if ($display->getComponent('sample_issue_link') && $journal_info->hasField('field_journal_sample_issue')) {
+        $sample_issue = $journal_info->get('field_journal_sample_issue');
+        if (!$sample_issue->isEmpty()) {
+          $sample_doi = $sample_issue->getString();
+          $build['sample_issue_link'] = [
+            '#type' => 'link',
+            '#title' => 'Sample issue',
+            '#url' => Url::fromRoute('highwire_content.lookup.doi', ['doi' => $sample_doi], []),
+            '#attributes' => ['class' => ['btn', 'btn-primary', 'journal-sample-issue-link']],
+          ];
+        }
+      }
+      // Add the impact factor text
+      if ($display->getComponent('impact_factor') && $journal_info->hasField('field_journal_impact_factor')) {
+        $impact_factor = $journal_info->get('field_journal_impact_factor');
+        if (!$impact_factor->isEmpty()) {
+          $impact_text = $impact_factor->getString();
+          if ($impact_text) {
+            $build['impact_factor'] = [
+              '#type' => 'html_tag',
+              '#tag' => 'span',
+              '#value' => $impact_text,
+              '#attributes' => ['class' => ['impact-factor-text']],
+            ];
+          }
+        }
+      }
+    }
+  }
+  // Pseudo fields for journals.
+  if ($content_type == HW_NODE_TYPE_JOURNAL) {
+    // Add current issue link.
+    if ($display->getComponent('current_issue_link') && $entity->hasField('journal_current_issue')) {
+      $current_issue = $entity->get('journal_current_issue');
+      if (!$current_issue->isEmpty()) {
+        $current_issue_nid = $current_issue->getString();
+        $build['current_issue_link'] = [
+          '#type' => 'link',
+          '#title' => t('Latest issue'),
+          '#url' => Url::fromRoute('entity.node.canonical', ['node' => $current_issue_nid], []),
+          '#attributes' => ['class' => ['btn', 'btn-primary']],
+        ];
+        $build['#cache']['tags'][] = 'node:' . $entity->id();
+      }
+    }
+    // Add submit an article link.
+    if ($display->getComponent('submit_article_link') && !empty($build['submit_article'])) {
+      $build['submit_article_link'] = [
+        '#type' => 'link',
+        '#title' => t('Submit an article'),
+        '#url' => Url::fromRoute('entity.node.canonical', ['node' => $entity->id()], ['fragment' => 'submit-article']),
+        '#attributes' => ['class' => ['btn', 'btn-secondary']],
+      ];
+    }
+    // Add the most-read pseudofield
+    if ($display->getComponent('most_read')) {
+      $block_manager = \Drupal::service('plugin.manager.block');
+      $plugin_block = $block_manager->createInstance('most_read_cited_block', [
+        'read_cited' => 'most-read',
+        'view_mode' => 'toc_list',
+        'limit' => 10,
+        'label' => '',
+      ]);
+      $plugin_block->setContextValue('node', $entity);
+      $build['most_read'] = $plugin_block->build();
+    }
+    // These views depend on corpus.
+    if (!empty($corpus)) {
+      // Add each Journal view to the render array.
+      $view_ids = ['latest_articles', 'all_issues'];
+      $view_args = ['corpus' => $corpus];
+      foreach ($view_ids as $id) {
+        if ($display->getComponent($id)) {
+          $view = Views::getView($id);
+          // Set corpus as contextual filter.
+          $view->setArguments($view_args);
+          // Build render array like ViewsBlock would.
+          $output = $view->buildRenderable('block_1', array_values($view_args));
+          $output = View::preRenderViewElement($output);
+          if (empty($output['view_build'])) {
+            $output = ['#cache' => $output['#cache']];
+          }
+          $build[$id] = $output;
+        }
+      }
+    }
+  }
+  // Add 'view [node_type]' link.
+  if ($display->getComponent('view_content_link')) {
+    $build['view_content_link'] = [
+      '#type' => 'link',
+      '#title' => \Drupal::token()->replace('View [node:type_display]', ['node' => $entity]),
+      '#url' => $entity->toUrl(),
+      '#attributes' => ['class' => ['btn', 'btn-secondary']],
+    ];
+  }
+}
+
+/**
+* Helper function to get book chunk content types for the MHE site.
+*
+* @return array
+*   Array of book chunk node types
+*/
+function bps_core_get_book_chunk_types() {
+  return ['item_chapter', 'item_section','item_front_matter', 'item_back_matter'];
+}
+
+/**
+* Implements hook_entity_update().
+* Invalidate custom cache associated to node.
+*/
+function bps_core_entity_update(EntityInterface $entity) {
+  $tags = [];
+  if ($entity->bundle() == 'journal_article') {
+    if ($entity->hasField('parent_issue') && !$entity->get('parent_issue')->isEmpty()) {
+      $tags[] = 'table-of-contents:' . $entity->get('parent_issue')->value;
+      Cache::invalidateTags($tags);
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function bps_core_views_pre_view($view, $display_id, &$args) {
+  if ($view->id() == 'related_content' && $display_id == 'block_related_content') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if (empty($node) || !HighWireContent::isHighWire($node)) {
+      return;
+    }
+
+    // Add search terms for "related content" block.
+    if ($node->hasField('keywords') && !$node->get('keywords')->isEmpty()) {
+      $args = [];
+
+      // Exclude current item from result set.
+      $args[] = $node->get('apath')->getString();
+
+      // Build string from all the keywords on the node.
+      $keywords_string = '';
+      foreach ($node->get('keywords') as $keyword) {
+        $word = $keyword->getValue();
+        // If keyword type is set, include only 'generic' type.
+        if (empty($word['first']) || (!empty($word['second']) && $word['second'] != 'generic')) {
+          continue;
+        }
+        // Multiple values are separated by spaces, so make sure to enclose keywords that contain spaces in quotes.
+        $kwd = strpos($word['first'], ' ') === FALSE ? $word['first'] : '"' . $word['first'] . '"';
+        if (empty($keywords_string)) {
+          $keywords_string .= $kwd;
+        }
+        elseif (strlen($keywords_string) < (2048 - strlen($kwd))) {
+          // Make sure max length of keywords string is no longer than 2048 characters.
+          $keywords_string .= ' ' . $kwd;
+        }
+      }
+
+      if (!empty($keywords_string)) {
+        $args[] = $keywords_string;
+      }
+
+      $view->setArguments($args);
+    }
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function bps_core_page_attachments(array &$attachments) {
+  $datalayer_lookup = \Drupal::service('highwire_datalayer.lookup');
+  $datalayer_attachment = $datalayer_lookup->datalayerGetData();
+  if (!empty($datalayer_attachment)) {
+    if (!empty($_SESSION['securityRoleID'])) {
+      $datalayer_attachment['user']['hwBPSSecurityRoles'] = $_SESSION['securityRoleID'];
+    } 
+    else {
+      $datalayer_attachment['user']['hwBPSSecurityRoles'] = NULL;
+    }
+    $datalayer_json = json_encode($datalayer_attachment, JSON_UNESCAPED_SLASHES);
+    $attachments['#attached']['html_head'][] = [
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'script',
+        '#value' => 'window.dataLayer = window.dataLayer || []; window.dataLayer.push(' . $datalayer_json . ');',
+      ],
+      'datalayers-js-1',
+    ];
+  }
+}

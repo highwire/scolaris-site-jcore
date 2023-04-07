@@ -1,0 +1,21 @@
+uuid: 6bf49ee4-b5b8-458b-8a13-d21974adb943
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.lpage
+field_name: lpage
+entity_type: node
+bundle: item_test_review
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,27 @@
+fonts_demo:
+  title: 'Fonts'
+  content:
+    lead: 'Demonstration of our Particle Fonts.'
+    summary:
+      'Provide contextual feedback messages for typical user actions with the
+      handful of available and flexible font weight with family.'
+font_name: Roboto, sans-serif
+font_family:
+  - name: Extra Light
+    weight: 100
+    code: $font-weight-lighter
+  - name: Light
+    weight: 300
+    code: $font-weight-light
+  - name: Regular / Base
+    weight: 400
+    code: $font-family-sans-serif
+  - name: Semi Bold
+    weight: 500
+    code: $font-weight-semi
+  - name: Bold
+    weight: 700
+    code: $font-weight-bold
+  - name: Extra Bold
+    weight: 900
+    code: $font-weight-bolder

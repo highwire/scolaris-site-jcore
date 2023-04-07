@@ -1,0 +1,51 @@
+.block-adnuntius {
+  display: inline-block;
+  width: 100%;
+  .adnuntius-wrapper {
+    height: auto !important;
+  }
+}
+.block-region-top {
+  .block-adnuntius {
+    margin-bottom: 10px;
+  }
+}
+.block-region-bottom,
+.block-region-left,
+.block-region-bottom-right {
+  .block-adnuntius {
+    margin-top: 30px;
+  }
+  .sidebar-article + .block-adnuntius {
+     margin-top: 0;
+   }
+}
+.block-region-top,
+.block-region-bottom {
+  .block-adnuntius {
+    .contentWrapperPerItem {
+      text-align: left;
+    }
+  }
+}
+.block-region-right {
+  .block-adnuntius {
+    margin-top: 20px;
+  }
+  .sidebar + .block-adnuntius {
+     margin-top: 30px;
+   }
+}
+.path-test-reviews,
+.path-periodicals,
+.path-reports-guidelines,
+.path-monographs {
+  .block-adnuntius {    
+    @include media-breakpoint-up(small-tablet) {
+      width: 49%;
+    }
+    @include media-breakpoint-up(medium-tablet) {
+      width: 100%;
+    }
+  }
+}

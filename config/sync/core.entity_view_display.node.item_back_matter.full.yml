@@ -1,0 +1,271 @@
+uuid: 94d04268-257b-41e5-9d68-acdba96ef535
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.item_back_matter.apath
+    - field.field.node.item_back_matter.archived
+    - field.field.node.item_back_matter.atom_id
+    - field.field.node.item_back_matter.authors_full_name
+    - field.field.node.item_back_matter.binary
+    - field.field.node.item_back_matter.book_has_abstract
+    - field.field.node.item_back_matter.book_has_body
+    - field.field.node.item_back_matter.book_part_label
+    - field.field.node.item_back_matter.book_part_type
+    - field.field.node.item_back_matter.chapter_type
+    - field.field.node.item_back_matter.children
+    - field.field.node.item_back_matter.contributors_xml
+    - field.field.node.item_back_matter.corpus
+    - field.field.node.item_back_matter.counts
+    - field.field.node.item_back_matter.cover_image
+    - field.field.node.item_back_matter.date_atom_release
+    - field.field.node.item_back_matter.date_atom_updated
+    - field.field.node.item_back_matter.date_edition
+    - field.field.node.item_back_matter.date_ppub
+    - field.field.node.item_back_matter.date_print_publication
+    - field.field.node.item_back_matter.description
+    - field.field.node.item_back_matter.disclaimer
+    - field.field.node.item_back_matter.doi
+    - field.field.node.item_back_matter.edition
+    - field.field.node.item_back_matter.edition_id
+    - field.field.node.item_back_matter.editors_full_name
+    - field.field.node.item_back_matter.extract_policy
+    - field.field.node.item_back_matter.fpage
+    - field.field.node.item_back_matter.hwmd_abstract_book
+    - field.field.node.item_back_matter.hwmd_full_text_book
+    - field.field.node.item_back_matter.hwmd_table_of_contents_book_
+    - field.field.node.item_back_matter.instructor_material
+    - field.field.node.item_back_matter.isbn_ebook
+    - field.field.node.item_back_matter.isbn_ebook_compact
+    - field.field.node.item_back_matter.isbn_print
+    - field.field.node.item_back_matter.isbn_print_compact
+    - field.field.node.item_back_matter.item_type
+    - field.field.node.item_back_matter.keywords
+    - field.field.node.item_back_matter.lpage
+    - field.field.node.item_back_matter.mime_type
+    - field.field.node.item_back_matter.parent
+    - field.field.node.item_back_matter.parent_book
+    - field.field.node.item_back_matter.pdf
+    - field.field.node.item_back_matter.permissions
+    - field.field.node.item_back_matter.publisher
+    - field.field.node.item_back_matter.registered_test
+    - field.field.node.item_back_matter.related_objects
+    - field.field.node.item_back_matter.section_title
+    - field.field.node.item_back_matter.subject_groups
+    - field.field.node.item_back_matter.subtitle
+    - field.field.node.item_back_matter.supp_content_type
+    - field.field.node.item_back_matter.supplementary_material
+    - field.field.node.item_back_matter.taxonomy_terms
+    - field.field.node.item_back_matter.title_plain
+    - field.field.node.item_back_matter.type_id
+    - node.type.item_back_matter
+  module:
+    - field_group
+    - highwire_markup_display
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_outer:
+      children:
+        - group_content_actions
+        - group_back_matter_tabs
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: journal-article__tabwrap
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Outer
+      region: content
+    group_content_actions:
+      children:
+        - bps_focus_view
+        - bps_toc_pager
+      parent_name: group_outer
+      weight: 68
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'journals-step top journal-article'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Content actions'
+      region: content
+    group_back_matter_tabs:
+      children:
+        - group_chapter
+        - group_contents
+      parent_name: group_outer
+      weight: 69
+      format_type: highwire_tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+        ajax_markup:
+          ajax_markup_enabled: 0
+          active_tab_ajax_enabled: 0
+      label: 'Back matter tabs'
+      region: content
+    group_chapter:
+      children:
+        - group_abstract
+        - hwmd_full_text_book
+      parent_name: group_back_matter_tabs
+      weight: 70
+      format_type: highwire_tab
+      format_settings:
+        id: ''
+        classes: 'tab-content article__tabcontent-body'
+        description: ''
+        active: 1
+        formatter: closed
+      label: Chapter
+      region: content
+    group_abstract:
+      children:
+        - hwmd_abstract_book
+      parent_name: group_chapter
+      weight: 71
+      format_type: html_element
+      format_settings:
+        id: abstract
+        classes: abstract-wrapper
+        element: div
+        show_label: true
+        label_element: h2
+        attributes: 'class="section-title"'
+        effect: none
+        speed: fast
+      label: Abstract
+      region: content
+    group_contents:
+      children:
+        - parent
+      parent_name: group_back_matter_tabs
+      weight: 71
+      format_type: highwire_tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        active: 0
+        formatter: closed
+      label: Contents
+      region: content
+id: node.item_back_matter.full
+targetEntityType: node
+bundle: item_back_matter
+mode: full
+content:
+  bps_focus_view:
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bps_toc_pager:
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  hwmd_abstract_book:
+    type: hwmarkup_display_formatter
+    weight: 57
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  hwmd_full_text_book:
+    type: hwmarkup_display_formatter
+    weight: 72
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  parent:
+    type: entity_reference_entity_view
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      view_mode: toc_list
+      link: false
+    third_party_settings: {  }
+hidden:
+  access_icon_bps_access_icon: true
+  addtoany: true
+  apath: true
+  archived: true
+  atom_id: true
+  authors_full_name: true
+  binary: true
+  book_has_abstract: true
+  book_has_body: true
+  book_part_label: true
+  book_part_type: true
+  ccc_permissions_link: true
+  chapter_type: true
+  children: true
+  contributors_xml: true
+  corpus: true
+  counts: true
+  cover_image: true
+  date_atom_release: true
+  date_atom_updated: true
+  date_edition: true
+  date_ppub: true
+  date_print_publication: true
+  description: true
+  disclaimer: true
+  doi: true
+  edition: true
+  edition_id: true
+  editors_full_name: true
+  extract_policy: true
+  fpage: true
+  highwire_citations_download: true
+  hw_alerts_sign_up: true
+  hw_marker_sign_up: true
+  hw_tag_sign_up: true
+  hwmd_table_of_contents_book_: true
+  instructor_material: true
+  isbn_ebook: true
+  isbn_ebook_compact: true
+  isbn_print: true
+  isbn_print_compact: true
+  item_type: true
+  keywords: true
+  langcode: true
+  links: true
+  lpage: true
+  mime_type: true
+  parent_book: true
+  pdf: true
+  permissions: true
+  prev_next_pager: true
+  publisher: true
+  registered_test: true
+  related_objects: true
+  section_title: true
+  subject_groups: true
+  subtitle: true
+  supp_content_type: true
+  supplementary_material: true
+  taxonomy_terms: true
+  title_plain: true
+  type_id: true

@@ -1,0 +1,30 @@
+uuid: 2e120aff-f64b-48ba-8c83-89104a0015db
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.variant_large_image
+field_name: variant_large_image
+entity_type: node
+type: image
+settings:
+  target_type: file
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

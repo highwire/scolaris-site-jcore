@@ -1,0 +1,24 @@
+uuid: b49c68ae-5b96-475a-b915-11dccae69ea2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_abstract_search
+    - node.type.item_report_guideline
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: abstract_search
+id: node.item_report_guideline.hwmd_abstract_search
+field_name: hwmd_abstract_search
+entity_type: node
+bundle: item_report_guideline
+label: 'HighWire Markup Display - Abstract Search'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

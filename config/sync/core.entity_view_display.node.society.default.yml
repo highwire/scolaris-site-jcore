@@ -1,0 +1,43 @@
+uuid: ff85a0c3-671b-4912-97c6-757c5c9f58a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.society.field_society_log
+    - field.field.node.society.field_society_website
+    - image.style.society_logo_300_150_
+    - node.type.society
+  module:
+    - image
+    - link
+    - user
+id: node.society.default
+targetEntityType: node
+bundle: society
+mode: default
+content:
+  field_society_log:
+    weight: 0
+    label: above
+    settings:
+      image_style: society_logo_300_150_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_society_website:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

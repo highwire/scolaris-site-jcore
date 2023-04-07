@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: select_demo
+  }
+%}
+  {% block content %}
+    {% include '@atoms/forms/_select.twig' %}
+  {% endblock content %}
+{% endembed %}

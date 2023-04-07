@@ -1,0 +1,88 @@
+{{ title_prefix }}
+{{ title_suffix }}
+<div class="journals-articles-top">
+  <div class="journals-articles-inner">
+    <div class="row{% if journal_coverimage and registered_test_icon %} rowcol-3{% elseif journal_coverimage %} rowcol-left-2{% elseif registered_test_icon %} rowcol-right-2{% endif %}">
+      {% if journal_coverimage %}
+        <div class="article-left-panel">
+          <picture>
+            {% include "@atoms/images/_image.twig" with {
+              image: {
+                src: journal_coverimage,
+                alt: 'Card Image',
+                title: 'Card Image'
+              }
+            } only %}
+          </picture>
+        </div>
+      {% endif %}
+      <div class="article-middle-panel">
+        {% include "@components/site/_journal-top-content.twig" with {
+          main_title: main_title,
+          suffix_title: suffix_title,
+          authors: authors,
+          book_type_item: [{
+            issue_doi: {
+              label: "DOI: ",
+              href: "https://doi.org/"~doi,
+              title: doi,
+              class: 'article__editedby',
+              text: "https://doi.org/"~doi,
+              target: '_blank'
+            }
+            },{
+              label: "Published",
+              value: publicationDate
+            },{
+              label: "Date of original reivew",
+              value: ''
+          }],
+          action_tools: [{
+            title_withoutpopup: content.pdf,
+            class: "action-favorites"
+          }, {
+            title_withoutpopup: hw_marker_sign_up,
+            class: "action-favorites",
+          }, {
+            href: "#",
+            title: "Cite",
+            text: "Cite",
+            class: "action-cite",
+            popupdata: bps_citations_download,
+            modelPopup:  'bps-city-popup'
+          }, {
+            href: addtoany['#link_url'],
+            title: "Share",
+            class: "action-share",
+            text: "Share",
+            popupdata: addtoany,
+            modelPopup:  'bps-share-popup'
+          }, {
+            title_withoutpopup: hw_alerts_sign_up,
+            class: "action-bookmark"
+          }, {
+            href: ccc_permissions_link['#url'],
+            title: "Permissions",
+            text: "Permissions",
+            class: "action-permissions",
+            target: '_blank'
+          }]
+        } only %}
+      </div>     
+      {% if registered_test_icon  %}
+        <div class="article-right-panel">
+          {% if registered_test_icon.src %}
+            <picture>
+              {% include "@atoms/images/_image.twig" with {
+                image: {
+                  src: registered_test_icon.src,
+                  alt: registered_test_icon.alt
+                }
+              } only %}
+            </picture>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

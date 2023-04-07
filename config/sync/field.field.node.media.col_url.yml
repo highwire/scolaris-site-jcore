@@ -1,0 +1,21 @@
+uuid: df99e9b6-9b42-4561-8968-22a45876b612
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.col_url
+    - node.type.media
+  module:
+    - text
+id: node.media.col_url
+field_name: col_url
+entity_type: node
+bundle: media
+label: col-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,7 @@
+---
+checkbox:
+  name: checkbox
+  value: checkbox
+  label: Checkbox Text
+  prefix: checkbox
+  index: 1

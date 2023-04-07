@@ -1,0 +1,49 @@
+ad_units:
+  '0000000000221579':
+    label: 'Slot 1 - 300X250'
+    auid: '0000000000221579'
+    width: 300
+    height: 250
+    weight: 50
+  000000000022157a:
+    label: 'Slot 2 - 300X250'
+    auid: 000000000022157a
+    width: 300
+    height: 250
+    weight: 50
+  000000000022157c:
+    label: 'Slot 3 - 300X250'
+    auid: 000000000022157c
+    width: 300
+    height: 250
+    weight: 50
+  000000000022157d:
+    label: 'Slot 4 - 300X250'
+    auid: 000000000022157d
+    width: 300
+    height: 250
+    weight: 50
+  '0000000000221588':
+    label: 'Slot 5 - 300X250'
+    auid: '0000000000221588'
+    width: 300
+    height: 250
+    weight: 50
+  000000000022158a:
+    label: 'Slot 6 - 300X250'
+    auid: 000000000022158a
+    width: 300
+    height: 250
+    weight: 50
+  000000000022158d:
+    label: 'Slot 7 - 728 x 90'
+    auid: 000000000022158d
+    width: 728
+    height: 90
+    weight: 50
+  '0000000000221590':
+    label: 'Slot 8 - 728 x 90'
+    auid: '0000000000221590'
+    width: 728
+    height: 90
+    weight: 50

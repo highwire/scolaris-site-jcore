@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: badge_demo
+  }
+%}
+  {% block content %}
+    {% include '@molecules/badge/_badge.twig' %}
+  {% endblock content %}
+{% endembed %}

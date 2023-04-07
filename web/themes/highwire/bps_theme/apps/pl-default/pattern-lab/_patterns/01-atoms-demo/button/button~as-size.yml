@@ -1,0 +1,7 @@
+---
+button:
+  title: Button Size
+  text: Button Size
+  type: button
+  style: primary
+  size: large

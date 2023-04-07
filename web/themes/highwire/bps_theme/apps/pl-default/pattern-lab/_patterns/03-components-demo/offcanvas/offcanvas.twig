@@ -1,0 +1,9 @@
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: offcanvas_demo
+  }
+%}
+  {% block content %}
+    {% include '@components/offcanvas/_offcanvas.twig' %}
+  {% endblock content %}
+{% endembed %}

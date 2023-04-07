@@ -1,0 +1,27 @@
+// Base Configuration
+@import "global/root";
+@import "global/reboot";
+@import "global/containers";
+@import "global/grid";
+@import "global/transitions";
+
+// Animations Setting
+@import "animations/animations";
+
+// Breakpoints Setting
+@import "breakpoints/breakpoints";
+
+// Colors Setting
+@import "colors/colors";
+
+// Typography Setting
+@import "typography/typography";
+
+// Fonts Setting
+@import "fonts/fonts";
+
+// Icons Setting
+@import "icons/icons";
+
+// Spacing Setting
+@import "spacing/spacing";

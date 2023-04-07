@@ -1,0 +1,16 @@
+---
+search_form:
+  search_filter_right: search-filter-right
+  search_autocomplete: form-search
+  search_position: search__position
+  icon_search: search__icon
+  field:
+    type: text
+    id: id
+    placeholder: Search this site
+    style: 'search__formcontrol'
+  button:
+    type: submit
+    style: search
+    text: Search
+    

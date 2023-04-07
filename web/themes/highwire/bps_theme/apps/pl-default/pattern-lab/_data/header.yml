@@ -1,0 +1,110 @@
+---
+site_logo:
+  image:
+    src: "../../../assets/images/logo.svg"
+    title: The british psychological society logo
+    alt: The british psychological society Logo
+    class: brand__logo
+    width: 286
+    height: 86
+publisher_logo:
+  image:
+    src: "../../../assets/images/bps-explore.svg"
+    title: BPS Explore Logo
+    alt: BPS Explore Logo
+    class: brand__logo
+    width: 286
+    height: 86
+navigation_dropdown:
+- dropdown:
+    id: subject-dropdown
+    modifier_class: navigation__item__dropdown
+    togglemenu: navigation__item__toggle
+    menulcass: navigation__item__dropdown-menu
+    title: Subjects
+    menu:
+      - href: #
+        value: Medicine
+      - href: #
+        value: Nursing
+      - href: #
+        value: Physician Assistant
+      - href: #
+        value: Behavioral Sciences
+      - href: #
+        value: Health Sciences
+    arrow: 'menu_arrow'    
+- dropdown:
+    id: content-dropdown
+    modifier_class: navigation__item__dropdown
+    togglemenu: navigation__item__toggle
+    menulcass: navigation__item__dropdown-menu
+    title: Content
+    menu:
+      - href: #
+        value: Book
+      - href: #
+        value: Journals
+      - href: #
+        value: Reference
+    arrow: 'menu_arrow'    
+- dropdown:
+    id: information-dropdown
+    modifier_class: navigation__item__dropdown
+    togglemenu: navigation__item__toggle
+    menulcass: navigation__item__dropdown-menu
+    title: Information
+    menu:
+      - href: #
+        value: Students
+      - href: #
+        value: Educators
+      - href: #
+        value: Institutions
+      - href: #
+        value: Authors
+      - href: #
+        value: Societies
+      - href: #
+        value: Advertisers
+    arrow: 'menu_arrow'    
+left_nav:
+- button:
+    href: "#"
+    title: About
+    text: About
+    class: nav-link 
+- button:
+    href: "#"
+    title: Blog
+    text: Blog
+    class: nav-link 
+right_nav:
+- button:
+    href: "#"
+    title: Account
+    text: Account
+    class: user__icon     
+- button:
+    href: "#"
+    title: Cart
+    text: 0 items
+    class: shopping-bag__icon
+
+search_form:
+  search_filter_right: search-filter-right
+  search_autocomplete: form-search
+  search_position: search__position
+  icon_search: search__icon
+  field:
+    type: text
+    id: id
+    placeholder: Search this site
+    style: 'search__formcontrol'
+  button:
+    type: submit
+    style: search
+    text: Search
+   
+
+

@@ -1,0 +1,21 @@
+uuid: e6831ccd-6b91-4622-8d40-5a943670e043
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.chapter_type
+    - node.type.item_test_review
+  module:
+    - text
+id: node.item_test_review.chapter_type
+field_name: chapter_type
+entity_type: node
+bundle: item_test_review
+label: chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

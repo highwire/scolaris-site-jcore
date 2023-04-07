@@ -1,0 +1,11 @@
+uuid: d13a0133-b5bc-4ef1-ae32-6dc770ab0589
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banner
+id: node.banner
+target_entity_type_id: node
+target_bundle: banner
+default_langcode: site_default
+language_alterable: false

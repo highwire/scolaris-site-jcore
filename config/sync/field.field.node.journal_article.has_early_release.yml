@@ -1,0 +1,21 @@
+uuid: 07746545-3acc-48b5-a381-bd9eaae6b434
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_early_release
+    - node.type.journal_article
+id: node.journal_article.has_early_release
+field_name: has_early_release
+entity_type: node
+bundle: journal_article
+label: has-early-release
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
