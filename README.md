@@ -1,7 +1,7 @@
 <a href="https://www.highwirepress.com"><img src="https://www.highwirepress.com/wp-content/uploads/2021/04/BPS-HighWire-e1625160384390-670x470.png" height="auto" width="300"></a>
 
 ## SMART Site url(s):
- - Add your SMART site url here...
+ - Add your SMART site url here.....
 
 ## Documentation
  - [Config Management](docs/CONFIG.md)
