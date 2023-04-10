@@ -1,4 +1,4 @@
-<a href="https://www.highwirepress.com"><img src="https://www.highwirepress.com/wp-content/themes/highwirepress/assets/images/highwirepress-logo.svg" height="auto" width="300"></a>
+<a href="https://www.highwirepress.com"><img src="https://www.highwirepress.com/wp-content/uploads/2021/11/jcore-01c.svg" height="auto" width="300"></a>
 
 ## SMART Site url(s):
  - Add your SMART site url here... Now Working
