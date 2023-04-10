@@ -2,6 +2,7 @@
 
 ## SMART Site url(s):
  - Add your SMART site url here...
+ - https://smart.highwire.org/publisher/highwire-jcore-drupal8-bps
 
 ## Documentation
  - [Config Management](docs/CONFIG.md)
