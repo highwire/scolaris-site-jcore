@@ -1,7 +1,8 @@
 <a href="https://www.highwirepress.com"><img src="https://www.highwirepress.com/wp-content/uploads/2021/11/jcore-01c.svg" height="auto" width="300"></a>
 
 ## SMART Site url(s):
- - Add your SMART site url here... Now Working
+ - Add your SMART site url here...
+ - https://smart.highwire.org/publisher/highwire-jcore-drupal8-bps
 
 ## Documentation
  - [Config Management](docs/CONFIG.md)
